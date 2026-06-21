@@ -11,9 +11,9 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         Field1 = new SC_OutfitCollectionInfo_F1Type
                         {
-                            Field1 = 60,
-                            Field2 = 0,
-                            Field3 = 0,
+                            Field1 = 2294,
+                            Field2 = 2294,
+                            Field3 = 21,
                         },
                     });
         }

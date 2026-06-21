@@ -7,18 +7,78 @@ namespace NTRSimulator.GameServer.Handlers
     {
         int lobbyGetBuildInfoCount;
 
-
         public override void HandleLobbyGetEventInfo(CS_LobbyGetEventInfo request, Connection connection)
         {
-                    connection.Send(new SC_LobbyGetEventInfo
+            connection.SendAutoEncrypted(new SC_LobbyGetEventInfo
+            {
+                Field1 =
+                {
+                    [30200] = true,
+                    [2000005] = true,
+                    [2000002] = true,
+                    [31000] = true,
+                    [2000011] = true,
+                    [30610] = true,
+                    [103] = true,
+                    [30710] = true,
+                    [31210] = true,
+                    [30510] = true,
+                    [30900] = true,
+                    [101] = true,
+                    [30400] = true,
+                    [102] = true,
+                    [2000001] = true,
+                    [30100] = true,
+                    [31310] = true,
+                    [30300] = true,
+                    [2000013] = true,
+                    [31110] = true,
+                    [30810] = true,
+                },
+                Field2 =
+                {
+                    [2000003] = new SC_LobbyGetEventInfo_F2ValueType
                     {
-                        Field1 = { },
-                        Field2 = { },
-                        Field3 = { },
-                        Field4 = { 38003, 43001 },
-                        Field5 = { },
-                        Field6 = { },
-                    });
+                        Field1 = 2000003,
+                        Field2 = 1775553762,
+                        Field3 = 0,
+                    },
+                    [2000012] = new SC_LobbyGetEventInfo_F2ValueType
+                    {
+                        Field1 = 2000012,
+                        Field2 = 1780740367,
+                        Field3 = 0,
+                    },
+                    [2000019] = new SC_LobbyGetEventInfo_F2ValueType
+                    {
+                        Field1 = 2000019,
+                        Field2 = 1780740283,
+                        Field3 = 0,
+                    },
+                    [2000015] = new SC_LobbyGetEventInfo_F2ValueType
+                    {
+                        Field1 = 2000015,
+                        Field2 = 1775553762,
+                        Field3 = 0,
+                    },
+                    [2000020] = new SC_LobbyGetEventInfo_F2ValueType
+                    {
+                        Field1 = 2000020,
+                        Field2 = 1779215887,
+                        Field3 = 0,
+                    },
+                    [31410] = new SC_LobbyGetEventInfo_F2ValueType
+                    {
+                        Field1 = 31410,
+                        Field2 = 1775553762,
+                        Field3 = 0,
+                    },
+                },
+                Field3 = { },
+                Field4 = { 43016, 43015, 38003, 43008, 44001, 44002, 44003, 43001 },
+                Field5 = { },
+                Field6 = { 3, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 },
+            });
         }
 
         public override void HandleLobbyGetBuildInfo(CS_LobbyGetBuildInfo request, Connection connection)
@@ -28,56 +88,180 @@ namespace NTRSimulator.GameServer.Handlers
                     connection.Send(
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 10,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 } },
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 2,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 } },
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 10,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 } },
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 2,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 } },
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 10,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 } },
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 2,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 } },
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 10,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 } },
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                            },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 2,
-                            Field1 = { new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 } },
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                            },
+                        },
+                        new SC_PlayerStatusCounterSync
+                        {
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                            },
+                        },
+                        new SC_PlayerStatusCounterSync
+                        {
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                            },
+                        },
+                        new SC_PlayerStatusCounterSync
+                        {
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                            },
+                        },
+                        new SC_PlayerStatusCounterSync
+                        {
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                            },
+                        },
+                        new SC_PlayerStatusCounterSync
+                        {
+                            Field2 = 28,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                            },
+                        },
+                        new SC_PlayerStatusCounterSync
+                        {
+                            Field2 = 31,
+                            Field1 =
+                            {
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                            },
                         },
                         new SC_LobbyGetBuildInfo
                         {
                             Field1 =
                             {
-                                [202] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 20202 } },
+                                [101] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10131, 10101, 10122, 10123, 10115, 10130, 10108, 10125, 10128, 10132, 10124, 10136, 10116, 10153, 10133 } },
+                                [102] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10204, 10205, 10212, 10226, 10231, 10211, 10201, 10206, 10218 } },
+                                [103] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10304, 10302, 10301 } },
+                                [104] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10401, 10402 } },
                                 [106] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { } },
-                                [101] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10131 } },
                                 [201] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { } },
+                                [202] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 20202, 20203 } },
                             },
-                            Field2 = 1,
-                            Field3 = { },
-                            Field4 = 0,
+                            Field2 = 49,
+                            Field3 = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
+                            Field4 = 39600,
                         });
 
                     if (lobbyGetBuildInfoCount != 2)
@@ -575,14 +759,42 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     Field1 =
                     {
+                        [101] = new CS_LobbySetScheme_F2Type_F1ValueType
+                        {
+                            Field1 = { },
+                            Field2 = { },
+                            Field3 = 0,
+                            Field4 = { },
+                            Field5 =
+                            {
+                                [1] = new CS_LobbySetScheme_F2Type_F1ValueType_F5ValueType
+                                {
+                                    Field1 = 0,
+                                    Field2 = { 660736 },
+                                    Field3 = { },
+                                },
+                                [2] = new CS_LobbySetScheme_F2Type_F1ValueType_F5ValueType
+                                {
+                                    Field1 = 1,
+                                    Field2 = { 809472, 1073152, 1452288, 929536 },
+                                    Field3 = { },
+                                },
+                                [3] = new CS_LobbySetScheme_F2Type_F1ValueType_F5ValueType
+                                {
+                                    Field1 = 0,
+                                    Field2 = { 2622906368, 2622658560, 2623308800 },
+                                    Field3 = { },
+                                },
+                            },
+                        },
                         [102] = new CS_LobbySetScheme_F2Type_F1ValueType
                         {
                             Field1 = { },
                             Field2 =
                             {
-                                [10201] = 202801,
                                 [10202] = 202802,
                                 [10204] = 113204,
+                                [10201] = 202801,
                             },
                             Field3 = 0,
                             Field4 = { },
@@ -601,23 +813,31 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
-        public override void HandleLobbyGetCafeInfo(CS_LobbyGetCafeInfo request, Connection connection)
+                public override void HandleLobbyGetCafeInfo(CS_LobbyGetCafeInfo request, Connection connection)
         {
                     connection.Send(new SC_LobbyGetCafeInfo
                     {
                         Field1 = 0,
-                        Field2 = 1,
+                        Field2 = 5,
                         Field3 =
                         {
-                            { 3u, 1 },
-                            { 4u, 1 },
-                            { 5u, 1 },
-                            { 6u, 1 },
-                            { 67u, 1 },
-                            { 1u, 1 },
-                            { 2u, 1 },
+                            [1u] = 1,
+                            [2u] = 1,
+                            [3u] = 1,
+                            [4u] = 1,
+                            [5u] = 1,
+                            [6u] = 1,
+                            [67u] = 1,
                         },
-                        Field4 = { },
+                        Field4 =
+                        {
+                            [1001] = 24,
+                            [1008] = 24,
+                            [1035] = 24,
+                            [1048] = 8,
+                            [1062] = 8,
+                            [1066] = 57,
+                        },
                         Field5 = { },
                         Field6 = { },
                     });
@@ -638,16 +858,79 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleLobbyBuffInfo(CS_LobbyBuffInfo request, Connection connection)
         {
-                    connection.Send(new SC_LobbyBuffInfo
+                    connection.Send(1, new SC_LobbyBuffInfo
                     {
                         Field1 = 0,
-                        Field2 = { },
+                        Field2 =
+                        {
+                            [1001] = 5,
+                            [1008] = 4,
+                            [1009] = 5,
+                            [1013] = 48,
+                            [1015] = 5,
+                            [1017] = 5,
+                            [1021] = 5,
+                            [1022] = 4,
+                            [1023] = 4,
+                            [1024] = 5,
+                            [1025] = 4,
+                            [1026] = 5,
+                            [1027] = 4,
+                            [1029] = 4,
+                            [1032] = 7,
+                            [1033] = 4,
+                            [1034] = 5,
+                            [1035] = 4,
+                            [1036] = 4,
+                            [1038] = 5,
+                            [1039] = 8,
+                            [1040] = 4,
+                            [1042] = 5,
+                            [1043] = 4,
+                            [1044] = 5,
+                            [1045] = 5,
+                            [1047] = 4,
+                            [1048] = 4,
+                            [1049] = 4,
+                            [1050] = 4,
+                            [1051] = 4,
+                            [1052] = 4,
+                            [1053] = 5,
+                            [1054] = 4,
+                            [1055] = 4,
+                            [1056] = 4,
+                            [1057] = 4,
+                            [1058] = 4,
+                            [1059] = 4,
+                            [1060] = 5,
+                            [1061] = 5,
+                            [1062] = 4,
+                            [1063] = 4,
+                            [1064] = 5,
+                            [1065] = 5,
+                            [1066] = 4,
+                            [1068] = 4,
+                            [1069] = 4,
+                            [1070] = 5,
+                            [1071] = 4,
+                            [1072] = 4,
+                            [1073] = 5,
+                            [1074] = 4,
+                            [1076] = 4,
+                            [1077] = 4,
+                        },
                         Field3 =
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                             [4] = 1,
+                            [5] = 1,
+                            [6] = 1,
+                            [7] = 1,
+                            [8] = 1,
+                            [9] = 1,
+                            [15] = 1,
                         },
                         Field4 = 0,
                         Field5 = 0,
@@ -675,13 +958,65 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
-       
         public override void HandleLobbyTutorialInfo(CS_LobbyTutorialInfo request, Connection connection)
         {
-                    connection.Send(new SC_LobbyTutorialInfo
+                    connection.Send(1, new SC_LobbyTutorialInfo
                     {
-                        Field1 = { },
-                        Field2 = { },
+                        Field1 =
+                        {
+                            [100210] = true,
+                            [100306] = true,
+                            [100307] = true,
+                            [100407] = true,
+                            [200210] = true,
+                            [200306] = true,
+                            [200307] = true,
+                            [200407] = true,
+                        },
+                        Field2 =
+                        {
+                            [1001] = true,
+                            [1002] = true,
+                            [1003] = true,
+                            [1004] = true,
+                            [1005] = true,
+                            [1006] = true,
+                            [1007] = true,
+                            [1008] = true,
+                            [1010] = true,
+                            [2002] = true,
+                            [2003] = true,
+                            [2004] = true,
+                            [2005] = true,
+                            [2006] = true,
+                            [2007] = true,
+                            [2008] = true,
+                            [2010] = true,
+                            [3007] = true,
+                            [10031] = true,
+                            [10041] = true,
+                            [10051] = true,
+                            [10081] = true,
+                            [10091] = true,
+                            [10101] = true,
+                            [10102] = true,
+                            [30100] = true,
+                            [30200] = true,
+                            [30300] = true,
+                            [30310] = true,
+                            [30410] = true,
+                            [30510] = true,
+                            [30610] = true,
+                            [30710] = true,
+                            [30810] = true,
+                            [30900] = true,
+                            [31000] = true,
+                            [31010] = true,
+                            [31110] = true,
+                            [31210] = true,
+                            [31310] = true,
+                            [31910] = true,
+                        },
                     });
         }
 
@@ -715,16 +1050,27 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(new SC_GetLobbyBgm { Field1 = 0 });
         }
 
-        public override void HandleLobbyWelcomeSettingInfo(CS_LobbyWelcomeSettingInfo request, Connection connection)
+        public override void HandleGetLobbyPhotoCut(CS_GetLobbyPhotoCut request, Connection connection)
+        {
+            connection.Send(new SC_GetLobbyPhotoCut
+            {
+                Field1 = { },
+                Field2 = { 1, 2, 3, 4, 5, 6, 7, 53, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 49, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 },
+                Field3 = 1,
+                Field4 = { },
+            });
+        }
+
+                public override void HandleLobbyWelcomeSettingInfo(CS_LobbyWelcomeSettingInfo request, Connection connection)
         {
             connection.Send(new SC_LobbyWelcomeSettingInfo
             {
                 Field1 = new SC_LobbyWelcomeSettingInfo_F1Type
                 {
                     Field1 = true,
-                    Field3 = 1779771779,
-                    Field4 = 1065,
-                    Field5 = false,
+                    Field3 = 1782025827,
+                    Field4 = 1017,
+                    Field5 = true,
                 },
             });
         }
@@ -745,57 +1091,111 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
-        public override void HandleLobbyGetGunSetting(CS_LobbyGetGunSetting request, Connection connection)
+                        public override void HandleLobbyGetGunSetting(CS_LobbyGetGunSetting request, Connection connection)
         {
             connection.Send(1,
                 new SC_LobbyGetGunSetting
                 {
                     Field1 =
                     {
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1052, Field2 = 1105203, Field3 = 273, Field4 = 1779719368, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1039, Field2 = 1103901, Field3 = 273, Field4 = 1779719368, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1054, Field2 = 1105401, Field3 = 273, Field4 = 1779719368, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1032, Field2 = 1103200, Field3 = 0, Field4 = 1779772074, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1015, Field2 = 1101500, Field3 = 0, Field4 = 1779719368, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1023, Field2 = 1102300, Field3 = 0, Field4 = 1779719368, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1025, Field2 = 1102501, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1047, Field2 = 1104701, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1034, Field2 = 1103401, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1040, Field2 = 1104000, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1038, Field2 = 1103800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1026, Field2 = 1102601, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1001, Field2 = 1100100, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1008, Field2 = 1100800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1009, Field2 = 1100900, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1013, Field2 = 1101300, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1015, Field2 = 1101500, Field3 = 0, Field4 = 1780739079, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1017, Field2 = 1101700, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1021, Field2 = 1102100, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1022, Field2 = 1102200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1066, Field2 = 1106600, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1065, Field2 = 1106500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1064, Field2 = 1106400, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1062, Field2 = 1106200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1061, Field2 = 1106100, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1060, Field2 = 1106000, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1059, Field2 = 1105900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1058, Field2 = 1105800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1057, Field2 = 1105700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1056, Field2 = 1105601, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1055, Field2 = 1105500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1053, Field2 = 1105300, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1051, Field2 = 1105100, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1023, Field2 = 1102300, Field3 = 0, Field4 = 1780739079, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1024, Field2 = 1102400, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1025, Field2 = 1102501, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1026, Field2 = 1102601, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1027, Field2 = 1102700, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1028, Field2 = 1102800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1029, Field2 = 1102900, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1032, Field2 = 1103200, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1033, Field2 = 1103300, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1034, Field2 = 1103401, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1035, Field2 = 1103500, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1036, Field2 = 1103600, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1037, Field2 = 1103700, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1038, Field2 = 1103800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1039, Field2 = 1103901, Field3 = 273, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1040, Field2 = 1104000, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1041, Field2 = 1104100, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1042, Field2 = 1104200, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1043, Field2 = 1104300, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1044, Field2 = 1104400, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1045, Field2 = 1104500, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1047, Field2 = 1104701, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1048, Field2 = 1104800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1049, Field2 = 1104900, Field3 = 0, Field4 = 0, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1050, Field2 = 1105000, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1051, Field2 = 1105100, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1052, Field2 = 1105203, Field3 = 273, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1053, Field2 = 1105300, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1054, Field2 = 1105401, Field3 = 273, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1055, Field2 = 1105500, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1056, Field2 = 1105600, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1057, Field2 = 1105700, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1058, Field2 = 1105800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1059, Field2 = 1105900, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1060, Field2 = 1106000, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1061, Field2 = 1106100, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1062, Field2 = 1106200, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1063, Field2 = 1106300, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1064, Field2 = 1106400, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1065, Field2 = 1106500, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1066, Field2 = 1106600, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1067, Field2 = 1106700, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1068, Field2 = 1106800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1069, Field2 = 1106900, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1070, Field2 = 1107000, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1071, Field2 = 1107100, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1072, Field2 = 1107200, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1073, Field2 = 1107300, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1074, Field2 = 1107400, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1075, Field2 = 1107500, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1076, Field2 = 1107600, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1077, Field2 = 1107700, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1078, Field2 = 1107800, Field3 = 0, Field4 = 0, Field5 = 0 },
                     },
                 });
         }
 
         public override void HandleLobbyGunCostumeParts(CS_LobbyGunCostumeParts request, Connection connection)
         {
-            connection.Send(new SC_LobbyGunCostumeParts()
+            connection.Send(new SC_LobbyGunCostumeParts());
+        }
+
+        public override void HandleLobbyWatchAvgDuo(CS_LobbyWatchAvgDuo request, Connection connection)
+        {
+            SC_LobbyWatchAvgDuo response = new SC_LobbyWatchAvgDuo
             {
-                
-            });
+                Field2 = request.Field2,
+            };
+            response.Field1.AddRange(request.Field1);
+            connection.Send(response);
         }
 
         public override void HandleLobbyPlantInfo(CS_LobbyPlantInfo request, Connection connection)
         {
-            connection.Send(new SC_LobbyPlantInfo()
+            connection.Send(new SC_LobbyPlantInfo
             {
-
+                Field1 = new SC_LobbyPlantInfo_F1Type
+                {
+                    Field1 = 0,
+                    Field2 = 0,
+                    Field3 = 0,
+                    Field4 = 0,
+                    Field5 = 0,
+                    Field6 = false,
+                    Field7 = 0,
+                    Field8 = false,
+                    Field9 = 0,
+                    Field10 = { },
+                    Field11 = 0,
+                },
             });
         }
 
@@ -1112,13 +1512,49 @@ namespace NTRSimulator.GameServer.Handlers
 
         // HandleDarkZoneGetUnlockEggStage 
 
-        public override void HandleLobbyAvatarInfo(CS_LobbyAvatarInfo request, Connection connection)
+        public override void HandleLobbyBirthdayCareInfo(CS_LobbyBirthdayCareInfo request, Connection connection)
+        {
+            connection.Send(new SC_LobbyBirthdayCareInfo
+            {
+                Field1 = 1780934400,
+                Field2 = false,
+            });
+        }
+
+        public override void HandleLobbyMessageBoardInfo(CS_LobbyMessageBoardInfo request, Connection connection)
+        {
+            connection.Send(new SC_LobbyMessageBoardInfo
+            {
+                Field1 = new SC_LobbyMessageBoardCreate_F1Type
+                {
+                    Field1 = new SC_LobbyMessageBoardCreate_F1Type_F1Type
+                    {
+                        Field1 = 1782025828,
+                        Field2 = 248,
+                    },
+                    Field5 =
+                    {
+                        [1] = 3,
+                    },
+                },
+                Field2 = { },
+                Field3 =
+                {
+                    [77] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1781052876, Field2 = 77 },
+                    [235] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1780874039, Field2 = 235 },
+                    [236] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1780739718, Field2 = 236 },
+                    [248] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1782025828, Field2 = 248 },
+                },
+            });
+        }
+
+                public override void HandleLobbyAvatarInfo(CS_LobbyAvatarInfo request, Connection connection)
         {
             connection.Send(new SC_LobbyAvatarInfo
             {
                 Field1 = new SC_LobbyAvatarInfo_F1Type
                 {
-                    Field1 = 0,
+                    Field1 = 1071,
                     Field2 = 1002,
                 },
             });
@@ -1132,18 +1568,25 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
-        public override void HandleLobbyWelcomeSettingPlayed(CS_LobbyWelcomeSettingPlayed request, Connection connection)
+                public override void HandleLobbyWelcomeSettingPlayed(CS_LobbyWelcomeSettingPlayed request, Connection connection)
         {
             connection.Send(new SC_LobbyWelcomeSettingPlayed
             {
                 Field1 = new SC_LobbyWelcomeSettingInfo_F1Type
                 {
                     Field1 = true,
-                    Field3 = 1779771779,
-                    Field4 = 1065,
+                    Field3 = 1782025827,
+                    Field4 = 1017,
                     Field5 = true,
                 },
             });
+        }
+
+        public override void HandleLobbyCancelEvent(CS_LobbyCancelEvent request, Connection connection)
+        {
+            SC_LobbyCancelEvent response = new SC_LobbyCancelEvent();
+            response.Field1.AddRange(request.Field1);
+            connection.Send(response);
         }
 
         public override void HandleLobbyTriggerEvent(CS_LobbyTriggerEvent request, Connection connection)
