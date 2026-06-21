@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <TcpIPacketHandler>NTRSimulator.Common.Packets.IPacketHandler</TcpIPacketHandler>
+	  <TcpPacketHandlerAttr>NTRSimulator.Common.Packets.PacketHandlerAttribute</TcpPacketHandlerAttr>
+	  <TcpConnection>NTRSimulator.Common.Networking.Connection</TcpConnection>
+	  <TcpMsgId>NTRSimulator.Common.Protocol.MsgId</TcpMsgId>
+	  <TcpMsgIdPrefix>Msg</TcpMsgIdPrefix>
+	  <TcpProtoDir>protos\</TcpProtoDir>
+	  
+	  <TcpNormalizeCsScPrefix>true</TcpNormalizeCsScPrefix>
+
+	  <!-- Set to false to keep local proto edits during builds -->
+	  <GoogIeProtobufOverwriteProtos>true</GoogIeProtobufOverwriteProtos>
+
+	  <!-- Raphael globs $(TcpOutDir)\**\*.cs; keep TCP outputs away from Grpc.Tools table_protos/ -->
+	  <TcpOutDir>$(IntermediateOutputPath)tcp\</TcpOutDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<!-- SDK default globs can pick up generated .cs under obj/; Grpc.Tools and Raphael add those explicitly -->
+	<Compile Remove="obj\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="GoogIe.Protobuf" Version="0.0.15">
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  <PrivateAssets>all</PrivateAssets>
+	</PackageReference>
+	<PackageReference Include="Grpc.Tools" Version="2.81.0">
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		<PrivateAssets>all</PrivateAssets>
+	</PackageReference>
+    <PackageReference Include="Google.Protobuf" Version="3.28.3" />
+    <PackageReference Include="Raphael.Tcp.Tools" Version="2.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+	<Protobuf Include="table_protos\*.proto" GrpcServices="None"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NTRSimulator.Common\NTRSimulator.Common.csproj" />
+  </ItemGroup>
+</Project>

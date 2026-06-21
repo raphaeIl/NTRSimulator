@@ -1,0 +1,1 @@
+mitmproxy -k --mode local:GF2_Exilium.exe -s proxy.py
