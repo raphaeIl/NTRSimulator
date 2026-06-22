@@ -489,7 +489,7 @@ namespace NTRSimulator.GameServer.Handlers
                         40u,
                         new SC_Index_F1ValueType
                         {
-                            Field1 = 40,
+                            Field1 = 40, // DO NOT ENABLE, why does this break the whole menu
                             Field2 =
                             {
                                 { 25001u, true },
@@ -529,22 +529,24 @@ namespace NTRSimulator.GameServer.Handlers
                             Field2 =
                             {
                                 { 1335001u, false },
-                                { 1335002u, false },
+                                //{ 1335002u, false },
                                 { 1335101u, false },
                             },
                         }
                     },
                     {
-                        162u,
+                        162u,    // special char cgs
                         new SC_Index_F1ValueType
                         {
-                            Field1 = 162,
+                            Field1 = 162, 
                             Field2 =
                             {
                                 { 1630001u, false },
                                 { 1630002u, false },
                                 { 1630003u, false },
+                                { 1630004u, false },
                                 { 1630005u, false },
+                                { 1630006u, false },
                                 { 1630007u, false },
                             },
                         }
