@@ -1601,5 +1601,13 @@ namespace NTRSimulator.GameServer.Handlers
                 Field2 = { },
             });
         }
+
+        public override void HandleLobbyAsmrBegin(CS_LobbyAsmrBegin request, Connection connection)
+        {
+            connection.Send(new SC_LobbyAsmrBegin
+            {
+                Field1 = request.Field1,
+            });
+        }
     }
 }
