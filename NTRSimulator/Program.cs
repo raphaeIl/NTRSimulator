@@ -75,6 +75,7 @@ namespace NTRSimulator
                 var app = builder.Build();
 
                 // app.Services.GetService<ITableService>().DumpAllJsonToFile();
+                // app.Services.GetService<ITableService>().PackAllJsonToFile();
 
                 //List<GunData> gunData = app.Services.GetService<ITableService>().GetTable<GunData>();
 
