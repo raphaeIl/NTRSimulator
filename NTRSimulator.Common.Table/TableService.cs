@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using Google.Protobuf;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -10,6 +11,23 @@ namespace NTRSimulator.Common.Table
     {
         private const int RowFieldNumber = 1;
         private const uint RowFieldTag = (RowFieldNumber << 3) | (uint)WireFormat.WireType.LengthDelimited;
+        private static readonly string[] PreferredLangPackageTableFiles =
+        [
+            "LangPackageTableCnData",
+            "LangPackageTableEnusData",
+            "LangPackageTableJajpData",
+            "LangPackageTableKokrData",
+            "LangPackageTableZhtcData",
+            "LangPackageTableFrfrData",
+            "LangPackageTableDedeData",
+            "LangPackageTableEsesData",
+            "LangPackageTablePtptData",
+            "LangPackageTableThthData",
+            "LangPackageTableVtviData"
+        ];
+        private static readonly Regex LangPackageLocalizedDataRegex = new(
+            "^LangPackageTable(?!Data$)(?!.*Builtin).*Data$",
+            RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         private readonly ConcurrentDictionary<Type, object> caches = new();
         private readonly ConcurrentDictionary<Type, MessageParser> parserCache = new();
@@ -31,12 +49,16 @@ namespace NTRSimulator.Common.Table
             foreach (var filePath in Directory.EnumerateFiles(tablesDir, "*.bytes"))
             {
                 var tableName = Path.GetFileNameWithoutExtension(filePath);
-                var type = assembly.GetType($"NTRSimulator.Common.Table.{tableName}");
+                var resolvedTypeName = ResolveTypeName(tableName);
+                var type = assembly.GetType($"NTRSimulator.Common.Table.{resolvedTypeName}");
                 if (type is null)
                 {
                     logger.LogWarning("Skipping {Table}: no matching protobuf type", tableName);
                     continue;
                 }
+
+                if (!string.Equals(resolvedTypeName, tableName, StringComparison.Ordinal))
+                    logger.LogDebug("Using protobuf type {ResolvedType} for table file {Table}", resolvedTypeName, tableName);
 
                 try
                 {
@@ -54,6 +76,60 @@ namespace NTRSimulator.Common.Table
             }
         }
 
+        public void PackAllJsonToFile(string? inputDir = null, string? outputDir = null)
+        {
+            const string hardcodedTableName = "LangPackageTableCnData"; // remove
+
+            inputDir ??= Path.Combine(ResourceDir, "Dump");
+            outputDir ??= Path.Combine(ResourceDir, "Pack");
+
+            if (!Directory.Exists(inputDir))
+                throw new DirectoryNotFoundException($"Dump directory not found: {inputDir}");
+
+            var tablesDir = Path.Combine(ResourceDir, "Tables");
+            var assembly = GetTableAssembly();
+            Directory.CreateDirectory(outputDir);
+
+            foreach (var jsonPath in Directory.EnumerateFiles(inputDir, "*.json"))
+            {
+                var tableName = Path.GetFileNameWithoutExtension(jsonPath);
+                /// remove
+                if (!string.Equals(tableName, hardcodedTableName, StringComparison.Ordinal))
+                {
+                    logger.LogDebug("Skipping {Table}: temporary hardcode only packs {HardcodedTable}", tableName, hardcodedTableName);
+                    continue;
+                }
+                ////
+
+                var resolvedTypeName = ResolveTypeName(tableName);
+                var type = assembly.GetType($"NTRSimulator.Common.Table.{resolvedTypeName}");
+                if (type is null)
+                {
+                    logger.LogWarning("Skipping {Table}: no matching protobuf type", tableName);
+                    continue;
+                }
+
+                try
+                {
+                    var sourceBytesPath = Path.Combine(tablesDir, $"{tableName}.bytes");
+                    var outputBytesPath = Path.Combine(outputDir, $"{tableName}.bytes");
+                    PackJsonToBytes(jsonPath, type, sourceBytesPath, outputBytesPath);
+                    logger.LogInformation("Packed {Table} to {Path}", tableName, outputBytesPath);
+                }
+                catch (Exception ex)
+                {
+                    logger.LogWarning(ex, "Failed to pack {Table}", tableName);
+                }
+            }
+        }
+
+        private static string ResolveTypeName(string tableName)
+        {
+            return LangPackageLocalizedDataRegex.IsMatch(tableName)
+                ? "LangPackageTableData"
+                : tableName;
+        }
+
         public List<T> GetTable<T>(bool bypassCache = false) where T : IMessage<T>, new()
         {
             var type = typeof(T);
@@ -61,7 +137,7 @@ namespace NTRSimulator.Common.Table
             if (!bypassCache && caches.TryGetValue(type, out var cached))
                 return (List<T>)cached;
 
-            var bytesFilePath = GetBytesFilePath(type.Name);
+            var bytesFilePath = ResolveBytesFilePath(type.Name);
 
             if (!File.Exists(bytesFilePath))
                 throw new FileNotFoundException(
@@ -101,6 +177,101 @@ namespace NTRSimulator.Common.Table
         private static string GetBytesFilePath(string tableName)
         {
             return Path.Combine(ResourceDir, "Tables", $"{tableName}.bytes");
+        }
+
+        private static void PackJsonToBytes(string jsonPath, Type rowType, string sourceBytesPath, string outputBytesPath)
+        {
+            var json = File.ReadAllText(jsonPath);
+            var listType = typeof(List<>).MakeGenericType(rowType);
+            var rowsObj = JsonConvert.DeserializeObject(json, listType)
+                ?? throw new InvalidDataException($"JSON file could not be deserialized: {jsonPath}");
+
+            if (rowsObj is not System.Collections.IEnumerable rows)
+                throw new InvalidDataException($"JSON root must be an array of rows: {jsonPath}");
+
+            var headerPrefix = ReadHeaderPrefix(sourceBytesPath);
+            using var dataStream = new MemoryStream();
+            using (var output = new CodedOutputStream(dataStream))
+            {
+                foreach (var rowObj in rows)
+                {
+                    if (rowObj is not IMessage message)
+                        throw new InvalidDataException($"Row in {jsonPath} is not an IMessage instance.");
+
+                    output.WriteTag(RowFieldTag);
+                    output.WriteBytes(message.ToByteString());
+                }
+
+                output.Flush();
+            }
+
+            Directory.CreateDirectory(Path.GetDirectoryName(outputBytesPath)!);
+            using var file = File.Create(outputBytesPath);
+            file.Write(headerPrefix, 0, headerPrefix.Length);
+            var dataBytes = dataStream.ToArray();
+            file.Write(dataBytes, 0, dataBytes.Length);
+        }
+
+        private static byte[] ReadHeaderPrefix(string sourceBytesPath)
+        {
+            if (!File.Exists(sourceBytesPath))
+                return BitConverter.GetBytes(0u);
+
+            var fileBytes = File.ReadAllBytes(sourceBytesPath);
+            if (fileBytes.Length < 4)
+                throw new InvalidDataException(
+                    $"Source table file is too small ({fileBytes.Length} bytes): {sourceBytesPath}");
+
+            int headerSize = (int)BitConverter.ToUInt32(fileBytes, 0);
+            int dataOffset = 4 + headerSize;
+            if (dataOffset > fileBytes.Length)
+                throw new InvalidDataException(
+                    $"Source header declares {headerSize} bytes but file is only {fileBytes.Length} bytes: {sourceBytesPath}");
+
+            var prefix = new byte[dataOffset];
+            Buffer.BlockCopy(fileBytes, 0, prefix, 0, dataOffset);
+            return prefix;
+        }
+
+        private string ResolveBytesFilePath(string tableName)
+        {
+            var directPath = GetBytesFilePath(tableName);
+            if (File.Exists(directPath) || !string.Equals(tableName, "LangPackageTableData", StringComparison.Ordinal))
+                return directPath;
+
+            foreach (var candidateName in PreferredLangPackageTableFiles)
+            {
+                var candidatePath = GetBytesFilePath(candidateName);
+                if (File.Exists(candidatePath))
+                {
+                    logger.LogDebug(
+                        "Resolved {RequestedTable} to localized table file {ResolvedTable}",
+                        tableName,
+                        candidateName);
+                    return candidatePath;
+                }
+            }
+
+            var tablesDir = Path.Combine(ResourceDir, "Tables");
+            if (Directory.Exists(tablesDir))
+            {
+                var discovered = Directory
+                    .EnumerateFiles(tablesDir, "LangPackageTable*Data.bytes")
+                    .Select(Path.GetFileNameWithoutExtension)
+                    .Where(static name => !string.IsNullOrEmpty(name))
+                    .FirstOrDefault(static name => name is not null && LangPackageLocalizedDataRegex.IsMatch(name));
+
+                if (discovered is not null)
+                {
+                    logger.LogDebug(
+                        "Resolved {RequestedTable} to discovered localized table file {ResolvedTable}",
+                        tableName,
+                        discovered);
+                    return GetBytesFilePath(discovered);
+                }
+            }
+
+            return directPath;
         }
 
         private static Assembly GetTableAssembly()
@@ -195,6 +366,8 @@ namespace NTRSimulator.Common.Table
         List<T> GetTable<T>(bool bypassCache = false) where T : IMessage<T>, new();
 
         void DumpAllJsonToFile(string? outputDir = null);
+
+        void PackAllJsonToFile(string? inputDir = null, string? outputDir = null);
 
         //void DownloadTable<T>(string url, bool autoLoad = true) where T : IMessage<T>, new();
         
