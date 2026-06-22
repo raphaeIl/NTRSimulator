@@ -255,13 +255,14 @@ namespace NTRSimulator.GameServer.Handlers
                                 [102] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10204, 10205, 10212, 10226, 10231, 10211, 10201, 10206, 10218 } },
                                 [103] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10304, 10302, 10301 } },
                                 [104] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10401, 10402 } },
-                                [106] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { } },
+                                [106] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10601, 10602, 10603, 10607 } },
+                                [107] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10716, 10701, 10702, 10704, 10703 } },
                                 [201] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { } },
                                 [202] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 20202, 20203 } },
                             },
                             Field2 = 49,
                             Field3 = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
-                            Field4 = 39600,
+                            Field4 = 40260,
                         });
 
                     if (lobbyGetBuildInfoCount != 2)
