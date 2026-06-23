@@ -13,5 +13,18 @@ namespace NTRSimulator.GameServer.Handlers
                 Field2 = { 1017 },
             });
         }
+
+        public override void HandleLobbyAsmrUnlockGun(CS_LobbyAsmrUnlockGun request, Connection connection)
+        {
+            connection.Send(new SC_LobbyAsmrUnlockGun
+            {
+                Field1 = request.Field1,
+            });
+        }
+
+        public override void HandleLobbyAsmrEnd(CS_LobbyAsmrEnd request, Connection connection)
+        {
+            connection.Send(new SC_LobbyAsmrEnd());
+        }
     }
 }

@@ -3,16 +3,14 @@ using System.Text.Json.Serialization;
 
 namespace NTRSimulator.Database.Entities
 {
-    public class Item
+    public class AvgDuo
     {
         [Key]
         public uint Id { get; set; }
 
-        public uint ItemId { get; set; }
+        public uint[] AvgDuoMainStageIds { get; set; } = [];
 
-        public int Type { get; set; }
-
-        public int Count { get; set; } = 1;
+        public uint[] AvgDuoSubStageIds { get; set; } = [];
 
         [JsonIgnore]
         public virtual Account Account { get; set; } = null!;

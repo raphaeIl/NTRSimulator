@@ -21,7 +21,8 @@ namespace NTRSimulator.GameServer.Services
         IWeaponModService weaponModService,
         IWeaponSkinService weaponSkinService,
         IWeaponModSkinService weaponModSkinService,
-        ICostumeService costumeService) : IInventoryService
+        ICostumeService costumeService,
+        IAvgDuoService avgDuoService) : IInventoryService
     {
         public void Add<T>(uint accountUid, T item) where T : class
         {
@@ -162,6 +163,12 @@ namespace NTRSimulator.GameServer.Services
             if (typeof(T) == typeof(Costume))
             {
                 costumeService.AddAllCostumes(accountUid);
+                return;
+            }
+
+            if (typeof(T) == typeof(AvgDuo))
+            {
+                avgDuoService.AddAllAvgDuo(accountUid);
                 return;
             }
 

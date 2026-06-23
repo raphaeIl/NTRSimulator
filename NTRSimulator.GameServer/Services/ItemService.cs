@@ -24,6 +24,7 @@ namespace NTRSimulator.GameServer.Services
                 .Select(d => new Item
                 {
                     ItemId = d.Id,
+                    Type = d.Type,
                     Count = DefaultItemCount,
                 })
                 .ToList();

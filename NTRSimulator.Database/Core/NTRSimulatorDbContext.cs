@@ -25,6 +25,8 @@ namespace NTRSimulator.Database.Core
 
         public DbSet<WeaponModSkin> WeaponModSkins => Set<WeaponModSkin>();
 
+        public DbSet<AvgDuo> AvgDuos => Set<AvgDuo>();
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Gun>(e =>
@@ -54,6 +56,7 @@ namespace NTRSimulator.Database.Core
                 e.HasIndex(i => i.ItemId);
                 e.HasIndex("AccountUid", "ItemId").IsUnique();
                 e.Property(i => i.Id).ValueGeneratedOnAdd();
+                e.Property(i => i.Type).HasDefaultValue(0);
                 e.Property(i => i.Count).HasDefaultValue(1);
             });
 
@@ -81,6 +84,21 @@ namespace NTRSimulator.Database.Core
                 e.HasIndex(s => s.WeaponModSkinId);
                 e.HasIndex("AccountUid", "WeaponModSkinId").IsUnique();
                 e.Property(s => s.Id).ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<AvgDuo>(e =>
+            {
+                e.Property(a => a.Id).ValueGeneratedOnAdd();
+                e.Property(a => a.AvgDuoMainStageIds).HasDefaultValue(Array.Empty<uint>());
+                e.Property(a => a.AvgDuoSubStageIds).HasDefaultValue(Array.Empty<uint>());
+
+                e.HasOne(a => a.Account)
+                 .WithOne(a => a.AvgDuo)
+                 .HasForeignKey<AvgDuo>("AccountUid")
+                 .OnDelete(DeleteBehavior.Cascade)
+                 .IsRequired();
+
+                e.HasIndex("AccountUid").IsUnique();
             });
 
             modelBuilder.Entity<Account>(e =>
