@@ -17,6 +17,7 @@ namespace NTRSimulator.Common.Networking
     {
         public PlayerSession? Session { get; set; }
         public Account? Account { get; set; }
+        public long? ServerTimeOverride { get; set; }
 
         private readonly NetworkStream _stream = client.GetStream();
 
