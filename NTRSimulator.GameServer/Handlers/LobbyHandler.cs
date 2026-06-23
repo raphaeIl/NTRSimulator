@@ -1561,6 +1561,22 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
+        public override void HandleLobbyAvatarSwitch(CS_LobbyAvatarSwitch request, Connection connection)
+        {
+            connection.Send(new SC_LobbyAvatarSwitch
+            {
+                Field1 = request.Field1,
+            });
+        }
+
+        public override void HandleLobbyAvatarClotheChange(CS_LobbyAvatarClotheChange request, Connection connection)
+        {
+            connection.Send(new SC_LobbyAvatarClotheChange
+            {
+                Field1 = request.Field1,
+            });
+        }
+
         public override void HandleGetLobbyMeilingConfig(CS_GetLobbyMeilingConfig request, Connection connection)
         {
             connection.Send(new SC_GetLobbyMeilingConfig
