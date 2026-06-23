@@ -1,5 +1,6 @@
 ﻿using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
+using System;
 
 namespace NTRSimulator.GameServer.Handlers
 {
@@ -9,6 +10,8 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleLobbyGetEventInfo(CS_LobbyGetEventInfo request, Connection connection)
         {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             connection.SendAutoEncrypted(new SC_LobbyGetEventInfo
             {
                 Field1 =
@@ -40,37 +43,37 @@ namespace NTRSimulator.GameServer.Handlers
                     [2000003] = new SC_LobbyGetEventInfo_F2ValueType
                     {
                         Field1 = 2000003,
-                        Field2 = 1775553762,
+                        Field2 = nowUnix,
                         Field3 = 0,
                     },
                     [2000012] = new SC_LobbyGetEventInfo_F2ValueType
                     {
                         Field1 = 2000012,
-                        Field2 = 1780740367,
+                        Field2 = nowUnix,
                         Field3 = 0,
                     },
                     [2000019] = new SC_LobbyGetEventInfo_F2ValueType
                     {
                         Field1 = 2000019,
-                        Field2 = 1780740283,
+                        Field2 = nowUnix,
                         Field3 = 0,
                     },
                     [2000015] = new SC_LobbyGetEventInfo_F2ValueType
                     {
                         Field1 = 2000015,
-                        Field2 = 1775553762,
+                        Field2 = nowUnix,
                         Field3 = 0,
                     },
                     [2000020] = new SC_LobbyGetEventInfo_F2ValueType
                     {
                         Field1 = 2000020,
-                        Field2 = 1779215887,
+                        Field2 = nowUnix,
                         Field3 = 0,
                     },
                     [31410] = new SC_LobbyGetEventInfo_F2ValueType
                     {
                         Field1 = 31410,
-                        Field2 = 1775553762,
+                        Field2 = nowUnix,
                         Field3 = 0,
                     },
                 },
@@ -1064,12 +1067,14 @@ namespace NTRSimulator.GameServer.Handlers
 
                 public override void HandleLobbyWelcomeSettingInfo(CS_LobbyWelcomeSettingInfo request, Connection connection)
         {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             connection.Send(new SC_LobbyWelcomeSettingInfo
             {
                 Field1 = new SC_LobbyWelcomeSettingInfo_F1Type
                 {
                     Field1 = true,
-                    Field3 = 1782025827,
+                    Field3 = nowUnix,
                     Field4 = 1017,
                     Field5 = true,
                 },
@@ -1094,6 +1099,8 @@ namespace NTRSimulator.GameServer.Handlers
 
                         public override void HandleLobbyGetGunSetting(CS_LobbyGetGunSetting request, Connection connection)
         {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             connection.Send(1,
                 new SC_LobbyGetGunSetting
                 {
@@ -1102,16 +1109,16 @@ namespace NTRSimulator.GameServer.Handlers
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1001, Field2 = 1100100, Field3 = 0, Field4 = 0, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1008, Field2 = 1100800, Field3 = 0, Field4 = 0, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1009, Field2 = 1100900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1013, Field2 = 1101300, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1015, Field2 = 1101500, Field3 = 0, Field4 = 1780739079, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1013, Field2 = 1101300, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1015, Field2 = 1101500, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1017, Field2 = 1101700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1021, Field2 = 1102100, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1021, Field2 = 1102100, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1022, Field2 = 1102200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1023, Field2 = 1102300, Field3 = 0, Field4 = 1780739079, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1023, Field2 = 1102300, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1024, Field2 = 1102400, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1025, Field2 = 1102501, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1025, Field2 = 1102501, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1026, Field2 = 1102601, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1027, Field2 = 1102700, Field3 = 0, Field4 = 1780739643, Field5 = 0 },
+                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1027, Field2 = 1102700, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1028, Field2 = 1102800, Field3 = 0, Field4 = 0, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1029, Field2 = 1102900, Field3 = 0, Field4 = 0, Field5 = 0 },
                         new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1032, Field2 = 1103200, Field3 = 0, Field4 = 0, Field5 = 0 },
@@ -1517,20 +1524,22 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyBirthdayCareInfo
             {
-                Field1 = 1780934400,
+                Field1 = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
                 Field2 = false,
             });
         }
 
         public override void HandleLobbyMessageBoardInfo(CS_LobbyMessageBoardInfo request, Connection connection)
         {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             connection.Send(new SC_LobbyMessageBoardInfo
             {
                 Field1 = new SC_LobbyMessageBoardCreate_F1Type
                 {
                     Field1 = new SC_LobbyMessageBoardCreate_F1Type_F1Type
                     {
-                        Field1 = 1782025828,
+                        Field1 = nowUnix,
                         Field2 = 248,
                     },
                     Field5 =
@@ -1541,10 +1550,10 @@ namespace NTRSimulator.GameServer.Handlers
                 Field2 = { },
                 Field3 =
                 {
-                    [77] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1781052876, Field2 = 77 },
-                    [235] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1780874039, Field2 = 235 },
-                    [236] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1780739718, Field2 = 236 },
-                    [248] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = 1782025828, Field2 = 248 },
+                    [77] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 77 },
+                    [235] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 235 },
+                    [236] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 236 },
+                    [248] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 248 },
                 },
             });
         }
@@ -1587,12 +1596,14 @@ namespace NTRSimulator.GameServer.Handlers
 
                 public override void HandleLobbyWelcomeSettingPlayed(CS_LobbyWelcomeSettingPlayed request, Connection connection)
         {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             connection.Send(new SC_LobbyWelcomeSettingPlayed
             {
                 Field1 = new SC_LobbyWelcomeSettingInfo_F1Type
                 {
                     Field1 = true,
-                    Field3 = 1782025827,
+                    Field3 = nowUnix,
                     Field4 = 1017,
                     Field5 = true,
                 },

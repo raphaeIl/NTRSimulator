@@ -2,6 +2,7 @@
 using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 using Serilog;
+using System;
 
 namespace NTRSimulator.GameServer.Handlers
 {
@@ -17,6 +18,8 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleGachaTentimes(CS_GachaTentimes request, Connection connection)
         {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
             // MsgScRecordStatisticUpdate
             SC_RecordStatisticUpdate scRecordStatisticUpdate = new()
             {
@@ -810,7 +813,7 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     GunId = 1026,
                     Field41 = 0,
-                    CreateTime = 1779518872,
+                    CreateTime = nowUnix,
                     Level = 1,
                     AscensionLevel = 1,
                     CostumeId = 1102600,
@@ -1183,7 +1186,7 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 Field1 = 37,
                 Field2 = 23023,
-                Field3 = 1779518872,
+                Field3 = nowUnix,
             };
             SC_OutfitCollectionScoreUpdate outfitCollectionScoreUpdate = new SC_OutfitCollectionScoreUpdate()
             {
@@ -1211,7 +1214,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Field5 = { },
                     Field6 =
                     {
-                        { 1311, 1779518872 },
+                        { 1311, nowUnix },
                     },
                 },
             };
