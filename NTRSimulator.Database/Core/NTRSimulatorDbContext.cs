@@ -56,6 +56,7 @@ namespace NTRSimulator.Database.Core
                 e.HasIndex(i => i.ItemId);
                 e.HasIndex("AccountUid", "ItemId").IsUnique();
                 e.Property(i => i.Id).ValueGeneratedOnAdd();
+                e.Property(i => i.Type).HasDefaultValue(0);
                 e.Property(i => i.Count).HasDefaultValue(1);
             });
 

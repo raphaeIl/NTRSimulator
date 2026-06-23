@@ -197,6 +197,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                         Thread.Sleep(ResponseSendDelayMs);
                     }
                     ctx.Reply("Items successfully updated!");
+                    needsIndexResponse = true;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, "Unsupported inventory type.");
@@ -207,7 +208,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid));
             Thread.Sleep(ResponseSendDelayMs);
-            ctx.Reply("Weaponmod, weaponskin, weaponmodskin, costume, and avgduo successfully updated!");
+            ctx.Reply("Index successfully updated!");
         }
     }
 
@@ -411,6 +412,14 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                         },
                     }
                 },
+                {
+                    162u,
+                    new SC_Index_F1ValueType
+                    {
+                        Field1 = 162,
+                        Field2 = { },
+                    }
+                },
             },
             Field2 =
             {
@@ -457,6 +466,16 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
         foreach (WeaponModSkin weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkin>(accountUid))
             response.Field1[61].Field2[weaponModSkin.WeaponModSkinId] = true;
+
+        foreach (Item item in inventoryService.GetPlayerInventory<Item>(accountUid))
+        {
+            if (item.Type != 162)
+            {
+                continue;
+            }
+
+            response.Field1[162u].Field2[item.ItemId] = true;
+        }
 
         return response;
     }

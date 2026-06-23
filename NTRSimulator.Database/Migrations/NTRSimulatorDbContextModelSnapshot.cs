@@ -202,6 +202,11 @@ namespace NTRSimulator.Database.Migrations
                     b.Property<long>("ItemId")
                         .HasColumnType("bigint");
 
+                    b.Property<int>("Type")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(0);
+
                     b.HasKey("Id");
 
                     b.HasIndex("AccountUid");

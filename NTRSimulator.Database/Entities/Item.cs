@@ -10,6 +10,8 @@ namespace NTRSimulator.Database.Entities
 
         public uint ItemId { get; set; }
 
+        public int Type { get; set; }
+
         public int Count { get; set; } = 1;
 
         [JsonIgnore]

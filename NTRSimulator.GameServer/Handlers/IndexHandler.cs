@@ -535,20 +535,11 @@ namespace NTRSimulator.GameServer.Handlers
                         }
                     },
                     {
-                        162u,    // special char cgs
+                        162u, // special char cgs
                         new SC_Index_F1ValueType
                         {
-                            Field1 = 162, 
-                            Field2 =
-                            {
-                                { 1630001u, true },
-                                { 1630002u, true },
-                                { 1630003u, true },
-                                { 1630004u, true },
-                                { 1630005u, true },
-                                { 1630006u, true },
-                                { 1630007u, true },
-                            },
+                            Field1 = 162,
+                            Field2 = { },
                         }
                     },
                     {
@@ -640,6 +631,16 @@ namespace NTRSimulator.GameServer.Handlers
             foreach (WeaponModSkin weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkin>(connection.Account.Uid))
             {
                 scIndex.Field1[61].Field2.Add(weaponModSkin.WeaponModSkinId, true);
+            }
+
+            foreach (Item item in inventoryService.GetPlayerInventory<Item>(connection.Account.Uid))
+            {
+                if (item.Type != 162)
+                {
+                    continue;
+                }
+
+                scIndex.Field1[162u].Field2[item.ItemId] = true;
             }
 
             //connection.Send(2, scIndex);
