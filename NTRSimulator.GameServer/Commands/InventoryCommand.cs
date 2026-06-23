@@ -21,6 +21,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         WeaponModSkin,
         Item,
         Costume,
+        AvgDuo,
     }
 
     private static readonly Dictionary<string, InventoryType> TypeAliases = new(StringComparer.OrdinalIgnoreCase)
@@ -35,12 +36,13 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         ["item"] = InventoryType.Item,
         ["characterskin"] = InventoryType.Costume,
         ["costume"] = InventoryType.Costume,
+        ["avgduo"] = InventoryType.AvgDuo,
     };
 
     [Argument("addall", "Add all entries for one or all inventory types", pattern: "true", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
     public bool AddAll { get; set; }
 
-    [Argument("type", "Optional inventory type", pattern: "gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
+    [Argument("type", "Optional inventory type", pattern: "gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|avgduo", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
     public string? Type { get; set; }
 
     public void Execute(CommandContext ctx)
@@ -65,7 +67,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             if (!TypeAliases.TryGetValue(requestedType, out var resolvedType))
             {
-                ctx.Reply($"Unknown type '{requestedType}'. Valid types: gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume");
+                ctx.Reply($"Unknown type '{requestedType}'. Valid types: gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|avgduo");
                 return;
             }
 
@@ -149,6 +151,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             case InventoryType.Costume:
                 inventoryService.AddAll<Costume>(accountUid);
                 break;
+            case InventoryType.AvgDuo:
+                inventoryService.AddAll<AvgDuo>(accountUid);
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, "Unsupported inventory type.");
         }
@@ -182,6 +187,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 case InventoryType.WeaponSkin:
                 case InventoryType.WeaponModSkin:
                 case InventoryType.Costume:
+                case InventoryType.AvgDuo:
                     needsIndexResponse = true;
                     break;
                 case InventoryType.Item:
@@ -201,7 +207,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid));
             Thread.Sleep(ResponseSendDelayMs);
-            ctx.Reply("Weaponmod, weaponskin, weaponmodskin, and costume successfully updated!");
+            ctx.Reply("Weaponmod, weaponskin, weaponmodskin, costume, and avgduo successfully updated!");
         }
     }
 

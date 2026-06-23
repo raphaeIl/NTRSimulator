@@ -40,5 +40,8 @@ namespace NTRSimulator.Database.Entities
 
         [JsonIgnore]
         public virtual ICollection<WeaponModSkin> WeaponModSkins { get; set; } = new List<WeaponModSkin>();
+
+        [JsonIgnore]
+        public virtual AvgDuo? AvgDuo { get; set; }
     }
 }

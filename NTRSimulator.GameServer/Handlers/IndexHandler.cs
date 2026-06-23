@@ -541,13 +541,13 @@ namespace NTRSimulator.GameServer.Handlers
                             Field1 = 162, 
                             Field2 =
                             {
-                                { 1630001u, false },
-                                { 1630002u, false },
-                                { 1630003u, false },
-                                { 1630004u, false },
-                                { 1630005u, false },
-                                { 1630006u, false },
-                                { 1630007u, false },
+                                { 1630001u, true },
+                                { 1630002u, true },
+                                { 1630003u, true },
+                                { 1630004u, true },
+                                { 1630005u, true },
+                                { 1630006u, true },
+                                { 1630007u, true },
                             },
                         }
                     },

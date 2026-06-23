@@ -55,6 +55,33 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("Accounts");
                 });
 
+            modelBuilder.Entity("NTRSimulator.Database.Entities.AvgDuo", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("AccountUid")
+                        .HasColumnType("bigint");
+
+                    b.Property<long[]>("AvgDuoMainStageIds")
+                        .HasColumnType("bigint[]")
+                        .HasDefaultValue(new long[0]);
+
+                    b.Property<long[]>("AvgDuoSubStageIds")
+                        .HasColumnType("bigint[]")
+                        .HasDefaultValue(new long[0]);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AccountUid")
+                        .IsUnique();
+
+                    b.ToTable("AvgDuos");
+                });
+
             modelBuilder.Entity("NTRSimulator.Database.Entities.Costume", b =>
                 {
                     b.Property<long>("Id")
@@ -302,6 +329,17 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
+            modelBuilder.Entity("NTRSimulator.Database.Entities.AvgDuo", b =>
+                {
+                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                        .WithOne("AvgDuo")
+                        .HasForeignKey("NTRSimulator.Database.Entities.AvgDuo", "AccountUid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
             modelBuilder.Entity("NTRSimulator.Database.Entities.Gun", b =>
                 {
                     b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
@@ -375,6 +413,8 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Guns");
 
                     b.Navigation("Items");
+
+                    b.Navigation("AvgDuo");
 
                     b.Navigation("Weapons");
 
