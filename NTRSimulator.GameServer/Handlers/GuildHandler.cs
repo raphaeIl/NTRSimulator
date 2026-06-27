@@ -10,30 +10,29 @@ namespace NTRSimulator.GameServer.Handlers
         {
                      connection.Send(new SC_GuildInfo
             {
-                Field1 = new SC_GuildInfo_F1Type
+                EGACCPJBFAD = new OJHDHMDKIEK
                 {
-                    Field1 = 123123,
-                    Field2 = "NTRSimulator",
-                    Field3 = 23,
-                    Field4 = 123123,
-                    Field6 = "ntrsimulator",
-                    Field7 = 32,
-                    Field8 = 0,
-                    Field9 = 3,
-                    Field10 = 4,
-                    Field11 = 123123,
-                    Field12 = "ntrsimulator",
-                    Field13 = false,
-                    Field14 = 0,
-                    Field15 = { 3, 4, 10 },
-                    Field16 = { 14, 11, 17, 18, 15 },
-                    Field17 = 1,
-                    Field18 = 0,
+                    Id = 123123,
+                    Name = "NTRSimulator",
+                    Level = 23,
+                    NLDDNFLPMNI = "ntrsimulator",
+                    ENPCEGHDOGP = 32,
+                    NEDCICLLAGJ = 0,
+                    CPAHOGDFLFH = 3,
+                    NDIFIFKGALK = 4,
+                    PBMLPPJBCHN = 123123,
+                    GBJBCGBOMAC = "ntrsimulator",
+                    FFFHMCINLBK = false,
+                    FAIMMOELGOE = 0,
+                    IDBBNMIDLAE = { 3, 4, 10 },
+                    DMBCJBNCGPE = { 14, 11, 17, 18, 15 },
+                    FKMGNLFONKO = 1,
+                    LBCCLINKDMP = 0,
                 },
-                Field2 = 10004,
-                Field3 = false,
-                Field4 = 10032,
-                Field5 = 60,
+                QuestId = 10004,
+                MDDICHKNEPE = false,
+                SeasonId = 10032,
+                ONBCNAAHJMA = 60,
             });
         }
 
@@ -45,75 +44,75 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(29, new SC_GuildMemberList
             {
-                Field1 =
+                LLEPAHIHEBE =
                 {
-                    new SC_GuildMemberList_F1Type
+                    new IOFPLLMGFNF
                     {
-                        Field1 = new SC_AsyncPvpHistory_F1Type_F1Type
+                        PBJAABKNKAP = new BinaryUser
                         {
-                            Field1 = new SC_Login_F1Type
+                            Data = new User
                             {
-                                Field1 = 1,
-                                Field2 = "ntrsimulator",
-                                Field3 = 60,
-                                Field5 = Enum_Male_Female.Female,
-                                Field6 = 1221,
-                                Field7 = 21208,
-                                Field10 = new SC_Login_F1Type_F10Type
+                                Uid = 1,
+                                Name = "ntrsimulator",
+                                Level = 60,
+                                Sex = Sex.Female,
+                                Birthday = 1221,
+                                Portrait = 21208,
+                                Status = new User.Types.LoginStatus
                                 {
-                                    Field2 = 123123,
-                                    Field3 = 123123,
-                                    Field4 = 12313,
+                                    LoginTime = 123123,
+                                    LogoutTime = 123123,
+                                    SyncTime = 12313,
                                 },
-                                Field12 = 12312313,
-                                Field13 = "ntrsimulator",
-                                Field15 = 23093,
-                                Field16 = 22057,
-                                Field17 = 10865,
-                                Field18 = 123123,
-                                Field19 = 123123,
-                                Field20 = 59,
-                                Field21 = 24153,
-                                Field29 =
+                                GuildId = 12312313,
+                                GuildName = "ntrsimulator",
+                                Title = 23093,
+                                Medal = 22057,
+                                MaxStage = 10865,
+                                AchievementLevel = 123123,
+                                CreatTime = 123123,
+                                GunNum = 59,
+                                PortraitFrame = 24153,
+                                Assistants =
                                 {
                                 
                                 },
-                                Field31 = 3,
-                                Field32 = 4,
-                                Field34 = new SC_Login_F1Type_F34Type
+                                BKIPIIMKNCF = 3,
+                                JNLHINHBEIE = 4,
+                                IDMOCOHNLDO = new User.Types.JMMLGEDCIGB
                                 {
-                                    Field1 = true,
-                                    Field2 = 1162,
-                                    Field3 = 40,
+                                    JBMNHBBGAHP = true,
+                                    OHPHNKCEGCM = 1162,
+                                    GPJEDMDBIIJ = 40,
                                 },
-                                Field35 = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
-                                Field39 = new SC_HeroModeMark_F1Type
+                                MPDCKNHELFH = (POAMOPPDEJC)16,
+                                DKCAABLJBND = new IHNPFJGBPJB
                                 {
-                                    Field1 = 1312313,
-                                    Field2 = 0.899999976f,
+                                    FEPOFIOMNDB = 1312313,
+                                    KKLABAKPAPI = 0.899999976f,
                                 },
-                                Field40 = new SC_Login_F1Type_F40Type
+                                HEEDJKIDCLI = new User.Types.KEKFMLHLAMN
                                 {
-                                    Field1 = 26,
-                                    Field2 = 120,
+                                    EPCCANNLACO = 26,
+                                    GPJEDMDBIIJ = 120,
                                 },
-                                Field41 = Enum_None_Jiangyu_Max.Jiangyu,
-                                Field42 = 1846,
+                                LPLPBLGJMEG = CFOOAELCKKF.BriefVersionJiangyu,
+                                BPCOAAEMFIB = 1846,
                             }.ToByteString(),
                         },
-                        Field2 = (Enum_JobNone_JobLeader_JobManager_JobNormal)1,
-                        Field3 = 310,
-                        Field4 = 123123,
-                        Field5 = 800,
-                        Field6 = 8000,
-                        Field7 = 13123123,
-                        Field8 = 123123123,
-                        Field9 = 10001,
-                        Field10 = 0,
-                        Field11 = 0,
+                        DAGBCMOABEA = (BLPACHOMKPJ)1,
+                        INFMFKJFNBA = 310,
+                        DPJNCPIHBFF = 123123,
+                        KLHLMGPNKOP = 800,
+                        GPFONDGMFDM = 8000,
+                        Uid = 13123123,
+                        BJDMOBCMDAB = 123123123,
+                        GDBJIKKMKFD = 10001,
+                        BLLPHFJICKN = 0,
+                        JMLAJJFAGLH = 0,
                     },
                 },
-                Field2 = 123,
+                PEFCJOKNJCN = 123,
             });
         }
         public override void HandleGetGuildSupplyList(CS_GetGuildSupplyList request, Connection connection)

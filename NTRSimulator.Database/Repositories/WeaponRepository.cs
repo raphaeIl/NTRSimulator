@@ -3,19 +3,19 @@ using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Repositories
 {
-    public sealed class WeaponRepository(NTRSimulatorDbContext db) : Repository<Weapon>(db), IWeaponRepository
+    public sealed class WeaponRepository(NTRSimulatorDbContext db) : Repository<WeaponEntity>(db), IWeaponRepository
     {
-        public Weapon[] GetWeaponsByUid(uint uid)
+        public WeaponEntity[] GetWeaponsByUid(uint uid)
         {
             return Db.Weapons.Where(w => w.Account.Uid == uid).ToArray();
         }
 
-        public Weapon? GetById(uint id) => Db.Weapons.SingleOrDefault(w => w.Id == id);
+        public WeaponEntity? GetById(uint id) => Db.Weapons.SingleOrDefault(w => w.Id == id);
     }
 
-    public interface IWeaponRepository : IRepository<Weapon>
+    public interface IWeaponRepository : IRepository<WeaponEntity>
     {
-        Weapon? GetById(uint id);
-        Weapon[] GetWeaponsByUid(uint uid);
+        WeaponEntity? GetById(uint id);
+        WeaponEntity[] GetWeaponsByUid(uint uid);
     }
 }

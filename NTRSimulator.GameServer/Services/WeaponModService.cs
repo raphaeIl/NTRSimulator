@@ -18,10 +18,10 @@ namespace NTRSimulator.GameServer.Services
             var existingModIds = new HashSet<uint>(account.WeaponMods.Select(m => m.WeaponModId));
 
             var newMods = modData
-                .Where(d => d.Field1 != 0 && !existingModIds.Contains(d.Field1))
-                .Select(d => new WeaponMod
+                .Where(d => d.Id != 0 && !existingModIds.Contains(d.Id))
+                .Select(d => new WeaponModEntity
                 {
-                    WeaponModId = d.Field1,
+                    WeaponModId = d.Id,
                     Uid = GenerateUid(),
                     Level = 0,
                     Field5 = 0,
@@ -34,14 +34,14 @@ namespace NTRSimulator.GameServer.Services
             weaponModRepository.SaveChanges();
         }
 
-        public WeaponMod[] GetPlayerWeaponMods(uint accountUid)
+        public WeaponModEntity[] GetPlayerWeaponMods(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.WeaponMods.ToArray();
         }
 
-        public void AddWeaponMod(uint accountUid, WeaponMod weaponMod)
+        public void AddWeaponMod(uint accountUid, WeaponModEntity weaponMod)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -49,7 +49,7 @@ namespace NTRSimulator.GameServer.Services
             weaponModRepository.SaveChanges();
         }
 
-        public bool RemoveWeaponMod(uint accountUid, WeaponMod weaponMod)
+        public bool RemoveWeaponMod(uint accountUid, WeaponModEntity weaponMod)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -67,9 +67,9 @@ namespace NTRSimulator.GameServer.Services
 
     public interface IWeaponModService : IGameService
     {
-        WeaponMod[] GetPlayerWeaponMods(uint accountUid);
-        void AddWeaponMod(uint accountUid, WeaponMod weaponMod);
-        bool RemoveWeaponMod(uint accountUid, WeaponMod weaponMod);
+        WeaponModEntity[] GetPlayerWeaponMods(uint accountUid);
+        void AddWeaponMod(uint accountUid, WeaponModEntity weaponMod);
+        bool RemoveWeaponMod(uint accountUid, WeaponModEntity weaponMod);
         void AddAllWeaponMods(uint accountUid);
     }
 }

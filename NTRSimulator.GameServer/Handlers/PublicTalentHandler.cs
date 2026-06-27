@@ -13,31 +13,31 @@ namespace NTRSimulator.GameServer.Handlers
 
             connection.Send(new SC_PublicTalentSkillItems
             {
-                Field1 =
+                PublicSkillItems =
                 {
-                    new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F12Type_F30Type_F8Type
+                    new PublicSkillItem
                     {
-                        Field1 = 1843288605358841857UL,
-                        Field2 = 91025,
-                        Field3 = 0,
-                        Field4 = 0,
-                        Field5 = false
+                        Id = 1843288605358841857UL,
+                        StcId = 91025,
+                        GunId = 0,
+                        Locked = 0,
+                        MDFIDAFPBJN = false
                     },
-                    new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F12Type_F30Type_F8Type
+                    new PublicSkillItem
                     {
-                        Field1 = 1843288605358841858UL,
-                        Field2 = 93007,
-                        Field3 = 0,
-                        Field4 = 0,
-                        Field5 = false
+                        Id = 1843288605358841858UL,
+                        StcId = 93007,
+                        GunId = 0,
+                        Locked = 0,
+                        MDFIDAFPBJN = false
                     },
-                    new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F12Type_F30Type_F8Type
+                    new PublicSkillItem
                     {
-                        Field1 = 1843288605358841856UL,
-                        Field2 = 91021,
-                        Field3 = 0,
-                        Field4 = 0,
-                        Field5 = false
+                        Id = 1843288605358841856UL,
+                        StcId = 91021,
+                        GunId = 0,
+                        Locked = 0,
+                        MDFIDAFPBJN = false
                     }
                 }
             });

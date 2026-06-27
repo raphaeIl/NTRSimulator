@@ -10,8 +10,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ClientReachCount
             {
-                Field1 = request.Field3,
-                Field2 = request.Field2,
+                LJJEFHEDHLB = request.BDDOIKKHJFH,
+                JILCADDFLNO = request.JILCADDFLNO,
             });
         }
     }

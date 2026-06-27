@@ -1,9 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace NTRSimulator.Database.Entities
 {
-    public class WeaponSkin
+    [Table("WeaponSkins")]
+    public class WeaponSkinEntity
     {
         [Key]
         public uint Id { get; set; }
@@ -11,6 +13,6 @@ namespace NTRSimulator.Database.Entities
         public uint WeaponSkinId { get; set; }
 
         [JsonIgnore]
-        public virtual Account Account { get; set; } = null!;
+        public virtual AccountEntity Account { get; set; } = null!;
     }
 }

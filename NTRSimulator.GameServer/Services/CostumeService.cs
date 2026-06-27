@@ -15,26 +15,24 @@ namespace NTRSimulator.GameServer.Services
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             var existingIds = new HashSet<uint>(account.Costumes.Select(c => c.CostumeId));
-            var newCostumes = new List<Costume>();
+            var newCostumes = new List<CostumeEntity>();
 
-            // From CostumeData table
             foreach (CostumeData data in tableService.GetTable<CostumeData>())
             {
                 if (!existingIds.Add(data.Id))
                     continue;
 
-                newCostumes.Add(new Costume { CostumeId = data.Id });
+                newCostumes.Add(new CostumeEntity { CostumeId = data.Id });
             }
 
-            // From GunData.CostumeIds (gun-specific costumes)
             foreach (GunData data in tableService.GetTable<GunData>())
             {
-                foreach (var costumeId in data.CostumeIds)
+                foreach (var costumeId in data.EILBLOLKOCM)
                 {
                     if (!existingIds.Add(costumeId))
                         continue;
 
-                    newCostumes.Add(new Costume { CostumeId = costumeId });
+                    newCostumes.Add(new CostumeEntity { CostumeId = costumeId });
                 }
             }
 
@@ -42,14 +40,14 @@ namespace NTRSimulator.GameServer.Services
             costumeRepository.SaveChanges();
         }
 
-        public Costume[] GetPlayerCostumes(uint accountUid)
+        public CostumeEntity[] GetPlayerCostumes(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.Costumes.ToArray();
         }
 
-        public void AddCostume(uint accountUid, Costume costume)
+        public void AddCostume(uint accountUid, CostumeEntity costume)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -57,7 +55,7 @@ namespace NTRSimulator.GameServer.Services
             costumeRepository.SaveChanges();
         }
 
-        public bool RemoveCostume(uint accountUid, Costume costume)
+        public bool RemoveCostume(uint accountUid, CostumeEntity costume)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -72,8 +70,8 @@ namespace NTRSimulator.GameServer.Services
     public interface ICostumeService : IGameService
     {
         void AddAllCostumes(uint accountUid);
-        Costume[] GetPlayerCostumes(uint accountUid);
-        void AddCostume(uint accountUid, Costume costume);
-        bool RemoveCostume(uint accountUid, Costume costume);
+        CostumeEntity[] GetPlayerCostumes(uint accountUid);
+        void AddCostume(uint accountUid, CostumeEntity costume);
+        bool RemoveCostume(uint accountUid, CostumeEntity costume);
     }
 }

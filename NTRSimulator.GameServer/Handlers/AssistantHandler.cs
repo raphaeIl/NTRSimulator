@@ -9,9 +9,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_Assistant
                     {
-                        Field1 = { },
-                        Field2 = 0,
-                        Field3 = { },
+                        GGOLBAILKIO = { },
+                        FLLPGJLBPLF = 0,
+                        IHNNHDGFJKB = { },
                     });
         }
 

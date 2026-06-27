@@ -1,9 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace NTRSimulator.Database.Entities
 {
-    public class AvgDuo
+    [Table("AvgDuos")]
+    public class AvgDuoEntity
     {
         [Key]
         public uint Id { get; set; }
@@ -13,6 +15,6 @@ namespace NTRSimulator.Database.Entities
         public uint[] AvgDuoSubStageIds { get; set; } = [];
 
         [JsonIgnore]
-        public virtual Account Account { get; set; } = null!;
+        public virtual AccountEntity Account { get; set; } = null!;
     }
 }

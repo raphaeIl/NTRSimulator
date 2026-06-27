@@ -10,9 +10,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_CareInfo
                     {
-                        Field1 = { },
-                        Field2 = { },
-                        Field3 = false,
+                        DHJDFODDKMI = { },
+                        Plans = { },
+                        EBHBLOKHAJL = false,
                     });
         }
     }

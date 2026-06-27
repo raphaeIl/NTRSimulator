@@ -9,24 +9,24 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     SC_GetCustomFormation response = new SC_GetCustomFormation
                     {
-                        Field1 = new SC_GetCustomFormation_F1Type(),
+                        OGNHICHKFAD = new PBEBLABCGEP(),
                     };
                     for (int i = 0; i < 12; i++)
                     {
-                        CS_CustomFormationModify_F2Type group = new CS_CustomFormationModify_F2Type
+                        CLHJOEOIFHP group = new CLHJOEOIFHP
                         {
-                            Field1 = "",
-                            Field3 = 0,
+                            Name = "",
+                            DCKBFGJJMFG = 0,
                         };
                         for (int j = 0; j < 6; j++)
                         {
-                            group.Field2.Add(new CS_CustomFormationModify_F2Type_F2Type
+                            group.Guns.Add(new NODNJAHDJGD
                             {
-                                Field1 = 0,
-                                Field2 = 0,
+                                GunId = 0,
+                                WeaponId = 0,
                             });
                         }
-                        response.Field1.Field1.Add(group);
+                        response.OGNHICHKFAD.KMPIHKFBAEP.Add(group);
                     }
                     connection.Send(response);
         }

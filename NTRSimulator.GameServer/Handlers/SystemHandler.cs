@@ -10,10 +10,10 @@ namespace NTRSimulator.GameServer.Handlers
         {
             SC_SystemUnlocks scSystemUnlocks = new SC_SystemUnlocks()
             {
-                Field1 = new SC_SystemUnlocks_F1Type
+                SystemLock = new SystemUnlock
                 {
-                    Field2 = 1085571,
-                    Field1 =
+                    Version = 1085571,
+                    Unlocks =
                     {
                         { 10997u, true },
                         { 10998u, true },
@@ -203,7 +203,7 @@ namespace NTRSimulator.GameServer.Handlers
                         { 49001u, true },
                     },
                 },
-                Field2 =
+                SystemTime =
                 {
                     { 11008u, 1645736400 },
                     { 28007u, 1745096400 },

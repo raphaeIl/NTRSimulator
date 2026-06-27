@@ -13,7 +13,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             if (connection.Account == null) return;
 
-            Item[] items = inventoryService.GetPlayerInventory<Item>(connection.Account.Uid);
+            ItemEntity[] items = inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid);
 
             if (items.Length == 0)
             {

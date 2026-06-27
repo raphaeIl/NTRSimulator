@@ -10,378 +10,378 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(2,
         new SC_Mails
         {
-            Field1 = true,
-            Field2 =
+            Active = true,
+            TotalMails =
             {
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10264,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)1,
-                            Field3 = 3005,
-                            Field4 = "",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10264,
+                            Type = (MailType)1,
+                            MailTempId = 3005,
+                            Title = "",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = false,
-                            Field10 = false,
-                            Field11 = 1779500060L,
-                            Field12 = 1782092060L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 1,
-                            Field17 = 0,
-                            Field18 = 0,
-                            Field19 =
+                            Read = false,
+                            Attached = false,
+                            ReceiveTime = 1779500060L,
+                            ExpireTime = 1782092060L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 1,
+                            BAFMGKOFPDJ = 0,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
             },
-            Field3 =
+            DMLHKOACPIC =
             {
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10267,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 1623,
-                            Field4 = "5月19日停机维护补偿",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10267,
+                            Type = (MailType)2,
+                            MailTempId = 1623,
+                            Title = "5月19日停机维护补偿",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = false,
-                            Field10 = false,
-                            Field11 = 1779152400L,
-                            Field12 = 1779724799L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 2,
-                            Field17 = 1623,
-                            Field18 = 0,
-                            Field19 =
+                            Read = false,
+                            Attached = false,
+                            ReceiveTime = 1779152400L,
+                            ExpireTime = 1779724799L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 2,
+                            BAFMGKOFPDJ = 1623,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10043,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 331,
-                            Field4 = "甜蜜的小礼物",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10043,
+                            Type = (MailType)2,
+                            MailTempId = 331,
+                            Title = "甜蜜的小礼物",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = true,
-                            Field10 = true,
-                            Field11 = 1722913200L,
-                            Field12 = 2038446000L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 1,
-                            Field17 = 331,
-                            Field18 = 0,
-                            Field19 =
+                            Read = true,
+                            Attached = true,
+                            ReceiveTime = 1722913200L,
+                            ExpireTime = 2038446000L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 1,
+                            BAFMGKOFPDJ = 331,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10250,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 1413,
-                            Field4 = "【年终奖兑换成功】您的衣装自选凭证已送达",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10250,
+                            Type = (MailType)2,
+                            MailTempId = 1413,
+                            Title = "【年终奖兑换成功】您的衣装自选凭证已送达",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = true,
-                            Field10 = true,
-                            Field11 = 1769140800L,
-                            Field12 = 1798732799L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 1,
-                            Field17 = 1413,
-                            Field18 = 0,
-                            Field19 =
+                            Read = true,
+                            Attached = true,
+                            ReceiveTime = 1769140800L,
+                            ExpireTime = 1798732799L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 1,
+                            BAFMGKOFPDJ = 1413,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10233,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 1161,
-                            Field4 = "全新功能【定向演化】现已开放",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10233,
+                            Type = (MailType)2,
+                            MailTempId = 1161,
+                            Title = "全新功能【定向演化】现已开放",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = true,
-                            Field10 = true,
-                            Field11 = 1759190400L,
-                            Field12 = 1790726400L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 3,
-                            Field17 = 1161,
-                            Field18 = 0,
-                            Field19 =
+                            Read = true,
+                            Attached = true,
+                            ReceiveTime = 1759190400L,
+                            ExpireTime = 1790726400L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 3,
+                            BAFMGKOFPDJ = 1161,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10265,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 1611,
-                            Field4 = "好心的指挥官，帮帮忙吧",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10265,
+                            Type = (MailType)2,
+                            MailTempId = 1611,
+                            Title = "好心的指挥官，帮帮忙吧",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = false,
-                            Field10 = false,
-                            Field11 = 1777582800L,
-                            Field12 = 1780261200L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 3,
-                            Field17 = 1611,
-                            Field18 = 0,
-                            Field19 =
+                            Read = false,
+                            Attached = false,
+                            ReceiveTime = 1777582800L,
+                            ExpireTime = 1780261200L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 3,
+                            BAFMGKOFPDJ = 1611,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10266,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 1624,
-                            Field4 = "从日出到烛光晚餐，指挥官都要陪我哦",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10266,
+                            Type = (MailType)2,
+                            MailTempId = 1624,
+                            Title = "从日出到烛光晚餐，指挥官都要陪我哦",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = false,
-                            Field10 = false,
-                            Field11 = 1779224400L,
-                            Field12 = 1781902800L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 3,
-                            Field17 = 1624,
-                            Field18 = 0,
-                            Field19 =
+                            Read = false,
+                            Attached = false,
+                            ReceiveTime = 1779224400L,
+                            ExpireTime = 1781902800L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 3,
+                            BAFMGKOFPDJ = 1624,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10137,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 833,
-                            Field4 = "指挥官性别修改功能现已开放",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10137,
+                            Type = (MailType)2,
+                            MailTempId = 833,
+                            Title = "指挥官性别修改功能现已开放",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = true,
-                            Field10 = true,
-                            Field11 = 1746484310L,
-                            Field12 = 2064153600L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 1,
-                            Field17 = 833,
-                            Field18 = 0,
-                            Field19 =
+                            Read = true,
+                            Attached = true,
+                            ReceiveTime = 1746484310L,
+                            ExpireTime = 2064153600L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 1,
+                            BAFMGKOFPDJ = 833,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },
-                        new SC_MailAdd_F1Type
+                        new Mail
                         {
-                            Field1 = 10232,
-                            Field2 = (Enum_None_System_SystemGroup_Gm)2,
-                            Field3 = 1160,
-                            Field4 = "【配件拆解】功能迭代补偿",
-                            Field5 = "",
-                            Field6 = "",
-                            Field7 =
+                            Id = 10232,
+                            Type = (MailType)2,
+                            MailTempId = 1160,
+                            Title = "【配件拆解】功能迭代补偿",
+                            Content = "",
+                            HintText = "",
+                            ContentArgs =
                             {
                             },
-                            Field8 =
+                            AttachmentItems =
                             {
                             },
-                            Field9 = true,
-                            Field10 = true,
-                            Field11 = 1759190400L,
-                            Field12 = 1790726400L,
-                            Field13 = 0L,
-                            Field14 = 0,
-                            Field15 = (Enum_None_Join_Survey)0,
-                            Field16 = 2,
-                            Field17 = 1160,
-                            Field18 = 0,
-                            Field19 =
+                            Read = true,
+                            Attached = true,
+                            ReceiveTime = 1759190400L,
+                            ExpireTime = 1790726400L,
+                            DeleteTime = 0L,
+                            Sender = 0,
+                            JOPJNGBLLDB = (DGNEONELCLC)0,
+                            HEJAAMLHNHH = 2,
+                            BAFMGKOFPDJ = 1160,
+                            HCOFMFNBFJC = 0,
+                            MJLMPPLNKIN =
                             {
                             },
-                            Field20 =
+                            MLPKIGPMAFO =
                             {
                             },
-                            Field21 =
+                            LFMFIGICHNE =
                             {
                             },
-                            Field22 =
+                            BNMMMNICFMK =
                             {
                             },
-                            Field23 = "",
-                            Field24 =
+                            FCHMDDAOMGI = "",
+                            FGKHFCFBHMG =
                             {
                             },
                         },

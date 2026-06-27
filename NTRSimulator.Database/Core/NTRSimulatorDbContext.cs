@@ -9,40 +9,40 @@ namespace NTRSimulator.Database.Core
         {
         }
 
-        public DbSet<Gun> Guns => Set<Gun>();
+        public DbSet<GunEntity> Guns => Set<GunEntity>();
 
-        public DbSet<Costume> Costumes => Set<Costume>();
+        public DbSet<CostumeEntity> Costumes => Set<CostumeEntity>();
 
-        public DbSet<Account> Accounts => Set<Account>();
+        public DbSet<AccountEntity> Accounts => Set<AccountEntity>();
 
-        public DbSet<Weapon> Weapons => Set<Weapon>();
+        public DbSet<WeaponEntity> Weapons => Set<WeaponEntity>();
 
-        public DbSet<Item> Items => Set<Item>();
+        public DbSet<ItemEntity> Items => Set<ItemEntity>();
 
-        public DbSet<WeaponMod> WeaponMods => Set<WeaponMod>();
+        public DbSet<WeaponModEntity> WeaponMods => Set<WeaponModEntity>();
 
-        public DbSet<WeaponSkin> WeaponSkins => Set<WeaponSkin>();
+        public DbSet<WeaponSkinEntity> WeaponSkins => Set<WeaponSkinEntity>();
 
-        public DbSet<WeaponModSkin> WeaponModSkins => Set<WeaponModSkin>();
+        public DbSet<WeaponModSkinEntity> WeaponModSkins => Set<WeaponModSkinEntity>();
 
-        public DbSet<AvgDuo> AvgDuos => Set<AvgDuo>();
+        public DbSet<AvgDuoEntity> AvgDuos => Set<AvgDuoEntity>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Gun>(e =>
+            modelBuilder.Entity<GunEntity>(e =>
             {
                 e.HasIndex(g => g.GunId);
                 e.Property(g => g.Id).ValueGeneratedOnAdd();
                 e.Property(g => g.Level).HasDefaultValue(1);
             });
 
-            modelBuilder.Entity<Costume>(e =>
+            modelBuilder.Entity<CostumeEntity>(e =>
             {
                 e.HasIndex(c => c.CostumeId);
                 e.Property(c => c.Id).ValueGeneratedOnAdd();
             });
 
-            modelBuilder.Entity<Weapon>(e =>
+            modelBuilder.Entity<WeaponEntity>(e =>
             {
                 e.HasIndex(w => w.WeaponId);
                 e.HasIndex(w => w.GunId);
@@ -51,7 +51,7 @@ namespace NTRSimulator.Database.Core
                 e.Property(w => w.BreakTimes).HasDefaultValue(1);
             });
 
-            modelBuilder.Entity<Item>(e =>
+            modelBuilder.Entity<ItemEntity>(e =>
             {
                 e.HasIndex(i => i.ItemId);
                 e.HasIndex("AccountUid", "ItemId").IsUnique();
@@ -60,7 +60,7 @@ namespace NTRSimulator.Database.Core
                 e.Property(i => i.Count).HasDefaultValue(1);
             });
 
-            modelBuilder.Entity<WeaponMod>(e =>
+            modelBuilder.Entity<WeaponModEntity>(e =>
             {
                 e.HasIndex(m => m.WeaponModId);
                 e.HasIndex(m => m.Uid).IsUnique();
@@ -72,21 +72,21 @@ namespace NTRSimulator.Database.Core
                 e.Property(m => m.Field7).HasDefaultValue(0ul);
             });
 
-            modelBuilder.Entity<WeaponSkin>(e =>
+            modelBuilder.Entity<WeaponSkinEntity>(e =>
             {
                 e.HasIndex(s => s.WeaponSkinId);
                 e.HasIndex("AccountUid", "WeaponSkinId").IsUnique();
                 e.Property(s => s.Id).ValueGeneratedOnAdd();
             });
 
-            modelBuilder.Entity<WeaponModSkin>(e =>
+            modelBuilder.Entity<WeaponModSkinEntity>(e =>
             {
                 e.HasIndex(s => s.WeaponModSkinId);
                 e.HasIndex("AccountUid", "WeaponModSkinId").IsUnique();
                 e.Property(s => s.Id).ValueGeneratedOnAdd();
             });
 
-            modelBuilder.Entity<AvgDuo>(e =>
+            modelBuilder.Entity<AvgDuoEntity>(e =>
             {
                 e.Property(a => a.Id).ValueGeneratedOnAdd();
                 e.Property(a => a.AvgDuoMainStageIds).HasDefaultValue(Array.Empty<uint>());
@@ -94,14 +94,14 @@ namespace NTRSimulator.Database.Core
 
                 e.HasOne(a => a.Account)
                  .WithOne(a => a.AvgDuo)
-                 .HasForeignKey<AvgDuo>("AccountUid")
+                 .HasForeignKey<AvgDuoEntity>("AccountUid")
                  .OnDelete(DeleteBehavior.Cascade)
                  .IsRequired();
 
                 e.HasIndex("AccountUid").IsUnique();
             });
 
-            modelBuilder.Entity<Account>(e =>
+            modelBuilder.Entity<AccountEntity>(e =>
             {
                 e.HasKey(a => a.Uid);
                 e.HasIndex(a => a.Email).IsUnique();

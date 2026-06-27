@@ -14,9 +14,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(2, new SC_TutorialInfo
             {
-                Field1 = new SC_TutorialInfo_F1Type
+                TutorialInfo = new Tutorial
                 {
-                    Field1 =
+                    Sends =
                     {
                         { 150301u, true },
                         { 150402u, true },
@@ -24,7 +24,7 @@ namespace NTRSimulator.GameServer.Handlers
                         { 190104u, true },
                         { 500202u, true },
                     },
-                    Field2 =
+                    Finished =
                     {
                         { 102u, true },
                         { 201u, true },

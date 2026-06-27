@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_SimCombatTutorialInfoV2
             {
-                Field1 = new SC_SimCombatTutorialInfoV2_F1Type { Field1 = 0 },
+                Tutorial = new PAHCFJFLGII { NPMHOABEFGB = 0 },
             });
         }
     }

@@ -131,28 +131,28 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         switch (type)
         {
             case InventoryType.Gun:
-                inventoryService.AddAll<Gun>(accountUid);
+                inventoryService.AddAll<GunEntity>(accountUid);
                 break;
             case InventoryType.Weapon:
-                inventoryService.AddAll<Weapon>(accountUid);
+                inventoryService.AddAll<WeaponEntity>(accountUid);
                 break;
             case InventoryType.WeaponMod:
-                inventoryService.AddAll<WeaponMod>(accountUid);
+                inventoryService.AddAll<WeaponModEntity>(accountUid);
                 break;
             case InventoryType.WeaponSkin:
-                inventoryService.AddAll<WeaponSkin>(accountUid);
+                inventoryService.AddAll<WeaponSkinEntity>(accountUid);
                 break;
             case InventoryType.WeaponModSkin:
-                inventoryService.AddAll<WeaponModSkin>(accountUid);
+                inventoryService.AddAll<WeaponModSkinEntity>(accountUid);
                 break;
             case InventoryType.Item:
-                inventoryService.AddAll<Item>(accountUid);
+                inventoryService.AddAll<ItemEntity>(accountUid);
                 break;
             case InventoryType.Costume:
-                inventoryService.AddAll<Costume>(accountUid);
+                inventoryService.AddAll<CostumeEntity>(accountUid);
                 break;
             case InventoryType.AvgDuo:
-                inventoryService.AddAll<AvgDuo>(accountUid);
+                inventoryService.AddAll<AvgDuoEntity>(accountUid);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, "Unsupported inventory type.");
@@ -215,8 +215,8 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
     private SC_Guns CreateGunResponse(uint accountUid)
     {
         SC_Guns response = new();
-        foreach (Gun gun in inventoryService.GetPlayerInventory<Gun>(accountUid))
-            response.Field1.Add(gun.ToProtoGunCharacter());
+        foreach (GunEntity gun in inventoryService.GetPlayerInventory<GunEntity>(accountUid))
+            response.Guns.Add(gun.ToProtoGunCharacter());
 
         return response;
     }
@@ -224,12 +224,12 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
     private SC_GunWeapons CreateWeaponResponse(uint accountUid)
     {
         SC_GunWeapons response = new();
-        foreach (Weapon weapon in inventoryService.GetPlayerInventory<Weapon>(accountUid))
+        foreach (WeaponEntity weapon in inventoryService.GetPlayerInventory<WeaponEntity>(accountUid))
         {
-            response.GunWeapons.Add(weapon.ToProtoWeapon());
+            response.Weapons.Add(weapon.ToProtoWeapon());
 
             if (weapon.GunId != 0)
-                response.Belong[weapon.Id] = weapon.GunId;
+                response.FEDCFGGDNBN[weapon.Id] = weapon.GunId;
         }
 
         return response;
@@ -237,7 +237,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private IEnumerable<SC_Items> CreateItemResponses(uint accountUid)
     {
-        Item[] items = inventoryService.GetPlayerInventory<Item>(accountUid);
+        ItemEntity[] items = inventoryService.GetPlayerInventory<ItemEntity>(accountUid);
         if (items.Length == 0)
         {
             yield return new SC_Items();
@@ -260,14 +260,14 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
     {
         SC_Index response = new SC_Index
         {
-            Field1 =
+            Indices =
             {
                 {
                     10u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 10,
-                        Field2 =
+                        Type = 10,
+                        Details =
                         {
                             { 1001u, false },
                             { 1008u, false },
@@ -278,10 +278,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     12u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 12,
-                        Field2 =
+                        Type = 12,
+                        Details =
                         {
                             { 21000u, true },
                             { 21001u, true },
@@ -294,26 +294,26 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     13u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 13,
-                        Field2 = { },
+                        Type = 13,
+                        Details = { },
                     }
                 },
                 {
                     14u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 14,
-                        Field2 = { },
+                        Type = 14,
+                        Details = { },
                     }
                 },
                 {
                     20u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 20,
-                        Field2 =
+                        Type = 20,
+                        Details =
                         {
                             { 11009u, false },
                             { 11010u, false },
@@ -325,18 +325,18 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     21u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 21,
-                        Field2 = { },
+                        Type = 21,
+                        Details = { },
                     }
                 },
                 {
                     36u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 36,
-                        Field2 =
+                        Type = 36,
+                        Details =
                         {
                             { 22001u, true },
                             { 22002u, false },
@@ -349,10 +349,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     37u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 37,
-                        Field2 =
+                        Type = 37,
+                        Details =
                         {
                             { 23001u, true },
                             { 23012u, true },
@@ -364,10 +364,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     39u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 39,
-                        Field2 =
+                        Type = 39,
+                        Details =
                         {
                             { 24001u, true },
                         },
@@ -375,10 +375,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     40u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 40,
-                        Field2 =
+                        Type = 40,
+                        Details =
                         {
                             { 25001u, true },
                         },
@@ -386,26 +386,26 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     60u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 60,
-                        Field2 = { },
+                        Type = 60,
+                        Details = { },
                     }
                 },
                 {
                     61u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 61,
-                        Field2 = { },
+                        Type = 61,
+                        Details = { },
                     }
                 },
                 {
                     133u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 133,
-                        Field2 =
+                        Type = 133,
+                        Details =
                         {
                             { 1335001u, false },
                             { 1335101u, false },
@@ -414,20 +414,20 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     162u,
-                    new SC_Index_F1ValueType
+                    new LMDCMBNFDCP
                     {
-                        Field1 = 162,
-                        Field2 = { },
+                        Type = 162,
+                        Details = { },
                     }
                 },
             },
-            Field2 =
+            IndicesInfo =
             {
                 {
                     36u,
-                    new SC_Index_F2ValueType
+                    new IndexInfo
                     {
-                        Field1 =
+                        Details =
                         {
                             { 22001u, 1703592104 },
                             { 22002u, 1728668611 },
@@ -440,9 +440,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     37u,
-                    new SC_Index_F2ValueType
+                    new IndexInfo
                     {
-                        Field1 =
+                        Details =
                         {
                             { 23001u, 1703592104 },
                             { 23012u, 1703900704 },
@@ -455,26 +455,26 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             },
         };
 
-        foreach (Costume costume in inventoryService.GetPlayerInventory<Costume>(accountUid))
-            response.Field1[13].Field2[costume.CostumeId] = true;
+        foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(accountUid))
+            response.Indices[13].Details[costume.CostumeId] = true;
 
-        foreach (WeaponMod weaponMod in inventoryService.GetPlayerInventory<WeaponMod>(accountUid))
-            response.Field1[21].Field2[weaponMod.WeaponModId] = true;
+        foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
+            response.Indices[21].Details[weaponMod.WeaponModId] = true;
 
-        foreach (WeaponSkin weaponSkin in inventoryService.GetPlayerInventory<WeaponSkin>(accountUid))
-            response.Field1[60].Field2[weaponSkin.WeaponSkinId] = true;
+        foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
+            response.Indices[60].Details[weaponSkin.WeaponSkinId] = true;
 
-        foreach (WeaponModSkin weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkin>(accountUid))
-            response.Field1[61].Field2[weaponModSkin.WeaponModSkinId] = true;
+        foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(accountUid))
+            response.Indices[61].Details[weaponModSkin.WeaponModSkinId] = true;
 
-        foreach (Item item in inventoryService.GetPlayerInventory<Item>(accountUid))
+        foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(accountUid))
         {
             if (item.Type != 162)
             {
                 continue;
             }
 
-            response.Field1[162u].Field2[item.ItemId] = true;
+            response.Indices[162u].Details[item.ItemId] = true;
         }
 
         return response;

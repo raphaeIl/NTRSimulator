@@ -18,12 +18,12 @@ namespace NTRSimulator.GameServer.Services
             var existingGunIds = new HashSet<uint>(account.Guns.Select(g => g.GunId));
 
             var newGuns = gunData
-                .Where(d => !existingGunIds.Contains(d.GunId))
-                .Select(d => new Gun
+                .Where(d => !existingGunIds.Contains(d.Id))
+                .Select(d => new GunEntity
                 {
-                    GunId = d.GunId,
+                    GunId = d.Id,
                     Level = 60,
-                    CostumeId = d.CostumeId,
+                    CostumeId = d.Avatar,
                     TimeCreated = DateTime.UtcNow,
                 })
                 .ToList();
@@ -32,14 +32,14 @@ namespace NTRSimulator.GameServer.Services
             gunRepository.SaveChanges();
         }
 
-        public Gun[] GetPlayerGuns(uint accountUid)
+        public GunEntity[] GetPlayerGuns(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.Guns.ToArray();
         }
 
-        public void AddGun(uint accountUid, Gun gun)
+        public void AddGun(uint accountUid, GunEntity gun)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -48,7 +48,7 @@ namespace NTRSimulator.GameServer.Services
             gunRepository.SaveChanges();
         }
 
-        public bool RemoveGun(uint accountUid, Gun gun)
+        public bool RemoveGun(uint accountUid, GunEntity gun)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -62,9 +62,9 @@ namespace NTRSimulator.GameServer.Services
 
     public interface IGunService : IGameService
     {
-        Gun[] GetPlayerGuns(uint accountUid);
-        void AddGun(uint accountUid, Gun gun);
-        bool RemoveGun(uint accountUid, Gun gun);
+        GunEntity[] GetPlayerGuns(uint accountUid);
+        void AddGun(uint accountUid, GunEntity gun);
+        bool RemoveGun(uint accountUid, GunEntity gun);
         void AddAllGuns(uint accountUid);
     }
 }

@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyCharacterInfo
             {
-                Field1 =
+                ALPKEDLGCBP =
                 {
                     [10010301u] = true,
                     [10080301u] = true,
@@ -73,7 +73,7 @@ namespace NTRSimulator.GameServer.Handlers
                     [10770301u] = true,
                     [10780301u] = true,
                 },
-                Field2 = { },
+                NKDBHMMPFOO = { },
             });
         }
     }

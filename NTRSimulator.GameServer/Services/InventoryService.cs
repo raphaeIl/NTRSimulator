@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.Database.Services;
 
@@ -28,43 +26,43 @@ namespace NTRSimulator.GameServer.Services
         {
             ArgumentNullException.ThrowIfNull(item);
 
-            if (item is Gun gun)
+            if (item is GunEntity gun)
             {
                 gunService.AddGun(accountUid, gun);
                 return;
             }
 
-            if (item is Weapon weapon)
+            if (item is WeaponEntity weapon)
             {
                 weaponService.AddWeapon(accountUid, weapon);
                 return;
             }
 
-            if (item is Item inventoryItem)
+            if (item is ItemEntity inventoryItem)
             {
                 itemService.AddItem(accountUid, inventoryItem);
                 return;
             }
 
-            if (item is WeaponMod weaponMod)
+            if (item is WeaponModEntity weaponMod)
             {
                 weaponModService.AddWeaponMod(accountUid, weaponMod);
                 return;
             }
 
-            if (item is WeaponSkin weaponSkin)
+            if (item is WeaponSkinEntity weaponSkin)
             {
                 weaponSkinService.AddWeaponSkin(accountUid, weaponSkin);
                 return;
             }
 
-            if (item is WeaponModSkin weaponModSkin)
+            if (item is WeaponModSkinEntity weaponModSkin)
             {
                 weaponModSkinService.AddWeaponModSkin(accountUid, weaponModSkin);
                 return;
             }
 
-            if (item is Costume costume)
+            if (item is CostumeEntity costume)
             {
                 costumeService.AddCostume(accountUid, costume);
                 return;
@@ -77,37 +75,37 @@ namespace NTRSimulator.GameServer.Services
         {
             ArgumentNullException.ThrowIfNull(item);
 
-            if (item is Gun gun)
+            if (item is GunEntity gun)
             {
                 return gunService.RemoveGun(accountUid, gun);
             }
 
-            if (item is Weapon weapon)
+            if (item is WeaponEntity weapon)
             {
                 return weaponService.RemoveWeapon(accountUid, weapon);
             }
 
-            if (item is Item inventoryItem)
+            if (item is ItemEntity inventoryItem)
             {
                 return itemService.RemoveItem(accountUid, inventoryItem);
             }
 
-            if (item is WeaponMod weaponMod)
+            if (item is WeaponModEntity weaponMod)
             {
                 return weaponModService.RemoveWeaponMod(accountUid, weaponMod);
             }
 
-            if (item is WeaponSkin weaponSkin)
+            if (item is WeaponSkinEntity weaponSkin)
             {
                 return weaponSkinService.RemoveWeaponSkin(accountUid, weaponSkin);
             }
 
-            if (item is WeaponModSkin weaponModSkin)
+            if (item is WeaponModSkinEntity weaponModSkin)
             {
                 return weaponModSkinService.RemoveWeaponModSkin(accountUid, weaponModSkin);
             }
 
-            if (item is Costume costume)
+            if (item is CostumeEntity costume)
             {
                 return costumeService.RemoveCostume(accountUid, costume);
             }
@@ -124,49 +122,49 @@ namespace NTRSimulator.GameServer.Services
 
         public void AddAll<T>(uint accountUid) where T : class
         {
-            if (typeof(T) == typeof(Gun))
+            if (typeof(T) == typeof(GunEntity))
             {
                 gunService.AddAllGuns(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(Weapon))
+            if (typeof(T) == typeof(WeaponEntity))
             {
                 weaponService.AddAllWeapons(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(Item))
+            if (typeof(T) == typeof(ItemEntity))
             {
                 itemService.AddAllItems(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(WeaponMod))
+            if (typeof(T) == typeof(WeaponModEntity))
             {
                 weaponModService.AddAllWeaponMods(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(WeaponSkin))
+            if (typeof(T) == typeof(WeaponSkinEntity))
             {
                 weaponSkinService.AddAllWeaponSkins(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(WeaponModSkin))
+            if (typeof(T) == typeof(WeaponModSkinEntity))
             {
                 weaponModSkinService.AddAllWeaponModSkins(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(Costume))
+            if (typeof(T) == typeof(CostumeEntity))
             {
                 costumeService.AddAllCostumes(accountUid);
                 return;
             }
 
-            if (typeof(T) == typeof(AvgDuo))
+            if (typeof(T) == typeof(AvgDuoEntity))
             {
                 avgDuoService.AddAllAvgDuo(accountUid);
                 return;
@@ -175,27 +173,27 @@ namespace NTRSimulator.GameServer.Services
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
         }
 
-        private static ICollection<T> GetCollection<T>(Account account) where T : class
+        private static ICollection<T> GetCollection<T>(AccountEntity account) where T : class
         {
-            if (typeof(T) == typeof(Gun))
+            if (typeof(T) == typeof(GunEntity))
                 return (ICollection<T>)(object)account.Guns;
 
-            if (typeof(T) == typeof(Weapon))
+            if (typeof(T) == typeof(WeaponEntity))
                 return (ICollection<T>)(object)account.Weapons;
 
-            if (typeof(T) == typeof(Item))
+            if (typeof(T) == typeof(ItemEntity))
                 return (ICollection<T>)(object)account.Items;
 
-            if (typeof(T) == typeof(WeaponMod))
+            if (typeof(T) == typeof(WeaponModEntity))
                 return (ICollection<T>)(object)account.WeaponMods;
 
-            if (typeof(T) == typeof(WeaponSkin))
+            if (typeof(T) == typeof(WeaponSkinEntity))
                 return (ICollection<T>)(object)account.WeaponSkins;
 
-            if (typeof(T) == typeof(WeaponModSkin))
+            if (typeof(T) == typeof(WeaponModSkinEntity))
                 return (ICollection<T>)(object)account.WeaponModSkins;
 
-            if (typeof(T) == typeof(Costume))
+            if (typeof(T) == typeof(CostumeEntity))
                 return (ICollection<T>)(object)account.Costumes;
 
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");

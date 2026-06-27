@@ -9,8 +9,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetAllOldScheme
                     {
-                        Field1 = { },
-                        Field2 = { },
+                        HBEFGPHGDNN = { },
+                        NIIJEGDNMLD = { },
                     });
         }
 

@@ -9,13 +9,13 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetNewbeeQuestV2
                     {
-                        Field1 = 69998,
-                        Field2 = new SC_GetNewbeeQuestV2_F2Type
+                        ONMNEMDCEIJ = 69998,
+                        LKAHOENFDFN = new KBJGHCKJJAJ
                         {
-                            Field1 = 1,
-                            Field2 = 1728668611,
-                            Field3 = { },
-                            Field4 = false,
+                            JODLPGFGDDN = 1,
+                            BPJMFIBFGKC = 1728668611,
+                            CDFBDNJIEOP = { },
+                            IIOPIOOLBOA = false,
                         },
                     });
         }

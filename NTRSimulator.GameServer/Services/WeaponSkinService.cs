@@ -19,7 +19,7 @@ namespace NTRSimulator.GameServer.Services
 
             var newSkins = skinData
                 .Where(d => d.Id != 0 && !existingSkinIds.Contains(d.Id))
-                .Select(d => new WeaponSkin
+                .Select(d => new WeaponSkinEntity
                 {
                     WeaponSkinId = d.Id,
                 })
@@ -29,14 +29,14 @@ namespace NTRSimulator.GameServer.Services
             weaponSkinRepository.SaveChanges();
         }
 
-        public WeaponSkin[] GetPlayerWeaponSkins(uint accountUid)
+        public WeaponSkinEntity[] GetPlayerWeaponSkins(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.WeaponSkins.ToArray();
         }
 
-        public void AddWeaponSkin(uint accountUid, WeaponSkin weaponSkin)
+        public void AddWeaponSkin(uint accountUid, WeaponSkinEntity weaponSkin)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -44,7 +44,7 @@ namespace NTRSimulator.GameServer.Services
             weaponSkinRepository.SaveChanges();
         }
 
-        public bool RemoveWeaponSkin(uint accountUid, WeaponSkin weaponSkin)
+        public bool RemoveWeaponSkin(uint accountUid, WeaponSkinEntity weaponSkin)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -58,9 +58,9 @@ namespace NTRSimulator.GameServer.Services
 
     public interface IWeaponSkinService : IGameService
     {
-        WeaponSkin[] GetPlayerWeaponSkins(uint accountUid);
-        void AddWeaponSkin(uint accountUid, WeaponSkin weaponSkin);
-        bool RemoveWeaponSkin(uint accountUid, WeaponSkin weaponSkin);
+        WeaponSkinEntity[] GetPlayerWeaponSkins(uint accountUid);
+        void AddWeaponSkin(uint accountUid, WeaponSkinEntity weaponSkin);
+        bool RemoveWeaponSkin(uint accountUid, WeaponSkinEntity weaponSkin);
         void AddAllWeaponSkins(uint accountUid);
     }
 }

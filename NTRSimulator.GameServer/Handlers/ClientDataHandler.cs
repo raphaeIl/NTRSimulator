@@ -15,7 +15,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ClientDataGet
             {
-                Field1 = ByteString.CopyFrom(
+                Data = ByteString.CopyFrom(
                     10,
         217,
         1,

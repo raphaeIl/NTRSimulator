@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="GoogIe.Protobuf" Version="0.0.15">
+	<PackageReference Include="GoogIe.Protobuf" Version="0.1.2">
 	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  <PrivateAssets>all</PrivateAssets>
 	</PackageReference>
