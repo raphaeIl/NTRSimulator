@@ -32,10 +32,10 @@ namespace NTRSimulator.GameServer.Handlers
                 Marks = { },
                 MIBABEHJCIK = { },
             };
-            // response.Field4[11651UL] = CreateFriendBrief(11651, "雷蒙先生", 21247, 24057);
-            response.Field4[1UL] = CreateFriendBrief(1, "Raymond (雷蒙先生)", 21257, 24023);
-            response.Field4[2] = CreateFriendBrief(2, "95（好女孩）", 21050, 24060);
-            response.Field4[3] = CreateFriendBrief(3, "雨中每亩", 1021035, 24160);
+            // response.Friends[11651UL] = CreateFriendBrief(11651, "雷蒙先生", 21247, 24057);
+            response.Friends[1UL] = CreateFriendBrief(1, "Raymond (雷蒙先生)", 21257, 24023);
+            response.Friends[2] = CreateFriendBrief(2, "95（好女孩）", 21050, 24060);
+            response.Friends[3] = CreateFriendBrief(3, "雨中每亩", 1021035, 24160);
 
             connection.SendAutoEncrypted(response);
         }
@@ -55,7 +55,7 @@ namespace NTRSimulator.GameServer.Handlers
                         Sex = Sex.Female,
                         Birthday = 709,
                         Portrait = avatarId,
-                        Status = new LoginStatus
+                        Status = new User.Types.LoginStatus
                         {
                             Online = true,
                             LoginTime = 12312312,
@@ -78,21 +78,22 @@ namespace NTRSimulator.GameServer.Handlers
                         },
                         BKIPIIMKNCF = 3,
                         JNLHINHBEIE = 4,
-                        IDMOCOHNLDO = new JMMLGEDCIGB
+                        IDMOCOHNLDO = new User.Types.JMMLGEDCIGB
                         {
-                            Name = 1163,
-                            Level = 40,
+                            JBMNHBBGAHP = false,
+                            OHPHNKCEGCM = 1163,
+                            GPJEDMDBIIJ = 40,
                         },
-                        MPDCKNHELFH = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
+                        MPDCKNHELFH = (POAMOPPDEJC)16,
                         DKCAABLJBND = new IHNPFJGBPJB
                         {
                             FEPOFIOMNDB = 1780963200UL,
                             KKLABAKPAPI = 1f,
                         },
-                        HEEDJKIDCLI = new KEKFMLHLAMN
+                        HEEDJKIDCLI = new User.Types.KEKFMLHLAMN
                         {
-                            Uid = 27,
-                            Name = 120,
+                            EPCCANNLACO = 27,
+                            GPJEDMDBIIJ = 120,
                         },
                         BPCOAAEMFIB = 1863,
                     }.ToByteString(),

@@ -22,7 +22,7 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         CheckinDone = false,
                         CheckinDay = 6,
-                        BPMBLLOMLNB = new MLODPBBCLEB { Endtime = 1729890000 },
+                        BPMBLLOMLNB = new MLODPBBCLEB { CBPFCFLIMKJ = 1729890000 },
                     },
                     [60504] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 6 },
                     [62103] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 1 },

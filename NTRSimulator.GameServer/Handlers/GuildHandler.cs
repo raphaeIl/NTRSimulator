@@ -15,7 +15,6 @@ namespace NTRSimulator.GameServer.Handlers
                     Id = 123123,
                     Name = "NTRSimulator",
                     Level = 23,
-                    Exp = 123123,
                     NLDDNFLPMNI = "ntrsimulator",
                     ENPCEGHDOGP = 32,
                     NEDCICLLAGJ = 0,
@@ -59,7 +58,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 Sex = Sex.Female,
                                 Birthday = 1221,
                                 Portrait = 21208,
-                                Status = new LoginStatus
+                                Status = new User.Types.LoginStatus
                                 {
                                     LoginTime = 123123,
                                     LogoutTime = 123123,
@@ -80,28 +79,28 @@ namespace NTRSimulator.GameServer.Handlers
                                 },
                                 BKIPIIMKNCF = 3,
                                 JNLHINHBEIE = 4,
-                                IDMOCOHNLDO = new JMMLGEDCIGB
+                                IDMOCOHNLDO = new User.Types.JMMLGEDCIGB
                                 {
-                                    Uid = true,
-                                    Name = 1162,
-                                    Level = 40,
+                                    JBMNHBBGAHP = true,
+                                    OHPHNKCEGCM = 1162,
+                                    GPJEDMDBIIJ = 40,
                                 },
-                                MPDCKNHELFH = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
+                                MPDCKNHELFH = (POAMOPPDEJC)16,
                                 DKCAABLJBND = new IHNPFJGBPJB
                                 {
                                     FEPOFIOMNDB = 1312313,
                                     KKLABAKPAPI = 0.899999976f,
                                 },
-                                HEEDJKIDCLI = new KEKFMLHLAMN
+                                HEEDJKIDCLI = new User.Types.KEKFMLHLAMN
                                 {
-                                    Uid = 26,
-                                    Name = 120,
+                                    EPCCANNLACO = 26,
+                                    GPJEDMDBIIJ = 120,
                                 },
-                                LPLPBLGJMEG = Enum_None_Jiangyu_Max.Jiangyu,
+                                LPLPBLGJMEG = CFOOAELCKKF.BriefVersionJiangyu,
                                 BPCOAAEMFIB = 1846,
                             }.ToByteString(),
                         },
-                        DAGBCMOABEA = (Enum_JobNone_JobLeader_JobManager_JobNormal)1,
+                        DAGBCMOABEA = (BLPACHOMKPJ)1,
                         INFMFKJFNBA = 310,
                         DPJNCPIHBFF = 123123,
                         KLHLMGPNKOP = 800,

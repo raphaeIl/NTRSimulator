@@ -615,22 +615,22 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[13].Field2.Add(costume.CostumeId, true);
+                scIndex.Indices[13].Details.Add(costume.CostumeId, true);
             }
 
             foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[21].Field2.Add(weaponMod.WeaponModId, true);
+                scIndex.Indices[21].Details.Add(weaponMod.WeaponModId, true);
             }
 
             foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[60].Field2.Add(weaponSkin.WeaponSkinId, true);
+                scIndex.Indices[60].Details.Add(weaponSkin.WeaponSkinId, true);
             }
 
             foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[61].Field2.Add(weaponModSkin.WeaponModSkinId, true);
+                scIndex.Indices[61].Details.Add(weaponModSkin.WeaponModSkinId, true);
             }
 
             foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid))
@@ -640,7 +640,7 @@ namespace NTRSimulator.GameServer.Handlers
                     continue;
                 }
 
-                scIndex.Indices[162u].Field2[item.ItemId] = true;
+                scIndex.Indices[162u].Details[item.ItemId] = true;
             }
 
             //connection.Send(2, scIndex);

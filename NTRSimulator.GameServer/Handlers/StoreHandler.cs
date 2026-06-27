@@ -294,7 +294,7 @@ namespace NTRSimulator.GameServer.Handlers
                     ManualRefreshTimes = { },
                     Test = new StoreTest
                     {
-                        Age = new Age
+                        Age = new StoreTest.Types.Age
                         {
                             Data = 34,
                         },

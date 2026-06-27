@@ -10,9 +10,9 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(
             new SC_DishBagInfo
             {
-                Info = new SC_DarkZonePlayerUpdate_F2Type_F48Type
+                Info = new Activities
                 {
-                    Info = { },
+                    DABKAEIBBGA = { },
                 },
             }
             );

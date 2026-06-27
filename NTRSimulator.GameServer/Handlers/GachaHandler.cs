@@ -45,7 +45,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -56,9 +56,9 @@ namespace NTRSimulator.GameServer.Handlers
                         ExtItems = { },
                         TranItems = { },
                         DropUp = false,
-                        CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                        CIPFHAHNMBM = (FMMNODBGEJC)62,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -71,7 +71,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -84,7 +84,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -97,7 +97,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -110,7 +110,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -123,7 +123,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -136,7 +136,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -149,7 +149,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                     new UserDropCache()
                     {
@@ -162,7 +162,7 @@ namespace NTRSimulator.GameServer.Handlers
                         DropUp = false,
                         CIPFHAHNMBM = 0,
                         WeaponModDisplay = null,
-                        Field12 = 0,
+                        
                     },
                 },
                 GachaDetails = null,
@@ -731,18 +731,17 @@ namespace NTRSimulator.GameServer.Handlers
                     new PELLFAAPKOL() { SystemId = 39, UniqueId = 60045 },
                 },
             };
-            SC_NewGunWeapon newGunWeapon = new SC_NewGunWeapon()
+            SC_NewGunWeapon newWeapon = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 6,
-                    WeaponId = 11036,
+                    StcId = 11036,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_AddIndex addIndex2 = new SC_AddIndex()
@@ -784,21 +783,20 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon2 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 7,
-                    WeaponId = 11048,
+                    StcId = 11048,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_GunWeaponBelong gunWeaponBelong = new SC_GunWeaponBelong()
             {
-                WeaponId = 7,
+                Id = 7,
                 GunId = 1026,
             };
             SC_AddIndex addIndex4 = new SC_AddIndex()
@@ -811,15 +809,14 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 Gun = new Gun()
                 {
-                    GunId = 1026,
-                    Exp = 0,
-                    CreateTime = nowUnix,
+                    Id = 1026,
+                    Timestamp = nowUnix,
                     Level = 1,
-                    AscensionLevel = 1,
-                    CostumeId = 1102600,
+                    AuthLevel = 1,
+                    Costume = 1102600,
                     DPKJMEMMEGH = 0,
                     GunClass = 0,
-                    Exp = 120,
+                    
                     PrivateTalentSkillItems = { 0, 0, 0 },
                     PublicTalentSkillItems = { 0, 0, 0 },
                     PublicTalentSkillItemsUid = { 0, 0, 0 },
@@ -829,8 +826,7 @@ namespace NTRSimulator.GameServer.Handlers
                     GunTalentConsume = { },
                     TalentResetNum = 0,
                     Details = null,
-                    AuthLevel = 0,
-                    IsAllTalentUnlock = false,
+                    GNDEJNMOPAF = false,
                     JJKGLEOOAPH = new LoungeChatMessage()
                     {
                         KFIAKLNJHMB = 1,
@@ -841,10 +837,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     DKKBDFJPOOA = { },
                     NJKHKDCNJPK = { 0 },
-                    Favorite = 0,
+                    NEBMMBJDNPF = 0,
                     HALPACHDCFI = { },
                     MHBBHAHAIGD = 0,
-                    GunBattleAiPreset = null,
+                    IDCHKHCLGLB = null,
                     NGJCBNLMPHP = 0,
                     INKGHGACOKA = { 0 },
                     HMKBFECHGJD = { 0 },
@@ -946,16 +942,15 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon3 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 8,
-                    WeaponId = 11045,
+                    StcId = 11045,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_AddIndex addIndex8 = new SC_AddIndex()
@@ -988,16 +983,15 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon4 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 9,
-                    WeaponId = 11017,
+                    StcId = 11017,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_AddIndex addIndex10 = new SC_AddIndex()
@@ -1008,16 +1002,15 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon5 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 10,
-                    WeaponId = 11039,
+                    StcId = 11039,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_AddIndex addIndex11 = new SC_AddIndex()
@@ -1044,16 +1037,15 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon6 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 11,
-                    WeaponId = 10631,
+                    StcId = 10631,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_AddIndex addIndex12 = new SC_AddIndex()
@@ -1086,16 +1078,15 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon7 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 12,
-                    WeaponId = 10361,
+                    StcId = 10361,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_AddIndex addIndex14 = new SC_AddIndex()
@@ -1106,16 +1097,15 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon8 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 13,
-                    WeaponId = 11009,
+                    StcId = 11009,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync44 = new SC_PlayerStatusCounterSync()
@@ -1128,37 +1118,35 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon9 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 14,
-                    WeaponId = 10361,
+                    StcId = 10361,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_NewGunWeapon newGunWeapon10 = new SC_NewGunWeapon()
             {
-                GunWeapon = new GunWeapon()
+                Weapon = new GunWeapon()
                 {
                     Id = 15,
-                    WeaponId = 11010,
+                    StcId = 11010,
                     Level = 1,
-                    CurExp = 0,
                     GunId = 0,
                     BreakTimes = 1,
-                    GunId = 2,
-                    ModSlots = { },
+
+                    WeaponMods = { },
                 },
             };
             SC_CommonQuestCountUpdate commonQuestCountUpdate = new SC_CommonQuestCountUpdate()
             {
                 Counters = new CommonQuestCounters()
                 {
-                    Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Guide,
+                    Type = CommonQuestCounters.Types.Type.Guide,
                     Rewards =
                     {
                         { 3000001, false },
@@ -1206,7 +1194,7 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 Counters = new CommonQuestCounters()
                 {
-                    Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LoadingPicture,
+                    Type = CommonQuestCounters.Types.Type.LoadingPicture,
                     Rewards =
                     {
                         { 1311, false },
@@ -1230,9 +1218,9 @@ namespace NTRSimulator.GameServer.Handlers
                     ExtItems = { },
                     TranItems = { },
                     DropUp = false,
-                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                    CIPFHAHNMBM = (FMMNODBGEJC)62,
                     WeaponModDisplay = null,
-                    Field12 = 0,
+                    
                 };
             }
 
@@ -1274,14 +1262,14 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     do
                     {
-                        //ch.Field1 = (uint)Random.Shared.Next(1020, 1063);
+                        //ch.ItemId = (uint)Random.Shared.Next(1020, 1063);
 
-                        ch.Field1 = 1078;
+                        ch.ItemId = 1078;
                         // 1032 daiyan
-                    } while (ch.Field1 == 1038 || ch.Field1 == 1060 || ch.Field1 == 1041 || ch.Field1 == 1026 || ch.Field1 == 1036 || ch.Field1 == 1022 || ch.Field1 == 1024);
+                    } while (ch.ItemId == 1038 || ch.ItemId == 1060 || ch.ItemId == 1041 || ch.ItemId == 1026 || ch.ItemId == 1036 || ch.ItemId == 1022 || ch.ItemId == 1024);
 
-                    history.Add(ch.Field1);
-                    Log.Information("Got character {char}", ch.Field1);
+                    history.Add(ch.ItemId);
+                    Log.Information("Got character {char}", ch.ItemId);
                 }
 
                 gachaAquirementResp = gachaAqu;
@@ -1293,7 +1281,7 @@ namespace NTRSimulator.GameServer.Handlers
                     addIndex,
                     playerStatusCounterSync2,
                     playerStatusCounterSync3,
-                    newGunWeapon,
+                    newWeapon,
                     addIndex2,
                     playerStatusCounterSync6,
                     addIndex3,

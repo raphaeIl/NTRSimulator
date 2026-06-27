@@ -22,7 +22,7 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
                         Active = true,
                         Message = request.Message ?? "",
-                        Emoji = request.Active,
+                        Emoji = request.Emoji,
                         Ts = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
                     },
                 });
@@ -54,7 +54,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
                     Active = true,
                     Message = request.Message ?? "",
-                    Emoji = request.Active,
+                    Emoji = request.Emoji,
                     Ts = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
                 },
             });

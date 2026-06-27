@@ -14,7 +14,6 @@ namespace NTRSimulator.GameServer.Handlers
                             [60015] = new IAHOOMEFPND
                             {
                                 Level = 1,
-                                Exp = 0,
                                 IOINKEDEKND = false,
                                 Rewards =
                                 {

@@ -13,7 +13,6 @@ namespace NTRSimulator.GameServer.Handlers
                         {
                             Status = 0,
                             Reward = { [1] = 0 },
-                            Exp = 0,
                             CurrId = 30034,
                             LeftRewardNum = 1,
                             DailyTask = { 34001, 34002, 34003, 34004 },

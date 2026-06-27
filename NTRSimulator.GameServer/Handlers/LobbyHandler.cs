@@ -43,37 +43,37 @@ namespace NTRSimulator.GameServer.Handlers
                     [2000003] = new KMIAGEBIMIP
                     {
                         EventId = 2000003,
-                        TriggerTime = nowUnix,
+                        CGPNIPFNENP = nowUnix,
                         FJBJIJIFACH = 0,
                     },
                     [2000012] = new KMIAGEBIMIP
                     {
                         EventId = 2000012,
-                        TriggerTime = nowUnix,
+                        CGPNIPFNENP = nowUnix,
                         FJBJIJIFACH = 0,
                     },
                     [2000019] = new KMIAGEBIMIP
                     {
                         EventId = 2000019,
-                        TriggerTime = nowUnix,
+                        CGPNIPFNENP = nowUnix,
                         FJBJIJIFACH = 0,
                     },
                     [2000015] = new KMIAGEBIMIP
                     {
                         EventId = 2000015,
-                        TriggerTime = nowUnix,
+                        CGPNIPFNENP = nowUnix,
                         FJBJIJIFACH = 0,
                     },
                     [2000020] = new KMIAGEBIMIP
                     {
                         EventId = 2000020,
-                        TriggerTime = nowUnix,
+                        CGPNIPFNENP = nowUnix,
                         FJBJIJIFACH = 0,
                     },
                     [31410] = new KMIAGEBIMIP
                     {
                         EventId = 31410,
-                        TriggerTime = nowUnix,
+                        CGPNIPFNENP = nowUnix,
                         FJBJIJIFACH = 0,
                     },
                 },
@@ -265,7 +265,6 @@ namespace NTRSimulator.GameServer.Handlers
                             },
                             Level = 49,
                             CFOCLIHKKJL = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
-                            Exp = 40260,
                         });
 
                     if (lobbyGetBuildInfoCount != 2)
@@ -289,29 +288,28 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1437,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 410261,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 410261,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 410262,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 410262,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1437, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1437, SummaryCounter = 0,
                                         DNGBLDDNGIN = 58,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 58, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -325,29 +323,28 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1437,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 410261,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 410261,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 410262,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 410262,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1437, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1437, SummaryCounter = 0,
                                         DNGBLDDNGIN = 58,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 58, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -362,29 +359,28 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -398,35 +394,34 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44015,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -440,41 +435,40 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44015,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 46032,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -488,47 +482,46 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44015,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 46032,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 71007,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -542,47 +535,46 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44015,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 46032,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 71007,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -596,47 +588,46 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44015,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 46032,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 71007,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -650,47 +641,46 @@ namespace NTRSimulator.GameServer.Handlers
                                     Id = 1439,
                                     Watchers =
                                     {
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 40001,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44012,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 44015,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 46032,
                                         },
-                                        new Watcher
+                                        new PlayerCounter.Types.Watcher
                                         {
                                             SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
-                                            Counter = true,
+                                            Focused = true,
                                             GBBABCAJHBL = 71007,
                                         },
                                     },
-                                    Counter = new Counter { Id = 1439, ResetPeriod = 0,
-                                        Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                                    Counter = new PlayerCounter.Types.Counter { Id = 1439, SummaryCounter = 0,
                                         DNGBLDDNGIN = 5,
                                         IMMIPLFMKIF = false,
                                         BBFIKDDGMFN = { 5, 1026 },
                                         EndTime = 0,
                                         FKPIGDOCHOB = 0,
                                         GBBFJEBJPEC = { },
-                                        Field10 = null,
-                                        Field11 = 0,
+                                        
+                                        
                                     },
                                 },
                             },
@@ -708,9 +698,9 @@ namespace NTRSimulator.GameServer.Handlers
                                     ExtItems = { },
                                     TranItems = { },
                                     DropUp = false,
-                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                                    CIPFHAHNMBM = (FMMNODBGEJC)62,
                                     WeaponModDisplay = null,
-                                    Field12 = 0,
+                                    
                                 },
                                 new UserDropCache
                                 {
@@ -721,9 +711,9 @@ namespace NTRSimulator.GameServer.Handlers
                                     ExtItems = { },
                                     TranItems = { },
                                     DropUp = false,
-                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                                    CIPFHAHNMBM = (FMMNODBGEJC)62,
                                     WeaponModDisplay = null,
-                                    Field12 = 0,
+                                    
                                 },
                                 new UserDropCache
                                 {
@@ -734,9 +724,9 @@ namespace NTRSimulator.GameServer.Handlers
                                     ExtItems = { },
                                     TranItems = { },
                                     DropUp = false,
-                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)328,
+                                    CIPFHAHNMBM = (FMMNODBGEJC)328,
                                     WeaponModDisplay = null,
-                                    Field12 = 0,
+                                    
                                 },
                                 new UserDropCache
                                 {
@@ -747,9 +737,9 @@ namespace NTRSimulator.GameServer.Handlers
                                     ExtItems = { },
                                     TranItems = { },
                                     DropUp = false,
-                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)328,
+                                    CIPFHAHNMBM = (FMMNODBGEJC)328,
                                     WeaponModDisplay = null,
-                                    Field12 = 0,
+                                    
                                 },
                             },
                         });
@@ -958,7 +948,7 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 EKMDGLKBILM = request.EKMDGLKBILM,
                 NGCBPMPCMMJ = true,
-                InterType = request.ECGAHCPCDDI,
+                ECGAHCPCDDI = request.ECGAHCPCDDI,
             });
         }
 
@@ -1036,8 +1026,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyTutorialSend
             {
-                KMHOOBIHPPE = { { request.KMHOOBIHPPE, 1u } },
-                PageId = request.KMHOOBIHPPE,
+                KMHOOBIHPPE = { { request.PageId, 1u } },
+                PageId = request.PageId,
             });
         }
 
@@ -1051,7 +1041,7 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleGetLobbyBgm(CS_GetLobbyBgm request, Connection connection)
         {
-            connection.Send(new SC_GetLobbyBgm { GodId = 0 });
+            connection.Send(new SC_GetLobbyBgm { JNHHAINDALC = 0 });
         }
 
         public override void HandleGetLobbyPhotoCut(CS_GetLobbyPhotoCut request, Connection connection)
@@ -1193,8 +1183,7 @@ namespace NTRSimulator.GameServer.Handlers
                 Info = new FOMLKMNAKEC
                 {
                     JJGNOPPPPIB = 0,
-                    Speed = 0,
-                    Exp = 0,
+                    NPJLLHJBFBP = 0,
                     NCINIEDEDFG = 0,
                     EFEELOPBBEH = 0,
                     GILBGLLFNEK = false,
@@ -1540,7 +1529,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Message = new OGKLGOMMLIM
                     {
                         Timestamp = nowUnix,
-                        MessageId = 248,
+                        BNAJBJBNIAK = 248,
                     },
                     LMFLEGLPBPG =
                     {
@@ -1550,10 +1539,10 @@ namespace NTRSimulator.GameServer.Handlers
                 GFOMBFKMPGC = { },
                 GLCJKEFJOLA =
                 {
-                    [77] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 77 },
-                    [235] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 235 },
-                    [236] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 236 },
-                    [248] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 248 },
+                    [77] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 77 },
+                    [235] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 235 },
+                    [236] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 236 },
+                    [248] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 248 },
                 },
             });
         }
@@ -1590,7 +1579,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetLobbyMeilingConfig
             {
-                InterType = { 402, 403, 404, 405 },
+                ECGAHCPCDDI = { 402, 403, 404, 405 },
             });
         }
 
@@ -1623,7 +1612,7 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 ABAPKEKAPCJ = new KMIAGEBIMIP
                 {
-                    EventId = request.EventId,
+                    EventId = request.HIOILHEPJCK,
                 },
                 INCNFOFGJFB = { },
             });

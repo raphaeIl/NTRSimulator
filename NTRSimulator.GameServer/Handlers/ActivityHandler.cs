@@ -272,7 +272,6 @@ namespace NTRSimulator.GameServer.Handlers
                             ANGHCINLCJO = new OCLANMMGEGA
                             {
                                 Type = 0,
-                                Exp = 0,
                                 Level = 0,
                                 LMNBPEBDCKG = { },
                                 IMMBMDAPFEN = { },

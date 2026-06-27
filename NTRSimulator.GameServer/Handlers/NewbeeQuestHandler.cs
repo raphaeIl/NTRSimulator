@@ -9,12 +9,12 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetNewbeeQuestV2
                     {
-                        ActivityId = 69998,
+                        ONMNEMDCEIJ = 69998,
                         LKAHOENFDFN = new KBJGHCKJJAJ
                         {
                             JODLPGFGDDN = 1,
                             BPJMFIBFGKC = 1728668611,
-                            StepReward = { },
+                            CDFBDNJIEOP = { },
                             IIOPIOOLBOA = false,
                         },
                     });

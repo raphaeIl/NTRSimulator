@@ -63,15 +63,15 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     SimCombatMythicInfo entry = new SimCombatMythicInfo
                     {
-                        Image = plan.Index,
+                        BEFHELAINLN = plan.Index,
                     };
-                    DCDLLEBGAHH planValue = new DCDLLEBGAHH
+                    SimCombatMythicInfo.Types.DCDLLEBGAHH planValue = new SimCombatMythicInfo.Types.DCDLLEBGAHH
                     {
-                        Field2 = plan.PlanField2,
+                        IFKCJEAGCFH = plan.PlanField2,
                     };
-                    planValue.Field1.AddRange(plan.Slots);
+                    planValue.CEAEBKMHDCJ.AddRange(plan.Slots);
                     entry.LCPMEOFCFPB[1] = planValue;
-                    response.DEOAAPJBIGP.Field2.Add(entry);
+                    response.DEOAAPJBIGP.PMDFJCLFFPB.Add(entry);
                 }
                 connection.Send(1, response);
         }
@@ -95,7 +95,7 @@ namespace NTRSimulator.GameServer.Handlers
                 int end = Math.Min(offset + ModsPerResponse, mods.Length);
 
                 for (int i = offset; i < end; i++)
-                    response.GunWeaponMods.Add(mods[i].ToProtoWeaponMod());
+                    response.Mods.Add(mods[i].ToProtoWeaponMod());
 
                 connection.SendAutoEncrypted(response);
                 offset += ModsPerResponse;

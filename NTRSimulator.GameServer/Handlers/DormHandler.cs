@@ -11,7 +11,7 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         Info = new NOMHELOJFLJ
                         {
-                            Character = { },
+                            PIOFFPPPEPK = { },
                             KBCJNGDOGKJ = 0,
                         },
                         GDJOKNOBNBM = { },

@@ -10,23 +10,23 @@ namespace NTRSimulator.GameServer.Handlers
                     connection.Send(new SC_DarkZoneStorage
                     {
                         StorageBuyTimes = 0,
-                        Storage = new uint32
+                        Storage = new PileBag
                         {
-                            Id = { },
+                            Entities = { },
                             Others = { },
                             House = true,
-                            Bag = { },
-                            Equips = { },
-                            Field13 = { },
+                            IHOAILNKNNE = { },
+                            Weapons = { },
+                            WeaponMods = { },
                         },
-                        Bag = new uint32
+                        Bag = new PileBag
                         {
-                            Id = { },
+                            Entities = { },
                             Others = { },
                             House = false,
-                            Bag = { },
-                            Equips = { },
-                            Field13 = { },
+                            IHOAILNKNNE = { },
+                            Weapons = { },
+                            WeaponMods = { },
                         },
                         Equips = { },
                     });
@@ -44,7 +44,6 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_DarkZoneWishExp
                     {
-                        Exp = 0,
                     });
         }
 
@@ -58,9 +57,9 @@ namespace NTRSimulator.GameServer.Handlers
                         IPGJJLJMEBO = CS_DarkZoneGetWeeklyInfo.Types.EPIBDODMBLN.All,
                         BCCILNBHDAO = new HBMBNIHMKLI
                         {
-                            ActivityId = 1001,
+                            ONMNEMDCEIJ = 1001,
                             TalentId = { },
-                            Difficulty = HBMBNIHMKLI.Types.FHOMGAKNIAF.Easy,
+                            IFNEDNHKBJN = HBMBNIHMKLI.Types.FHOMGAKNIAF.Easy,
                             Quests =
                             {
                                 new DJIPBLHIDPA { QuestId = 3018, JONLCAGBGJE = false },

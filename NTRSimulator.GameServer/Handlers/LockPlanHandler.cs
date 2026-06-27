@@ -32,11 +32,11 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     APCOFGHAHGD = new FBELIIBLEJP
                     {
-                        Open = false,
+                        COFDFFJMNMA = false,
                     },
                     MAFNGCMKKAJ = new FBELIIBLEJP
                     {
-                        Open = false,
+                        COFDFFJMNMA = false,
                     },
                 },
             };
@@ -49,7 +49,7 @@ namespace NTRSimulator.GameServer.Handlers
                 };
                 entry.AEBNOHIKJOI.AddRange(plan.Slots);
                 planValue.ANGKLPKHILE.Add(entry);
-                response.DJNPEOFHKHD.Field3.Field3[plan.Index] = planValue;
+                response.DJNPEOFHKHD.APCOFGHAHGD.IOEHJIPOEED[plan.Index] = planValue;
             }
             foreach ((uint Index, uint[] Slots, uint PlanField3) plan in type4Plans)
             {
@@ -60,7 +60,7 @@ namespace NTRSimulator.GameServer.Handlers
                 };
                 entry.AEBNOHIKJOI.AddRange(plan.Slots);
                 planValue.ANGKLPKHILE.Add(entry);
-                response.DJNPEOFHKHD.Field4.Field3[plan.Index] = planValue;
+                response.DJNPEOFHKHD.MAFNGCMKKAJ.IOEHJIPOEED[plan.Index] = planValue;
             }
             connection.Send(response);
         }

@@ -26,7 +26,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 WeaponId = 0,
                             });
                         }
-                        response.OGNHICHKFAD.Field1.Add(group);
+                        response.OGNHICHKFAD.KMPIHKFBAEP.Add(group);
                     }
                     connection.Send(response);
         }

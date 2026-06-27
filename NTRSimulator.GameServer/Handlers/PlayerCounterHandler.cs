@@ -23,15 +23,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 36,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 72001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 72001
                             },
                         },
-                        Counter = new Counter { Id = 36, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 4, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 36, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 8100 }
@@ -42,15 +41,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 44,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1203,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1203
                             },
                         },
-                        Counter = new Counter { Id = 44, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 44, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10108, 1 }
@@ -61,27 +59,26 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 23,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 46028,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 46028
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 70001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 70001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 44008,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 44008
                             },
                         },
-                        Counter = new Counter { Id = 23, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 23, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 1024 }
@@ -92,27 +89,26 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 99,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 46028,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 46028
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 70001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 70001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 44008,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 44008
                             },
                         },
-                        Counter = new Counter { Id = 99, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 99, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 1032 }
@@ -123,21 +119,20 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 13,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 46035,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 46035
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)30, UniqueId = 23011,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 23011
                             },
                         },
-                        Counter = new Counter { Id = 13, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 486800, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 13, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 2 }
@@ -148,15 +143,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 8,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 99997,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 99997
                             },
                         },
-                        Counter = new Counter { Id = 8, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 8, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10102, 1 }
@@ -167,15 +161,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 43,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)2, UniqueId = 9,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 9
                             },
                         },
-                        Counter = new Counter { Id = 43, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 3, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 43, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 51, -1, -1, 8 }
@@ -186,15 +179,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 45,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)2, UniqueId = 8,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 8
                             },
                         },
-                        Counter = new Counter { Id = 45, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 45, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10143, 1 }
@@ -205,15 +197,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 1234,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)63, UniqueId = 1201,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1201
                             },
                         },
-                        Counter = new Counter { Id = 1234, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 11, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 1234, SummaryCounter = 0,
                             DNGBLDDNGIN = 750,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 750 }
@@ -224,189 +215,188 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 9,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020006,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020006
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020007,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020007
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020010,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020010
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020019,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020019
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020003,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020003
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 48039,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 48039
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020016,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020016
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020020,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020020
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020021,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020021
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020025,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020025
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020027,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020027
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020011,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020011
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020015,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020015
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020017,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020017
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020008,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020008
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020004,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020004
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020013,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020013
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020022,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020022
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020028,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020028
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020009,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020009
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020014,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020014
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020018,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020018
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020024,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020024
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020002,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020002
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020005,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020005
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020012,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020012
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020023,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020023
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 3020026,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 3020026
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)30, UniqueId = 22020,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 22020
                             },
                         },
-                        Counter = new Counter { Id = 9, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 28430, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 9, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 2, 101 }
@@ -417,27 +407,26 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 66,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)18, UniqueId = 6,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 6
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)18, UniqueId = 24,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 24
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)49, UniqueId = 102431,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 102431
                             },
                         },
-                        Counter = new Counter { Id = 66, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 66, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 1001, 1024, -1, 1 }
@@ -448,21 +437,20 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 4,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 70003,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 70003
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)49, UniqueId = 101721,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 101721
                             },
                         },
-                        Counter = new Counter { Id = 4, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 4, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 1017 }
@@ -473,39 +461,38 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 28,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1022,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1022
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 44004,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 44004
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 46024,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 46024
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 70000,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 70000
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)49, UniqueId = 100121,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 100121
                             },
                         },
-                        Counter = new Counter { Id = 28, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 28, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 1001 }
@@ -516,15 +503,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 18,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 48038,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 48038
                             },
                         },
-                        Counter = new Counter { Id = 18, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 292, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 18, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 401 }
@@ -535,69 +521,68 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 27,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400101,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400101
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400104,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400104
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400105,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400105
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400107,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400107
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400108,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400108
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400109,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400109
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 50078,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 50078
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400102,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400102
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400103,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400103
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 400106,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 400106
                             },
                         },
-                        Counter = new Counter { Id = 27, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 0, Max = 9, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 27, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 58, 1001 }
@@ -608,69 +593,68 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 3,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401709,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401709
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401703,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401703
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401701,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401701
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401702,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401702
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401704,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401704
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401705,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401705
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401706,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401706
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401707,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401707
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 401708,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 401708
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 50077,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 50077
                             },
                         },
-                        Counter = new Counter { Id = 3, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 0, Max = 9, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 3, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 58, 1017 }
@@ -681,15 +665,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 49,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1040,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1040
                             },
                         },
-                        Counter = new Counter { Id = 49, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 49, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 11023 }
@@ -700,15 +683,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 17,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1202,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1202
                             },
                         },
-                        Counter = new Counter { Id = 17, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 17, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10184, 1 }
@@ -719,27 +701,26 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 47,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1210,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1210
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 99001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 99001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1204,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1204
                             },
                         },
-                        Counter = new Counter { Id = 47, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 47, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10110, 1 }
@@ -750,21 +731,20 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 2,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 71000,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 71000
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)49, UniqueId = 100821,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 100821
                             },
                         },
-                        Counter = new Counter { Id = 2, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 2, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 1008 }
@@ -775,399 +755,398 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 19,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010040,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010040
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010042,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010042
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010059,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010059
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010062,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010062
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010018,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010018
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010025,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010025
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010028,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010028
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010036,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010036
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010005,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010005
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010056,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010056
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010058,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010058
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010063,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010063
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010041,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010041
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010048,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010048
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010052,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010052
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010037,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010037
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010016,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010016
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010019,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010019
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010023,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010023
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010034,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010034
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010043,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010043
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010047,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010047
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010061,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010061
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 48037,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 48037
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010006,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010006
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010007,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010007
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010017,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010017
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010021,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010021
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010057,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010057
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010008,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010008
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010032,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010032
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010053,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010053
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010003,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010003
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010027,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010027
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010044,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010044
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010013,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010013
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010030,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010030
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010035,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010035
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010038,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010038
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010039,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010039
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010004,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010004
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010011,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010011
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010015,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010015
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010020,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010020
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010045,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010045
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010050,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010050
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010054,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010054
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010002,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010002
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010010,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010010
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010060,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010060
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010022,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010022
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010026,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010026
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010033,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010033
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010055,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010055
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010049,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010049
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010009,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010009
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010029,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010029
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010031,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010031
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010046,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010046
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010012,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010012
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010014,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010014
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010024,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010024
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 4010051,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 4010051
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)30, UniqueId = 22022,
-                                Counter = false,
+                                Focused = false,
                                 GBBABCAJHBL = 22022
                             },
                         },
-                        Counter = new Counter { Id = 19, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 292, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 19, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 400 }
@@ -1178,15 +1157,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 51,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1030,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1030
                             },
                         },
-                        Counter = new Counter { Id = 51, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 227, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 51, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 409, 1 }
@@ -1197,15 +1175,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 1435,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)9, UniqueId = 34013,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 34013
                             },
                         },
-                        Counter = new Counter { Id = 1435, ResetPeriod = (Enum_CounterResetNone_CounterResetDaily_CounterResetWeekly_CounterResetMax)2,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 1435, SummaryCounter = (LKMHGHADMKK)2,
                             DNGBLDDNGIN = 400,
                             IMMIPLFMKIF = true,
                             BBFIKDDGMFN = { 400 }
@@ -1216,15 +1193,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 37,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)2, UniqueId = 7,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 7
                             },
                         },
-                        Counter = new Counter { Id = 37, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 37, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10141, 1 }
@@ -1235,39 +1211,38 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 14,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 46021,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 46021
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 46023,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 46023
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1201,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1201
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 44001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 44001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 44003,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 44003
                             },
                         },
-                        Counter = new Counter { Id = 14, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 14, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10103, 1 }
@@ -1278,15 +1253,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 1434,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)3, UniqueId = 1,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1
                             },
                         },
-                        Counter = new Counter { Id = 1434, ResetPeriod = (Enum_CounterResetNone_CounterResetDaily_CounterResetWeekly_CounterResetMax)1,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 1434, SummaryCounter = (LKMHGHADMKK)1,
                             DNGBLDDNGIN = 400,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 400 }
@@ -1297,51 +1271,50 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 63,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)2, UniqueId = 6,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 6
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2020006,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2020006
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2020003,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2020003
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2020001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2020001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2020002,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2020002
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2020004,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2020004
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2020005,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2020005
                             },
                         },
-                        Counter = new Counter { Id = 63, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 2835, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 63, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 201, 21, 1 }
@@ -1352,21 +1325,20 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 46,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 48019,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 48019
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 2000001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 2000001
                             },
                         },
-                        Counter = new Counter { Id = 46, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 46, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10110, 1, 1 }
@@ -1377,15 +1349,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 16,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 1021,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 1021
                             },
                         },
-                        Counter = new Counter { Id = 16, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 191, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 16, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 5, 12 }
@@ -1396,189 +1367,188 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 48,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040016,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040016
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040024,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040024
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040026,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040026
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040001,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040001
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040002,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040002
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040010,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040010
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040014,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040014
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040015,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040015
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040017,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040017
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040027,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040027
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040028,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040028
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040007,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040007
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040009,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040009
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040019,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040019
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040021,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040021
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040003,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040003
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040005,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040005
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040020,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040020
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040023,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040023
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040004,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040004
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040011,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040011
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040018,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040018
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040025,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040025
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040030,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040030
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040008,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040008
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040012,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040012
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040006,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040006
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040013,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040013
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040022,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040022
                             },
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 5040029,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 5040029
                             },
                         },
-                        Counter = new Counter { Id = 48, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 48, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 105, 4 }
@@ -1589,15 +1559,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 1436,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)59, UniqueId = 12005,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 12005
                             },
                         },
-                        Counter = new Counter { Id = 1436, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 1436, SummaryCounter = 0,
                             DNGBLDDNGIN = 400,
                             IMMIPLFMKIF = true,
                             BBFIKDDGMFN = { 400 }
@@ -1608,15 +1577,14 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 7,
                         Watchers =
                         {
-                            new Watcher
+                            new PlayerCounter.Types.Watcher
                             {
                                 SystemId = (PlayerCounterSystem)1, UniqueId = 99998,
-                                Counter = true,
+                                Focused = true,
                                 GBBABCAJHBL = 99998
                             },
                         },
-                        Counter = new Counter { Id = 7, ResetPeriod = 0,
-                            Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
+                        Counter = new PlayerCounter.Types.Counter { Id = 7, SummaryCounter = 0,
                             DNGBLDDNGIN = 0,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 200, 10101, 1 }
@@ -2092,7 +2060,7 @@ namespace NTRSimulator.GameServer.Handlers
                  {
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Guide,
+                         Type = CommonQuestCounters.Types.Type.Guide,
                          Rewards =
                          {
                              { 4010031u, false },
@@ -2380,77 +2348,77 @@ namespace NTRSimulator.GameServer.Handlers
                  {
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.WeeklySimCombat,
+                         Type = CommonQuestCounters.Types.Type.WeeklySimCombat,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.PvpDailyPoints,
+                         Type = CommonQuestCounters.Types.Type.PvpDailyPoints,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.PvpGuide,
+                         Type = CommonQuestCounters.Types.Type.PvpGuide,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassDaily,
+                         Type = CommonQuestCounters.Types.Type.BattlepassDaily,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassShare,
+                         Type = CommonQuestCounters.Types.Type.BattlepassShare,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassWeekly,
+                         Type = CommonQuestCounters.Types.Type.BattlepassWeekly,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.DarkZoneCycle,
+                         Type = CommonQuestCounters.Types.Type.DarkZoneCycle,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.DarkZonePermanent,
+                         Type = CommonQuestCounters.Types.Type.DarkZonePermanent,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.WeeklyChallenge,
+                         Type = CommonQuestCounters.Types.Type.WeeklyChallenge,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Achievement,
+                         Type = CommonQuestCounters.Types.Type.Achievement,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Daily,
+                         Type = CommonQuestCounters.Types.Type.Daily,
                          Rewards =
                          {
                              { 9u, true },
@@ -2465,7 +2433,7 @@ namespace NTRSimulator.GameServer.Handlers
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Week,
+                         Type = CommonQuestCounters.Types.Type.Week,
                          Rewards =
                          {
                              { 1u, false },
@@ -2475,28 +2443,28 @@ namespace NTRSimulator.GameServer.Handlers
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassAccept,
+                         Type = CommonQuestCounters.Types.Type.BattlepassAccept,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ThemeWarmUp,
+                         Type = CommonQuestCounters.Types.Type.ThemeWarmUp,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Newbee,
+                         Type = CommonQuestCounters.Types.Type.Newbee,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.MonopolyDaily,
+                         Type = CommonQuestCounters.Types.Type.MonopolyDaily,
                          Rewards =
                          {
                              { 13u, false },
@@ -2511,21 +2479,21 @@ namespace NTRSimulator.GameServer.Handlers
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.MonopolyTask,
+                         Type = CommonQuestCounters.Types.Type.MonopolyTask,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Amo,
+                         Type = CommonQuestCounters.Types.Type.Amo,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.DarkZoneAchievement,
+                         Type = CommonQuestCounters.Types.Type.DarkZoneAchievement,
                          Rewards =
                          {
                              { 1090u, false },
@@ -2569,7 +2537,7 @@ namespace NTRSimulator.GameServer.Handlers
                      },
                      new CommonQuestCounters
                      {
-                         Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.SimCafeGrade,
+                         Type = CommonQuestCounters.Types.Type.SimCafeGrade,
                          Rewards = { },
                          PhaseRewards = { },
                          JGOJBNHMJJH = { },
@@ -2584,105 +2552,105 @@ namespace NTRSimulator.GameServer.Handlers
                   {
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Back,
+                          Type = CommonQuestCounters.Types.Type.Back,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Treasure,
+                          Type = CommonQuestCounters.Types.Type.Treasure,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.SimCafeWarmUp,
+                          Type = CommonQuestCounters.Types.Type.SimCafeWarmUp,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Bingo,
+                          Type = CommonQuestCounters.Types.Type.Bingo,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ActivityBingo,
+                          Type = CommonQuestCounters.Types.Type.ActivityBingo,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ActivityCollection,
+                          Type = CommonQuestCounters.Types.Type.ActivityCollection,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.GeopoliticalWarmUp,
+                          Type = CommonQuestCounters.Types.Type.GeopoliticalWarmUp,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ControlFight,
+                          Type = CommonQuestCounters.Types.Type.ControlFight,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ActivityDispatch,
+                          Type = CommonQuestCounters.Types.Type.ActivityDispatch,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.GeopoliticalDaily,
+                          Type = CommonQuestCounters.Types.Type.GeopoliticalDaily,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.GeopoliticalFormal,
+                          Type = CommonQuestCounters.Types.Type.GeopoliticalFormal,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ActivityMainTask,
+                          Type = CommonQuestCounters.Types.Type.ActivityMainTask,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.RubyShop,
+                          Type = CommonQuestCounters.Types.Type.RubyShop,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BeginnerLevel,
+                          Type = CommonQuestCounters.Types.Type.BeginnerLevel,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.StageFight,
+                          Type = CommonQuestCounters.Types.Type.StageFight,
                           Rewards =
                           {
                               { 5u, true },
@@ -2696,28 +2664,28 @@ namespace NTRSimulator.GameServer.Handlers
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.SandBox,
+                          Type = CommonQuestCounters.Types.Type.SandBox,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Rouge,
+                          Type = CommonQuestCounters.Types.Type.Rouge,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.GunExamine,
+                          Type = CommonQuestCounters.Types.Type.GunExamine,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.TpsShoot,
+                          Type = CommonQuestCounters.Types.Type.TpsShoot,
                           Rewards =
                           {
                               { 100121u, false },
@@ -2736,7 +2704,7 @@ namespace NTRSimulator.GameServer.Handlers
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ActivityFreeSkin,
+                          Type = CommonQuestCounters.Types.Type.ActivityFreeSkin,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
@@ -2751,7 +2719,7 @@ namespace NTRSimulator.GameServer.Handlers
                   {
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.RichMan,
+                          Type = CommonQuestCounters.Types.Type.RichMan,
                           Rewards =
                           {
                               { 2005u, false },
@@ -2782,63 +2750,63 @@ namespace NTRSimulator.GameServer.Handlers
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Dungeon,
+                          Type = CommonQuestCounters.Types.Type.Dungeon,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Shootspace,
+                          Type = CommonQuestCounters.Types.Type.Shootspace,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassSeason,
+                          Type = CommonQuestCounters.Types.Type.BattlepassSeason,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.KittyCafe,
+                          Type = CommonQuestCounters.Types.Type.KittyCafe,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BackBattlePass,
+                          Type = CommonQuestCounters.Types.Type.BackBattlePass,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ActivityItemTask,
+                          Type = CommonQuestCounters.Types.Type.ActivityItemTask,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Motorcycle,
+                          Type = CommonQuestCounters.Types.Type.Motorcycle,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.AchievementChallenge,
+                          Type = CommonQuestCounters.Types.Type.AchievementChallenge,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LoadingPicture,
+                          Type = CommonQuestCounters.Types.Type.LoadingPicture,
                           Rewards =
                           {
                               { 20353u, false },
@@ -2856,7 +2824,7 @@ namespace NTRSimulator.GameServer.Handlers
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.NewSystem,
+                          Type = CommonQuestCounters.Types.Type.NewSystem,
                           Rewards =
                           {
                               { 1u, false },
@@ -2869,63 +2837,63 @@ namespace NTRSimulator.GameServer.Handlers
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.PastEventStage,
+                          Type = CommonQuestCounters.Types.Type.PastEventStage,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Lottery,
+                          Type = CommonQuestCounters.Types.Type.Lottery,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.EventReward,
+                          Type = CommonQuestCounters.Types.Type.EventReward,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.WorldBoss,
+                          Type = CommonQuestCounters.Types.Type.WorldBoss,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LobbyMiniGame,
+                          Type = CommonQuestCounters.Types.Type.LobbyMiniGame,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.KittyCafe2,
+                          Type = CommonQuestCounters.Types.Type.KittyCafe2,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.EventTask,
+                          Type = CommonQuestCounters.Types.Type.EventTask,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.YunTuChess,
+                          Type = CommonQuestCounters.Types.Type.YunTuChess,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassDailyTimeLimit,
+                          Type = CommonQuestCounters.Types.Type.BattlepassDailyTimeLimit,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
@@ -2940,87 +2908,87 @@ namespace NTRSimulator.GameServer.Handlers
                   {
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassWeeklyTimeLimit,
+                          Type = CommonQuestCounters.Types.Type.BattlepassWeeklyTimeLimit,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.BattlepassSeasonTimeLimit,
+                          Type = CommonQuestCounters.Types.Type.BattlepassSeasonTimeLimit,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LobbyPartyNotes,
+                          Type = CommonQuestCounters.Types.Type.LobbyPartyNotes,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LotteryV2,
+                          Type = CommonQuestCounters.Types.Type.LotteryV2,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.AchievementPs,
+                          Type = CommonQuestCounters.Types.Type.AchievementPs,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ButtGame,
+                          Type = CommonQuestCounters.Types.Type.ButtGame,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.OneTime,
+                          Type = CommonQuestCounters.Types.Type.OneTime,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.TransformGunUnlock,
+                          Type = CommonQuestCounters.Types.Type.TransformGunUnlock,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.EventEndlessTower,
+                          Type = CommonQuestCounters.Types.Type.EventEndlessTower,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LobbyPlant,
+                          Type = CommonQuestCounters.Types.Type.LobbyPlant,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       new CommonQuestCounters
                       {
-                          Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.ButtGameV2,
+                          Type = CommonQuestCounters.Types.Type.ButtGameV2,
                           Rewards = { },
                           PhaseRewards = { },
                           JGOJBNHMJJH = { },
                       },
                       //new CommonQuestCounters
                       //{
-                      //    Counters = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.MaylingStoreSpecialRefresh,
+                      //    Field1 = CommonQuestCounters.Types.Type.MaylingStoreSpecialRefresh,
                       //    Field4 = { },
-                      //    Field5 = { },
-                      //    Field6 = { },
+                      //    PhaseRewards = { },
+                      //    JGOJBNHMJJH = { },
                       //},
                   }
             };
@@ -3032,7 +3000,7 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                         new CommonQuestCounters
                         {
-                            Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Guide,
+                            Type = CommonQuestCounters.Types.Type.Guide,
                             Rewards =
                             {
                            
@@ -3042,14 +3010,13 @@ namespace NTRSimulator.GameServer.Handlers
                             PhaseRewards = { },
                             JGOJBNHMJJH = { },
                         },
-                    }
-            };
+                    }            };
 
             List<GunData> gunData = tableService.GetTable<GunData>();
 
             foreach (GunEntity gun in gunService.GetPlayerGuns(connection.Account.Uid))
             {
-                uint dormId = gunData.Where(g => g.GunId == gun.GunId).FirstOrDefault().Field60[0];
+                uint dormId = gunData.Where(g => g.Id == gun.GunId).FirstOrDefault().POBHEFFJGOP[0];
 
                 countSection6.Counters[0].Rewards.Add(dormId, false);
             }

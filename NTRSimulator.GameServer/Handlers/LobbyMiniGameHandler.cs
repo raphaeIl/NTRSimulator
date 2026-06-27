@@ -15,22 +15,18 @@ namespace NTRSimulator.GameServer.Handlers
                                 2u,
                                 new HMDODOBKKND
                                 {
-                                    Unlock = false,
+                                    MPNGHAKGLDM = false,
                                     KOPDKBOLABF = { },
-                                    Field3 = null,
-                                    Field4 = null,
-                                    Field5 = 0,
+                                    
                                 }
                             },
                             {
                                 1u,
                                 new HMDODOBKKND
                                 {
-                                    Unlock = false,
+                                    MPNGHAKGLDM = false,
                                     KOPDKBOLABF = { },
-                                    Field3 = null,
-                                    Field4 = null,
-                                    Field5 = 0,
+                                    
                                 }
                             },
                         },

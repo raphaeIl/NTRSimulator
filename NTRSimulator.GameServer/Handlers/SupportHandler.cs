@@ -43,7 +43,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [3] = 20,
                                 [4] = 20,
@@ -90,7 +90,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [6] = 20,
                                 [1] = 20,
@@ -137,7 +137,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [1] = 20,
                                 [2] = 20,
@@ -184,7 +184,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [2] = 20,
                                 [3] = 20,
@@ -231,7 +231,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [4] = 20,
                                 [5] = 20,
@@ -278,7 +278,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [4] = 20,
                                 [5] = 20,
@@ -325,7 +325,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     },
                                 },
                             },
-                            Property =
+                            GDLFJIJOMAL =
                             {
                                 [2] = 20,
                                 [3] = 20,

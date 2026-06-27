@@ -10,7 +10,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ClientReachCount
             {
-                IsInvisiableInGrass = request.BDDOIKKHJFH,
+                LJJEFHEDHLB = request.BDDOIKKHJFH,
                 JILCADDFLNO = request.JILCADDFLNO,
             });
         }
