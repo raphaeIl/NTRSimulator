@@ -19,7 +19,7 @@ namespace NTRSimulator.GameServer.Services
 
             var newSkins = skinData
                 .Where(d => d.Id != 0 && !existingSkinIds.Contains(d.Id))
-                .Select(d => new WeaponModSkin
+                .Select(d => new WeaponModSkinEntity
                 {
                     WeaponModSkinId = d.Id,
                 })
@@ -29,14 +29,14 @@ namespace NTRSimulator.GameServer.Services
             weaponModSkinRepository.SaveChanges();
         }
 
-        public WeaponModSkin[] GetPlayerWeaponModSkins(uint accountUid)
+        public WeaponModSkinEntity[] GetPlayerWeaponModSkins(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.WeaponModSkins.ToArray();
         }
 
-        public void AddWeaponModSkin(uint accountUid, WeaponModSkin weaponModSkin)
+        public void AddWeaponModSkin(uint accountUid, WeaponModSkinEntity weaponModSkin)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -44,7 +44,7 @@ namespace NTRSimulator.GameServer.Services
             weaponModSkinRepository.SaveChanges();
         }
 
-        public bool RemoveWeaponModSkin(uint accountUid, WeaponModSkin weaponModSkin)
+        public bool RemoveWeaponModSkin(uint accountUid, WeaponModSkinEntity weaponModSkin)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -58,9 +58,9 @@ namespace NTRSimulator.GameServer.Services
 
     public interface IWeaponModSkinService : IGameService
     {
-        WeaponModSkin[] GetPlayerWeaponModSkins(uint accountUid);
-        void AddWeaponModSkin(uint accountUid, WeaponModSkin weaponModSkin);
-        bool RemoveWeaponModSkin(uint accountUid, WeaponModSkin weaponModSkin);
+        WeaponModSkinEntity[] GetPlayerWeaponModSkins(uint accountUid);
+        void AddWeaponModSkin(uint accountUid, WeaponModSkinEntity weaponModSkin);
+        bool RemoveWeaponModSkin(uint accountUid, WeaponModSkinEntity weaponModSkin);
         void AddAllWeaponModSkins(uint accountUid);
     }
 }

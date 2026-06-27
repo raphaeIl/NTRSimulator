@@ -19,7 +19,7 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_GunWeapons scGunWeapons = new SC_GunWeapons();
 
-            foreach (Weapon weapon in inventoryService.GetPlayerInventory<Weapon>(connection.Account.Uid))
+            foreach (WeaponEntity weapon in inventoryService.GetPlayerInventory<WeaponEntity>(connection.Account.Uid))
             {
                 scGunWeapons.Weapons.Add(weapon.ToProtoWeapon());
 
@@ -80,7 +80,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             if (connection.Account == null) return;
 
-            WeaponMod[] mods = inventoryService.GetPlayerInventory<WeaponMod>(connection.Account.Uid);
+            WeaponModEntity[] mods = inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid);
 
             if (mods.Length == 0)
             {
@@ -111,7 +111,7 @@ namespace NTRSimulator.GameServer.Handlers
             }
 
             SC_GunWeaponSkinItems response = new SC_GunWeaponSkinItems();
-            foreach (WeaponSkin weaponSkin in inventoryService.GetPlayerInventory<WeaponSkin>(connection.Account.Uid))
+            foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(connection.Account.Uid))
                 response.PGMKLGCFAOF[weaponSkin.WeaponSkinId] = 1;
 
             connection.Send(response);

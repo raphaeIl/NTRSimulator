@@ -1,7 +1,5 @@
 using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
-using EntityItem = NTRSimulator.Database.Entities.Item;
-using ProtoItem = NTRSimulator.Common.Proto.Item;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Services;
 
@@ -615,27 +613,27 @@ namespace NTRSimulator.GameServer.Handlers
                 },
             };
 
-            foreach (Costume costume in inventoryService.GetPlayerInventory<Costume>(connection.Account.Uid))
+            foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(connection.Account.Uid))
             {
                 scIndex.Indices[13].Field2.Add(costume.CostumeId, true);
             }
 
-            foreach (WeaponMod weaponMod in inventoryService.GetPlayerInventory<WeaponMod>(connection.Account.Uid))
+            foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid))
             {
                 scIndex.Indices[21].Field2.Add(weaponMod.WeaponModId, true);
             }
 
-            foreach (WeaponSkin weaponSkin in inventoryService.GetPlayerInventory<WeaponSkin>(connection.Account.Uid))
+            foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(connection.Account.Uid))
             {
                 scIndex.Indices[60].Field2.Add(weaponSkin.WeaponSkinId, true);
             }
 
-            foreach (WeaponModSkin weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkin>(connection.Account.Uid))
+            foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(connection.Account.Uid))
             {
                 scIndex.Indices[61].Field2.Add(weaponModSkin.WeaponModSkinId, true);
             }
 
-            foreach (EntityItem item in inventoryService.GetPlayerInventory<EntityItem>(connection.Account.Uid))
+            foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid))
             {
                 if (item.Type != 162)
                 {

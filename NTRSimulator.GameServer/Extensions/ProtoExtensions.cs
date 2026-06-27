@@ -34,7 +34,7 @@ public static class ProtoExtensions
         };
     }
 
-    public static GunWeapon ToProtoWeapon(this Weapon weapon)
+    public static GunWeapon ToProtoWeapon(this WeaponEntity weapon)
     {
         ArgumentNullException.ThrowIfNull(weapon);
 
@@ -50,7 +50,7 @@ public static class ProtoExtensions
         };
     }
 
-    public static GunWeaponMod ToProtoWeaponMod(this WeaponMod weaponMod)
+    public static GunWeaponMod ToProtoWeaponMod(this WeaponModEntity weaponMod)
     {
         ArgumentNullException.ThrowIfNull(weaponMod);
 

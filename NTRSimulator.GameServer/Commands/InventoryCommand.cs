@@ -134,25 +134,25 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 inventoryService.AddAll<GunEntity>(accountUid);
                 break;
             case InventoryType.Weapon:
-                inventoryService.AddAll<Weapon>(accountUid);
+                inventoryService.AddAll<WeaponEntity>(accountUid);
                 break;
             case InventoryType.WeaponMod:
-                inventoryService.AddAll<WeaponMod>(accountUid);
+                inventoryService.AddAll<WeaponModEntity>(accountUid);
                 break;
             case InventoryType.WeaponSkin:
-                inventoryService.AddAll<WeaponSkin>(accountUid);
+                inventoryService.AddAll<WeaponSkinEntity>(accountUid);
                 break;
             case InventoryType.WeaponModSkin:
-                inventoryService.AddAll<WeaponModSkin>(accountUid);
+                inventoryService.AddAll<WeaponModSkinEntity>(accountUid);
                 break;
             case InventoryType.Item:
-                inventoryService.AddAll<Item>(accountUid);
+                inventoryService.AddAll<ItemEntity>(accountUid);
                 break;
             case InventoryType.Costume:
-                inventoryService.AddAll<Costume>(accountUid);
+                inventoryService.AddAll<CostumeEntity>(accountUid);
                 break;
             case InventoryType.AvgDuo:
-                inventoryService.AddAll<AvgDuo>(accountUid);
+                inventoryService.AddAll<AvgDuoEntity>(accountUid);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, "Unsupported inventory type.");
@@ -224,7 +224,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
     private SC_GunWeapons CreateWeaponResponse(uint accountUid)
     {
         SC_GunWeapons response = new();
-        foreach (Weapon weapon in inventoryService.GetPlayerInventory<Weapon>(accountUid))
+        foreach (WeaponEntity weapon in inventoryService.GetPlayerInventory<WeaponEntity>(accountUid))
         {
             response.Weapons.Add(weapon.ToProtoWeapon());
 
@@ -237,7 +237,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private IEnumerable<SC_Items> CreateItemResponses(uint accountUid)
     {
-        EntityItem[] items = inventoryService.GetPlayerInventory<EntityItem>(accountUid);
+        ItemEntity[] items = inventoryService.GetPlayerInventory<ItemEntity>(accountUid);
         if (items.Length == 0)
         {
             yield return new SC_Items();
@@ -455,19 +455,19 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             },
         };
 
-        foreach (Costume costume in inventoryService.GetPlayerInventory<Costume>(accountUid))
+        foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(accountUid))
             response.Indices[13].Details[costume.CostumeId] = true;
 
-        foreach (WeaponMod weaponMod in inventoryService.GetPlayerInventory<WeaponMod>(accountUid))
+        foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
             response.Indices[21].Details[weaponMod.WeaponModId] = true;
 
-        foreach (WeaponSkin weaponSkin in inventoryService.GetPlayerInventory<WeaponSkin>(accountUid))
+        foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
             response.Indices[60].Details[weaponSkin.WeaponSkinId] = true;
 
-        foreach (WeaponModSkin weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkin>(accountUid))
+        foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(accountUid))
             response.Indices[61].Details[weaponModSkin.WeaponModSkinId] = true;
 
-        foreach (EntityItem item in inventoryService.GetPlayerInventory<EntityItem>(accountUid))
+        foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(accountUid))
         {
             if (item.Type != 162)
             {

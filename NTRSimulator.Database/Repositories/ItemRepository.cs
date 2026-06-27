@@ -3,20 +3,20 @@ using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Repositories
 {
-    public sealed class ItemRepository(NTRSimulatorDbContext db) : Repository<Item>(db), IItemRepository
+    public sealed class ItemRepository(NTRSimulatorDbContext db) : Repository<ItemEntity>(db), IItemRepository
     {
-        public Item[] GetItemsByUid(uint uid)
+        public ItemEntity[] GetItemsByUid(uint uid)
         {
             return Db.Items.Where(i => i.Account.Uid == uid).ToArray();
         }
 
-        public Item? GetByItemId(uint uid, uint itemId) =>
+        public ItemEntity? GetByItemId(uint uid, uint itemId) =>
             Db.Items.SingleOrDefault(i => i.Account.Uid == uid && i.ItemId == itemId);
     }
 
-    public interface IItemRepository : IRepository<Item>
+    public interface IItemRepository : IRepository<ItemEntity>
     {
-        Item? GetByItemId(uint uid, uint itemId);
-        Item[] GetItemsByUid(uint uid);
+        ItemEntity? GetByItemId(uint uid, uint itemId);
+        ItemEntity[] GetItemsByUid(uint uid);
     }
 }

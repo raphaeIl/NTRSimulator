@@ -93,13 +93,13 @@ namespace NTRSimulator.SDKServer.Services
             };
         }
 
-        private Account CreateAccount(string email, string password, bool isGuest)
+        private AccountEntity CreateAccount(string email, string password, bool isGuest)
         {
             var now = DateTime.UtcNow;
             return accountService.CreateAccount(email, HashPassword(password), isGuest, now);
         }
 
-        private static AutoLoginDto BuildLoginDto(Account account, string accessToken)
+        private static AutoLoginDto BuildLoginDto(AccountEntity account, string accessToken)
         {
             return new AutoLoginDto
             {

@@ -17,7 +17,7 @@ namespace NTRSimulator.GameServer.Services
 
             Avg3dDuoStageData[] avg3dDuoStages = tableService.GetTable<Avg3dDuoStageData>().ToArray();
 
-            var avgDuo = account.AvgDuo ?? new AvgDuo();
+            var avgDuo = account.AvgDuo ?? new AvgDuoEntity();
             avgDuo.AvgDuoMainStageIds = avg3dDuoStages
                 .Select(stage => stage.Id)
                 .ToArray();

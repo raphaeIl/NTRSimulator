@@ -20,6 +20,6 @@ namespace NTRSimulator.Database.Entities
         public DateTime TimeCreated { get; set; }
 
         [JsonIgnore]
-        public virtual Account Account { get; set; } = null!;
+        public virtual AccountEntity Account { get; set; } = null!;
     }
 }

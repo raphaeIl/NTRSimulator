@@ -19,7 +19,7 @@ namespace NTRSimulator.GameServer.Services
 
             var newWeapons = weaponData
                 .Where(d => d.Id != 0 && !existingWeaponIds.Contains(d.Id))
-                .Select(d => new Weapon
+                .Select(d => new WeaponEntity
                 {
                     WeaponId = d.Id,
                     Level = 1,
@@ -34,14 +34,14 @@ namespace NTRSimulator.GameServer.Services
             weaponRepository.SaveChanges();
         }
 
-        public Weapon[] GetPlayerWeapons(uint accountUid)
+        public WeaponEntity[] GetPlayerWeapons(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.Weapons.ToArray();
         }
 
-        public void AddWeapon(uint accountUid, Weapon weapon)
+        public void AddWeapon(uint accountUid, WeaponEntity weapon)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -49,7 +49,7 @@ namespace NTRSimulator.GameServer.Services
             weaponRepository.SaveChanges();
         }
 
-        public bool RemoveWeapon(uint accountUid, Weapon weapon)
+        public bool RemoveWeapon(uint accountUid, WeaponEntity weapon)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -63,9 +63,9 @@ namespace NTRSimulator.GameServer.Services
 
     public interface IWeaponService : IGameService
     {
-        Weapon[] GetPlayerWeapons(uint accountUid);
-        void AddWeapon(uint accountUid, Weapon weapon);
-        bool RemoveWeapon(uint accountUid, Weapon weapon);
+        WeaponEntity[] GetPlayerWeapons(uint accountUid);
+        void AddWeapon(uint accountUid, WeaponEntity weapon);
+        bool RemoveWeapon(uint accountUid, WeaponEntity weapon);
         void AddAllWeapons(uint accountUid);
     }
 }

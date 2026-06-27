@@ -3,16 +3,16 @@ using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Repositories
 {
-    public sealed class AvgDuoRepository(NTRSimulatorDbContext db) : Repository<AvgDuo>(db), IAvgDuoRepository
+    public sealed class AvgDuoRepository(NTRSimulatorDbContext db) : Repository<AvgDuoEntity>(db), IAvgDuoRepository
     {
-        public AvgDuo? GetByUid(uint uid)
+        public AvgDuoEntity? GetByUid(uint uid)
         {
             return Db.AvgDuos.SingleOrDefault(a => a.Account.Uid == uid);
         }
     }
 
-    public interface IAvgDuoRepository : IRepository<AvgDuo>
+    public interface IAvgDuoRepository : IRepository<AvgDuoEntity>
     {
-        AvgDuo? GetByUid(uint uid);
+        AvgDuoEntity? GetByUid(uint uid);
     }
 }

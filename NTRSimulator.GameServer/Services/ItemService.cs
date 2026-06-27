@@ -21,7 +21,7 @@ namespace NTRSimulator.GameServer.Services
 
             var newItems = itemData
                 .Where(d => d.Id != 0 && !existingItemIds.Contains(d.Id))
-                .Select(d => new Item
+                .Select(d => new ItemEntity
                 {
                     ItemId = d.Id,
                     Type = d.Type,
@@ -33,14 +33,14 @@ namespace NTRSimulator.GameServer.Services
             itemRepository.SaveChanges();
         }
 
-        public Item[] GetPlayerItems(uint accountUid)
+        public ItemEntity[] GetPlayerItems(uint accountUid)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
             return account.Items.ToArray();
         }
 
-        public void AddItem(uint accountUid, Item item)
+        public void AddItem(uint accountUid, ItemEntity item)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -48,7 +48,7 @@ namespace NTRSimulator.GameServer.Services
             itemRepository.SaveChanges();
         }
 
-        public bool RemoveItem(uint accountUid, Item item)
+        public bool RemoveItem(uint accountUid, ItemEntity item)
         {
             var account = accountService.GetByUid(accountUid)
                 ?? throw new InvalidOperationException($"Account with uid '{accountUid}' was not found.");
@@ -62,9 +62,9 @@ namespace NTRSimulator.GameServer.Services
 
     public interface IItemService : IGameService
     {
-        Item[] GetPlayerItems(uint accountUid);
-        void AddItem(uint accountUid, Item item);
-        bool RemoveItem(uint accountUid, Item item);
+        ItemEntity[] GetPlayerItems(uint accountUid);
+        void AddItem(uint accountUid, ItemEntity item);
+        bool RemoveItem(uint accountUid, ItemEntity item);
         void AddAllItems(uint accountUid);
     }
 }
