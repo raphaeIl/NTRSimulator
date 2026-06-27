@@ -9,7 +9,7 @@ namespace NTRSimulator.Database.Core
         {
         }
 
-        public DbSet<Gun> Guns => Set<Gun>();
+        public DbSet<GunEntity> Guns => Set<GunEntity>();
 
         public DbSet<Costume> Costumes => Set<Costume>();
 
@@ -29,7 +29,7 @@ namespace NTRSimulator.Database.Core
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Gun>(e =>
+            modelBuilder.Entity<GunEntity>(e =>
             {
                 e.HasIndex(g => g.GunId);
                 e.Property(g => g.Id).ValueGeneratedOnAdd();

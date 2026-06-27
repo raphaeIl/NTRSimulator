@@ -10,9 +10,9 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(
             new SC_PptInfo
             {
-                Field1 = new SC_PptFinish_F1Type
+                BPKHDANAJGF = new KIANAFJAHJC
                 {
-                    Field1 =
+                    IGIIGDJOPFH =
                     {
                         { 1032u, false },
                         { 2601u, false },

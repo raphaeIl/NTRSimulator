@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ChatNodeFetchAddr
             {
-                Field1 = true,
+                EKCAJNMIMOO = true,
             });
         }
     }

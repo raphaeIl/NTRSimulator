@@ -9,8 +9,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyAsmrInfo
             {
-                Field1 = { 1 },
-                Field2 = { 1017 },
+                IIIOINLCDBH = { 1 },
+                CPHCGPHMHKA = { 1017 },
             });
         }
 
@@ -18,7 +18,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyAsmrUnlockGun
             {
-                Field1 = request.Field1,
+                GunId = request.GunId,
             });
         }
 

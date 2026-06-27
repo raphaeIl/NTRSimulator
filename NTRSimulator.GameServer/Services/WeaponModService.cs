@@ -18,10 +18,10 @@ namespace NTRSimulator.GameServer.Services
             var existingModIds = new HashSet<uint>(account.WeaponMods.Select(m => m.WeaponModId));
 
             var newMods = modData
-                .Where(d => d.Field1 != 0 && !existingModIds.Contains(d.Field1))
+                .Where(d => d.Id != 0 && !existingModIds.Contains(d.Id))
                 .Select(d => new WeaponMod
                 {
-                    WeaponModId = d.Field1,
+                    WeaponModId = d.Id,
                     Uid = GenerateUid(),
                     Level = 0,
                     Field5 = 0,

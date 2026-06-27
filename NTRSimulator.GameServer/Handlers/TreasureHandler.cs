@@ -9,27 +9,27 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_TreasureData
                     {
-                        Field1 =
+                        LLLDFCFANII =
                         {
-                            [60015] = new SC_TreasureData_F1ValueType
+                            [60015] = new IAHOOMEFPND
                             {
-                                Field1 = 1,
-                                Field2 = 0,
-                                Field3 = false,
-                                Field4 =
+                                Level = 1,
+                                Exp = 0,
+                                IOINKEDEKND = false,
+                                Rewards =
                                 {
-                                    [1001] = new SC_TreasureData_F1ValueType_F4ValueType
+                                    [1001] = new ECDNJHCNDJB
                                     {
-                                        Field1 = (Enum_None_Unlock_Received)1,
-                                        Field2 = 0,
+                                        EDCJPOMIGHG = (ECDNJHCNDJB.Types.BBCLAKIOMLF)1,
+                                        IFGAOKKPHAF = 0,
                                     },
                                 },
-                                Field5 = new SC_TreasureData_F1ValueType_F5Type
+                                DPOCKPGIDJN = new CJPDLINBJCO
                                 {
-                                    Field1 = { },
-                                    Field2 = { },
-                                    Field3 = { },
-                                    Field4 = false,
+                                    EENJDLHFCPI = { },
+                                    FLEJPMNDEMN = { },
+                                    PPACOCKHNPE = { },
+                                    EBJGBABBELD = false,
                                 },
                             },
                         },

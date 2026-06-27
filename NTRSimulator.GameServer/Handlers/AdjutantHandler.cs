@@ -9,15 +9,15 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_AdjutantInfo
             {
-                Field1 = new SC_AdjutantInfo_F1Type
+                Adjutant = new Adjutant
                 {
-                    Field1 = 0,
-                    Field2 = 0,
-                    Field3 = { 10202, 0, 0, 0 },
-                    Field4 = new SC_AdjutantInfo_F1Type_F4Type
+                    Current = 0,
+                    Costume = 0,
+                    Assistants = { 10202, 0, 0, 0 },
+                    Background = new Background
                     {
-                        Field1 = 1001,
-                        Field2 = 2001
+                        Inside = 1001,
+                        Outside = 2001
                     }
                 }
             });

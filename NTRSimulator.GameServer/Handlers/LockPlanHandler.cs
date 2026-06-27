@@ -28,39 +28,39 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_GetSupportChipLockPlan response = new SC_GetSupportChipLockPlan
             {
-                Field1 = new SC_GetSupportChipLockPlan_F1Type
+                DJNPEOFHKHD = new FDGHOKHFAPD
                 {
-                    Field3 = new SC_GetSupportChipLockPlan_F1Type_F3Type
+                    APCOFGHAHGD = new FBELIIBLEJP
                     {
-                        Field2 = false,
+                        Open = false,
                     },
-                    Field4 = new SC_GetSupportChipLockPlan_F1Type_F3Type
+                    MAFNGCMKKAJ = new FBELIIBLEJP
                     {
-                        Field2 = false,
+                        Open = false,
                     },
                 },
             };
             foreach ((uint Index, uint[] Slots, uint PlanField3) plan in type3Plans)
             {
-                SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType planValue = new SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType();
-                SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType_F1Type entry = new SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType_F1Type
+                NICHOMDGIOM planValue = new NICHOMDGIOM();
+                OMKPKMFIKLP entry = new OMKPKMFIKLP
                 {
-                    Field3 = plan.PlanField3,
+                    IJMINJLDENL = plan.PlanField3,
                 };
-                entry.Field2.AddRange(plan.Slots);
-                planValue.Field1.Add(entry);
-                response.Field1.Field3.Field3[plan.Index] = planValue;
+                entry.AEBNOHIKJOI.AddRange(plan.Slots);
+                planValue.ANGKLPKHILE.Add(entry);
+                response.DJNPEOFHKHD.Field3.Field3[plan.Index] = planValue;
             }
             foreach ((uint Index, uint[] Slots, uint PlanField3) plan in type4Plans)
             {
-                SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType planValue = new SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType();
-                SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType_F1Type entry = new SC_GetSupportChipLockPlan_F1Type_F3Type_F3ValueType_F1Type
+                NICHOMDGIOM planValue = new NICHOMDGIOM();
+                OMKPKMFIKLP entry = new OMKPKMFIKLP
                 {
-                    Field3 = plan.PlanField3,
+                    IJMINJLDENL = plan.PlanField3,
                 };
-                entry.Field2.AddRange(plan.Slots);
-                planValue.Field1.Add(entry);
-                response.Field1.Field4.Field3[plan.Index] = planValue;
+                entry.AEBNOHIKJOI.AddRange(plan.Slots);
+                planValue.ANGKLPKHILE.Add(entry);
+                response.DJNPEOFHKHD.Field4.Field3[plan.Index] = planValue;
             }
             connection.Send(response);
         }

@@ -1,5 +1,7 @@
 using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
+using EntityItem = NTRSimulator.Database.Entities.Item;
+using ProtoItem = NTRSimulator.Common.Proto.Item;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Services;
 
@@ -14,14 +16,14 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_Index scIndex = new SC_Index
             {
-                Field1 =
+                Indices =
                 {
                     {
                         10u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 10,
-                            Field2 =
+                            Type = 10,
+                            Details =
                             {
                                 { 1001u, false },
                                 { 1008u, false },
@@ -83,10 +85,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         12u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 12,
-                            Field2 =
+                            Type = 12,
+                            Details =
                             {
                                 { 21000u, true },
                                 { 21001u, true },
@@ -230,10 +232,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         13u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 13,
-                            Field2 =
+                            Type = 13,
+                            Details =
                             {
  
                             },
@@ -241,18 +243,18 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         14u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 14,
-                            Field2 = { },
+                            Type = 14,
+                            Details = { },
                         }
                     },
                     {
                         20u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 20,
-                            Field2 =
+                            Type = 20,
+                            Details =
                             {
                                 { 11009u, false },
                                 { 11010u, false },
@@ -287,10 +289,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         21u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 21,
-                            Field2 =
+                            Type = 21,
+                            Details =
                             {
  
                             },
@@ -298,20 +300,20 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         30u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 30,
-                            Field2 =
+                            Type = 30,
+                            Details =
                             {
                             },
                         }
                     },
                     {
                         36u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 36,
-                            Field2 =
+                            Type = 36,
+                            Details =
                             {
                                 { 22001u, true },
                                 { 22002u, false },
@@ -324,10 +326,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         37u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 37,
-                            Field2 =
+                            Type = 37,
+                            Details =
                             {
                                 { 23001u, true },
                                 { 23012u, true },
@@ -420,10 +422,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         39u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 39,
-                            Field2 =
+                            Type = 39,
+                            Details =
                             {
                                 { 24001u, true },
                                 { 24032u, true },
@@ -487,10 +489,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         40u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 40, // DO NOT ENABLE, why does this break the whole menu
-                            Field2 =
+                            Type = 40, // DO NOT ENABLE, why does this break the whole menu
+                            Details =
                             {
                                 { 25001u, true },
                                 // { 25009u, true },
@@ -501,10 +503,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         60u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 60,
-                            Field2 =
+                            Type = 60,
+                            Details =
                             {
  
                             },
@@ -512,10 +514,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         61u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 61,
-                            Field2 =
+                            Type = 61,
+                            Details =
                             {
  
                             },
@@ -523,10 +525,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         133u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 133,
-                            Field2 =
+                            Type = 133,
+                            Details =
                             {
                                 { 1335001u, false },
                                 //{ 1335002u, false },
@@ -536,18 +538,18 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         162u, // special char cgs
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 162,
-                            Field2 = { },
+                            Type = 162,
+                            Details = { },
                         }
                     },
                     {
                         171u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 171,
-                            Field2 =
+                            Type = 171,
+                            Details =
                             {
                                 { 1600001u, false },
                                 { 1600002u, false },
@@ -556,10 +558,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         181u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 181,
-                            Field2 =
+                            Type = 181,
+                            Details =
                             {
                                 { 1581008u, false },
                             },
@@ -567,10 +569,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         201u,
-                        new SC_Index_F1ValueType
+                        new LMDCMBNFDCP
                         {
-                            Field1 = 201,
-                            Field2 =
+                            Type = 201,
+                            Details =
                             {
                                 { 1002u, false },
                                 { 2001u, false },
@@ -579,13 +581,13 @@ namespace NTRSimulator.GameServer.Handlers
                         }
                     },
                 },
-                Field2 =
+                IndicesInfo =
                 {
                     {
                         36u,
-                        new SC_Index_F2ValueType
+                        new IndexInfo
                         {
-                            Field1 =
+                            Details =
                             {
                                 { 22001u, 1703592104 },
                                 { 22002u, 1728668611 },
@@ -598,9 +600,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         37u,
-                        new SC_Index_F2ValueType
+                        new IndexInfo
                         {
-                            Field1 =
+                            Details =
                             {
                                 { 23001u, 1703592104 },
                                 { 23012u, 1703900704 },
@@ -615,32 +617,32 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (Costume costume in inventoryService.GetPlayerInventory<Costume>(connection.Account.Uid))
             {
-                scIndex.Field1[13].Field2.Add(costume.CostumeId, true);
+                scIndex.Indices[13].Field2.Add(costume.CostumeId, true);
             }
 
             foreach (WeaponMod weaponMod in inventoryService.GetPlayerInventory<WeaponMod>(connection.Account.Uid))
             {
-                scIndex.Field1[21].Field2.Add(weaponMod.WeaponModId, true);
+                scIndex.Indices[21].Field2.Add(weaponMod.WeaponModId, true);
             }
 
             foreach (WeaponSkin weaponSkin in inventoryService.GetPlayerInventory<WeaponSkin>(connection.Account.Uid))
             {
-                scIndex.Field1[60].Field2.Add(weaponSkin.WeaponSkinId, true);
+                scIndex.Indices[60].Field2.Add(weaponSkin.WeaponSkinId, true);
             }
 
             foreach (WeaponModSkin weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkin>(connection.Account.Uid))
             {
-                scIndex.Field1[61].Field2.Add(weaponModSkin.WeaponModSkinId, true);
+                scIndex.Indices[61].Field2.Add(weaponModSkin.WeaponModSkinId, true);
             }
 
-            foreach (Item item in inventoryService.GetPlayerInventory<Item>(connection.Account.Uid))
+            foreach (EntityItem item in inventoryService.GetPlayerInventory<EntityItem>(connection.Account.Uid))
             {
                 if (item.Type != 162)
                 {
                     continue;
                 }
 
-                scIndex.Field1[162u].Field2[item.ItemId] = true;
+                scIndex.Indices[162u].Field2[item.ItemId] = true;
             }
 
             //connection.Send(2, scIndex);

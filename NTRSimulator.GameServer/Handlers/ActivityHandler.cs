@@ -7,34 +7,34 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandlePlanActivity(CS_PlanActivity request, Connection connection)
         {
-            switch (request.Field1)
+            switch (request.Type)
                     {
                         case 4:
                             connection.Send(new SC_PlanActivity
                             {
-                                Field1 = 4,
-                                Field2 = { },
-                                Field3 = { },
-                                Field4 = { },
-                                Field5 = { },
+                                Type = 4,
+                                ActiveIds = { },
+                                NextIds = { },
+                                ActivityPlan = { },
+                                WillOpenPlans = { },
                             });
                             break;
                         case 5:
                             connection.Send(new SC_PlanActivity
                             {
-                                Field1 = 5,
-                                Field2 = { 50063, 500261, 50064 },
-                                Field3 = { },
-                                Field4 = { },
-                                Field5 = { },
+                                Type = 5,
+                                ActiveIds = { 50063, 500261, 50064 },
+                                NextIds = { },
+                                ActivityPlan = { },
+                                WillOpenPlans = { },
                             });
                             break;
                         case 6:
                             connection.Send(1,
                                 new SC_PlanActivity
                                 {
-                                    Field1 = 6,
-                                    Field2 =
+                                    Type = 6,
+                                    ActiveIds =
                                     {
                                         63409,
                                         69992,
@@ -50,171 +50,171 @@ namespace NTRSimulator.GameServer.Handlers
                                         69993,
                                         69995,
                                     },
-                                    Field3 =
+                                    NextIds =
                                     {
                                     },
-                                    Field4 =
+                                    ActivityPlan =
                                     {
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 63409,
-                                            Field2 = 1779148800L,
-                                            Field3 = 1780963199L,
-                                            Field4 =
+                                            Id = 63409,
+                                            OpenTime = 1779148800L,
+                                            CloseTime = 1780963199L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 69992,
-                                            Field2 = 1697162400L,
-                                            Field3 = 2553800399L,
-                                            Field4 =
+                                            Id = 69992,
+                                            OpenTime = 1697162400L,
+                                            CloseTime = 2553800399L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 60015,
-                                            Field2 = 1702630800L,
-                                            Field3 = 2553800399L,
-                                            Field4 =
+                                            Id = 60015,
+                                            OpenTime = 1702630800L,
+                                            CloseTime = 2553800399L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 63301,
-                                            Field2 = 1777334400L,
-                                            Field3 = 1779656399L,
-                                            Field4 =
+                                            Id = 63301,
+                                            OpenTime = 1777334400L,
+                                            CloseTime = 1779656399L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 63410,
-                                            Field2 = 1779148800L,
-                                            Field3 = 1780963199L,
-                                            Field4 =
+                                            Id = 63410,
+                                            OpenTime = 1779148800L,
+                                            CloseTime = 1780963199L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 63402,
-                                            Field2 = 1779148800L,
-                                            Field3 = 1780963199L,
-                                            Field4 =
+                                            Id = 63402,
+                                            OpenTime = 1779148800L,
+                                            CloseTime = 1780963199L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 60003,
-                                            Field2 = 1697162400L,
-                                            Field3 = 2553800399L,
-                                            Field4 =
+                                            Id = 60003,
+                                            OpenTime = 1697162400L,
+                                            CloseTime = 2553800399L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 63401,
-                                            Field2 = 1779148800L,
-                                            Field3 = 1781470799L,
-                                            Field4 =
+                                            Id = 63401,
+                                            OpenTime = 1779148800L,
+                                            CloseTime = 1781470799L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 69999,
-                                            Field2 = 1779500060L,
-                                            Field3 = 1780709660L,
-                                            Field4 =
+                                            Id = 69999,
+                                            OpenTime = 1779500060L,
+                                            CloseTime = 1780709660L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 69997,
-                                            Field2 = 1702621200L,
-                                            Field3 = 2553800399L,
-                                            Field4 =
+                                            Id = 69997,
+                                            OpenTime = 1702621200L,
+                                            CloseTime = 2553800399L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 63408,
-                                            Field2 = 1779148800L,
-                                            Field3 = 1780963199L,
-                                            Field4 =
+                                            Id = 63408,
+                                            OpenTime = 1779148800L,
+                                            CloseTime = 1780963199L,
+                                            Args =
                                             {
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 69993,
-                                            Field2 = 1779500060L,
-                                            Field3 = 0L,
-                                            Field4 =
+                                            Id = 69993,
+                                            OpenTime = 1779500060L,
+                                            CloseTime = 0L,
+                                            Args =
                                             {
                                                 0,
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
-                                        new SC_PlanActivity_F4Type
+                                        new ActivityPlan
                                         {
-                                            Field1 = 69995,
-                                            Field2 = 1743213915L,
-                                            Field3 = 0L,
-                                            Field4 =
+                                            Id = 69995,
+                                            OpenTime = 1743213915L,
+                                            CloseTime = 0L,
+                                            Args =
                                             {
                                                 0,
                                             },
-                                            Field5 =
+                                            GOLPGJGBJIK =
                                             {
                                             },
                                         },
                                     },
-                                    Field5 =
+                                    WillOpenPlans =
                                     {
                                     },
                                 });
@@ -222,11 +222,11 @@ namespace NTRSimulator.GameServer.Handlers
                         case 13:
                             connection.Send(new SC_PlanActivity
                             {
-                                Field1 = 13,
-                                Field2 = { 51079 },
-                                Field3 = { 51080 },
-                                Field4 = { },
-                                Field5 = { },
+                                Type = 13,
+                                ActiveIds = { 51079 },
+                                NextIds = { 51080 },
+                                ActivityPlan = { },
+                                WillOpenPlans = { },
                             });
                             break;
             }
@@ -236,12 +236,12 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ActivityGetMedium
                     {
-                        Field1 =
+                        FGMEGJPEJLM =
                         {
-                            [1] = new SC_ActivityGetMedium_F1ValueType
+                            [1] = new DCNNGHIOOJM
                             {
-                                Field1 = 0,
-                                Field2 = "3F13V8TC32",
+                                State = 0,
+                                Token = "3F13V8TC32",
                             },
                         },
                     });
@@ -251,7 +251,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetActivityAmo
                     {
-                        Field1 = { },
+                        OOEJEHGFCLL = { },
                     });
         }
 
@@ -259,23 +259,23 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ActivityBackInfo
                     {
-                        Field1 = new SC_ActivityBackDailyRefresh_F1Type
+                        Info = new IGHEKKLGNLA
                         {
-                            Field1 = 1,
-                            Field2 = 1779500060,
-                            Field3 = 3,
-                            Field4 = 1779518860,
-                            Field5 = false,
-                            Field6 = 0,
-                            Field7 = false,
-                            Field8 = 2,
-                            Field9 = new SC_ActivityBackDailyRefresh_F1Type_F9Type
+                            IAPDLJKLLNM = 1,
+                            OpenTime = 1779500060,
+                            HNAKPBEGGFK = 3,
+                            HPABIPEOBKN = 1779518860,
+                            IEHFGOMCBCN = false,
+                            CJOINHJCPII = 0,
+                            CheckinDone = false,
+                            Version = 2,
+                            ANGHCINLCJO = new OCLANMMGEGA
                             {
-                                Field1 = 0,
-                                Field2 = 0,
-                                Field3 = 0,
-                                Field4 = { },
-                                Field5 = { },
+                                Type = 0,
+                                Exp = 0,
+                                Level = 0,
+                                LMNBPEBDCKG = { },
+                                IMMBMDAPFEN = { },
                             },
                         },
                     });
@@ -285,17 +285,17 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetActivityDailyFood
                     {
-                        Field1 =
+                        PLAKNGGJGPL =
                         {
-                            [1] = new SC_GetActivityDailyFood_F1ValueType
+                            [1] = new JMNBIFKFMLB
                             {
-                                Field1 = 1779508800,
-                                Field2 = false,
+                                ENGFMGEEMBG = 1779508800,
+                                State = false,
                             },
-                            [2] = new SC_GetActivityDailyFood_F1ValueType
+                            [2] = new JMNBIFKFMLB
                             {
-                                Field1 = 1779530400,
-                                Field2 = false,
+                                ENGFMGEEMBG = 1779530400,
+                                State = false,
                             },
                         },
                     });
@@ -305,10 +305,10 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetActivityConversion
                     {
-                        Field1 = new SC_GetActivityConversion_F1Type
+                        GIOIKFICGAE = new PKPJMDCFFKD
                         {
-                            Field1 = 0,
-                            Field2 = false,
+                            CurrId = 0,
+                            FPAEHEGGAIH = false,
                         },
                     });
         }
@@ -317,7 +317,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ActivitySkinBargainInfo
                     {
-                        Field1 = { },
+                        Info = { },
                     });
         }
 
@@ -325,7 +325,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ActivityLotteryInfo()
                     {
-                        Field1 = { }
+                        BNKEKDKPCIE = { }
                     });
         }
 

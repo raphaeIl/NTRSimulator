@@ -9,12 +9,12 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_DormInfo
                     {
-                        Field1 = new SC_DormInfo_F1Type
+                        Info = new NOMHELOJFLJ
                         {
-                            Field3 = { },
-                            Field9 = 0,
+                            Character = { },
+                            KBCJNGDOGKJ = 0,
                         },
-                        Field2 = { },
+                        GDJOKNOBNBM = { },
                     });
         }
 
@@ -22,7 +22,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetDormFormationInfo
             {
-                Field1 = { },
+                AHFNBKINDGB = { },
             });
         }
 
@@ -30,7 +30,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_EnterDorm
             {
-                Field1 = request.Field1,
+                GunId = request.GunId,
             });
         }
 
@@ -38,8 +38,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_DormSkinChange()
             {
-                Field1 = request.Field1,
-                Field2 = request.Field2
+                GunId = request.GunId,
+                CostumeId = request.CostumeId
             });
         }
 

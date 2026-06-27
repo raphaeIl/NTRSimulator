@@ -14,7 +14,7 @@ namespace NTRSimulator.GameServer.Handlers
 
             connection.SendAutoEncrypted(new SC_LobbyGetEventInfo
             {
-                Field1 =
+                ELPBKBNCKBP =
                 {
                     [30200] = true,
                     [2000005] = true,
@@ -38,49 +38,49 @@ namespace NTRSimulator.GameServer.Handlers
                     [31110] = true,
                     [30810] = true,
                 },
-                Field2 =
+                MAPKAGCPLIM =
                 {
-                    [2000003] = new SC_LobbyGetEventInfo_F2ValueType
+                    [2000003] = new KMIAGEBIMIP
                     {
-                        Field1 = 2000003,
-                        Field2 = nowUnix,
-                        Field3 = 0,
+                        EventId = 2000003,
+                        TriggerTime = nowUnix,
+                        FJBJIJIFACH = 0,
                     },
-                    [2000012] = new SC_LobbyGetEventInfo_F2ValueType
+                    [2000012] = new KMIAGEBIMIP
                     {
-                        Field1 = 2000012,
-                        Field2 = nowUnix,
-                        Field3 = 0,
+                        EventId = 2000012,
+                        TriggerTime = nowUnix,
+                        FJBJIJIFACH = 0,
                     },
-                    [2000019] = new SC_LobbyGetEventInfo_F2ValueType
+                    [2000019] = new KMIAGEBIMIP
                     {
-                        Field1 = 2000019,
-                        Field2 = nowUnix,
-                        Field3 = 0,
+                        EventId = 2000019,
+                        TriggerTime = nowUnix,
+                        FJBJIJIFACH = 0,
                     },
-                    [2000015] = new SC_LobbyGetEventInfo_F2ValueType
+                    [2000015] = new KMIAGEBIMIP
                     {
-                        Field1 = 2000015,
-                        Field2 = nowUnix,
-                        Field3 = 0,
+                        EventId = 2000015,
+                        TriggerTime = nowUnix,
+                        FJBJIJIFACH = 0,
                     },
-                    [2000020] = new SC_LobbyGetEventInfo_F2ValueType
+                    [2000020] = new KMIAGEBIMIP
                     {
-                        Field1 = 2000020,
-                        Field2 = nowUnix,
-                        Field3 = 0,
+                        EventId = 2000020,
+                        TriggerTime = nowUnix,
+                        FJBJIJIFACH = 0,
                     },
-                    [31410] = new SC_LobbyGetEventInfo_F2ValueType
+                    [31410] = new KMIAGEBIMIP
                     {
-                        Field1 = 31410,
-                        Field2 = nowUnix,
-                        Field3 = 0,
+                        EventId = 31410,
+                        TriggerTime = nowUnix,
+                        FJBJIJIFACH = 0,
                     },
                 },
-                Field3 = { },
-                Field4 = { 43016, 43015, 38003, 43008, 44001, 44002, 44003, 43001 },
-                Field5 = { },
-                Field6 = { 3, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 },
+                INCNFOFGJFB = { },
+                DAHKBJPOFCP = { 43016, 43015, 38003, 43008, 44001, 44002, 44003, 43001 },
+                DBNONLHDHLM = { },
+                HINGCIJFHAC = { 3, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 },
             });
         }
 
@@ -91,181 +91,181 @@ namespace NTRSimulator.GameServer.Handlers
                     connection.Send(
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 28,
-                            Field1 =
+                            Num = 28,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40140 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40141 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 40142 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40140 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40141 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 40142 },
                             },
                         },
                         new SC_PlayerStatusCounterSync
                         {
-                            Field2 = 31,
-                            Field1 =
+                            Num = 31,
+                            Watchers =
                             {
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1562 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1563 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1564 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1565 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1566 },
-                                new SC_PlayerStatusCounterSync_F1Type { Field1 = 63, Field2 = 1561 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1562 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1563 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1564 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1565 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1566 },
+                                new PELLFAAPKOL { SystemId = 63, UniqueId = 1561 },
                             },
                         },
                         new SC_LobbyGetBuildInfo
                         {
-                            Field1 =
+                            CPJOGIOCNMM =
                             {
-                                [101] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10131, 10101, 10122, 10123, 10115, 10130, 10108, 10125, 10128, 10132, 10124, 10136, 10116, 10153, 10133 } },
-                                [102] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10204, 10205, 10212, 10226, 10231, 10211, 10201, 10206, 10218 } },
-                                [103] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10304, 10302, 10301 } },
-                                [104] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10401, 10402 } },
-                                [106] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10601, 10602, 10603, 10607 } },
-                                [107] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 10716, 10701, 10702, 10704, 10703 } },
-                                [201] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { } },
-                                [202] = new SC_LobbyGetBuildInfo_F1ValueType { Field2 = { 20202, 20203 } },
+                                [101] = new OICGGHHHFBI { KICFGBGNDGF = { 10131, 10101, 10122, 10123, 10115, 10130, 10108, 10125, 10128, 10132, 10124, 10136, 10116, 10153, 10133 } },
+                                [102] = new OICGGHHHFBI { KICFGBGNDGF = { 10204, 10205, 10212, 10226, 10231, 10211, 10201, 10206, 10218 } },
+                                [103] = new OICGGHHHFBI { KICFGBGNDGF = { 10304, 10302, 10301 } },
+                                [104] = new OICGGHHHFBI { KICFGBGNDGF = { 10401, 10402 } },
+                                [106] = new OICGGHHHFBI { KICFGBGNDGF = { 10601, 10602, 10603, 10607 } },
+                                [107] = new OICGGHHHFBI { KICFGBGNDGF = { 10716, 10701, 10702, 10704, 10703 } },
+                                [201] = new OICGGHHHFBI { KICFGBGNDGF = { } },
+                                [202] = new OICGGHHHFBI { KICFGBGNDGF = { 20202, 20203 } },
                             },
-                            Field2 = 49,
-                            Field3 = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
-                            Field4 = 40260,
+                            Level = 49,
+                            CFOCLIHKKJL = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
+                            Exp = 40260,
                         });
 
                     if (lobbyGetBuildInfoCount != 2)
@@ -276,9 +276,9 @@ namespace NTRSimulator.GameServer.Handlers
                     connection.SendUnsequenced(
                         new SC_RecordStatisticUpdate
                         {
-                            Field1 = 1,
-                            Field2 = 11,
-                            Field3 = 0,
+                            CHEOLEADCCB = 1,
+                            MDAIIFCGJMO = 11,
+                            BCGNJMDFLDG = 0,
                         },
                         new SC_PlayerCounterSync
                         {
@@ -291,25 +291,25 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 410261,
-                                            Field3 = true,
-                                            Field4 = 410261,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 410261,
+                                            Counter = true,
+                                            GBBABCAJHBL = 410261,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 410262,
-                                            Field3 = true,
-                                            Field4 = 410262,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 410262,
+                                            Counter = true,
+                                            GBBABCAJHBL = 410262,
                                         },
                                     },
                                     Counter = new Counter { Id = 1437, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 58,
-                                        Field5 = false,
-                                        Field6 = { 58, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 58,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 58, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -327,25 +327,25 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 410261,
-                                            Field3 = true,
-                                            Field4 = 410261,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 410261,
+                                            Counter = true,
+                                            GBBABCAJHBL = 410261,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 410262,
-                                            Field3 = true,
-                                            Field4 = 410262,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 410262,
+                                            Counter = true,
+                                            GBBABCAJHBL = 410262,
                                         },
                                     },
                                     Counter = new Counter { Id = 1437, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 58,
-                                        Field5 = false,
-                                        Field6 = { 58, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 58,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 58, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -364,25 +364,25 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -400,31 +400,31 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44015,
-                                            Field3 = true,
-                                            Field4 = 44015,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44015,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -442,37 +442,37 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44015,
-                                            Field3 = true,
-                                            Field4 = 44015,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44015,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 46032,
-                                            Field3 = true,
-                                            Field4 = 46032,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
+                                            Counter = true,
+                                            GBBABCAJHBL = 46032,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -490,43 +490,43 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44015,
-                                            Field3 = true,
-                                            Field4 = 44015,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44015,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 46032,
-                                            Field3 = true,
-                                            Field4 = 46032,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
+                                            Counter = true,
+                                            GBBABCAJHBL = 46032,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 71007,
-                                            Field3 = true,
-                                            Field4 = 71007,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
+                                            Counter = true,
+                                            GBBABCAJHBL = 71007,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -544,43 +544,43 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44015,
-                                            Field3 = true,
-                                            Field4 = 44015,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44015,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 46032,
-                                            Field3 = true,
-                                            Field4 = 46032,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
+                                            Counter = true,
+                                            GBBABCAJHBL = 46032,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 71007,
-                                            Field3 = true,
-                                            Field4 = 71007,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
+                                            Counter = true,
+                                            GBBABCAJHBL = 71007,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -598,43 +598,43 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44015,
-                                            Field3 = true,
-                                            Field4 = 44015,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44015,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 46032,
-                                            Field3 = true,
-                                            Field4 = 46032,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
+                                            Counter = true,
+                                            GBBABCAJHBL = 46032,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 71007,
-                                            Field3 = true,
-                                            Field4 = 71007,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
+                                            Counter = true,
+                                            GBBABCAJHBL = 71007,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -652,43 +652,43 @@ namespace NTRSimulator.GameServer.Handlers
                                     {
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 40001,
-                                            Field3 = true,
-                                            Field4 = 40001,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 40001,
+                                            Counter = true,
+                                            GBBABCAJHBL = 40001,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44012,
-                                            Field3 = true,
-                                            Field4 = 44012,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44012,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44012,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 44015,
-                                            Field3 = true,
-                                            Field4 = 44015,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 44015,
+                                            Counter = true,
+                                            GBBABCAJHBL = 44015,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 46032,
-                                            Field3 = true,
-                                            Field4 = 46032,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 46032,
+                                            Counter = true,
+                                            GBBABCAJHBL = 46032,
                                         },
                                         new Watcher
                                         {
-                                            SystemId = (Enum_CounterSystemNone_CounterSystemAchievement_CounterSystemGuideQuest_CounterSystemDailyQuest_CounterSystemWeeklyQuest)1, UniqueId = 71007,
-                                            Field3 = true,
-                                            Field4 = 71007,
+                                            SystemId = (PlayerCounterSystem)1, UniqueId = 71007,
+                                            Counter = true,
+                                            GBBABCAJHBL = 71007,
                                         },
                                     },
                                     Counter = new Counter { Id = 1439, ResetPeriod = 0,
                                         Num = new Num { Continuous = 0, Summary = 1, Max = 0, ValueCase = 0 },
-                                        Field4 = 5,
-                                        Field5 = false,
-                                        Field6 = { 5, 1026 },
-                                        Field7 = 0,
-                                        Field8 = 0,
-                                        Field9 = { },
+                                        DNGBLDDNGIN = 5,
+                                        IMMIPLFMKIF = false,
+                                        BBFIKDDGMFN = { 5, 1026 },
+                                        EndTime = 0,
+                                        FKPIGDOCHOB = 0,
+                                        GBBFJEBJPEC = { },
                                         Field10 = null,
                                         Field11 = 0,
                                     },
@@ -697,58 +697,58 @@ namespace NTRSimulator.GameServer.Handlers
                         },
                         new SC_DropCollect
                         {
-                            Field1 =
+                            Drops =
                             {
-                                new SC_DarkZoneEndContract_F4Type
+                                new UserDropCache
                                 {
-                                    Field1 = 16,
-                                    Field2 = 18,
-                                    Field6 = 0,
-                                    Field7 = 0,
-                                    Field4 = { },
-                                    Field8 = { },
-                                    Field9 = false,
-                                    Field10 = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
-                                    Field11 = null,
+                                    ItemId = 16,
+                                    ItemNum = 18,
+                                    Relate = 0,
+                                    OverflowNum = 0,
+                                    ExtItems = { },
+                                    TranItems = { },
+                                    DropUp = false,
+                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                                    WeaponModDisplay = null,
                                     Field12 = 0,
                                 },
-                                new SC_DarkZoneEndContract_F4Type
+                                new UserDropCache
                                 {
-                                    Field1 = 47,
-                                    Field2 = 12,
-                                    Field6 = 0,
-                                    Field7 = 0,
-                                    Field4 = { },
-                                    Field8 = { },
-                                    Field9 = false,
-                                    Field10 = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
-                                    Field11 = null,
+                                    ItemId = 47,
+                                    ItemNum = 12,
+                                    Relate = 0,
+                                    OverflowNum = 0,
+                                    ExtItems = { },
+                                    TranItems = { },
+                                    DropUp = false,
+                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                                    WeaponModDisplay = null,
                                     Field12 = 0,
                                 },
-                                new SC_DarkZoneEndContract_F4Type
+                                new UserDropCache
                                 {
-                                    Field1 = 23023,
-                                    Field2 = 1,
-                                    Field6 = 0,
-                                    Field7 = 0,
-                                    Field4 = { },
-                                    Field8 = { },
-                                    Field9 = false,
-                                    Field10 = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)328,
-                                    Field11 = null,
+                                    ItemId = 23023,
+                                    ItemNum = 1,
+                                    Relate = 0,
+                                    OverflowNum = 0,
+                                    ExtItems = { },
+                                    TranItems = { },
+                                    DropUp = false,
+                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)328,
+                                    WeaponModDisplay = null,
                                     Field12 = 0,
                                 },
-                                new SC_DarkZoneEndContract_F4Type
+                                new UserDropCache
                                 {
-                                    Field1 = 21011,
-                                    Field2 = 1,
-                                    Field6 = 0,
-                                    Field7 = 0,
-                                    Field4 = { },
-                                    Field8 = { },
-                                    Field9 = false,
-                                    Field10 = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)328,
-                                    Field11 = null,
+                                    ItemId = 21011,
+                                    ItemNum = 1,
+                                    Relate = 0,
+                                    OverflowNum = 0,
+                                    ExtItems = { },
+                                    TranItems = { },
+                                    DropUp = false,
+                                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)328,
+                                    WeaponModDisplay = null,
                                     Field12 = 0,
                                 },
                             },
@@ -759,60 +759,60 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyGetSchemeV2
             {
-                Field1 = new CS_LobbySetScheme_F2Type
+                CNLAIIIHBIK = new AFHDBEJPOHJ
                 {
-                    Field1 =
+                    PKDLBOBNCBJ =
                     {
-                        [101] = new CS_LobbySetScheme_F2Type_F1ValueType
+                        [101] = new AGGNMOGPNDI
                         {
-                            Field1 = { },
-                            Field2 = { },
-                            Field3 = 0,
-                            Field4 = { },
-                            Field5 =
+                            Guns = { },
+                            PPKDIKDPBIG = { },
+                            ThemeId = 0,
+                            HOCKKBJALMM = { },
+                            JOCPKDIKBPF =
                             {
-                                [1] = new CS_LobbySetScheme_F2Type_F1ValueType_F5ValueType
+                                [1] = new OBLDJNGKIFA
                                 {
-                                    Field1 = 0,
-                                    Field2 = { 660736 },
-                                    Field3 = { },
+                                    KHJPJMJHHCK = 0,
+                                    AABKAFBKBCF = { 660736 },
+                                    DLNCGLAONAH = { },
                                 },
-                                [2] = new CS_LobbySetScheme_F2Type_F1ValueType_F5ValueType
+                                [2] = new OBLDJNGKIFA
                                 {
-                                    Field1 = 1,
-                                    Field2 = { 809472, 1073152, 1452288, 929536 },
-                                    Field3 = { },
+                                    KHJPJMJHHCK = 1,
+                                    AABKAFBKBCF = { 809472, 1073152, 1452288, 929536 },
+                                    DLNCGLAONAH = { },
                                 },
-                                [3] = new CS_LobbySetScheme_F2Type_F1ValueType_F5ValueType
+                                [3] = new OBLDJNGKIFA
                                 {
-                                    Field1 = 0,
-                                    Field2 = { 2622906368, 2622658560, 2623308800 },
-                                    Field3 = { },
+                                    KHJPJMJHHCK = 0,
+                                    AABKAFBKBCF = { 2622906368, 2622658560, 2623308800 },
+                                    DLNCGLAONAH = { },
                                 },
                             },
                         },
-                        [102] = new CS_LobbySetScheme_F2Type_F1ValueType
+                        [102] = new AGGNMOGPNDI
                         {
-                            Field1 = { },
-                            Field2 =
+                            Guns = { },
+                            PPKDIKDPBIG =
                             {
                                 [10202] = 202802,
                                 [10204] = 113204,
                                 [10201] = 202801,
                             },
-                            Field3 = 0,
-                            Field4 = { },
-                            Field5 = { },
+                            ThemeId = 0,
+                            HOCKKBJALMM = { },
+                            JOCPKDIKBPF = { },
                         },
                     },
-                    Field2 = "",
+                    Name = "",
                 },
-                Field2 =
+                MPDOHKILMCA =
                 {
-                    new CS_LobbySetScheme_F2Type { Field1 = { }, Field2 = "" },
-                    new CS_LobbySetScheme_F2Type { Field1 = { }, Field2 = "" },
-                    new CS_LobbySetScheme_F2Type { Field1 = { }, Field2 = "" },
-                    new CS_LobbySetScheme_F2Type { Field1 = { }, Field2 = "" },
+                    new AFHDBEJPOHJ { PKDLBOBNCBJ = { }, Name = "" },
+                    new AFHDBEJPOHJ { PKDLBOBNCBJ = { }, Name = "" },
+                    new AFHDBEJPOHJ { PKDLBOBNCBJ = { }, Name = "" },
+                    new AFHDBEJPOHJ { PKDLBOBNCBJ = { }, Name = "" },
                 },
             });
         }
@@ -821,9 +821,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_LobbyGetCafeInfo
                     {
-                        Field1 = 0,
-                        Field2 = 5,
-                        Field3 =
+                        FMICMDLIOJD = 0,
+                        CMADKJPJPHF = 5,
+                        FFNCCJADIDB =
                         {
                             [1u] = 1,
                             [2u] = 1,
@@ -833,7 +833,7 @@ namespace NTRSimulator.GameServer.Handlers
                             [6u] = 1,
                             [67u] = 1,
                         },
-                        Field4 =
+                        IAOJDFGPGKA =
                         {
                             [1001] = 24,
                             [1008] = 24,
@@ -842,8 +842,8 @@ namespace NTRSimulator.GameServer.Handlers
                             [1062] = 8,
                             [1066] = 57,
                         },
-                        Field5 = { },
-                        Field6 = { },
+                        PMNDAICHKKO = { },
+                        POFLALGADAO = { },
                     });
         }
 
@@ -851,11 +851,11 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_LobbyCookingInfo
                     {
-                        Field1 = new SC_LobbyCookingInfo_F1Type
+                        Info = new EOBBIJAPFPD
                         {
-                            Field1 = 0,
-                            Field2 = { },
-                            Field4 = { },
+                            CLLCFMCMONP = 0,
+                            DJCLEPBDFJD = { },
+                            EGOAOKPKFKF = { },
                         },
                     });
         }
@@ -864,8 +864,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(1, new SC_LobbyBuffInfo
                     {
-                        Field1 = 0,
-                        Field2 =
+                        KFNCPJPPGEF = 0,
+                        KGHAGBOFCMD =
                         {
                             [1001] = 5,
                             [1008] = 4,
@@ -923,7 +923,7 @@ namespace NTRSimulator.GameServer.Handlers
                             [1076] = 4,
                             [1077] = 4,
                         },
-                        Field3 =
+                        AJLCMPKKNAA =
                         {
                             [1] = 1,
                             [2] = 1,
@@ -936,9 +936,9 @@ namespace NTRSimulator.GameServer.Handlers
                             [9] = 1,
                             [15] = 1,
                         },
-                        Field4 = 0,
-                        Field5 = 0,
-                        Field6 = false,
+                        AEPCLIFECCC = 0,
+                        MGIKONEONBF = 0,
+                        LHGLNJNFIPM = false,
                     });
         }
 
@@ -946,9 +946,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_LobbyGetQuestInfo
                     {
-                        Field1 = 0,
-                        Field2 = 0,
-                        Field3 = { },
+                        PAKHJDKPENP = 0,
+                        LNJNKGNGBAC = 0,
+                        GKPAAEMKODB = { },
                     });
         }
 
@@ -956,9 +956,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyInteract
             {
-                Field1 = request.Field1,
-                Field2 = true,
-                Field3 = request.Field3,
+                EKMDGLKBILM = request.EKMDGLKBILM,
+                NGCBPMPCMMJ = true,
+                InterType = request.ECGAHCPCDDI,
             });
         }
 
@@ -966,7 +966,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(1, new SC_LobbyTutorialInfo
                     {
-                        Field1 =
+                        Sends =
                         {
                             [100210] = true,
                             [100306] = true,
@@ -977,7 +977,7 @@ namespace NTRSimulator.GameServer.Handlers
                             [200307] = true,
                             [200407] = true,
                         },
-                        Field2 =
+                        DIPIDKNFNPH =
                         {
                             [1001] = true,
                             [1002] = true,
@@ -1028,7 +1028,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyTutorialFinish
             {
-                Field1 = { request.Field1 },
+                Groups = { request.Groups },
             });
         }
 
@@ -1036,8 +1036,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyTutorialSend
             {
-                Field1 = { { request.Field1, 1u } },
-                Field2 = request.Field1,
+                KMHOOBIHPPE = { { request.KMHOOBIHPPE, 1u } },
+                PageId = request.KMHOOBIHPPE,
             });
         }
 
@@ -1045,23 +1045,23 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetLobbyShareCodeIdx
                     {
-                        Field1 = { },
+                        BDMOEFJJFAM = { },
                     });
         }
 
         public override void HandleGetLobbyBgm(CS_GetLobbyBgm request, Connection connection)
         {
-            connection.Send(new SC_GetLobbyBgm { Field1 = 0 });
+            connection.Send(new SC_GetLobbyBgm { GodId = 0 });
         }
 
         public override void HandleGetLobbyPhotoCut(CS_GetLobbyPhotoCut request, Connection connection)
         {
             connection.Send(new SC_GetLobbyPhotoCut
             {
-                Field1 = { },
-                Field2 = { 1, 2, 3, 4, 5, 6, 7, 53, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 49, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 },
-                Field3 = 1,
-                Field4 = { },
+                OAGEAGJKLHB = { },
+                CCNDHNDHKBO = { 1, 2, 3, 4, 5, 6, 7, 53, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 49, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 },
+                BOKKHALJCMA = 1,
+                INNLIAFIMIM = { },
             });
         }
 
@@ -1071,12 +1071,12 @@ namespace NTRSimulator.GameServer.Handlers
 
             connection.Send(new SC_LobbyWelcomeSettingInfo
             {
-                Field1 = new SC_LobbyWelcomeSettingInfo_F1Type
+                OBOGLCLAIPH = new NMEMMFMPCJB
                 {
-                    Field1 = true,
-                    Field3 = nowUnix,
-                    Field4 = 1017,
-                    Field5 = true,
+                    OIKBNGNPNIM = true,
+                    DHFNGECCLAK = nowUnix,
+                    JCOMGOPOLOP = 1017,
+                    HPNKLKLOECK = true,
                 },
             });
         }
@@ -1085,7 +1085,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyHandmadeGiftInfo
             {
-                Field1 = { },
+                KKLPCCBIFOM = { },
             });
         }
 
@@ -1093,7 +1093,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetLobbyHandmadeGiftMay
             {
-                Field1 = { },
+                MNGLCEKHNHE = { },
             });
         }
 
@@ -1104,69 +1104,69 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(1,
                 new SC_LobbyGetGunSetting
                 {
-                    Field1 =
+                    Guns =
                     {
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1001, Field2 = 1100100, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1008, Field2 = 1100800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1009, Field2 = 1100900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1013, Field2 = 1101300, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1015, Field2 = 1101500, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1017, Field2 = 1101700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1021, Field2 = 1102100, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1022, Field2 = 1102200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1023, Field2 = 1102300, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1024, Field2 = 1102400, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1025, Field2 = 1102501, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1026, Field2 = 1102601, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1027, Field2 = 1102700, Field3 = 0, Field4 = nowUnix, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1028, Field2 = 1102800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1029, Field2 = 1102900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1032, Field2 = 1103200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1033, Field2 = 1103300, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1034, Field2 = 1103401, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1035, Field2 = 1103500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1036, Field2 = 1103600, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1037, Field2 = 1103700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1038, Field2 = 1103800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1039, Field2 = 1103901, Field3 = 273, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1040, Field2 = 1104000, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1041, Field2 = 1104100, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1042, Field2 = 1104200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1043, Field2 = 1104300, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1044, Field2 = 1104400, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1045, Field2 = 1104500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1047, Field2 = 1104701, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1048, Field2 = 1104800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1049, Field2 = 1104900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1050, Field2 = 1105000, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1051, Field2 = 1105100, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1052, Field2 = 1105203, Field3 = 273, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1053, Field2 = 1105300, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1054, Field2 = 1105401, Field3 = 273, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1055, Field2 = 1105500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1056, Field2 = 1105600, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1057, Field2 = 1105700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1058, Field2 = 1105800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1059, Field2 = 1105900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1060, Field2 = 1106000, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1061, Field2 = 1106100, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1062, Field2 = 1106200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1063, Field2 = 1106300, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1064, Field2 = 1106400, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1065, Field2 = 1106500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1066, Field2 = 1106600, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1067, Field2 = 1106700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1068, Field2 = 1106800, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1069, Field2 = 1106900, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1070, Field2 = 1107000, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1071, Field2 = 1107100, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1072, Field2 = 1107200, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1073, Field2 = 1107300, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1074, Field2 = 1107400, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1075, Field2 = 1107500, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1076, Field2 = 1107600, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1077, Field2 = 1107700, Field3 = 0, Field4 = 0, Field5 = 0 },
-                        new CS_LobbySetScheme_F2Type_F1ValueType_F1Type { Field1 = 1078, Field2 = 1107800, Field3 = 0, Field4 = 0, Field5 = 0 },
+                        new JBHAOOEHJOO { GunId = 1001, HHBMPKBDBAH = 1100100, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1008, HHBMPKBDBAH = 1100800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1009, HHBMPKBDBAH = 1100900, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1013, HHBMPKBDBAH = 1101300, FCDLFDGDFOO = 0, PFPHNDEDJHN = nowUnix, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1015, HHBMPKBDBAH = 1101500, FCDLFDGDFOO = 0, PFPHNDEDJHN = nowUnix, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1017, HHBMPKBDBAH = 1101700, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1021, HHBMPKBDBAH = 1102100, FCDLFDGDFOO = 0, PFPHNDEDJHN = nowUnix, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1022, HHBMPKBDBAH = 1102200, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1023, HHBMPKBDBAH = 1102300, FCDLFDGDFOO = 0, PFPHNDEDJHN = nowUnix, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1024, HHBMPKBDBAH = 1102400, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1025, HHBMPKBDBAH = 1102501, FCDLFDGDFOO = 0, PFPHNDEDJHN = nowUnix, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1026, HHBMPKBDBAH = 1102601, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1027, HHBMPKBDBAH = 1102700, FCDLFDGDFOO = 0, PFPHNDEDJHN = nowUnix, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1028, HHBMPKBDBAH = 1102800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1029, HHBMPKBDBAH = 1102900, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1032, HHBMPKBDBAH = 1103200, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1033, HHBMPKBDBAH = 1103300, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1034, HHBMPKBDBAH = 1103401, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1035, HHBMPKBDBAH = 1103500, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1036, HHBMPKBDBAH = 1103600, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1037, HHBMPKBDBAH = 1103700, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1038, HHBMPKBDBAH = 1103800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1039, HHBMPKBDBAH = 1103901, FCDLFDGDFOO = 273, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1040, HHBMPKBDBAH = 1104000, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1041, HHBMPKBDBAH = 1104100, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1042, HHBMPKBDBAH = 1104200, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1043, HHBMPKBDBAH = 1104300, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1044, HHBMPKBDBAH = 1104400, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1045, HHBMPKBDBAH = 1104500, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1047, HHBMPKBDBAH = 1104701, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1048, HHBMPKBDBAH = 1104800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1049, HHBMPKBDBAH = 1104900, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1050, HHBMPKBDBAH = 1105000, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1051, HHBMPKBDBAH = 1105100, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1052, HHBMPKBDBAH = 1105203, FCDLFDGDFOO = 273, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1053, HHBMPKBDBAH = 1105300, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1054, HHBMPKBDBAH = 1105401, FCDLFDGDFOO = 273, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1055, HHBMPKBDBAH = 1105500, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1056, HHBMPKBDBAH = 1105600, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1057, HHBMPKBDBAH = 1105700, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1058, HHBMPKBDBAH = 1105800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1059, HHBMPKBDBAH = 1105900, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1060, HHBMPKBDBAH = 1106000, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1061, HHBMPKBDBAH = 1106100, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1062, HHBMPKBDBAH = 1106200, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1063, HHBMPKBDBAH = 1106300, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1064, HHBMPKBDBAH = 1106400, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1065, HHBMPKBDBAH = 1106500, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1066, HHBMPKBDBAH = 1106600, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1067, HHBMPKBDBAH = 1106700, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1068, HHBMPKBDBAH = 1106800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1069, HHBMPKBDBAH = 1106900, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1070, HHBMPKBDBAH = 1107000, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1071, HHBMPKBDBAH = 1107100, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1072, HHBMPKBDBAH = 1107200, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1073, HHBMPKBDBAH = 1107300, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1074, HHBMPKBDBAH = 1107400, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1075, HHBMPKBDBAH = 1107500, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1076, HHBMPKBDBAH = 1107600, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1077, HHBMPKBDBAH = 1107700, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
+                        new JBHAOOEHJOO { GunId = 1078, HHBMPKBDBAH = 1107800, FCDLFDGDFOO = 0, PFPHNDEDJHN = 0, PFIECLBKOMF = 0 },
                     },
                 });
         }
@@ -1180,9 +1180,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
             SC_LobbyWatchAvgDuo response = new SC_LobbyWatchAvgDuo
             {
-                Field2 = request.Field2,
+                JLPAEKALOKI = request.JLPAEKALOKI,
             };
-            response.Field1.AddRange(request.Field1);
+            response.Id.AddRange(request.Id);
             connection.Send(response);
         }
 
@@ -1190,19 +1190,19 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyPlantInfo
             {
-                Field1 = new SC_LobbyPlantInfo_F1Type
+                Info = new FOMLKMNAKEC
                 {
-                    Field1 = 0,
-                    Field2 = 0,
-                    Field3 = 0,
-                    Field4 = 0,
-                    Field5 = 0,
-                    Field6 = false,
-                    Field7 = 0,
-                    Field8 = false,
-                    Field9 = 0,
-                    Field10 = { },
-                    Field11 = 0,
+                    JJGNOPPPPIB = 0,
+                    Speed = 0,
+                    Exp = 0,
+                    NCINIEDEDFG = 0,
+                    EFEELOPBBEH = 0,
+                    GILBGLLFNEK = false,
+                    HMPGFCICDPF = 0,
+                    APCCCCBNAJC = false,
+                    RoomId = 0,
+                    CCOCGNFFIGD = { },
+                    PPFIKNCHBAO = 0,
                 },
             });
         }
@@ -1212,94 +1212,94 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(7, new SC_LobbyPartyInfo
             {
-                Field1 =
+                AGCMHJFOGIH =
                 {
-                    [101] = new SC_LobbyPartyInfo_F1ValueType
+                    [101] = new KEAKDAMCBMM
                     {
-                        Field1 = 101,
-                        Field2 =
+                        Id = 101,
+                        HFKNLIGCIBP =
                         {
-                            [10101] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10101] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10101,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10101,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1010101] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010101, Field2 = true },
-                                    [1010102] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010102, Field2 = true },
-                                    [1010103] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010103, Field2 = true },
-                                    [1010104] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010104, Field2 = true },
-                                    [1010105] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010105, Field2 = true },
-                                    [1010106] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010106, Field2 = true },
-                                    [1010107] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010107, Field2 = true },
-                                    [1010108] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010108, Field2 = true },
+                                    [1010101] = new CIFKOJJBCHF { Id = 1010101, BAJHKMIBPDC = true },
+                                    [1010102] = new CIFKOJJBCHF { Id = 1010102, BAJHKMIBPDC = true },
+                                    [1010103] = new CIFKOJJBCHF { Id = 1010103, BAJHKMIBPDC = true },
+                                    [1010104] = new CIFKOJJBCHF { Id = 1010104, BAJHKMIBPDC = true },
+                                    [1010105] = new CIFKOJJBCHF { Id = 1010105, BAJHKMIBPDC = true },
+                                    [1010106] = new CIFKOJJBCHF { Id = 1010106, BAJHKMIBPDC = true },
+                                    [1010107] = new CIFKOJJBCHF { Id = 1010107, BAJHKMIBPDC = true },
+                                    [1010108] = new CIFKOJJBCHF { Id = 1010108, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10102] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10102] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10102,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10102,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1010201] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010201, Field2 = true },
-                                    [1010202] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010202, Field2 = true },
-                                    [1010203] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010203, Field2 = true },
-                                    [1010204] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010204, Field2 = true },
-                                    [1010205] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010205, Field2 = true },
-                                    [1010206] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010206, Field2 = true },
+                                    [1010201] = new CIFKOJJBCHF { Id = 1010201, BAJHKMIBPDC = true },
+                                    [1010202] = new CIFKOJJBCHF { Id = 1010202, BAJHKMIBPDC = true },
+                                    [1010203] = new CIFKOJJBCHF { Id = 1010203, BAJHKMIBPDC = true },
+                                    [1010204] = new CIFKOJJBCHF { Id = 1010204, BAJHKMIBPDC = true },
+                                    [1010205] = new CIFKOJJBCHF { Id = 1010205, BAJHKMIBPDC = true },
+                                    [1010206] = new CIFKOJJBCHF { Id = 1010206, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10103] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10103] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10103,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10103,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1010301] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010301, Field2 = true },
-                                    [1010302] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010302, Field2 = true },
-                                    [1010303] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010303, Field2 = true },
-                                    [1010304] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010304, Field2 = true },
-                                    [1010305] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010305, Field2 = true },
-                                    [1010306] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010306, Field2 = true },
-                                    [1010307] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010307, Field2 = true },
-                                    [1010308] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010308, Field2 = true },
+                                    [1010301] = new CIFKOJJBCHF { Id = 1010301, BAJHKMIBPDC = true },
+                                    [1010302] = new CIFKOJJBCHF { Id = 1010302, BAJHKMIBPDC = true },
+                                    [1010303] = new CIFKOJJBCHF { Id = 1010303, BAJHKMIBPDC = true },
+                                    [1010304] = new CIFKOJJBCHF { Id = 1010304, BAJHKMIBPDC = true },
+                                    [1010305] = new CIFKOJJBCHF { Id = 1010305, BAJHKMIBPDC = true },
+                                    [1010306] = new CIFKOJJBCHF { Id = 1010306, BAJHKMIBPDC = true },
+                                    [1010307] = new CIFKOJJBCHF { Id = 1010307, BAJHKMIBPDC = true },
+                                    [1010308] = new CIFKOJJBCHF { Id = 1010308, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10104] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10104] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10104,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10104,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1010401] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010401, Field2 = true },
-                                    [1010402] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010402, Field2 = true },
-                                    [1010403] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010403, Field2 = true },
-                                    [1010404] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010404, Field2 = true },
-                                    [1010405] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010405, Field2 = true },
+                                    [1010401] = new CIFKOJJBCHF { Id = 1010401, BAJHKMIBPDC = true },
+                                    [1010402] = new CIFKOJJBCHF { Id = 1010402, BAJHKMIBPDC = true },
+                                    [1010403] = new CIFKOJJBCHF { Id = 1010403, BAJHKMIBPDC = true },
+                                    [1010404] = new CIFKOJJBCHF { Id = 1010404, BAJHKMIBPDC = true },
+                                    [1010405] = new CIFKOJJBCHF { Id = 1010405, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10105] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10105] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10105,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10105,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1010501] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010501, Field2 = true },
-                                    [1010502] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010502, Field2 = true },
-                                    [1010503] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010503, Field2 = true },
-                                    [1010504] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1010504, Field2 = true },
+                                    [1010501] = new CIFKOJJBCHF { Id = 1010501, BAJHKMIBPDC = true },
+                                    [1010502] = new CIFKOJJBCHF { Id = 1010502, BAJHKMIBPDC = true },
+                                    [1010503] = new CIFKOJJBCHF { Id = 1010503, BAJHKMIBPDC = true },
+                                    [1010504] = new CIFKOJJBCHF { Id = 1010504, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
                         },
-                        Field4 = false,
-                        Field5 = new SC_LobbyPartyInfo_F1ValueType_F5Type
+                        AACANKHENII = false,
+                        MLIJIDKIFGF = new KEMPBIAFGHB
                         {
-                            Field1 =
+                            HFJLFAEFENH =
                             {
                                 [3700902] = 3700903,
                                 [3700908] = 3700909,
@@ -1307,98 +1307,98 @@ namespace NTRSimulator.GameServer.Handlers
                                 [3700917] = 3700919,
                             },
                         },
-                        Field8 = 0,
+                        MLHIMAFLHAP = 0,
                     },
-                    [102] = new SC_LobbyPartyInfo_F1ValueType
+                    [102] = new KEAKDAMCBMM
                     {
-                        Field1 = 102,
-                        Field2 =
+                        Id = 102,
+                        HFKNLIGCIBP =
                         {
-                            [10201] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10201] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10201,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10201,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1020101] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020101, Field2 = true },
-                                    [1020102] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020102, Field2 = true },
-                                    [1020103] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020103, Field2 = true },
-                                    [1020104] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020104, Field2 = true },
-                                    [1020105] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020105, Field2 = true },
-                                    [1020106] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020106, Field2 = true },
-                                    [1020107] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020107, Field2 = true },
-                                    [1020108] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020108, Field2 = true },
+                                    [1020101] = new CIFKOJJBCHF { Id = 1020101, BAJHKMIBPDC = true },
+                                    [1020102] = new CIFKOJJBCHF { Id = 1020102, BAJHKMIBPDC = true },
+                                    [1020103] = new CIFKOJJBCHF { Id = 1020103, BAJHKMIBPDC = true },
+                                    [1020104] = new CIFKOJJBCHF { Id = 1020104, BAJHKMIBPDC = true },
+                                    [1020105] = new CIFKOJJBCHF { Id = 1020105, BAJHKMIBPDC = true },
+                                    [1020106] = new CIFKOJJBCHF { Id = 1020106, BAJHKMIBPDC = true },
+                                    [1020107] = new CIFKOJJBCHF { Id = 1020107, BAJHKMIBPDC = true },
+                                    [1020108] = new CIFKOJJBCHF { Id = 1020108, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10202] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10202] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10202,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10202,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1020201] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020201, Field2 = true },
-                                    [1020202] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020202, Field2 = true },
-                                    [1020203] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020203, Field2 = true },
-                                    [1020204] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020204, Field2 = true },
-                                    [1020205] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020205, Field2 = true },
-                                    [1020206] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020206, Field2 = true },
-                                    [1020207] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020207, Field2 = true },
+                                    [1020201] = new CIFKOJJBCHF { Id = 1020201, BAJHKMIBPDC = true },
+                                    [1020202] = new CIFKOJJBCHF { Id = 1020202, BAJHKMIBPDC = true },
+                                    [1020203] = new CIFKOJJBCHF { Id = 1020203, BAJHKMIBPDC = true },
+                                    [1020204] = new CIFKOJJBCHF { Id = 1020204, BAJHKMIBPDC = true },
+                                    [1020205] = new CIFKOJJBCHF { Id = 1020205, BAJHKMIBPDC = true },
+                                    [1020206] = new CIFKOJJBCHF { Id = 1020206, BAJHKMIBPDC = true },
+                                    [1020207] = new CIFKOJJBCHF { Id = 1020207, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10203] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10203] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10203,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10203,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1020301] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020301, Field2 = true },
-                                    [1020302] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020302, Field2 = true },
-                                    [1020303] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020303, Field2 = true },
-                                    [1020304] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020304, Field2 = true },
-                                    [1020305] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020305, Field2 = true },
-                                    [1020306] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020306, Field2 = true },
-                                    [1020307] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020307, Field2 = true },
+                                    [1020301] = new CIFKOJJBCHF { Id = 1020301, BAJHKMIBPDC = true },
+                                    [1020302] = new CIFKOJJBCHF { Id = 1020302, BAJHKMIBPDC = true },
+                                    [1020303] = new CIFKOJJBCHF { Id = 1020303, BAJHKMIBPDC = true },
+                                    [1020304] = new CIFKOJJBCHF { Id = 1020304, BAJHKMIBPDC = true },
+                                    [1020305] = new CIFKOJJBCHF { Id = 1020305, BAJHKMIBPDC = true },
+                                    [1020306] = new CIFKOJJBCHF { Id = 1020306, BAJHKMIBPDC = true },
+                                    [1020307] = new CIFKOJJBCHF { Id = 1020307, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10204] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10204] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10204,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10204,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1020401] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020401, Field2 = true },
-                                    [1020402] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020402, Field2 = true },
-                                    [1020403] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020403, Field2 = true },
-                                    [1020404] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020404, Field2 = true },
-                                    [1020405] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020405, Field2 = true },
-                                    [1020406] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020406, Field2 = true },
-                                    [1020407] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020407, Field2 = true },
-                                    [1020408] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020408, Field2 = true },
+                                    [1020401] = new CIFKOJJBCHF { Id = 1020401, BAJHKMIBPDC = true },
+                                    [1020402] = new CIFKOJJBCHF { Id = 1020402, BAJHKMIBPDC = true },
+                                    [1020403] = new CIFKOJJBCHF { Id = 1020403, BAJHKMIBPDC = true },
+                                    [1020404] = new CIFKOJJBCHF { Id = 1020404, BAJHKMIBPDC = true },
+                                    [1020405] = new CIFKOJJBCHF { Id = 1020405, BAJHKMIBPDC = true },
+                                    [1020406] = new CIFKOJJBCHF { Id = 1020406, BAJHKMIBPDC = true },
+                                    [1020407] = new CIFKOJJBCHF { Id = 1020407, BAJHKMIBPDC = true },
+                                    [1020408] = new CIFKOJJBCHF { Id = 1020408, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10205] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10205] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10205,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10205,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1020501] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020501, Field2 = true },
-                                    [1020502] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020502, Field2 = true },
-                                    [1020503] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020503, Field2 = true },
-                                    [1020504] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020504, Field2 = true },
-                                    [1020505] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1020505, Field2 = true },
+                                    [1020501] = new CIFKOJJBCHF { Id = 1020501, BAJHKMIBPDC = true },
+                                    [1020502] = new CIFKOJJBCHF { Id = 1020502, BAJHKMIBPDC = true },
+                                    [1020503] = new CIFKOJJBCHF { Id = 1020503, BAJHKMIBPDC = true },
+                                    [1020504] = new CIFKOJJBCHF { Id = 1020504, BAJHKMIBPDC = true },
+                                    [1020505] = new CIFKOJJBCHF { Id = 1020505, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
                         },
-                        Field4 = false,
-                        Field5 = new SC_LobbyPartyInfo_F1ValueType_F5Type
+                        AACANKHENII = false,
+                        MLIJIDKIFGF = new KEMPBIAFGHB
                         {
-                            Field1 =
+                            HFJLFAEFENH =
                             {
                                 [3110908] = 3110909,
                                 [3110917] = 3110919,
@@ -1407,101 +1407,101 @@ namespace NTRSimulator.GameServer.Handlers
                                 [3110939] = 3110941,
                             },
                         },
-                        Field8 = 0,
+                        MLHIMAFLHAP = 0,
                     },
-                    [103] = new SC_LobbyPartyInfo_F1ValueType
+                    [103] = new KEAKDAMCBMM
                     {
-                        Field1 = 103,
-                        Field2 =
+                        Id = 103,
+                        HFKNLIGCIBP =
                         {
-                            [10301] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10301] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10301,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10301,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1030101] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030101, Field2 = true },
-                                    [1030102] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030102, Field2 = true },
-                                    [1030103] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030103, Field2 = true },
-                                    [1030104] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030104, Field2 = true },
-                                    [1030105] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030105, Field2 = true },
-                                    [1030106] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030106, Field2 = true },
-                                    [1030107] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030107, Field2 = true },
-                                    [1030108] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030108, Field2 = true },
-                                    [1030109] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030109, Field2 = true },
-                                    [1030110] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030110, Field2 = true },
+                                    [1030101] = new CIFKOJJBCHF { Id = 1030101, BAJHKMIBPDC = true },
+                                    [1030102] = new CIFKOJJBCHF { Id = 1030102, BAJHKMIBPDC = true },
+                                    [1030103] = new CIFKOJJBCHF { Id = 1030103, BAJHKMIBPDC = true },
+                                    [1030104] = new CIFKOJJBCHF { Id = 1030104, BAJHKMIBPDC = true },
+                                    [1030105] = new CIFKOJJBCHF { Id = 1030105, BAJHKMIBPDC = true },
+                                    [1030106] = new CIFKOJJBCHF { Id = 1030106, BAJHKMIBPDC = true },
+                                    [1030107] = new CIFKOJJBCHF { Id = 1030107, BAJHKMIBPDC = true },
+                                    [1030108] = new CIFKOJJBCHF { Id = 1030108, BAJHKMIBPDC = true },
+                                    [1030109] = new CIFKOJJBCHF { Id = 1030109, BAJHKMIBPDC = true },
+                                    [1030110] = new CIFKOJJBCHF { Id = 1030110, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10302] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10302] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10302,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10302,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1030201] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030201, Field2 = true },
-                                    [1030202] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030202, Field2 = true },
-                                    [1030203] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030203, Field2 = true },
-                                    [1030204] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030204, Field2 = true },
-                                    [1030205] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030205, Field2 = true },
-                                    [1030206] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030206, Field2 = true },
-                                    [1030207] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030207, Field2 = true },
+                                    [1030201] = new CIFKOJJBCHF { Id = 1030201, BAJHKMIBPDC = true },
+                                    [1030202] = new CIFKOJJBCHF { Id = 1030202, BAJHKMIBPDC = true },
+                                    [1030203] = new CIFKOJJBCHF { Id = 1030203, BAJHKMIBPDC = true },
+                                    [1030204] = new CIFKOJJBCHF { Id = 1030204, BAJHKMIBPDC = true },
+                                    [1030205] = new CIFKOJJBCHF { Id = 1030205, BAJHKMIBPDC = true },
+                                    [1030206] = new CIFKOJJBCHF { Id = 1030206, BAJHKMIBPDC = true },
+                                    [1030207] = new CIFKOJJBCHF { Id = 1030207, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10303] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10303] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10303,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10303,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1030301] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030301, Field2 = true },
-                                    [1030302] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030302, Field2 = true },
-                                    [1030303] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030303, Field2 = true },
-                                    [1030304] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030304, Field2 = true },
-                                    [1030305] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030305, Field2 = true },
-                                    [1030306] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030306, Field2 = true },
-                                    [1030307] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030307, Field2 = true },
+                                    [1030301] = new CIFKOJJBCHF { Id = 1030301, BAJHKMIBPDC = true },
+                                    [1030302] = new CIFKOJJBCHF { Id = 1030302, BAJHKMIBPDC = true },
+                                    [1030303] = new CIFKOJJBCHF { Id = 1030303, BAJHKMIBPDC = true },
+                                    [1030304] = new CIFKOJJBCHF { Id = 1030304, BAJHKMIBPDC = true },
+                                    [1030305] = new CIFKOJJBCHF { Id = 1030305, BAJHKMIBPDC = true },
+                                    [1030306] = new CIFKOJJBCHF { Id = 1030306, BAJHKMIBPDC = true },
+                                    [1030307] = new CIFKOJJBCHF { Id = 1030307, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10304] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10304] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10304,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10304,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1030401] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030401, Field2 = true },
-                                    [1030402] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030402, Field2 = true },
-                                    [1030403] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030403, Field2 = true },
-                                    [1030404] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030404, Field2 = true },
-                                    [1030405] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030405, Field2 = true },
-                                    [1030406] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030406, Field2 = true },
-                                    [1030407] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030407, Field2 = true },
-                                    [1030408] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030408, Field2 = true },
+                                    [1030401] = new CIFKOJJBCHF { Id = 1030401, BAJHKMIBPDC = true },
+                                    [1030402] = new CIFKOJJBCHF { Id = 1030402, BAJHKMIBPDC = true },
+                                    [1030403] = new CIFKOJJBCHF { Id = 1030403, BAJHKMIBPDC = true },
+                                    [1030404] = new CIFKOJJBCHF { Id = 1030404, BAJHKMIBPDC = true },
+                                    [1030405] = new CIFKOJJBCHF { Id = 1030405, BAJHKMIBPDC = true },
+                                    [1030406] = new CIFKOJJBCHF { Id = 1030406, BAJHKMIBPDC = true },
+                                    [1030407] = new CIFKOJJBCHF { Id = 1030407, BAJHKMIBPDC = true },
+                                    [1030408] = new CIFKOJJBCHF { Id = 1030408, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
-                            [10305] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType
+                            [10305] = new BNNMKBFFNHJ
                             {
-                                Field1 = 10305,
-                                Field2 = true,
-                                Field3 =
+                                SectionId = 10305,
+                                BAJHKMIBPDC = true,
+                                LGNOAHMHJHH =
                                 {
-                                    [1030501] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030501, Field2 = true },
-                                    [1030502] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030502, Field2 = true },
-                                    [1030503] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030503, Field2 = true },
-                                    [1030504] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030504, Field2 = true },
-                                    [1030505] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030505, Field2 = true },
-                                    [1030506] = new SC_LobbyPartyInfo_F1ValueType_F2ValueType_F3ValueType { Field1 = 1030506, Field2 = true },
+                                    [1030501] = new CIFKOJJBCHF { Id = 1030501, BAJHKMIBPDC = true },
+                                    [1030502] = new CIFKOJJBCHF { Id = 1030502, BAJHKMIBPDC = true },
+                                    [1030503] = new CIFKOJJBCHF { Id = 1030503, BAJHKMIBPDC = true },
+                                    [1030504] = new CIFKOJJBCHF { Id = 1030504, BAJHKMIBPDC = true },
+                                    [1030505] = new CIFKOJJBCHF { Id = 1030505, BAJHKMIBPDC = true },
+                                    [1030506] = new CIFKOJJBCHF { Id = 1030506, BAJHKMIBPDC = true },
                                 },
-                                Field4 = { },
+                                LDLCBHAEFHO = { },
                             },
                         },
-                        Field4 = false,
-                        Field5 = new SC_LobbyPartyInfo_F1ValueType_F5Type
+                        AACANKHENII = false,
+                        MLIJIDKIFGF = new KEMPBIAFGHB
                         {
-                            Field1 =
+                            HFJLFAEFENH =
                             {
                                 [3160910] = 3160911,
                                 [3160915] = 3160916,
@@ -1510,7 +1510,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 [3160936] = 3160937,
                             },
                         },
-                        Field8 = 0,
+                        MLHIMAFLHAP = 0,
                     },
                 },
             });
@@ -1524,8 +1524,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyBirthdayCareInfo
             {
-                Field1 = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
-                Field2 = false,
+                IJEOPLAPLIB = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
+                MICAPNGJBPH = false,
             });
         }
 
@@ -1535,25 +1535,25 @@ namespace NTRSimulator.GameServer.Handlers
 
             connection.Send(new SC_LobbyMessageBoardInfo
             {
-                Field1 = new SC_LobbyMessageBoardCreate_F1Type
+                CECNOCLMAOG = new BNCNOLPBNBN
                 {
-                    Field1 = new SC_LobbyMessageBoardCreate_F1Type_F1Type
+                    Message = new OGKLGOMMLIM
                     {
-                        Field1 = nowUnix,
-                        Field2 = 248,
+                        Timestamp = nowUnix,
+                        MessageId = 248,
                     },
-                    Field5 =
+                    LMFLEGLPBPG =
                     {
                         [1] = 3,
                     },
                 },
-                Field2 = { },
-                Field3 =
+                GFOMBFKMPGC = { },
+                GLCJKEFJOLA =
                 {
-                    [77] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 77 },
-                    [235] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 235 },
-                    [236] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 236 },
-                    [248] = new SC_LobbyMessageBoardCreate_F1Type_F1Type { Field1 = nowUnix, Field2 = 248 },
+                    [77] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 77 },
+                    [235] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 235 },
+                    [236] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 236 },
+                    [248] = new OGKLGOMMLIM { Timestamp = nowUnix, MessageId = 248 },
                 },
             });
         }
@@ -1562,10 +1562,10 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyAvatarInfo
             {
-                Field1 = new SC_LobbyAvatarInfo_F1Type
+                HIOGBPMJGON = new CGLPDAABOEP
                 {
-                    Field1 = 1071,
-                    Field2 = 1002,
+                    MPFFENCOPFP = 1071,
+                    OCCAHBFCHNP = 1002,
                 },
             });
         }
@@ -1574,7 +1574,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyAvatarSwitch
             {
-                Field1 = request.Field1,
+                MPFFENCOPFP = request.MPFFENCOPFP,
             });
         }
 
@@ -1582,7 +1582,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyAvatarClotheChange
             {
-                Field1 = request.Field1,
+                PPKOJNBJJFH = request.PPKOJNBJJFH,
             });
         }
 
@@ -1590,7 +1590,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetLobbyMeilingConfig
             {
-                Field1 = { 402, 403, 404, 405 },
+                InterType = { 402, 403, 404, 405 },
             });
         }
 
@@ -1600,12 +1600,12 @@ namespace NTRSimulator.GameServer.Handlers
 
             connection.Send(new SC_LobbyWelcomeSettingPlayed
             {
-                Field1 = new SC_LobbyWelcomeSettingInfo_F1Type
+                OBOGLCLAIPH = new NMEMMFMPCJB
                 {
-                    Field1 = true,
-                    Field3 = nowUnix,
-                    Field4 = 1017,
-                    Field5 = true,
+                    OIKBNGNPNIM = true,
+                    DHFNGECCLAK = nowUnix,
+                    JCOMGOPOLOP = 1017,
+                    HPNKLKLOECK = true,
                 },
             });
         }
@@ -1613,7 +1613,7 @@ namespace NTRSimulator.GameServer.Handlers
         public override void HandleLobbyCancelEvent(CS_LobbyCancelEvent request, Connection connection)
         {
             SC_LobbyCancelEvent response = new SC_LobbyCancelEvent();
-            response.Field1.AddRange(request.Field1);
+            response.MNDDGCLCMDP.AddRange(request.MNDDGCLCMDP);
             connection.Send(response);
         }
 
@@ -1621,11 +1621,11 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyTriggerEvent
             {
-                Field1 = new SC_LobbyGetEventInfo_F2ValueType
+                ABAPKEKAPCJ = new KMIAGEBIMIP
                 {
-                    Field1 = request.Field1,
+                    EventId = request.EventId,
                 },
-                Field2 = { },
+                INCNFOFGJFB = { },
             });
         }
 
@@ -1633,7 +1633,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyAsmrBegin
             {
-                Field1 = request.Field1,
+                GunId = request.GunId,
             });
         }
     }

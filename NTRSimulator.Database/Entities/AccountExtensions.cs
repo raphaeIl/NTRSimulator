@@ -10,7 +10,7 @@ namespace NTRSimulator.Database.Entities
                 account.Costumes.Add(costume);
         }
 
-        public static void AddGuns(this Account account, IReadOnlyList<Gun> guns)
+        public static void AddGuns(this Account account, IReadOnlyList<GunEntity> guns)
         {
             foreach (var gun in guns)
                 account.Guns.Add(gun);

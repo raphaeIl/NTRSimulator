@@ -7,7 +7,7 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleGetBgm(CS_GetBgm request, Connection connection)
         {
-            connection.Send(new SC_GetBgm { Field1 = 0 });
+            connection.Send(new SC_GetBgm { GodId = 0 });
         }
     }
 }

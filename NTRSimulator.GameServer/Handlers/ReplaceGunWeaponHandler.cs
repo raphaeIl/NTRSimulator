@@ -9,9 +9,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ReplaceGunWeaponModSkin
             {
-                Field1 = request.Field1,
-                Field2 = request.Field2,
-                Field3 = request.Field3,
+                Id = request.Id,
+                GunId = request.GunId,
+                DPMKGPOCIOK = request.DPMKGPOCIOK,
             });
         }
     }

@@ -13,14 +13,14 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleCyclePlan(CS_CyclePlan req, Connection connection)
         {
-            switch (req.Field1)
+            switch (req.Type)
             {
                 case 1:
                     connection.Send(
             new SC_CyclePlan
             {
-                Field1 = 1,
-                Field2 =
+                Type = 1,
+                FKFEIHHMEBF =
                 { },
             }
                     );

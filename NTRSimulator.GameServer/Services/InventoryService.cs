@@ -28,7 +28,7 @@ namespace NTRSimulator.GameServer.Services
         {
             ArgumentNullException.ThrowIfNull(item);
 
-            if (item is Gun gun)
+            if (item is GunEntity gun)
             {
                 gunService.AddGun(accountUid, gun);
                 return;
@@ -77,7 +77,7 @@ namespace NTRSimulator.GameServer.Services
         {
             ArgumentNullException.ThrowIfNull(item);
 
-            if (item is Gun gun)
+            if (item is GunEntity gun)
             {
                 return gunService.RemoveGun(accountUid, gun);
             }
@@ -124,7 +124,7 @@ namespace NTRSimulator.GameServer.Services
 
         public void AddAll<T>(uint accountUid) where T : class
         {
-            if (typeof(T) == typeof(Gun))
+            if (typeof(T) == typeof(GunEntity))
             {
                 gunService.AddAllGuns(accountUid);
                 return;
@@ -177,7 +177,7 @@ namespace NTRSimulator.GameServer.Services
 
         private static ICollection<T> GetCollection<T>(Account account) where T : class
         {
-            if (typeof(T) == typeof(Gun))
+            if (typeof(T) == typeof(GunEntity))
                 return (ICollection<T>)(object)account.Guns;
 
             if (typeof(T) == typeof(Weapon))

@@ -10,10 +10,10 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_Friends
             {
-                Field2 = { },
-                Field3 = { },
-                Field4 = { },
-                Field5 = { },
+                Marks = { },
+                MIBABEHJCIK = { },
+                Friends = { },
+                BHJLKLNBAFO = { },
             });
         }
 
@@ -21,7 +21,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_FriendApplyList
             {
-                Field1 = { },
+                Apps = { },
             });
         }
 
@@ -29,8 +29,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             var response = new SC_RefreshFriends
             {
-                Field2 = { },
-                Field3 = { },
+                Marks = { },
+                MIBABEHJCIK = { },
             };
             // response.Field4[11651UL] = CreateFriendBrief(11651, "雷蒙先生", 21247, 24057);
             response.Field4[1UL] = CreateFriendBrief(1, "Raymond (雷蒙先生)", 21257, 24023);
@@ -40,61 +40,61 @@ namespace NTRSimulator.GameServer.Handlers
             connection.SendAutoEncrypted(response);
         }
 
-        private static SC_FriendAdd_F2Type CreateFriendBrief(ulong id, string name, uint avatarId, uint avatarFrameId)
+        private static Friend CreateFriendBrief(ulong id, string name, uint avatarId, uint avatarFrameId)
         {
-            return new SC_FriendAdd_F2Type
+            return new Friend
             {
-                Field1 = id,
-                Field2 = new SC_AsyncPvpHistory_F1Type_F1Type
+                Id = id,
+                User = new BinaryUser
                 {
-                    Field1 = new SC_Login_F1Type
+                    Data = new User
                     {
-                        Field1 = id,
-                        Field2 = name,
-                        Field3 = 60,
-                        Field5 = Enum_Male_Female.Female,
-                        Field6 = 709,
-                        Field7 = avatarId,
-                        Field10 = new SC_Login_F1Type_F10Type
+                        Uid = id,
+                        Name = name,
+                        Level = 60,
+                        Sex = Sex.Female,
+                        Birthday = 709,
+                        Portrait = avatarId,
+                        Status = new LoginStatus
                         {
-                            Field1 = true,
-                            Field2 = 12312312,
-                            Field3 = 123123123,
-                            Field4 = 123123,
-                            Field5 = 1231232323,
+                            Online = true,
+                            LoginTime = 12312312,
+                            LogoutTime = 123123123,
+                            SyncTime = 123123,
+                            Client = 1231232323,
                         },
-                        Field12 = 123123,
-                        Field13 = "ntrsimulator",
-                        Field15 = 23087,
-                        Field16 = 22004,
-                        Field17 = 30465,
-                        Field18 = 123123123,
-                        Field19 = 12321313,
-                        Field20 = 56,
-                        Field21 = avatarFrameId,
-                        Field29 =
+                        GuildId = 123123,
+                        GuildName = "ntrsimulator",
+                        Title = 23087,
+                        Medal = 22004,
+                        MaxStage = 30465,
+                        AchievementLevel = 123123123,
+                        CreatTime = 12321313,
+                        GunNum = 56,
+                        PortraitFrame = avatarFrameId,
+                        Assistants =
                         {
                  
                         },
-                        Field31 = 3,
-                        Field32 = 4,
-                        Field34 = new SC_Login_F1Type_F34Type
+                        BKIPIIMKNCF = 3,
+                        JNLHINHBEIE = 4,
+                        IDMOCOHNLDO = new JMMLGEDCIGB
                         {
-                            Field2 = 1163,
-                            Field3 = 40,
+                            Name = 1163,
+                            Level = 40,
                         },
-                        Field35 = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
-                        Field39 = new SC_HeroModeMark_F1Type
+                        MPDCKNHELFH = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
+                        DKCAABLJBND = new IHNPFJGBPJB
                         {
-                            Field1 = 1780963200UL,
-                            Field2 = 1f,
+                            FEPOFIOMNDB = 1780963200UL,
+                            KKLABAKPAPI = 1f,
                         },
-                        Field40 = new SC_Login_F1Type_F40Type
+                        HEEDJKIDCLI = new KEKFMLHLAMN
                         {
-                            Field1 = 27,
-                            Field2 = 120,
+                            Uid = 27,
+                            Name = 120,
                         },
-                        Field42 = 1863,
+                        BPCOAAEMFIB = 1863,
                     }.ToByteString(),
                 },
             };

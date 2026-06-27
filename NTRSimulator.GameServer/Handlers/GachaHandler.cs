@@ -12,7 +12,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetGachaCumulativeInfo
             {
-                Field1 = { },
+                EMFOHMKKMKA = { },
             });
         }
 
@@ -23,151 +23,151 @@ namespace NTRSimulator.GameServer.Handlers
             // MsgScRecordStatisticUpdate
             SC_RecordStatisticUpdate scRecordStatisticUpdate = new()
             {
-                Field1 = 1,
-                Field2 = 1
+                CHEOLEADCCB = 1,
+                MDAIIFCGJMO = 1
             };
             connection.Send(scRecordStatisticUpdate);
             
             SC_GachaAcquirement gachaAqu = new SC_GachaAcquirement()
             {
-                Field3 = 234001,
-                Field2 = null,
-                Field1 =
+                GachaId = 234001,
+                Gacha = null,
+                Drops =
                 {
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11030,
-                        Field2 = 1,
-                        Field6 = 16,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11030,
+                        ItemNum = 1,
+                        Relate = 16,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 1022,
-                        Field2 = 1,
-                        Field6 = 0,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
-                        Field11 = null,
+                        ItemId = 1022,
+                        ItemNum = 1,
+                        Relate = 0,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11048,
-                        Field2 = 1,
-                        Field6 = 18,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11048,
+                        ItemNum = 1,
+                        Relate = 18,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11042,
-                        Field2 = 1,
-                        Field6 = 19,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11042,
+                        ItemNum = 1,
+                        Relate = 19,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 10631,
-                        Field2 = 1,
-                        Field6 = 20,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 10631,
+                        ItemNum = 1,
+                        Relate = 20,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11010,
-                        Field2 = 1,
-                        Field6 = 21,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11010,
+                        ItemNum = 1,
+                        Relate = 21,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11009,
-                        Field2 = 1,
-                        Field6 = 22,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11009,
+                        ItemNum = 1,
+                        Relate = 22,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11039,
-                        Field2 = 1,
-                        Field6 = 23,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11039,
+                        ItemNum = 1,
+                        Relate = 23,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11022,
-                        Field2 = 1,
-                        Field6 = 24,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11022,
+                        ItemNum = 1,
+                        Relate = 24,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
-                    new SC_DarkZoneEndContract_F4Type()
+                    new UserDropCache()
                     {
-                        Field1 = 11008,
-                        Field2 = 1,
-                        Field6 = 25,
-                        Field7 = 0,
-                        Field4 = { },
-                        Field8 = { },
-                        Field9 = false,
-                        Field10 = 0,
-                        Field11 = null,
+                        ItemId = 11008,
+                        ItemNum = 1,
+                        Relate = 25,
+                        OverflowNum = 0,
+                        ExtItems = { },
+                        TranItems = { },
+                        DropUp = false,
+                        CIPFHAHNMBM = 0,
+                        WeaponModDisplay = null,
                         Field12 = 0,
                     },
                 },
-                Field5 = null,
-                Field4 = 10,
-                Field6 =
+                GachaDetails = null,
+                GachaTimes = 10,
+                Guarantee =
                 {
                     { 110001, 60 },
                     { 155001, 70 },
@@ -409,22 +409,22 @@ namespace NTRSimulator.GameServer.Handlers
                     { 24001, 70 },
                     { 169001, 70 },
                 },
-                Field7 = 1,
-                Field8 = false,
-                Field9 = null,
+                OBJIBOMKEKD = 1,
+                LNMCMKNNILF = false,
+                CCEDHLMCBID = null,
             };
 
             SC_GachaAcquirement gachaAquSkin = new SC_GachaAcquirement()
             {
-                Field3 = 221001,
-                Field2 = null,
-                Field1 =
+                GachaId = 221001,
+                Gacha = null,
+                Drops =
                 {
 
                 },
-                Field5 = null,
-                Field4 = 10,
-                Field6 =
+                GachaDetails = null,
+                GachaTimes = 10,
+                Guarantee =
                 {
                     { 1001, 80 },
                     { 1101, 80 },
@@ -666,69 +666,69 @@ namespace NTRSimulator.GameServer.Handlers
                     { 238001, 73 },
                     { 239001, 66 },
                 },
-                Field7 = 722,
-                Field8 = false,
-                Field9 = null,
+                OBJIBOMKEKD = 722,
+                LNMCMKNNILF = false,
+                CCEDHLMCBID = null,
             };
 
             SC_PlayerStatusCounterSync playerStatusCounterSync = new()
             {
-                Field2 = 11,
-                Field1 =
+                Num = 11,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 48027 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000007 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000013 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000014 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000019 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000003 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000006 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000016 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000018 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 1023 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000017 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000021 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000009 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000026 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000027 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000028 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000008 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000024 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000025 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000004 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000005 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000012 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000020 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000001 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000002 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000011 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000022 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000023 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000010 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 3000015 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 30, Field2 = 22010 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 48027 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000007 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000013 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000014 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000019 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000003 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000006 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000016 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000018 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 1023 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000017 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000021 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000009 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000026 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000027 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000028 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000008 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000024 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000025 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000004 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000005 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000012 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000020 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000001 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000002 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000011 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000022 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000023 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000010 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 3000015 },
+                    new PELLFAAPKOL() { SystemId = 30, UniqueId = 22010 },
                 },
             };
             SC_AddIndex addIndex = new SC_AddIndex()
             {
-                Field1 = 60,
-                Field2 = 3114663,
-                Field3 = 0,
+                Type = 60,
+                Id = 3114663,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync2 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 6,
-                Field1 =
+                Num = 6,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1311 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1311 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync3 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60045 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60045 },
                 },
             };
             SC_NewGunWeapon newGunWeapon = new SC_NewGunWeapon()
@@ -739,7 +739,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11036,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -747,39 +747,39 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex2 = new SC_AddIndex()
             {
-                Field1 = 20,
-                Field2 = 11036,
-                Field3 = 0,
+                Type = 20,
+                Id = 11036,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync6 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 4,
-                Field1 =
+                Num = 4,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 48026 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 30, Field2 = 22009 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 48026 },
+                    new PELLFAAPKOL() { SystemId = 30, UniqueId = 22009 },
                 },
             };
             SC_AddIndex addIndex3 = new SC_AddIndex()
             {
-                Field1 = 60,
-                Field2 = 3111703,
-                Field3 = 0,
+                Type = 60,
+                Id = 3111703,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync8 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 7,
-                Field1 =
+                Num = 7,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1311 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1311 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync9 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60049 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60049 },
                 },
             };
             SC_NewGunWeapon newGunWeapon2 = new SC_NewGunWeapon()
@@ -790,7 +790,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11048,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -803,26 +803,26 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex4 = new SC_AddIndex()
             {
-                Field1 = 20,
-                Field2 = 11048,
-                Field3 = 0,
+                Type = 20,
+                Id = 11048,
+                Ts = 0,
             };
             SC_NewGun newGun = new SC_NewGun()
             {
-                Field1 = new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F12Type()
+                Gun = new Gun()
                 {
                     GunId = 1026,
-                    Field41 = 0,
+                    Exp = 0,
                     CreateTime = nowUnix,
                     Level = 1,
                     AscensionLevel = 1,
                     CostumeId = 1102600,
-                    Field54 = 0,
+                    DPKJMEMMEGH = 0,
                     GunClass = 0,
                     Exp = 120,
-                    Field42 = { 0, 0, 0 },
-                    Field43 = { 0, 0, 0 },
-                    Field45 = { 0, 0, 0 },
+                    PrivateTalentSkillItems = { 0, 0, 0 },
+                    PublicTalentSkillItems = { 0, 0, 0 },
+                    PublicTalentSkillItemsUid = { 0, 0, 0 },
                     TalentTree = { },
                     IsGetPublicTalentSkillItem = false,
                     Preset = 0,
@@ -831,117 +831,117 @@ namespace NTRSimulator.GameServer.Handlers
                     Details = null,
                     AuthLevel = 0,
                     IsAllTalentUnlock = false,
-                    Field50 = new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F12Type_F50Type()
+                    JJKGLEOOAPH = new LoungeChatMessage()
                     {
-                        Field1 = 1,
-                        Field2 = 0,
-                        Field3 = 0,
-                        Field4 = false,
-                        Field5 = 0,
+                        KFIAKLNJHMB = 1,
+                        ABOJJOJODME = 0,
+                        FDKIHAPHHPD = 0,
+                        APPPIAJDHLD = false,
+                        PCPEAMOJPCF = 0,
                     },
-                    Field51 = { },
-                    Field52 = { 0 },
+                    DKKBDFJPOOA = { },
+                    NJKHKDCNJPK = { 0 },
                     Favorite = 0,
-                    Field55 = { },
-                    Field56 = 0,
+                    HALPACHDCFI = { },
+                    MHBBHAHAIGD = 0,
                     GunBattleAiPreset = null,
-                    Field58 = 0,
-                    Field59 = { 0 },
-                    Field60 = { 0 },
-                    Field61 = 0,
-                    Field62 = 7,
+                    NGJCBNLMPHP = 0,
+                    INKGHGACOKA = { 0 },
+                    HMKBFECHGJD = { 0 },
+                    HEENBCJCHFG = 0,
+                    WeaponId = 7,
                 },
             };
             SC_AddIndex addIndex5 = new SC_AddIndex()
             {
-                Field1 = 10,
-                Field2 = 1026,
-                Field3 = 0,
+                Type = 10,
+                Id = 1026,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync15 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1351 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1351 },
                 },
             };
             SC_AddIndex addIndex6 = new SC_AddIndex()
             {
-                Field1 = 13,
-                Field2 = 1102600,
-                Field3 = 0,
+                Type = 13,
+                Id = 1102600,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync17 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 5,
-                Field1 =
+                Num = 5,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 48026 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 30, Field2 = 22009 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 48026 },
+                    new PELLFAAPKOL() { SystemId = 30, UniqueId = 22009 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync18 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 2,
-                Field1 =
+                Num = 2,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1241 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1241 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync19 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 5,
-                Field1 =
+                Num = 5,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1341 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1341 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync20 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402606 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402607 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402608 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402601 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402602 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402603 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402604 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402605 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402606 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402607 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402608 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402601 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402602 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402603 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402604 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402605 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync21 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402609 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 1, Field2 = 402610 },
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 49, Field2 = 102611 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402609 },
+                    new PELLFAAPKOL() { SystemId = 1, UniqueId = 402610 },
+                    new PELLFAAPKOL() { SystemId = 49, UniqueId = 102611 },
                 },
             };
             SC_AddIndex addIndex7 = new SC_AddIndex()
             {
-                Field1 = 60,
-                Field2 = 3116693,
-                Field3 = 0,
+                Type = 60,
+                Id = 3116693,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync23 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 8,
-                Field1 =
+                Num = 8,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1311 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1311 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync24 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60048 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60048 },
                 },
             };
             SC_NewGunWeapon newGunWeapon3 = new SC_NewGunWeapon()
@@ -952,7 +952,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11045,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -960,30 +960,30 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex8 = new SC_AddIndex()
             {
-                Field1 = 20,
-                Field2 = 11045,
-                Field3 = 0,
+                Type = 20,
+                Id = 11045,
+                Ts = 0,
             };
             SC_AddIndex addIndex9 = new SC_AddIndex()
             {
-                Field1 = 60,
-                Field2 = 3116623,
-                Field3 = 0,
+                Type = 60,
+                Id = 3116623,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync28 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 9,
-                Field1 =
+                Num = 9,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1311 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1311 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync29 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60041 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60041 },
                 },
             };
             SC_NewGunWeapon newGunWeapon4 = new SC_NewGunWeapon()
@@ -994,7 +994,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11017,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1002,9 +1002,9 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex10 = new SC_AddIndex()
             {
-                Field1 = 20,
-                Field2 = 11017,
-                Field3 = 0,
+                Type = 20,
+                Id = 11017,
+                Ts = 0,
             };
             SC_NewGunWeapon newGunWeapon5 = new SC_NewGunWeapon()
             {
@@ -1014,7 +1014,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11039,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1022,24 +1022,24 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex11 = new SC_AddIndex()
             {
-                Field1 = 60,
-                Field2 = 3111583,
-                Field3 = 0,
+                Type = 60,
+                Id = 3111583,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync34 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 10,
-                Field1 =
+                Num = 10,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1311 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1311 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync35 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60222 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60222 },
                 },
             };
             SC_NewGunWeapon newGunWeapon6 = new SC_NewGunWeapon()
@@ -1050,7 +1050,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 10631,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1058,30 +1058,30 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex12 = new SC_AddIndex()
             {
-                Field1 = 20,
-                Field2 = 10631,
-                Field3 = 0,
+                Type = 20,
+                Id = 10631,
+                Ts = 0,
             };
             SC_AddIndex addIndex13 = new SC_AddIndex()
             {
-                Field1 = 60,
-                Field2 = 3111753,
-                Field3 = 0,
+                Type = 60,
+                Id = 3111753,
+                Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync39 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 11,
-                Field1 =
+                Num = 11,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1311 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1311 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync40 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 1,
-                Field1 =
+                Num = 1,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60054 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60054 },
                 },
             };
             SC_NewGunWeapon newGunWeapon7 = new SC_NewGunWeapon()
@@ -1092,7 +1092,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 10361,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1100,9 +1100,9 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex14 = new SC_AddIndex()
             {
-                Field1 = 20,
-                Field2 = 10361,
-                Field3 = 0,
+                Type = 20,
+                Id = 10361,
+                Ts = 0,
             };
             SC_NewGunWeapon newGunWeapon8 = new SC_NewGunWeapon()
             {
@@ -1112,7 +1112,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11009,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1120,10 +1120,10 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync44 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 2,
-                Field1 =
+                Num = 2,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 39, Field2 = 60054 },
+                    new PELLFAAPKOL() { SystemId = 39, UniqueId = 60054 },
                 },
             };
             SC_NewGunWeapon newGunWeapon9 = new SC_NewGunWeapon()
@@ -1134,7 +1134,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 10361,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1148,7 +1148,7 @@ namespace NTRSimulator.GameServer.Handlers
                     WeaponId = 11010,
                     Level = 1,
                     CurExp = 0,
-                    Field5 = 0,
+                    GunId = 0,
                     BreakTimes = 1,
                     GunId = 2,
                     ModSlots = { },
@@ -1156,10 +1156,10 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_CommonQuestCountUpdate commonQuestCountUpdate = new SC_CommonQuestCountUpdate()
             {
-                Field1 = new SC_CommonQuestCountReset_F1Type()
+                Counters = new CommonQuestCounters()
                 {
-                    Field1 = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Guide,
-                    Field4 =
+                    Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.Guide,
+                    Rewards =
                     {
                         { 3000001, false },
                         { 402601, false },
@@ -1169,13 +1169,13 @@ namespace NTRSimulator.GameServer.Handlers
                         { 46032, false },
                         { 71007, false },
                     },
-                    Field5 = { },
-                    Field6 = { },
+                    PhaseRewards = { },
+                    JGOJBNHMJJH = { },
                 },
             };
             SC_ResourceUpdate resourceUpdate = new SC_ResourceUpdate()
             {
-                Field2 =
+                ResourceEx =
                 {
                     { 45, 93 },
                     { 16, 18 },
@@ -1184,54 +1184,54 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_AddIndex addIndex15 = new SC_AddIndex()
             {
-                Field1 = 37,
-                Field2 = 23023,
-                Field3 = nowUnix,
+                Type = 37,
+                Id = 23023,
+                Ts = nowUnix,
             };
             SC_OutfitCollectionScoreUpdate outfitCollectionScoreUpdate = new SC_OutfitCollectionScoreUpdate()
             {
-                Field1 = 62,
+                Score = 62,
             };
             SC_AddIndex addIndex16 = new SC_AddIndex()
             {
-                Field1 = 12,
-                Field2 = 21011,
-                Field3 = 0,
+                Type = 12,
+                Id = 21011,
+                Ts = 0,
             };
             SC_OutfitCollectionScoreUpdate outfitCollectionScoreUpdate2 = new SC_OutfitCollectionScoreUpdate()
             {
-                Field1 = 64,
+                Score = 64,
             };
             SC_CommonQuestCountUpdate commonQuestCountUpdate2 = new SC_CommonQuestCountUpdate()
             {
-                Field1 = new SC_CommonQuestCountReset_F1Type()
+                Counters = new CommonQuestCounters()
                 {
-                    Field1 = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LoadingPicture,
-                    Field4 =
+                    Type = Enum_WeeklySimCombat_PvpDailyPoints_PvpGuide_BattlepassDaily_BattlepassShare.LoadingPicture,
+                    Rewards =
                     {
                         { 1311, false },
                     },
-                    Field5 = { },
-                    Field6 =
+                    PhaseRewards = { },
+                    JGOJBNHMJJH =
                     {
                         { 1311, nowUnix },
                     },
                 },
             };
 
-            SC_DarkZoneEndContract_F4Type CreateItem(uint itemId, uint amount)
+            UserDropCache CreateItem(uint itemId, uint amount)
             {
-                return new SC_DarkZoneEndContract_F4Type()
+                return new UserDropCache()
                 {
-                    Field1 = itemId,
-                    Field2 = amount,
-                    Field6 = 0,
-                    Field7 = 0,
-                    Field4 = { },
-                    Field8 = { },
-                    Field9 = false,
-                    Field10 = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
-                    Field11 = null,
+                    ItemId = itemId,
+                    ItemNum = amount,
+                    Relate = 0,
+                    OverflowNum = 0,
+                    ExtItems = { },
+                    TranItems = { },
+                    DropUp = false,
+                    CIPFHAHNMBM = (Enum_NoneNull_UserUpgradeReward_TakeAchieveRewards_TakeAchieveTagReward_RecordRoomGetDetailReward)62,
+                    WeaponModDisplay = null,
                     Field12 = 0,
                 };
             }
@@ -1240,7 +1240,7 @@ namespace NTRSimulator.GameServer.Handlers
             // 3d dorm skin 221001
             SC_GachaAcquirement gachaAquirementResp = null;
 
-            if (request.Field1 == 221001)
+            if (request.GachaId == 221001)
             {
                 //GachaClothesData
                 // 31083 可露凯ssr, 31086 安朵丝sr, 31096罗蕾莱ssr, 31097, 31095莱娅ssr, 31107
@@ -1248,19 +1248,19 @@ namespace NTRSimulator.GameServer.Handlers
 
                 for (int i = 0; i < 10; i++)
                 {
-                    gachaAquSkin.Field1.Add(CreateItem(skinPool[Random.Shared.Next(skinPool.Length)], 999));
+                    gachaAquSkin.Drops.Add(CreateItem(skinPool[Random.Shared.Next(skinPool.Length)], 999));
                 }
 
-                //gachaAquSkin.Field1.Add(CreateItem(210150101, 1));
-                //gachaAquSkin.Field1.Add(CreateItem(210150601, 1));
-                //gachaAquSkin.Field1.Add(CreateItem(300021, 1));
-                //gachaAquSkin.Field1.Add(CreateItem(210150101, 1));
-                //gachaAquSkin.Field1.Add(CreateItem(31019, 1));
-                //gachaAquSkin.Field1.Add(CreateItem(506, 1));
+                //gachaAquSkin.Drops.Add(CreateItem(210150101, 1));
+                //gachaAquSkin.Drops.Add(CreateItem(210150601, 1));
+                //gachaAquSkin.Drops.Add(CreateItem(300021, 1));
+                //gachaAquSkin.Drops.Add(CreateItem(210150101, 1));
+                //gachaAquSkin.Drops.Add(CreateItem(31019, 1));
+                //gachaAquSkin.Drops.Add(CreateItem(506, 1));
 
                 for (int i = 0; i < 20; i++)
                 {
-                    gachaAquSkin.Field1.Add(CreateItem(1032, 999));
+                    gachaAquSkin.Drops.Add(CreateItem(1032, 999));
                 }
 
                 gachaAquirementResp = gachaAquSkin;
@@ -1270,7 +1270,7 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 List<uint> history = new List<uint>();
 
-                foreach (var ch in gachaAqu.Field1)
+                foreach (var ch in gachaAqu.Drops)
                 {
                     do
                     {

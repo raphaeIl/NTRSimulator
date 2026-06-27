@@ -21,10 +21,10 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (Weapon weapon in inventoryService.GetPlayerInventory<Weapon>(connection.Account.Uid))
             {
-                scGunWeapons.GunWeapons.Add(weapon.ToProtoWeapon());
+                scGunWeapons.Weapons.Add(weapon.ToProtoWeapon());
 
                 if (weapon.GunId != 0)
-                    scGunWeapons.Belong[weapon.Id] = weapon.GunId;
+                    scGunWeapons.FEDCFGGDNBN[weapon.Id] = weapon.GunId;
             }
 
             connection.SendAutoEncrypted(scGunWeapons);
@@ -54,24 +54,24 @@ namespace NTRSimulator.GameServer.Handlers
                 };
                 SC_GetGunWeaponModLockPlan response = new SC_GetGunWeaponModLockPlan
                 {
-                    Field1 = new SC_GetGunWeaponModLockPlan_F1Type
+                    DEOAAPJBIGP = new FJKJEJJPNLI
                     {
-                        Field1 = false,
+                        KJDFHNBFOMB = false,
                     },
                 };
                 foreach ((uint Index, uint[] Slots, uint PlanField2) plan in plans)
                 {
-                    SC_DelGunWeaponModLockPlan_F1Type entry = new SC_DelGunWeaponModLockPlan_F1Type
+                    SimCombatMythicInfo entry = new SimCombatMythicInfo
                     {
-                        Field1 = plan.Index,
+                        Image = plan.Index,
                     };
-                    SC_DelGunWeaponModLockPlan_F1Type_F2ValueType planValue = new SC_DelGunWeaponModLockPlan_F1Type_F2ValueType
+                    DCDLLEBGAHH planValue = new DCDLLEBGAHH
                     {
                         Field2 = plan.PlanField2,
                     };
                     planValue.Field1.AddRange(plan.Slots);
-                    entry.Field2[1] = planValue;
-                    response.Field1.Field2.Add(entry);
+                    entry.LCPMEOFCFPB[1] = planValue;
+                    response.DEOAAPJBIGP.Field2.Add(entry);
                 }
                 connection.Send(1, response);
         }
@@ -106,13 +106,13 @@ namespace NTRSimulator.GameServer.Handlers
         {
             if (connection.Account == null)
             {
-                connection.Send(new SC_GunWeaponSkinItems { Field1 = { } });
+                connection.Send(new SC_GunWeaponSkinItems { PGMKLGCFAOF = { } });
                 return;
             }
 
             SC_GunWeaponSkinItems response = new SC_GunWeaponSkinItems();
             foreach (WeaponSkin weaponSkin in inventoryService.GetPlayerInventory<WeaponSkin>(connection.Account.Uid))
-                response.Field1[weaponSkin.WeaponSkinId] = 1;
+                response.PGMKLGCFAOF[weaponSkin.WeaponSkinId] = 1;
 
             connection.Send(response);
         }
@@ -121,11 +121,11 @@ namespace NTRSimulator.GameServer.Handlers
         {
                 connection.Send(new SC_GunWeaponModGetContinuouslyPolarization
                 {
-                    Field1 = new SC_GunWeaponModGetContinuouslyPolarization_F1Type
+                    NHJFCEMIPEO = new GEDLLJGMIED
                     {
-                        Field3 = 0,
-                        Field4 = 0,
-                        Field6 = { },
+                        AMKICOIHKPD = 0,
+                        DDGMKANMOLN = 0,
+                        GENGCMEPHFM = { },
                     },
                 });
         }
@@ -134,8 +134,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ReplaceGunWeaponSkin
             {
-                Field1 = request.Field1,
-                Field2 = request.Field2,
+                Id = request.Id,
+                GunId = request.GunId,
             });
         }
 
@@ -143,8 +143,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_UseGunWeaponSkin
             {
-                Field1 = request.Field1,
-                Field2 = request.Field2,
+                Id = request.Id,
+                PMKFBMGBDNP = request.PMKFBMGBDNP,
             });
         }
 
@@ -152,7 +152,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_UnlockGunWeaponModSkin
             {
-                Field2 = request.Field2,
+                GunId = request.GunId,
             });
         }
 

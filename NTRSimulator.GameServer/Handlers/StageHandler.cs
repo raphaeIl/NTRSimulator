@@ -12,181 +12,181 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleStageRecord(CS_StageRecord request, Connection connection)
         {
-            switch (request.Field2)
+            switch (request.Type)
             {
                 case 11:
                     {
                         connection.Send(1, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             10104,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10104,
-                                Field2 = 1703900906,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10104,
+                                FirstPassTime = 1703900906,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10105,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10105,
-                                Field2 = 1703901048,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10105,
+                                FirstPassTime = 1703901048,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10106,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10106,
-                                Field2 = 1703901190,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10106,
+                                FirstPassTime = 1703901190,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10107,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10107,
-                                Field2 = 1728667765,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10107,
+                                FirstPassTime = 1728667765,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10108,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10108,
-                                Field2 = 1728668071,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10108,
+                                FirstPassTime = 1728668071,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10109,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10109,
-                                Field2 = 1728668217,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10109,
+                                FirstPassTime = 1728668217,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10110,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10110,
-                                Field2 = 1728668611,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10110,
+                                FirstPassTime = 1728668611,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10141,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10141,
-                                Field2 = 1728667617,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10141,
+                                FirstPassTime = 1728667617,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10142,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10142,
-                                Field2 = 1728667936,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10142,
+                                FirstPassTime = 1728667936,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10143,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10143,
-                                Field2 = 1728668327,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10143,
+                                FirstPassTime = 1728668327,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10183,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10183,
-                                Field2 = 1703901077,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10183,
+                                FirstPassTime = 1703901077,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10184,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10184,
-                                Field2 = 1703901217,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10184,
+                                FirstPassTime = 1703901217,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -197,49 +197,49 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             10101,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10101,
-                                Field2 = 1703900194,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10101,
+                                FirstPassTime = 1703900194,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10102,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10102,
-                                Field2 = 1703900349,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10102,
+                                FirstPassTime = 1703900349,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             10103,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10103,
-                                Field2 = 1703900704,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10103,
+                                FirstPassTime = 1703900704,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -250,21 +250,21 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             10001,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 10001,
-                                Field2 = 1703592371,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 1,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 10001,
+                                FirstPassTime = 1703592371,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -275,8519 +275,8519 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(28, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             30101,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30101,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30101,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30102,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30102,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30102,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30103,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30103,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30103,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30104,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30104,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30104,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30105,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30105,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30105,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30301,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30301,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30301,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30302,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30302,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30302,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30303,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30303,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30303,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30304,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30304,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30304,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30305,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30305,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30305,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30306,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30306,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30306,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30307,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30307,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30307,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30308,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30308,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30308,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30309,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30309,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30309,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30311,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30311,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30311,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30312,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30312,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30312,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30313,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30313,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30313,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30314,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30314,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30314,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30315,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30315,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30315,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30316,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30316,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30316,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30381,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30381,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30381,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30382,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30382,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30382,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30401,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30401,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30401,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30402,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30402,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30402,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30403,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30403,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30403,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30404,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30404,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30404,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30405,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30405,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30405,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30406,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30406,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30406,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30407,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30407,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30407,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30408,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30408,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30408,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30409,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30409,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30409,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30461,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30461,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30461,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30462,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30462,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30462,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30463,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30463,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30463,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30464,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30464,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30464,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30465,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30465,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30465,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30486,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30486,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30486,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30501,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30501,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30501,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30502,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30502,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30502,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30503,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30503,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30503,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30504,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30504,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30504,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30505,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30505,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30505,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30506,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30506,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30506,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30507,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30507,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30507,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30508,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30508,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30508,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30509,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30509,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30509,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30541,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30541,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30541,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30542,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30542,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30542,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30543,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30543,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30543,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30544,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30544,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30544,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30545,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30545,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30545,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30546,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30546,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30546,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30561,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30561,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30561,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30562,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30562,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30562,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30563,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30563,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30563,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30564,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30564,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30564,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30565,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30565,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30565,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30586,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30586,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30586,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30587,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30587,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30587,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30701,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30701,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30701,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30702,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30702,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30702,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30703,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30703,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30703,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30704,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30704,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30704,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30705,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30705,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30705,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30706,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30706,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30706,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30707,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30707,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30707,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30708,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30708,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30708,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30709,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30709,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30709,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30761,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30761,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30761,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30762,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30762,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30762,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30763,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30763,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30763,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30764,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30764,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30764,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30765,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30765,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30765,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30786,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30786,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30786,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30787,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30787,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30787,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30788,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30788,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30788,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30801,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30801,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30801,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30802,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30802,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30802,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30803,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30803,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30803,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30804,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30804,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30804,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30805,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30805,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30805,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30806,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30806,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30806,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30807,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30807,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30807,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30808,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30808,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30808,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30809,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30809,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30809,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30841,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30841,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30841,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30842,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30842,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30842,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30843,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30843,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30843,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30844,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30844,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30844,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30845,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30845,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30845,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30846,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30846,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30846,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30861,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30861,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30861,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30862,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30862,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30862,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30863,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30863,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30863,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30864,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30864,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30864,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30865,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30865,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30865,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30881,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30881,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30881,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30882,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30882,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30882,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30901,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30901,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30901,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30902,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30902,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30902,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30903,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30903,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30903,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30904,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30904,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30904,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30905,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30905,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30905,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30906,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30906,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30906,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30907,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30907,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30907,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30908,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30908,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30908,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30909,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30909,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30909,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30910,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30910,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30910,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30941,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30941,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30941,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30942,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30942,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30942,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30943,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30943,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30943,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30944,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30944,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30944,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30945,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30945,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30945,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30946,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30946,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30946,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30961,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30961,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30961,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30962,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30962,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30962,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30963,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30963,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30963,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30964,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30964,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30964,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30965,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30965,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30965,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30981,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30981,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30981,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30982,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30982,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30982,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             30983,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 30983,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 30983,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31001,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31001,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31001,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31002,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31002,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31002,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31003,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31003,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31003,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31004,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31004,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31004,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31005,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31005,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31005,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31006,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31006,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31006,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31007,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31007,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31007,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31008,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31008,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31008,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31009,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31009,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31009,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31041,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31041,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31041,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31042,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31042,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31042,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31043,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31043,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31043,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31044,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31044,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31044,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31045,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31045,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31045,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31046,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31046,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31046,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31061,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31061,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31061,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31062,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31062,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31062,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31063,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31063,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31063,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31064,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31064,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31064,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31065,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31065,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31065,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31081,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31081,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31081,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31082,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31082,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31082,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31101,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31101,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31101,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31102,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31102,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31102,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31103,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31103,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31103,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31104,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31104,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31104,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31105,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31105,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31105,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31106,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31106,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31106,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31107,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31107,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31107,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31108,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31108,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31108,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31109,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31109,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31109,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31161,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31161,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31161,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31162,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31162,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31162,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31163,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31163,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31163,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31164,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31164,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31164,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31165,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31165,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31165,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31181,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31181,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31181,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31201,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31201,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31201,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31202,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31202,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31202,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31203,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31203,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31203,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31204,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31204,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31204,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31205,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31205,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31205,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31206,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31206,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31206,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31207,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31207,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31207,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31208,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31208,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31208,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31209,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31209,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31209,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31261,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31261,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31261,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31262,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31262,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31262,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31263,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31263,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31263,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31264,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31264,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31264,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31265,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31265,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31265,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31281,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31281,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31281,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31282,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31282,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31282,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31283,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31283,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31283,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31301,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31301,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31301,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31302,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31302,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31302,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31303,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31303,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31303,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31304,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31304,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31304,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31305,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31305,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31305,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31306,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31306,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31306,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31307,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31307,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31307,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31308,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31308,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31308,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31309,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31309,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31309,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31310,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31310,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31310,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31341,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31341,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31341,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31342,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31342,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31342,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31343,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31343,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31343,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31344,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31344,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31344,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31345,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31345,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31345,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31346,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31346,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31346,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31361,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31361,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31361,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31362,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31362,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31362,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31363,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31363,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31363,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31364,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31364,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31364,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31365,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31365,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31365,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31381,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31381,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31381,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31382,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31382,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31382,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31383,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31383,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31383,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31384,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31384,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31384,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31401,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31401,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31401,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31402,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31402,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31402,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31403,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31403,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31403,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31404,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31404,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31404,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31405,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31405,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31405,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31406,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31406,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31406,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31407,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31407,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31407,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31408,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31408,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31408,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31409,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31409,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31409,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31410,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31410,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31410,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31411,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31411,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31411,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31441,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31441,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31441,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31442,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31442,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31442,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31443,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31443,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31443,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31444,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31444,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31444,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31445,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31445,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31445,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31461,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31461,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31461,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31462,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31462,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31462,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31463,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31463,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31463,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31464,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31464,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31464,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31465,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31465,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31465,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31481,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31481,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31481,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31482,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31482,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31482,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31483,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31483,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31483,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31484,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31484,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31484,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31485,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31485,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31485,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31486,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31486,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31486,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31501,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31501,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31501,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31502,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31502,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31502,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31503,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31503,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31503,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31504,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31504,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31504,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31505,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31505,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31505,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31506,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31506,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31506,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31507,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31507,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31507,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31508,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31508,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31508,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31509,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31509,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31509,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31561,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31561,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31561,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31562,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31562,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31562,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31563,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31563,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31563,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31564,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31564,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31564,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31565,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31565,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31565,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31581,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31581,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31581,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31582,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31582,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31582,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31601,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31601,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31601,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31602,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31602,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31602,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31603,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31603,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31603,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31604,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31604,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31604,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31605,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31605,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31605,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31606,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31606,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31606,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31607,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31607,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31607,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31608,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31608,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31608,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31609,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31609,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31609,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31661,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31661,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31661,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31662,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31662,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31662,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31663,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31663,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31663,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31664,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31664,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31664,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31665,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31665,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31665,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31681,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31681,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31681,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31682,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31682,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31682,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31683,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31683,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31683,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31684,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31684,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31684,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31685,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31685,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31685,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31701,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31701,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31701,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31702,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31702,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31702,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31703,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31703,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31703,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31704,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31704,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31704,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31705,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31705,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31705,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31706,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31706,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31706,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31707,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31707,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31707,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31708,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31708,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31708,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31709,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31709,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31709,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31761,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31761,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31761,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31762,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31762,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31762,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31763,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31763,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31763,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31764,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31764,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31764,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31765,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31765,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31765,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31781,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31781,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31781,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31782,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31782,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31782,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31783,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31783,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31783,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31784,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31784,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31784,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31785,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31785,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31785,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31786,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31786,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31786,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31801,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31801,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31801,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31802,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31802,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31802,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31803,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31803,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31803,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31804,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31804,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31804,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31805,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31805,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31805,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31806,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31806,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31806,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31807,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31807,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31807,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31808,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31808,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31808,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31809,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31809,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31809,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31810,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31810,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31810,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31811,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31811,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31811,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31841,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31841,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31841,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31842,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31842,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31842,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31843,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31843,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31843,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31844,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31844,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31844,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31845,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31845,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31845,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31846,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31846,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31846,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31861,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31861,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31861,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31862,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31862,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31862,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31863,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31863,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31863,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31864,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31864,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31864,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31865,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31865,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31865,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31881,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31881,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31881,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31882,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31882,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31882,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31883,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31883,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31883,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31884,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31884,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31884,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31901,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31901,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31901,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31902,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31902,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31902,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31903,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31903,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31903,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31904,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31904,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31904,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31905,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31905,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31905,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31906,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31906,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31906,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31907,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31907,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31907,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31908,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31908,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31908,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31909,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31909,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31909,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31910,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31910,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31910,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31911,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31911,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31911,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31941,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31941,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31941,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31942,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31942,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31942,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31943,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31943,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31943,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31944,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31944,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31944,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31945,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31945,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31945,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31946,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31946,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31946,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31961,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31961,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31961,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31962,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31962,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31962,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31963,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31963,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31963,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31964,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31964,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31964,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31965,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31965,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31965,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31981,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31981,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31981,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31982,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31982,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31982,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31983,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31983,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31983,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31984,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31984,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31984,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31985,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31985,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31985,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31986,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31986,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31986,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31988,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31988,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31988,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31989,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31989,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31989,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32001,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32001,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32001,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32002,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32002,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32002,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32003,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32003,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32003,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32004,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32004,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32004,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32005,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32005,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32005,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32006,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32006,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32006,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32007,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32007,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32007,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32008,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32008,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32008,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32009,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32009,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32009,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32041,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32041,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32041,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32042,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32042,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32042,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32043,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32043,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32043,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32044,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32044,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32044,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32045,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32045,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32045,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32046,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32046,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32046,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32061,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32061,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32061,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32062,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32062,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32062,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32063,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32063,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32063,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32064,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32064,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32064,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32065,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32065,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32065,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32081,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32081,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32081,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32082,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32082,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32082,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32083,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32083,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32083,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32084,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32084,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32084,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32085,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32085,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32085,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32086,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32086,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32086,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32101,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32101,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32101,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32102,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32102,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32102,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32103,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32103,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32103,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32104,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32104,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32104,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32105,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32105,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32105,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32106,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32106,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32106,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32107,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32107,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32107,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32108,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32108,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32108,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32109,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32109,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32109,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32141,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32141,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32141,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32142,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32142,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32142,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32143,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32143,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32143,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32144,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32144,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32144,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32145,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32145,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32145,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32146,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32146,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32146,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32161,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32161,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32161,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32162,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32162,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32162,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32163,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32163,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32163,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32164,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32164,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32164,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32165,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32165,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32165,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32181,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32181,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32181,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32182,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32182,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32182,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32183,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32183,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32183,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32184,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32184,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32184,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32185,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32185,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32185,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32186,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32186,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32186,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32187,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32187,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32187,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32188,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32188,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32188,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32201,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32201,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32201,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32202,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32202,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32202,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32203,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32203,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32203,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32204,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32204,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32204,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32205,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32205,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32205,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32206,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32206,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32206,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32207,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32207,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32207,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32208,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32208,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32208,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32209,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32209,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32209,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32241,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32241,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32241,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32242,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32242,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32242,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32243,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32243,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32243,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32244,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32244,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32244,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32245,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32245,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32245,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32246,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32246,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32246,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32261,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32261,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32261,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32262,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32262,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32262,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32263,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32263,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32263,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32264,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32264,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32264,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32265,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32265,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32265,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32281,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32281,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32281,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32282,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32282,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32282,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32283,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32283,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32283,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32284,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32284,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32284,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32301,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32301,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32301,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32302,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32302,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32302,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32303,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32303,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32303,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32304,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32304,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32304,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32305,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32305,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32305,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32306,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32306,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32306,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32307,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32307,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32307,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32308,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32308,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32308,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32309,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32309,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32309,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32310,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32310,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32310,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32311,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32311,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32311,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32312,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32312,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32312,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32313,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32313,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32313,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32314,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32314,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32314,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32315,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32315,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32315,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32316,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32316,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32316,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32317,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32317,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32317,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32341,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32341,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32341,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32342,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32342,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32342,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32343,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32343,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32343,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32344,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32344,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32344,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32345,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32345,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32345,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32346,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32346,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32346,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32361,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32361,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32361,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32362,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32362,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32362,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32363,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32363,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32363,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32364,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32364,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32364,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32365,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32365,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32365,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32381,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32381,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32381,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32382,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32382,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32382,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32383,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32383,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32383,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32384,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32384,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32384,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32385,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32385,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32385,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32386,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32386,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32386,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32387,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32387,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32387,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32401,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32401,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32401,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32402,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32402,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32402,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32403,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32403,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32403,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32404,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32404,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32404,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32405,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32405,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32405,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32406,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32406,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32406,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32407,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32407,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32407,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32408,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32408,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32408,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32409,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32409,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32409,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32410,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32410,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32410,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32411,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32411,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32411,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32412,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32412,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32412,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32413,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32413,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32413,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32414,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32414,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32414,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32415,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32415,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32415,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32416,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32416,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32416,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32441,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32441,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32441,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32442,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32442,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32442,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32443,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32443,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32443,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32444,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32444,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32444,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32445,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32445,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32445,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32446,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32446,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32446,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32461,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32461,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32461,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32462,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32462,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32462,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32463,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32463,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32463,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32464,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32464,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32464,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32465,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32465,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32465,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32481,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32481,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32481,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32482,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32482,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32482,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32483,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32483,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32483,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32484,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32484,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32484,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32485,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32485,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32485,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32486,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32486,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32486,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32487,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32487,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32487,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32488,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32488,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32488,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32501,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32501,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32501,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32502,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32502,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32502,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32503,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32503,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32503,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32504,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32504,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32504,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32505,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32505,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32505,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32506,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32506,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32506,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32507,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32507,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32507,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32508,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32508,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32508,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32509,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32509,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32509,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32541,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32541,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32541,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32542,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32542,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32542,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32543,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32543,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32543,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32544,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32544,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32544,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32545,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32545,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32545,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32546,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32546,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32546,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32561,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32561,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32561,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32562,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32562,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32562,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32563,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32563,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32563,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32564,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32564,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32564,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32565,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32565,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32565,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32581,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32581,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32581,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32582,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32582,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32582,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32583,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32583,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32583,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32584,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32584,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32584,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32585,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32585,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32585,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32586,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32586,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32586,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33201,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33201,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33201,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33202,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33202,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33202,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33203,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33203,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33203,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33204,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33204,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33204,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33205,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33205,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33205,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33206,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33206,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33206,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33207,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33207,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33207,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33208,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33208,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33208,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33209,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33209,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33209,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33210,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33210,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33210,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33211,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33211,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33211,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33212,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33212,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33212,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33241,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33241,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33241,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33242,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33242,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33242,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33243,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33243,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33243,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33244,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33244,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33244,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33245,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33245,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33245,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33246,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33246,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33246,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33281,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33281,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33281,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33282,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33282,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33282,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33283,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33283,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33283,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33284,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33284,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33284,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33301,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33301,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33301,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33302,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33302,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33302,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33303,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33303,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33303,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33304,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33304,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33304,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33305,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33305,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33305,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33306,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33306,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33306,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33307,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33307,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33307,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33308,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33308,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33308,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33309,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33309,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33309,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33341,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33341,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33341,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33342,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33342,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33342,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33343,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33343,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33343,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33344,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33344,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33344,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33345,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33345,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33345,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33346,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33346,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33346,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33381,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33381,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33381,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33382,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33382,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33382,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33383,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33383,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33383,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33384,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33384,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33384,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34001,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34001,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34001,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34002,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34002,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34002,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34003,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34003,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34003,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34004,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34004,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34004,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34005,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34005,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34005,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34006,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34006,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34006,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34007,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34007,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34007,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34008,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34008,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34008,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34009,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34009,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34009,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34010,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34010,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34010,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34041,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34041,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34041,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34042,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34042,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34042,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34043,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34043,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34043,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34044,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34044,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34044,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34045,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34045,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34045,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34046,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34046,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34046,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34081,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34081,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34081,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34082,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34082,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34082,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34083,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34083,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34083,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34084,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34084,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34084,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34085,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34085,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34085,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34086,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34086,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34086,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34087,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34087,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34087,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34088,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34088,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34088,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34089,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34089,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34089,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34090,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34090,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34090,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34101,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34101,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34101,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34102,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34102,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34102,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34103,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34103,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34103,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34104,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34104,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34104,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34105,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34105,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34105,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34106,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34106,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34106,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34107,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34107,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34107,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34108,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34108,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34108,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34109,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34109,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34109,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34110,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34110,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34110,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34111,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34111,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34111,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34112,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34112,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34112,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34113,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34113,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34113,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34114,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34114,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34114,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34141,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34141,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34141,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34142,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34142,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34142,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34143,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34143,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34143,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34144,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34144,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34144,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34145,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34145,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34145,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34146,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34146,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34146,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34181,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34181,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34181,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34182,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34182,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34182,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34183,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34183,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34183,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34184,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34184,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34184,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34185,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34185,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34185,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             34186,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 34186,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 34186,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             340901,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 340901,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 340901,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             340902,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 340902,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 340902,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -8798,8 +8798,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -8807,21 +8807,21 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             26201,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 26201,
-                                Field2 = 1729507115,
-                                Field4 = 7,
-                                Field5 = false,
-                                Field6 = 268,
-                                Field7 = true,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 26201,
+                                FirstPassTime = 1729507115,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 268,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -8832,8 +8832,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -8841,8 +8841,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -8850,8 +8850,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -8859,8 +8859,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -8868,8 +8868,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -8877,567 +8877,567 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(1, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             31691,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31691,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31691,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31692,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31692,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31692,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31693,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31693,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31693,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31694,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31694,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31694,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31695,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31695,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31695,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31891,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31891,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31891,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31892,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31892,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31892,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31893,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31893,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31893,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31894,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31894,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31894,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             31895,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31895,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31895,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32091,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32091,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32091,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32092,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32092,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32092,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32093,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32093,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32093,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32094,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32094,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32094,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32095,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32095,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32095,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32491,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32491,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32491,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32492,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32492,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32492,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32493,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32493,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32493,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32494,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32494,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32494,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32495,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32495,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32495,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32691,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32691,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32691,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32692,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32692,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32692,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32693,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32693,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32693,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32694,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32694,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32694,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32695,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32695,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32695,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32891,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32891,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32891,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32892,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32892,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32892,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32893,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32893,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32893,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32894,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32894,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32894,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             32895,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 32895,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 32895,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33091,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33091,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33091,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33092,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33092,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33092,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33093,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33093,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33093,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33094,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33094,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33094,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33095,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33095,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33095,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33291,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33291,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33291,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33292,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33292,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33292,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33293,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33293,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33293,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33294,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33294,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33294,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         {
                             33295,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 33295,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 33295,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -9448,8 +9448,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -9457,8 +9457,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -9466,8 +9466,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -9475,8 +9475,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -9484,21 +9484,21 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord
                         {
-                            Field1 = null,
-                            Field2 =
+                            Record = null,
+                            Records =
                         {
                         {
                             31987,
-                            new SC_StageRecord_F1Type()
+                            new StageRecord()
                             {
-                                Field1 = 31987,
-                                Field2 = 0,
-                                Field4 = 0,
-                                Field5 = false,
-                                Field6 = 0,
-                                Field7 = false,
-                                Field8 = 0,
-                                Field9 = false,
+                                StageId = 31987,
+                                FirstPassTime = 0,
+                                CompleteChallenges = 0,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 0,
+                                MCDNPPCAFOK = false,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
                             }
                         },
                         },
@@ -9509,8 +9509,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }
@@ -9518,8 +9518,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         connection.Send(0, new SC_StageRecord()
                         {
-                            Field1 = null,
-                            Field2 = { },
+                            Record = null,
+                            Records = { },
                         });
                         break;
                     }

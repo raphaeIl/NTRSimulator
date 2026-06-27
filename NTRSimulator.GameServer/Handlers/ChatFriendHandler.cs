@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ChatFriendList
                     {
-                        Field1 = { },
+                        Friend = { },
                     });
         }
 

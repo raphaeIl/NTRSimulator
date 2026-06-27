@@ -20,7 +20,7 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleLogin(CS_Login req, Connection connection)
         {
-            var session = PlayerSessionManager.Instance.GetSession(req.Field2);
+            var session = PlayerSessionManager.Instance.GetSession(req.Token);
             if (session == null)
             {
                 Log.Warning("Invalid or expired token during login.");
@@ -42,7 +42,7 @@ namespace NTRSimulator.GameServer.Handlers
             // (this is not the correct place to do this, better to be done at tutorial login instead of normal, not implemented yet)
             if (account.Guns.Count == 0)
             {
-                //inventoryService.AddAll<Gun>(account.Uid);
+                //inventoryService.AddAll<GunEntity>(account.Uid);
                 List<GunData> gunData = tableService.GetTable<GunData>();
                 List<InitItemCsData> initItemData = tableService.GetTable<InitItemCsData>();
 
@@ -50,7 +50,7 @@ namespace NTRSimulator.GameServer.Handlers
 
                 foreach (var defaultGun in defaultGuns)
                 {
-                    inventoryService.Add<Gun>(account.Uid, new Gun()
+                    inventoryService.Add<GunEntity>(account.Uid, new GunEntity()
                     {
                         GunId = defaultGun.GunId,
                         Level = 1,
@@ -65,170 +65,170 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_RecordStatisticUpdate scRecordStatisticUpdate = new SC_RecordStatisticUpdate()
             {
-                Field1 = 1,
-                Field2 = 1,
-                Field3 = 0
+                CHEOLEADCCB = 1,
+                MDAIIFCGJMO = 1,
+                BCGNJMDFLDG = 0
             };
 
             SC_Login endgame_acc_scLogin = new()
             {
-                Field1 = new SC_Login_F1Type
+                User = new User
                 {
-                    Field1 = 1,
-                    Field2 = "ntrsimulator",
-                    Field3 = 60,
-                    Field4 = 0,
-                    Field5 = Enum_Male_Female.Female,
-                    Field6 = 101,
-                    Field7 = 21089, // avatar PlayerAvatarData
-                    Field21 = 24164, // frame HeadFrameData
-                    Field8 = "aaa",
-                    Field27 = 0,
-                    Field15 = 25000,
-                    Field16 = 22010,
-                    Field17 = 31065,
-                    Field18 = 16843009,
-                    Field19 = 123213123,
-                    Field20 = 55,
-                    Field26 = { },
-                    Field22 = { 22081, 22082, 22083, 22084 },
-                    Field23 = { 73, 95, 120, 108, 78 },
-                    Field10 = new SC_Login_F1Type_F10Type
+                    Uid = 1,
+                    Name = "ntrsimulator",
+                    Level = 60,
+                    Exp = 0,
+                    Sex = Sex.Female,
+                    Birthday = 101,
+                    Portrait = 21089, // avatar PlayerAvatarData
+                    PortraitFrame = 24164, // frame HeadFrameData
+                    Motto = "aaa",
+                    JKOCEOKNAOL = 0,
+                    Title = 25000,
+                    Medal = 22010,
+                    MaxStage = 31065,
+                    AchievementLevel = 16843009,
+                    CreatTime = 123213123,
+                    GunNum = 55,
+                    MonthCard = { },
+                    NewMedal = { 22081, 22082, 22083, 22084 },
+                    AchievementNum = { 73, 95, 120, 108, 78 },
+                    Status = new LoginStatus
                     {
-                        Field1 = false,
-                        Field2 = 1780801750,
-                        Field3 = 1780801908,
-                        Field4 = 1780802125,
-                        Field5 = 0
+                        Online = false,
+                        LoginTime = 1780801750,
+                        LogoutTime = 1780801908,
+                        SyncTime = 1780802125,
+                        Client = 0
                     },
-                    Field11 = null,
-                    Field12 = 123123,
-                    Field13 = "ntrsimulator",
-                    Field14 = 0,
-                    Field31 = 3,
-                    Field32 = 4,
-                    Field33 = false,
-                    Field34 = new SC_Login_F1Type_F34Type()
+                    Assistant = null,
+                    GuildId = 123123,
+                    GuildName = "ntrsimulator",
+                    GuildNextJoinTime = 0,
+                    BKIPIIMKNCF = 3,
+                    JNLHINHBEIE = 4,
+                    COGLOCMDFOH = false,
+                    IDMOCOHNLDO = new JMMLGEDCIGB()
                     {
-                        Field1 = true,
-                        Field2 = 1162,
-                        Field3 = 40
+                        Uid = true,
+                        Name = 1162,
+                        Level = 40
                     },
-                    Field45 = "",
-                    Field28 =
+                    NBGNEBFEPON = "",
+                    DELPACHDBFG =
                     {
                 
                     },
-                    Field30 =
+                    AGMEOHPHANG =
                     {
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 11044,
-                           Field2 = 4134104,
-                           Field3 =
+                           Uid = 11044,
+                           Name = 4134104,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 20116453, Field2 = 7332824 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 10112353, Field2 = 7331055 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 120115353, Field2 = 7335814 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 30111353, Field2 = 0 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 20116453, Name = 7332824 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 10112353, Name = 7331055 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 120115353, Name = 7335814 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 30111353, Name = 0 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 10523,
-                           Field2 = 4134085,
-                           Field3 =
+                           Uid = 10523,
+                           Name = 4134085,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 20113453, Field2 = 7332345 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 10112353, Field2 = 7231355 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 120116353, Field2 = 6315664 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 30116353, Field2 = 6313484 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 20113453, Name = 7332345 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 10112353, Name = 7231355 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 120116353, Name = 6315664 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 30116353, Name = 6313484 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 10002,
-                           Field2 = 4132084,
-                           Field3 =
+                           Uid = 10002,
+                           Name = 4132084,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 20127453, Field2 = 6312264 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 10126353, Field2 = 7331055 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 120127353, Field2 = 7335814 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 30125353, Field2 = 6313514 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 20127453, Name = 6312264 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 10126353, Name = 7331055 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 120127353, Name = 7335814 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 30125353, Name = 6313514 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 11038,
-                           Field2 = 4134104,
-                           Field3 =
+                           Uid = 11038,
+                           Name = 4134104,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 20117453, Field2 = 7332824 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 10115353, Field2 = 7331055 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 120117353, Field2 = 7335814 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 30115353, Field2 = 0 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 20117453, Name = 7332824 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 10115353, Name = 7331055 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 120117353, Name = 7335814 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 30115353, Name = 0 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 11044,
-                           Field2 = 0,
-                           Field3 =
+                           Uid = 11044,
+                           Name = 0,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 10333,
-                           Field2 = 0,
-                           Field3 =
+                           Uid = 10333,
+                           Name = 0,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 10333,
-                           Field2 = 0,
-                           Field3 =
+                           Uid = 10333,
+                           Name = 0,
+                           Level =
                            {
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 },
-                               new SC_Login_F1Type_F30Type_F3Type { Field1 = 0, Field2 = 0 }
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 },
+                               new SC_Login_F1Type_F30Type_F3Type { Uid = 0, Name = 0 }
                            },
-                           Field4 = 1
+                           Exp = 1
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 0,
-                           Field2 = 0,
-                           Field3 = {},
-                           Field4 = 0
+                           Uid = 0,
+                           Name = 0,
+                           Level = {},
+                           Exp = 0
                        },
-                       new SC_Login_F1Type_F30Type
+                       new DBECHFOOJOO
                        {
-                           Field1 = 0,
-                           Field2 = 0,
-                           Field3 = {},
-                           Field4 = 0
+                           Uid = 0,
+                           Name = 0,
+                           Level = {},
+                           Exp = 0
                        }
                     },
-                    Field35 = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
-                    Field37 =
+                    MPDCKNHELFH = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
+                    KPGENCJDIFM =
                     {
                           false,
                           false,
@@ -248,10 +248,10 @@ namespace NTRSimulator.GameServer.Handlers
                           true,
                           true
                     },
-                    Field38 = 25001,
-                    Field36 = new SC_Login_F1Type_F36Type()
+                    OAIMENKAOEO = 25001,
+                    OBMLMKKHBIA = new LAHOFDCJGEM()
                     {
-                        Field1 =
+                        NBONFIHFCBE =
                         {
                             1647247360,
                             1645478144,
@@ -278,119 +278,119 @@ namespace NTRSimulator.GameServer.Handlers
                             1648300800,
                             1648366592
                         },
-                        Field2 = 1335002,
-                        Field3 = 1335101
+                        FJFCNNNPACN = 1335002,
+                        ELANFNLJCFM = 1335101
                     },
-                    Field39 = new SC_HeroModeMark_F1Type()
+                    DKCAABLJBND = new IHNPFJGBPJB()
                     {
-                        Field1 = 1780963200,
-                        Field2 = 0.9f
+                        FEPOFIOMNDB = 1780963200,
+                        KKLABAKPAPI = 0.9f
                     },
-                    Field40 = new SC_Login_F1Type_F40Type()
+                    HEEDJKIDCLI = new KEKFMLHLAMN()
                     {
-                        Field1 = 26,
-                        Field2 = 120
+                        Uid = 26,
+                        Name = 120
                     },
-                    Field41 = 0,
-                    Field42 = 2294,
-                    Field43 = 0,
-                    Field44 = null
+                    LPLPBLGJMEG = 0,
+                    BPCOAAEMFIB = 2294,
+                    HOLPILIHFIK = 0,
+                    PMJNEPPFAKF = null
                 },
-                Field2 = 0,
-                Field3 = { },
-                Field4 = "",
-                Field5 = "0",
-                Field6 = "abcdefghabcdefgh",
-                Field10 = Enum_StatusNormal_StatusServerMaintain_StatusServerReadTimeOut_StatusMessageMaxFrequency_StatusUserNotLogin.StatusNormal,
-                Field11 = Enum_Normal_Marching_Playing.Normal,
-                Field13 = 8,
-                Field14 = true,
-                Field15 = ""
+                NormalGacha = 0,
+                SimCombat = { },
+                BroadcastSign = "",
+                PrivateSign = "0",
+                CliResCropty = "abcdefghabcdefgh",
+                Status = UserStatus.StatusNormal,
+                DzStatus = AGFLPCMOGGI.Types.Status.Normal,
+                OFLLLHEJEDO = 8,
+                JNJEOPFIHJP = true,
+                DHMOAKCALLG = ""
             };
 
             SC_ActivityBackDailyRefresh scActivityBackDailyRefresh = new SC_ActivityBackDailyRefresh()
             {
-                Field1 = new SC_ActivityBackDailyRefresh_F1Type()
+                Info = new IGHEKKLGNLA()
                 {
-                    Field1 = 1,
-                    Field2 = 1779500060,
-                    Field3 = 3,
-                    Field4 = 1779518860,
-                    Field5 = false,
-                    Field6 = 0,
-                    Field7 = false,
-                    Field8 = 2,
-                    Field9 = new SC_ActivityBackDailyRefresh_F1Type_F9Type()
+                    IAPDLJKLLNM = 1,
+                    OpenTime = 1779500060,
+                    HNAKPBEGGFK = 3,
+                    HPABIPEOBKN = 1779518860,
+                    IEHFGOMCBCN = false,
+                    CJOINHJCPII = 0,
+                    CheckinDone = false,
+                    Version = 2,
+                    ANGHCINLCJO = new OCLANMMGEGA()
                     {
-                        Field1 = Enum_Normal_Advance.Normal,
-                        Field2 = 0,
-                        Field3 = 0,
-                        Field4 = { },
-                        Field5 = { },
+                        Type = Enum_Normal_Advance.Normal,
+                        Exp = 0,
+                        Level = 0,
+                        LMNBPEBDCKG = { },
+                        IMMBMDAPFEN = { },
                     },
                 },
             };
             SC_Login scLogin = new SC_Login()
             {
-                Field1 = new SC_Login_F1Type()
+                User = new User()
                 {
-                    Field1 = 2225766,
-                    Field2 = "kebjgw",
-                    Field3 = 60,
-                    Field4 = 0,
-                    Field5 = Enum_Male_Female.Female,
-                    Field6 = 101,
-                    Field7 = 21999,
-                    Field21 = 0,
-                    Field8 = "",
-                    Field27 = 0,
-                    Field15 = 23001,
-                    Field16 = 22001,
-                    Field17 = 10110,
-                    Field18 = 16843009,
-                    Field19 = 1703592104,
-                    Field20 = 4,
-                    Field26 = { },
-                    Field10 = new SC_Login_F1Type_F10Type()
+                    Uid = 2225766,
+                    Name = "kebjgw",
+                    Level = 60,
+                    Exp = 0,
+                    Sex = Sex.Female,
+                    Birthday = 101,
+                    Portrait = 21999,
+                    PortraitFrame = 0,
+                    Motto = "",
+                    JKOCEOKNAOL = 0,
+                    Title = 23001,
+                    Medal = 22001,
+                    MaxStage = 10110,
+                    AchievementLevel = 16843009,
+                    CreatTime = 1703592104,
+                    GunNum = 4,
+                    MonthCard = { },
+                    Status = new LoginStatus()
                     {
-                        Field1 = false,
-                        Field2 = 1779501594,
-                        Field3 = 1779501613,
-                        Field4 = 1779501613,
-                        Field5 = 0,
+                        Online = false,
+                        LoginTime = 1779501594,
+                        LogoutTime = 1779501613,
+                        SyncTime = 1779501613,
+                        Client = 0,
                     },
-                    Field11 = null,
-                    Field12 = 0,
-                    Field13 = "",
-                    Field14 = 0,
-                    Field31 = 0,
-                    Field32 = 0,
-                    Field33 = false,
-                    Field34 = new SC_Login_F1Type_F34Type()
+                    Assistant = null,
+                    GuildId = 0,
+                    GuildName = "",
+                    GuildNextJoinTime = 0,
+                    BKIPIIMKNCF = 0,
+                    JNLHINHBEIE = 0,
+                    COGLOCMDFOH = false,
+                    IDMOCOHNLDO = new JMMLGEDCIGB()
                     {
-                        Field1 = false,
-                        Field2 = 0,
-                        Field3 = 0,
+                        Uid = false,
+                        Name = 0,
+                        Level = 0,
                     },
-                    Field45 = "",
-                    Field22 = { 22023, 22020, 22019, 22022 },
-                    Field23 = { 0, 7, 28, 79, 1 },
-                    Field28 = { },
-                    Field29 = { },
-                    Field30 =
+                    NBGNEBFEPON = "",
+                    NewMedal = { 22023, 22020, 22019, 22022 },
+                    AchievementNum = { 0, 7, 28, 79, 1 },
+                    DELPACHDBFG = { },
+                    Assistants = { },
+                    AGMEOHPHANG =
                     {
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
-                        new SC_Login_F1Type_F30Type(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
+                        new DBECHFOOJOO(),
                     },
-                    Field35 = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
-                    Field37 =
+                    MPDCKNHELFH = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
+                    KPGENCJDIFM =
                     {
                         false,
                         false,
@@ -410,43 +410,43 @@ namespace NTRSimulator.GameServer.Handlers
                         true,
                         true,
                     },
-                    Field38 = 0,
-                    Field36 = new SC_Login_F1Type_F36Type()
+                    OAIMENKAOEO = 0,
+                    OBMLMKKHBIA = new LAHOFDCJGEM()
                     {
-                        Field1 = { },
-                        Field2 = 1335001,
-                        Field3 = 1335101,
+                        NBONFIHFCBE = { },
+                        FJFCNNNPACN = 1335001,
+                        ELANFNLJCFM = 1335101,
                     },
-                    Field39 = null,
-                    Field40 = new SC_Login_F1Type_F40Type()
+                    DKCAABLJBND = null,
+                    HEEDJKIDCLI = new KEKFMLHLAMN()
                     {
-                        Field1 = 0,
-                        Field2 = 0,
+                        Uid = 0,
+                        Name = 0,
                     },
-                    Field41 = 0,
-                    Field42 = 60,
-                    Field43 = 0,
-                    Field44 = null,
+                    LPLPBLGJMEG = 0,
+                    BPCOAAEMFIB = 60,
+                    HOLPILIHFIK = 0,
+                    PMJNEPPFAKF = null,
                 },
-                Field2 = 0,
-                Field3 = { },
-                Field4 = "",
-                Field5 = "0",
-                Field6 = "abcdefghabcdefgh",
-                Field10 = Enum_StatusNormal_StatusServerMaintain_StatusServerReadTimeOut_StatusMessageMaxFrequency_StatusUserNotLogin.StatusNormal,
-                Field11 = Enum_Normal_Marching_Playing.Normal,
-                Field13 = 8,
-                Field14 = true,
-                Field15 = "",
+                NormalGacha = 0,
+                SimCombat = { },
+                BroadcastSign = "",
+                PrivateSign = "0",
+                CliResCropty = "abcdefghabcdefgh",
+                Status = UserStatus.StatusNormal,
+                DzStatus = AGFLPCMOGGI.Types.Status.Normal,
+                OFLLLHEJEDO = 8,
+                JNJEOPFIHJP = true,
+                DHMOAKCALLG = "",
             };
 
             //scLogin = PcapUtils.GetPacketFromPcap<SC_Login>(MsgId.MsgScLogin, PacketType.RESPONSE);
 
             SC_Resource scResource = new()
             {
-                Field1 = new SC_Resource_F1Type()
+                Res = new Resource()
                 {
-                    Field1 =
+                    ResourceEx =
                     {
                         0,
                         10555,
@@ -549,79 +549,79 @@ namespace NTRSimulator.GameServer.Handlers
                         0,
                         0
                     },
-                    Field2 =
+                    StaminaTypeResource =
                     {
                         [101] = new()
                         {
-                            Field1 = 1779163704,
-                            Field3 = 183
+                            ResourceEx = 1779163704,
+                            MonthCard = 183
                         },
                         [102] = new()
                         {
-                            Field1 = 1779163939,
-                            Field3 = 3
+                            ResourceEx = 1779163939,
+                            MonthCard = 3
                         },
                         [106] = new()
                         {
-                            Field1 = 1779163939,
-                            Field3 = 5
+                            ResourceEx = 1779163939,
+                            MonthCard = 5
                         }
                     },
 
-                    Field3 =
+                    MonthCard =
                     {
                     },
 
-                    Field4 =
+                    OFHIHPPKKJP =
                     {
-                        [261] = new SC_LimitItemUpdate_F1ValueType()
+                        [261] = new JIDLNNFNGGF()
                         {
-                            Field1 = new()
+                            ResourceEx = new()
                             {
-                                Field1 =
+                                ResourceEx =
                                 {
                                     1730214970
                                 }
                             },
-                            Field2 = 0
+                            StaminaTypeResource = 0
                         }
                     }
                 }
             };
 
-            scResource.Field1.Field1[1] = 123456789;
-            scResource.Field1.Field1[10] = 123456789;
-            scResource.Field1.Field1[12] = 123456789;
-            scResource.Field1.Field1[45] = 123456789;
+            scResource.Res.ResourceEx[1] = 123456789;
+            scResource.Res.ResourceEx[10] = 123456789;
+            scResource.Res.ResourceEx[12] = 123456789;
+            scResource.Res.ResourceEx[45] = 123456789;
 
             SC_Sync scSync = new SC_Sync()
             {
-                Field1 = 1779518860,
-                Field2 = 0,
+                Timestamp = 1779518860,
+                ActiveTime = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 8,
-                Field1 =
+                Num = 8,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 40011 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 40011 },
                 },
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync2 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 8,
-                Field1 =
+                Num = 8,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1581 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1581 },
                 },
             };
             SC_Record scRecord = new SC_Record()
             {
-                Field1 = { },
-                Field3 = null,
-                Field2 = { true, true, true, true, true },
-                Field4 = { },
-                Field6 =
+                Gacha = { },
+                GachaDetails = null,
+                Exp = { true, true, true, true, true },
+                Limit = { },
+                Guarantee =
                 {
                     { 1001, 79 },
                     { 1101, 79 },
@@ -863,62 +863,62 @@ namespace NTRSimulator.GameServer.Handlers
                     { 238001, 80 },
                     { 239001, 70 },
                 },
-                Field7 = 1,
-                Field8 =
+                OBJIBOMKEKD = 1,
+                NJHKLBALAJA =
                 {
-                    { 4101, new SC_Record_F8ValueType() { Field1 = 1027, Field2 = false } },
+                    { 4101, new RecordRoomDetail() { MMHMOJABOPP = 1027, LNMCMKNNILF = false } },
                 },
             };
             SC_DarkZoneStep1RoomBasicInfo scDarkZoneStep1RoomBasicInfo = new SC_DarkZoneStep1RoomBasicInfo()
             {
-                Field1 = new SC_DarkZoneMarch_F8Type()
+                Room = new RoomBriefInfo()
                 {
-                    Field1 = 0,
-                    Field2 = 0,
-                    Field3 = 0,
-                    Field4 = 0,
-                    Field5 = 0,
-                    Field6 = 0,
-                    Field7 = 0,
-                    Field41 = null,
-                    Field42 = null,
-                    Field43 = 0,
+                    RoomStcId = 0,
+                    RoomId = 0,
+                    MapId = 0,
+                    QuestId = 0,
+                    DzType = 0,
+                    GroupId = 0,
+                    ELBNMDGMJEF = 0,
+                    PKHIIDMOAAJ = null,
+                    GJJLHKODHIO = null,
+                    BCKGIFENEAL = 0,
                 },
-                Field2 = Enum_Null_Enable_Disable.Enable,
-                Field3 = null,
+                RecnnFuncType = RecnnFuncType.Enable,
+                OEPFKCENLIK = null,
             };
             SC_HotfixNoticeSync scHotfixNoticeSync = new SC_HotfixNoticeSync()
             {
-                Field1 =
+                MGDPMAGKADP =
                 {
                     {
                         1,
-                        new SC_HotfixNoticeSync_F1ValueType()
+                        new NNAJHDNAMOB()
                         {
-                            Field1 = 1,
-                            Field2 = 1774266600,
-                            Field3 = 10,
-                            Field4 = 0,
+                            Id = 1,
+                            BeginTime = 1774266600,
+                            FGBHHHIHBPO = 10,
+                            KNENOHBINPG = 0,
                         }
                     },
                     {
                         2,
-                        new SC_HotfixNoticeSync_F1ValueType()
+                        new NNAJHDNAMOB()
                         {
-                            Field1 = 2,
-                            Field2 = 1774266900,
-                            Field3 = 5,
-                            Field4 = 0,
+                            Id = 2,
+                            BeginTime = 1774266900,
+                            FGBHHHIHBPO = 5,
+                            KNENOHBINPG = 0,
                         }
                     },
                     {
                         3,
-                        new SC_HotfixNoticeSync_F1ValueType()
+                        new NNAJHDNAMOB()
                         {
-                            Field1 = 3,
-                            Field2 = 1774267140,
-                            Field3 = 1,
-                            Field4 = 0,
+                            Id = 3,
+                            BeginTime = 1774267140,
+                            FGBHHHIHBPO = 1,
+                            KNENOHBINPG = 0,
                         }
                     },
                 },
@@ -941,22 +941,22 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_GetGamePlayStatus sCGetGamePlayStatus3 = new SC_GetGamePlayStatus()
             {
-                Field1 = new SC_GetGamePlayStatus_F1Type()
+                CMOBODHPHOC = new LFBPPCEEHFH()
                 {
-                    Field1 = new SC_GetGamePlayStatus_F1Type_F1Type()
+                    CMOBODHPHOC = new SC_GetGamePlayStatus_F1Type_F1Type()
                     {
-                        Field1 = new SC_GetGamePlayStatus_F1Type_F1Type_F1Type()
+                        CMOBODHPHOC = new NrtPvpSeason()
                         {
-                            Field1 = 1,
-                            Field2 = 0,
-                            Field3 = 0,
-                            Field4 = 30034,
-                            Field5 = 20137
+                            LevelType = 1,
+                            PlanId = 0,
+                            LastPlanId = 0,
+                            SeasonId = 30034,
+                            LastSeasonId = 20137
                         }
                     },
-                    Field2 = null,
-                    Field3 = null,
-                    Field4 = null,
+                    LastPlanId = null,
+                    SeasonId = null,
+                    LastSeasonId = null,
                     Field5 = null,
                     Field6 = null,
                     Field7 = null,
@@ -969,25 +969,25 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_PlayerStatusCounterSync playerStatusCounterSync3 = new SC_PlayerStatusCounterSync()
             {
-                Field2 = 0,
-                Field1 =
+                Num = 0,
+                Watchers =
                 {
-                    new SC_PlayerStatusCounterSync_F1Type() { Field1 = 63, Field2 = 1321 },
+                    new PELLFAAPKOL() { SystemId = 63, UniqueId = 1321 },
                 },
             };
             SC_GetGamePlayStatus scGetGamePlayStatus2 = new SC_GetGamePlayStatus()
             {
-                Field1 = new SC_GetGamePlayStatus_F1Type()
+                CMOBODHPHOC = new LFBPPCEEHFH()
                 {
-                    Field1 = null,
-                    Field2 = null,
-                    Field3 = new SC_GetGamePlayStatus_F1Type_F3Type()
+                    CMOBODHPHOC = null,
+                    LastPlanId = null,
+                    SeasonId = new SC_GetGamePlayStatus_F1Type_F3Type()
                     {
-                        Field1 = false,
-                        Field2 = 0,
-                        Field3 = 0,
+                        CMOBODHPHOC = false,
+                        LastPlanId = 0,
+                        SeasonId = 0,
                     },
-                    Field4 = null,
+                    LastSeasonId = null,
                     Field5 = null,
                     Field6 = null,
                     Field7 = null,
@@ -1001,8 +1001,8 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_MomentFetch scMomentFetch = new SC_MomentFetch()
             {
-                Field1 = { },
-                Field2 = 0
+                KCMDKLFKKGM = { },
+                IEKMOJNONDP = 0
             };
             connection.Send(scMomentFetch);
         }

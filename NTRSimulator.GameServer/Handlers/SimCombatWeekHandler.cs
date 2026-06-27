@@ -9,48 +9,48 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     SC_SimCombatWeekInfo response = new SC_SimCombatWeekInfo
                     {
-                        Field2 = 4,
-                        Field3 = false,
-                        Field1 = new SC_SimCombatWeekInfo_F1Type
+                        CycleId = 4,
+                        HLJOFEGMBEA = false,
+                        Info = new SimCombatWeekly
                         {
-                            Field1 = 10004,
-                            Field2 = 1,
-                            Field3 = 0,
-                            Field5 = { },
-                            Field10 = { },
-                            Field13 = 0,
-                            Field17 = new SC_SimCombatWeekInfo_F1Type_F17Type
+                            PlanId = 10004,
+                            Storey = 1,
+                            LastPlanId = 0,
+                            GunPrivilege = { },
+                            WeeklyQuest = { },
+                            StepStatus = 0,
+                            StepB = new SimCombatWeekStepB
                             {
-                                Field9 = 0,
-                                Field12 = 0,
-                                Field15 = 0,
-                                Field1 = { },
-                                Field16 = false,
+                                FinishBid = 0,
+                                MaxScore = 0,
+                                Score = 0,
+                                Lineups = { },
+                                Finished = false,
                             },
-                            Field18 = 0,
-                            Field20 = { },
-                            Field21 = { },
-                            Field22 = { },
-                            Field23 = false,
-                            Field24 = false,
-                            Field26 = 0,
-                            Field27 = false,
-                            Field28 = false,
+                            StepBtimes = 0,
+                            FinishedAstory = { },
+                            InheritBuff = { },
+                            HistoryScore = { },
+                            OJBJFHAOEFC = false,
+                            DKJDPJGKMNL = false,
+                            BJKKBJDMKAC = 0,
+                            NJGPJNKPFCM = false,
+                            HLJOFEGMBEA = false,
                         },
                     };
                     foreach (uint weekId in new uint[] { 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 })
                     {
-                        response.Field1.Field25[weekId] = new SC_SimCombatWeekInfo_F1Type_F25ValueType
+                        response.Info.ODKPMJFEMIL[weekId] = new DLNCFFHEHIJ
                         {
-                            Field1 = weekId,
-                            Field2 = 0,
-                            Field3 = 0,
-                            Field4 = 0,
-                            Field5 = { },
-                            Field6 = { },
-                            Field7 = weekId,
-                            Field8 = 0,
-                            Field9 = { },
+                            Storey = weekId,
+                            OIFIKKAAKJB = 0,
+                            Score = 0,
+                            MaxScore = 0,
+                            Lineups = { },
+                            InheritBuff = { },
+                            KNPHEBDLFFP = weekId,
+                            CEAKINDONJD = 0,
+                            OFNIFIAHBGG = { },
                         };
                     }
                     connection.Send(response);

@@ -18,10 +18,10 @@ namespace NTRSimulator.GameServer.Services
             var existingWeaponIds = new HashSet<uint>(account.Weapons.Select(w => w.WeaponId));
 
             var newWeapons = weaponData
-                .Where(d => d.WeaponId != 0 && !existingWeaponIds.Contains(d.WeaponId))
+                .Where(d => d.Id != 0 && !existingWeaponIds.Contains(d.Id))
                 .Select(d => new Weapon
                 {
-                    WeaponId = d.WeaponId,
+                    WeaponId = d.Id,
                     Level = 1,
                     CurExp = 0,
                     BreakTimes = 1,

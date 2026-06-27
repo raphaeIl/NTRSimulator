@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetCharacterDailyInfo
                     {
-                        Field1 = { },
+                        GGMFOMHIBNJ = { },
                     });
         }
 

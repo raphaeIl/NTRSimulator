@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_SimCombatInfo
             {
-                Field1 = new SC_SimCombatInfo_F1Type { Field1 = 0 },
+                Info = new SimCombatInfo { AdvancedMaxLevel = 0 },
             });
         }
 
@@ -18,16 +18,16 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(
             new SC_SimCombatMythicInfo
             {
-                Field1 = { },
-                Field2 =
+                StageInfo = { },
+                GroupIds =
                 { },
-                Field3 = 0,
-                Field4 = false,
-                Field5 = new SC_SimCombatMythicInfo_F5Type
+                NextTime = 0,
+                CanRecive = false,
+                Info = new EKOHFHNPMFN
                 {
-                    Field3 = 0,
-                    Field4 = { },
-                    Field5 = { },
+                    JMMDJGMFEIG = 0,
+                    StageInfo = { },
+                    ELECCHPPDOD = { },
                 },
             }
             );
@@ -38,11 +38,11 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(
             new SC_SimCombatMythicHardInfo
             {
-                Field1 =
+                Current =
                 {
-                    new SC_SimCombatMythicHardHistory_F1Type
+                    new HDBBHGABLCP
                     {
-                        Field1 = 26,
+                        Current = 26,
                         Field2 =
                         { },
                         Field4 = 180026,
@@ -57,7 +57,7 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(
             new SC_SimCombatResourceInfo
             {
-                Field9 = { },
+                SimCombatResource = { },
             }
             );
         }

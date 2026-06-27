@@ -9,13 +9,13 @@ namespace NTRSimulator.GameServer.Handlers
         {
             
 
-                    switch (request.Field1)
+                    switch (request.PlanId)
                     {
                         case 600004:
                             connection.Send(new SC_RougeGameInfo
                             {
-                                Field1 = 600004,
-                                Field3 = false,
+                                PlanId = 600004,
+                                CBNMNFAOMLL = false,
                             });
                             break;
                     }

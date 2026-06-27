@@ -1,5 +1,7 @@
 ﻿using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
+using EntityItem = NTRSimulator.Database.Entities.Item;
+using ProtoItem = NTRSimulator.Common.Proto.Item;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Services;
 
@@ -13,7 +15,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             if (connection.Account == null) return;
 
-            Item[] items = inventoryService.GetPlayerInventory<Item>(connection.Account.Uid);
+            EntityItem[] items = inventoryService.GetPlayerInventory<EntityItem>(connection.Account.Uid);
 
             if (items.Length == 0)
             {

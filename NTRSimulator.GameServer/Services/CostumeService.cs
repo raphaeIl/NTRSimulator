@@ -26,10 +26,10 @@ namespace NTRSimulator.GameServer.Services
                 newCostumes.Add(new Costume { CostumeId = data.Id });
             }
 
-            // From GunData.CostumeIds (gun-specific costumes)
+            // From GunData.EILBLOLKOCM (gun-specific costumes)
             foreach (GunData data in tableService.GetTable<GunData>())
             {
-                foreach (var costumeId in data.CostumeIds)
+                foreach (var costumeId in data.EILBLOLKOCM)
                 {
                     if (!existingIds.Add(costumeId))
                         continue;

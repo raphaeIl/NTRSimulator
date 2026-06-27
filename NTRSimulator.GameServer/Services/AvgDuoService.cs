@@ -19,10 +19,10 @@ namespace NTRSimulator.GameServer.Services
 
             var avgDuo = account.AvgDuo ?? new AvgDuo();
             avgDuo.AvgDuoMainStageIds = avg3dDuoStages
-                .Select(stage => stage.Field1)
+                .Select(stage => stage.Id)
                 .ToArray();
             avgDuo.AvgDuoSubStageIds = avg3dDuoStages
-                .SelectMany(stage => stage.Field2)
+                .SelectMany(stage => stage.AFOAOKNKEAN)
                 .ToArray();
 
             if (account.AvgDuo == null)

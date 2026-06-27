@@ -18,16 +18,16 @@ namespace NTRSimulator.GameServer.Handlers
 
             SC_Guns scGuns = new SC_Guns();
 
-            foreach (Gun gun in inventoryService.GetPlayerInventory<Gun>(connection.Account.Uid))
+            foreach (GunEntity gun in inventoryService.GetPlayerInventory<GunEntity>(connection.Account.Uid))
             {
-                scGuns.Field1.Add(gun.ToProtoGunCharacter());
+                scGuns.Guns.Add(gun.ToProtoGunCharacter());
 
             }
 
             //uint[] chars = new uint[] { 1017, 1024, 1001, 1008 };
             //uint[] chars = new uint[] { 1032, 1063 };
-            //scGuns.Field1.Add(CreateNewGunCharacter(1032, 20));
-            //scGuns.Field1.Add(CreateNewGunCharacter(1063, 20));
+            //scGuns.Guns.Add(CreateNewGunCharacter(1032, 20));
+            //scGuns.Guns.Add(CreateNewGunCharacter(1063, 20));
             
             connection.SendAutoEncrypted(scGuns);
         }
@@ -37,12 +37,12 @@ namespace NTRSimulator.GameServer.Handlers
                 connection.Send(4,
                     new SC_GunRemouldingPlugins
                     {
-                        Field1 =
+                        AIDIBGJDNLM =
                         {
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1835910277177040896UL,
-                                Field1 = 983201,
+                                AIDIBGJDNLM = 983201,
                                 Field2 =
                                 {
                                     1200201,
@@ -54,7 +54,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1846099719155113984UL,
-                                Field1 = 984102,
+                                AIDIBGJDNLM = 984102,
                                 Field2 =
                                 {
                                     1100302,
@@ -66,7 +66,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1843288636979699712UL,
-                                Field1 = 983301,
+                                AIDIBGJDNLM = 983301,
                                 Field2 =
                                 {
                                     1300101,
@@ -78,7 +78,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1839071274439041024UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100201,
@@ -90,7 +90,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1829565371798020096UL,
-                                Field1 = 984202,
+                                AIDIBGJDNLM = 984202,
                                 Field2 =
                                 {
                                     1200402,
@@ -102,7 +102,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1846544928750985216UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100401,
@@ -114,7 +114,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1845186142339620864UL,
-                                Field1 = 984302,
+                                AIDIBGJDNLM = 984302,
                                 Field2 =
                                 {
                                     1300302,
@@ -126,7 +126,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1830929806184701952UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100301,
@@ -138,7 +138,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1832835441797128192UL,
-                                Field1 = 983301,
+                                AIDIBGJDNLM = 983301,
                                 Field2 =
                                 {
                                     1300401,
@@ -150,7 +150,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1845005422894800896UL,
-                                Field1 = 984302,
+                                AIDIBGJDNLM = 984302,
                                 Field2 =
                                 {
                                     1300402,
@@ -162,7 +162,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1858088292359102464UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100301,
@@ -174,7 +174,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1836550333413744640UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400101,
@@ -186,7 +186,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1841010189906501632UL,
-                                Field1 = 984402,
+                                AIDIBGJDNLM = 984402,
                                 Field2 =
                                 {
                                     1400202,
@@ -198,7 +198,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1835280701670318080UL,
-                                Field1 = 984202,
+                                AIDIBGJDNLM = 984202,
                                 Field2 =
                                 {
                                     1200302,
@@ -210,7 +210,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1838893343599255552UL,
-                                Field1 = 984402,
+                                AIDIBGJDNLM = 984402,
                                 Field2 =
                                 {
                                     1400102,
@@ -222,7 +222,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1842370612705648640UL,
-                                Field1 = 984402,
+                                AIDIBGJDNLM = 984402,
                                 Field2 =
                                 {
                                     1400102,
@@ -234,7 +234,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1857996740069711872UL,
-                                Field1 = 983301,
+                                AIDIBGJDNLM = 983301,
                                 Field2 =
                                 {
                                     1300401,
@@ -246,7 +246,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1843288855838482432UL,
-                                Field1 = 984402,
+                                AIDIBGJDNLM = 984402,
                                 Field2 =
                                 {
                                     1400302,
@@ -258,7 +258,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1834636826666622976UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100101,
@@ -270,7 +270,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1845459095485702144UL,
-                                Field1 = 984202,
+                                AIDIBGJDNLM = 984202,
                                 Field2 =
                                 {
                                     1200202,
@@ -282,7 +282,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1840808736761864192UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400201,
@@ -294,7 +294,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1842370402064556032UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100101,
@@ -306,7 +306,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1830196550596321280UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400301,
@@ -318,7 +318,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1831464973352591360UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400401,
@@ -330,7 +330,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1842097119480012800UL,
-                                Field1 = 985102,
+                                AIDIBGJDNLM = 985102,
                                 Field2 =
                                 {
                                     1100203,
@@ -343,7 +343,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1827044870051618816UL,
-                                Field1 = 984302,
+                                AIDIBGJDNLM = 984302,
                                 Field2 =
                                 {
                                     1300302,
@@ -355,7 +355,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1834013572877803520UL,
-                                Field1 = 983101,
+                                AIDIBGJDNLM = 983101,
                                 Field2 =
                                 {
                                     1100201,
@@ -367,7 +367,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1856336655181438976UL,
-                                Field1 = 983201,
+                                AIDIBGJDNLM = 983201,
                                 Field2 =
                                 {
                                     1200301,
@@ -379,7 +379,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1845640086511706112UL,
-                                Field1 = 984302,
+                                AIDIBGJDNLM = 984302,
                                 Field2 =
                                 {
                                     1300302,
@@ -391,7 +391,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1828925846182715392UL,
-                                Field1 = 985102,
+                                AIDIBGJDNLM = 985102,
                                 Field2 =
                                 {
                                     1100303,
@@ -403,7 +403,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1826204793002024960UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400301,
@@ -415,7 +415,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1826383457987616768UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400101,
@@ -427,7 +427,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1833379456729767936UL,
-                                Field1 = 983201,
+                                AIDIBGJDNLM = 983201,
                                 Field2 =
                                 {
                                     1200301,
@@ -439,7 +439,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1844548013226221568UL,
-                                Field1 = 984102,
+                                AIDIBGJDNLM = 984102,
                                 Field2 =
                                 {
                                     1100102,
@@ -451,7 +451,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1845818391211827200UL,
-                                Field1 = 984202,
+                                AIDIBGJDNLM = 984202,
                                 Field2 =
                                 {
                                     1200302,
@@ -463,7 +463,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1839905421879435264UL,
-                                Field1 = 984402,
+                                AIDIBGJDNLM = 984402,
                                 Field2 =
                                 {
                                     1400302,
@@ -475,7 +475,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1846545133357522944UL,
-                                Field1 = 984302,
+                                AIDIBGJDNLM = 984302,
                                 Field2 =
                                 {
                                     1300302,
@@ -487,7 +487,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1832285033641041920UL,
-                                Field1 = 983201,
+                                AIDIBGJDNLM = 983201,
                                 Field2 =
                                 {
                                     1200301,
@@ -499,7 +499,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1837905451422867456UL,
-                                Field1 = 984302,
+                                AIDIBGJDNLM = 984302,
                                 Field2 =
                                 {
                                     1300202,
@@ -511,7 +511,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1827847029261361152UL,
-                                Field1 = 983401,
+                                AIDIBGJDNLM = 983401,
                                 Field2 =
                                 {
                                     1400101,
@@ -523,7 +523,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new BattleReplayNbcopResult_F4Type_F3Type_F101Type_F11Type
                             {
                                 Field3 = 1828489963575992320UL,
-                                Field1 = 983301,
+                                AIDIBGJDNLM = 983301,
                                 Field2 =
                                 {
                                     1300101,
@@ -541,8 +541,8 @@ namespace NTRSimulator.GameServer.Handlers
                 
                 connection.Send(new SC_GunCostume
                 {
-                    Field1 = request.Field1,
-                    Field2 = request.Field2,
+                    GunId = request.GunId,
+                    CostumeId = request.CostumeId,
                 });
         }
 
@@ -550,56 +550,56 @@ namespace NTRSimulator.GameServer.Handlers
         {
                 connection.Send(new SC_GetGunRemouldingPluginLockPlan
                 {
-                    Field1 = new SC_GetGunRemouldingPluginLockPlan_F1Type
+                    DJNPEOFHKHD = new AOEAJGGGBBM
                     {
-                        Field1 = false,
-                        Field2 =
+                        Open = false,
+                        PMDFJCLFFPB =
                         {
-                            new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type
+                            new PBPDJINOMHG
                             {
-                                Field1 =
+                                CLMMDIGBOJC =
                                 {
-                                    new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type_F1Type
+                                    new HGHONBPDMNG
                                     {
-                                        Field1 = { 11001, 11002 },
-                                        Field2 = { 21007, 21008 },
-                                        Field3 = 1,
+                                        JMCMFMNNENL = { 11001, 11002 },
+                                        AEBNOHIKJOI = { 21007, 21008 },
+                                        IJMINJLDENL = 1,
                                     },
                                 },
                             },
-                            new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type
+                            new PBPDJINOMHG
                             {
-                                Field1 =
+                                CLMMDIGBOJC =
                                 {
-                                    new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type_F1Type
+                                    new HGHONBPDMNG
                                     {
-                                        Field1 = { 12001, 12002 },
-                                        Field2 = { 22007, 22008 },
-                                        Field3 = 1,
+                                        JMCMFMNNENL = { 12001, 12002 },
+                                        AEBNOHIKJOI = { 22007, 22008 },
+                                        IJMINJLDENL = 1,
                                     },
                                 },
                             },
-                            new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type
+                            new PBPDJINOMHG
                             {
-                                Field1 =
+                                CLMMDIGBOJC =
                                 {
-                                    new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type_F1Type
+                                    new HGHONBPDMNG
                                     {
-                                        Field1 = { 13001, 13002 },
-                                        Field2 = { 23007, 23008 },
-                                        Field3 = 1,
+                                        JMCMFMNNENL = { 13001, 13002 },
+                                        AEBNOHIKJOI = { 23007, 23008 },
+                                        IJMINJLDENL = 1,
                                     },
                                 },
                             },
-                            new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type
+                            new PBPDJINOMHG
                             {
-                                Field1 =
+                                CLMMDIGBOJC =
                                 {
-                                    new SC_GetGunRemouldingPluginLockPlan_F1Type_F2Type_F1Type
+                                    new HGHONBPDMNG
                                     {
-                                        Field1 = { 14001, 14002 },
-                                        Field2 = { 24007, 24008 },
-                                        Field3 = 1,
+                                        JMCMFMNNENL = { 14001, 14002 },
+                                        AEBNOHIKJOI = { 24007, 24008 },
+                                        IJMINJLDENL = 1,
                                     },
                                 },
                             },

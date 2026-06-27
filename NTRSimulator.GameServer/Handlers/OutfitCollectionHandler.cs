@@ -9,11 +9,11 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_OutfitCollectionInfo
                     {
-                        Field1 = new SC_OutfitCollectionInfo_F1Type
+                        MPBPMJOCFFM = new IDDNGKGGPCB
                         {
-                            Field1 = 2294,
-                            Field2 = 2294,
-                            Field3 = 21,
+                            DEGNALHNOMI = 2294,
+                            JBDNIBGJKNO = 2294,
+                            BDJAJPIEIHJ = 21,
                         },
                     });
         }
@@ -22,7 +22,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_OutfitCollectionConfirmScore()
             {
-                Field1 = 999999
+                HGJIGJJOMNG = 999999
             });
         }
 
@@ -30,7 +30,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_OutfitCollectionLevelReward()
             {
-                Field1 = 999999
+                Level = 999999
             });
         }
     }

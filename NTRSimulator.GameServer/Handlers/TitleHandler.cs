@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ModTitle
             {
-                Field1 = request.Field1,
+                Title = request.Title,
             });
         }
     }

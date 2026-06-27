@@ -9,24 +9,24 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetBattlepassInfo
                     {
-                        Field1 = new SC_BattlepassAcquire_F2Type
+                        Battlepass = new Battlepass
                         {
-                            Field1 = 0,
-                            Field2 = { [1] = 0 },
-                            Field3 = 0,
-                            Field4 = 30034,
-                            Field5 = 1,
-                            Field6 = { 34001, 34002, 34003, 34004 },
-                            Field7 = { 34013, 34009, 34015, 34010, 34012, 34016, 34007, 34014, 34008 },
-                            Field8 = { },
-                            Field9 = { },
-                            Field11 = { },
-                            Field12 = { },
-                            Field13 = 0,
-                            Field14 = false,
-                            Field15 = { 34018, 34019, 34022, 34020, 34021, 34017 },
+                            Status = 0,
+                            Reward = { [1] = 0 },
+                            Exp = 0,
+                            CurrId = 30034,
+                            LeftRewardNum = 1,
+                            DailyTask = { 34001, 34002, 34003, 34004 },
+                            WeeklyTask = { 34013, 34009, 34015, 34010, 34012, 34016, 34007, 34014, 34008 },
+                            ExtraTask = { },
+                            ShareTask = { },
+                            ReleseTask = { },
+                            AcceptTaskinfo = { },
+                            RefreshTime = 0,
+                            MaxLevelReward = false,
+                            OPJONAGNMKE = { 34018, 34019, 34022, 34020, 34021, 34017 },
                         },
-                        Field2 = 0,
+                        ShareExpire = 0,
                     });
         }
 

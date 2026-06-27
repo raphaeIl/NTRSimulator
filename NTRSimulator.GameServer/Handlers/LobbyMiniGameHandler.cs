@@ -9,14 +9,14 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_LobbyMiniGameInfo
                     {
-                        Field1 =
+                        PDGDDBPGDKD =
                         {
                             {
                                 2u,
-                                new SC_LobbyMiniGameInfo_F1ValueType
+                                new HMDODOBKKND
                                 {
-                                    Field1 = false,
-                                    Field2 = { },
+                                    Unlock = false,
+                                    KOPDKBOLABF = { },
                                     Field3 = null,
                                     Field4 = null,
                                     Field5 = 0,
@@ -24,10 +24,10 @@ namespace NTRSimulator.GameServer.Handlers
                             },
                             {
                                 1u,
-                                new SC_LobbyMiniGameInfo_F1ValueType
+                                new HMDODOBKKND
                                 {
-                                    Field1 = false,
-                                    Field2 = { },
+                                    Unlock = false,
+                                    KOPDKBOLABF = { },
                                     Field3 = null,
                                     Field4 = null,
                                     Field5 = 0,

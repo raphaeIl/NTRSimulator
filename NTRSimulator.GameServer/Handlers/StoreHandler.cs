@@ -10,89 +10,89 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(8,
                 new SC_Store
                 {
-                    Field1 =
+                    Histories =
                     {
                     {
                         1200u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 233u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 233u,
+                            Cost = 0u,
                         }
                     },
                     {
                         1201u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 30u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 30u,
+                            Cost = 0u,
                         }
                     },
                     {
                         13254u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 1u,
-                            Field3 = 1u,
-                            Field4 = 0u,
+                            Count = 1u,
+                            Total = 1u,
+                            Cost = 0u,
                         }
                     },
                     {
                         14001u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 0u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 0u,
+                            Cost = 0u,
                         }
                     },
                     {
                         14002u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 0u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 0u,
+                            Cost = 0u,
                         }
                     },
                     {
                         14003u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 0u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 0u,
+                            Cost = 0u,
                         }
                     },
                     {
                         14004u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 0u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 0u,
+                            Cost = 0u,
                         }
                     },
                     {
                         14005u,
-                        new SC_Store_F1ValueType
+                        new StoreHistory
                         {
-                            Field2 = 0u,
-                            Field3 = 0u,
-                            Field4 = 0u,
+                            Count = 0u,
+                            Total = 0u,
+                            Cost = 0u,
                         }
                     },
                     },
-                    Field2 = new SC_MaylingUpdate_F1Type
+                    Mayling = new Mayling
                     {
-                        Field6 = 0.0,
-                        Field7 = 0u,
+                        Total = 0.0,
+                        ECHOLCLCIPE = 0u,
                     },
-                    Field3 = new SC_Store_F3Type
+                    Refresh = new StoreRefresh
                     {
-                        Field1 =
+                        Tags =
                         {
                         { 105u, 1779570000L },
                         { 106u, 1780261200L },
@@ -103,7 +103,7 @@ namespace NTRSimulator.GameServer.Handlers
                         { 212u, 1779570000L },
                         { 801u, 1779656400L },
                         },
-                        Field2 =
+                        Goods =
                         {
                         { 1104u, 1780261200L },
                         { 1105u, 1780261200L },
@@ -290,32 +290,32 @@ namespace NTRSimulator.GameServer.Handlers
                         { 108021u, 1779656400L },
                         },
                     },
-                    Field4 = { },
-                    Field5 = { },
-                    Field10 = new SC_Store_F10Type
+                    Tags = { },
+                    ManualRefreshTimes = { },
+                    Test = new StoreTest
                     {
-                        Field1 = new SC_Store_F10Type_F1Type
+                        Age = new Age
                         {
-                            Field1 = 34,
+                            Data = 34,
                         },
-                        Field2 = { },
-                        Field3 = { },
+                        MonthlyRecharge = { },
+                        FCEIPHMABIL = { },
                     },
-                    Field6 =
+                    DBCBJAHBHPH =
                     {
                     { 1213u, 1755604449L },
                     },
-                    Field7 =
+                    AAGEPBGKAMF =
                     {
                     { 1200u, 23u },
                     },
-                    Field11 =
+                    IJCLIMKPFAA =
                     {
                     { 1240u, true },
                     { 73003u, true },
                     },
-                    Field12 = 0u,
-                    Field13 = { },
+                    GMCGHLPFHND = 0u,
+                    JGKJGOBNBGD = { },
                 });
         }
     }
