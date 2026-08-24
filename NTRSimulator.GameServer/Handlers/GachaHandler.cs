@@ -1273,7 +1273,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         //ch.ItemId = (uint)Random.Shared.Next(1020, 1063);
 
-                        ch.ItemId = 1078;
+                        //ch.ItemId = 1078; // fox
+                        ch.ItemId = 1079;
                         // 1032 daiyan
                     } while (ch.ItemId == 1038 || ch.ItemId == 1060 || ch.ItemId == 1041 || ch.ItemId == 1026 || ch.ItemId == 1036 || ch.ItemId == 1022 || ch.ItemId == 1024);
 
