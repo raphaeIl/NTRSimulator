@@ -1085,7 +1085,26 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
-                        public override void HandleLobbyGetGunSetting(CS_LobbyGetGunSetting request, Connection connection)
+        public override void HandleGetLobbyHandmadeCommonGift(CS_GetLobbyHandmadeCommonGift request, Connection connection)
+        {
+            connection.Send(new SC_GetLobbyHandmadeCommonGift
+            {
+                KKLPCCBIFOM = { },
+            });
+        }
+
+        public override void HandleGetLobbySchemeBriefV3(CS_GetLobbySchemeBriefV3 request, Connection connection)
+        {
+            connection.Send(new SC_GetLobbySchemeBriefV3
+            {
+                EDMELOEFEDA = new ENFPOEEMINP
+                {
+                    NCIJONLOPFC = { },
+                },
+            });
+        }
+
+        public override void HandleLobbyGetGunSetting(CS_LobbyGetGunSetting request, Connection connection)
         {
             uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
