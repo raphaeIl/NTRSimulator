@@ -71,58 +71,33 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleChatDetail(CS_ChatDetail request, Connection connection)
         {
-            switch (request.Uid)
+            const long lastId = 1;
+            connection.Send(new SC_ChatDetail
             {
-                case 1:
-                    connection.Send(new SC_ChatDetail
+                Uid = request.Uid,
+                Chat = new Chat
+                {
+                    Uid = request.Uid,
+                    LastId = lastId,
+                    UnreadNum = 0,
+                    Show = false,
+                    AEEDCNBBHGK = lastId,
+                },
+                History = new FNMCGHAOALB
+                {
+                    KCBKEINNPGK =
                     {
-                        Uid = 1,
-                        Chat = new Chat
+                        new ChatMessage
                         {
-                            Uid = 1,
-                            LastId = 1865715258121785344,
-                            UnreadNum = 0,
-                            Show = false,
-                            CPBECAKEMGJ = 0,
-                            AEEDCNBBHGK = 1865715258121785344,
+                            Id = lastId,
+                            Active = false,
+                            Message = "Welcome to NTRSimulator!",
+                            Emoji = 0,
+                            Ts = 1,
                         },
-                        History = new FNMCGHAOALB
-                        {
-                            Read =
-                            {
-                                // new ChatMessage
-                                // {
-                                //     Read = 1865715237374722048,
-                                //     KCBKEINNPGK = true, // is self
-                                //     Field5 = "我喜欢你",
-                                //     Field6 = 0,
-                                //     Field8 = 1780894134,
-                                // },
-                            },
-                            KCBKEINNPGK =
-                            {
-                                new ChatMessage
-                                {
-                                    Id = 1865715258121785344,
-                                    Active = false,
-                                    Message = "Welcome to NTRSimulator!",
-                                    Emoji = 0,
-                                    Ts = 1780894153,
-                                },
-                                new ChatMessage
-                                {
-                                    Id = 1865715294762176512,
-                                    Active = false,
-                                    Message = "",
-                                    Emoji = 100901,
-                                    Ts = 1780932799,
-                                },
-                            },
-
-                        },
-                    });
-                    break;
-            }
+                    },
+                },
+            });
         }
     }
 }
