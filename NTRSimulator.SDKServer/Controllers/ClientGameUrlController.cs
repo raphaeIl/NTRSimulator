@@ -21,6 +21,8 @@ namespace NTRSimulator.SDKServer.Controllers
                     H5LevasitupApiUrl = "https://gf2-h5levasitup-api.sunborngame.com/client/remain_cnt",
                     H5LevasitupWebUrl = "https://gf2.sunborngame.com/lydrlyd/",
                     LotteryH5WebUrl = "https://gf2.sunborngame.com/HHZZRaffle/",
+                    MicaH5ElmoRebuildApiUrl = "https://gf2-h5elmorebuild-api.sunborngame.com/client/lottery/remain_cnt",
+                    MicaH5ElmoRebuildWebUrl = "https://gf2.sunborngame.com/amhfbdzz/cn/",
                     RaffleApiUrl = "https://gf2-h52ndanngacha-api.sunborngame.com",
                     RaffleWebUrl = "https://gf2.sunborngame.com/yearendharvest",
                     ReflowApiUrl = "https://gf2-h5back-api.sunborngame.com/game_get_info",
