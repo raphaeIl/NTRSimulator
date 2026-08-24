@@ -18,10 +18,9 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     {
                         10u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 10,
-                            Details =
+                            Unlocks =
                             {
                                 { 1001u, false },
                                 { 1008u, false },
@@ -83,10 +82,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         12u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 12,
-                            Details =
+                            Unlocks =
                             {
                                 { 21000u, true },
                                 { 21001u, true },
@@ -230,10 +228,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         13u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 13,
-                            Details =
+                            Unlocks =
                             {
  
                             },
@@ -241,18 +238,16 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         14u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 14,
-                            Details = { },
+                            Unlocks = { },
                         }
                     },
                     {
                         20u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 20,
-                            Details =
+                            Unlocks =
                             {
                                 { 11009u, false },
                                 { 11010u, false },
@@ -287,10 +282,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         21u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 21,
-                            Details =
+                            Unlocks =
                             {
  
                             },
@@ -298,20 +292,18 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         30u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 30,
-                            Details =
+                            Unlocks =
                             {
                             },
                         }
                     },
                     {
                         36u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 36,
-                            Details =
+                            Unlocks =
                             {
                                 { 22001u, true },
                                 { 22002u, false },
@@ -324,10 +316,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         37u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 37,
-                            Details =
+                            Unlocks =
                             {
                                 { 23001u, true },
                                 { 23012u, true },
@@ -420,10 +411,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         39u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 39,
-                            Details =
+                            Unlocks =
                             {
                                 { 24001u, true },
                                 { 24032u, true },
@@ -487,10 +477,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         40u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 40, // DO NOT ENABLE, why does this break the whole menu
-                            Details =
+                            Unlocks =
                             {
                                 { 25001u, true },
                                 // { 25009u, true },
@@ -501,10 +490,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         60u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 60,
-                            Details =
+                            Unlocks =
                             {
  
                             },
@@ -512,10 +500,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         61u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 61,
-                            Details =
+                            Unlocks =
                             {
  
                             },
@@ -523,10 +510,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         133u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 133,
-                            Details =
+                            Unlocks =
                             {
                                 { 1335001u, false },
                                 //{ 1335002u, false },
@@ -536,18 +522,16 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         162u, // special char cgs
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 162,
-                            Details = { },
+                            Unlocks = { },
                         }
                     },
                     {
                         171u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 171,
-                            Details =
+                            Unlocks =
                             {
                                 { 1600001u, false },
                                 { 1600002u, false },
@@ -556,10 +540,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         181u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 181,
-                            Details =
+                            Unlocks =
                             {
                                 { 1581008u, false },
                             },
@@ -567,10 +550,9 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         201u,
-                        new LMDCMBNFDCP
+                        new SystemUnlock
                         {
-                            Type = 201,
-                            Details =
+                            Unlocks =
                             {
                                 { 1002u, false },
                                 { 2001u, false },
@@ -585,7 +567,7 @@ namespace NTRSimulator.GameServer.Handlers
                         36u,
                         new IndexInfo
                         {
-                            Details =
+                            Version =
                             {
                                 { 22001u, 1703592104 },
                                 { 22002u, 1728668611 },
@@ -600,7 +582,7 @@ namespace NTRSimulator.GameServer.Handlers
                         37u,
                         new IndexInfo
                         {
-                            Details =
+                            Version =
                             {
                                 { 23001u, 1703592104 },
                                 { 23012u, 1703900704 },
@@ -615,22 +597,22 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[13].Details.Add(costume.CostumeId, true);
+                scIndex.Indices[13].Unlocks.Add(costume.CostumeId, true);
             }
 
             foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[21].Details.Add(weaponMod.WeaponModId, true);
+                scIndex.Indices[21].Unlocks.Add(weaponMod.WeaponModId, true);
             }
 
             foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[60].Details.Add(weaponSkin.WeaponSkinId, true);
+                scIndex.Indices[60].Unlocks.Add(weaponSkin.WeaponSkinId, true);
             }
 
             foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[61].Details.Add(weaponModSkin.WeaponModSkinId, true);
+                scIndex.Indices[61].Unlocks.Add(weaponModSkin.WeaponModSkinId, true);
             }
 
             foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid))
@@ -640,7 +622,7 @@ namespace NTRSimulator.GameServer.Handlers
                     continue;
                 }
 
-                scIndex.Indices[162u].Details[item.ItemId] = true;
+                scIndex.Indices[162u].Unlocks[item.ItemId] = true;
             }
 
             //connection.Send(2, scIndex);

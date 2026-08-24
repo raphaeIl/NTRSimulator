@@ -14,7 +14,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private enum InventoryType
     {
-        Gun,
+        Gun_3,
         Weapon,
         WeaponMod,
         WeaponSkin,
@@ -26,9 +26,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private static readonly Dictionary<string, InventoryType> TypeAliases = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["gun"] = InventoryType.Gun,
-        ["char"] = InventoryType.Gun,
-        ["character"] = InventoryType.Gun,
+        ["gun"] = InventoryType.Gun_3,
+        ["char"] = InventoryType.Gun_3,
+        ["character"] = InventoryType.Gun_3,
         ["weapon"] = InventoryType.Weapon,
         ["weaponmod"] = InventoryType.WeaponMod,
         ["weaponskin"] = InventoryType.WeaponSkin,
@@ -130,7 +130,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
     {
         switch (type)
         {
-            case InventoryType.Gun:
+            case InventoryType.Gun_3:
                 inventoryService.AddAll<GunEntity>(accountUid);
                 break;
             case InventoryType.Weapon:
@@ -173,7 +173,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             switch (type)
             {
-                case InventoryType.Gun:
+                case InventoryType.Gun_3:
                     ctx.Connection.SendAutoEncrypted(CreateGunResponse(accountUid));
                     Thread.Sleep(ResponseSendDelayMs);
                     ctx.Reply("Guns successfully updated!");
@@ -264,10 +264,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             {
                 {
                     10u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 10,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 1001u, false },
                             { 1008u, false },
@@ -278,10 +277,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     12u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 12,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 21000u, true },
                             { 21001u, true },
@@ -294,26 +292,23 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     13u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 13,
-                        Details = { },
+                    new SystemUnlock
+                        {
+                            Unlocks = { },
                     }
                 },
                 {
                     14u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 14,
-                        Details = { },
+                    new SystemUnlock
+                        {
+                            Unlocks = { },
                     }
                 },
                 {
                     20u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 20,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 11009u, false },
                             { 11010u, false },
@@ -325,18 +320,16 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     21u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 21,
-                        Details = { },
+                    new SystemUnlock
+                        {
+                            Unlocks = { },
                     }
                 },
                 {
                     36u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 36,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 22001u, true },
                             { 22002u, false },
@@ -349,10 +342,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     37u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 37,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 23001u, true },
                             { 23012u, true },
@@ -364,10 +356,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     39u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 39,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 24001u, true },
                         },
@@ -375,10 +366,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     40u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 40,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 25001u, true },
                         },
@@ -386,26 +376,23 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     60u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 60,
-                        Details = { },
+                    new SystemUnlock
+                        {
+                            Unlocks = { },
                     }
                 },
                 {
                     61u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 61,
-                        Details = { },
+                    new SystemUnlock
+                        {
+                            Unlocks = { },
                     }
                 },
                 {
                     133u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 133,
-                        Details =
+                    new SystemUnlock
+                        {
+                            Unlocks =
                         {
                             { 1335001u, false },
                             { 1335101u, false },
@@ -414,10 +401,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     162u,
-                    new LMDCMBNFDCP
-                    {
-                        Type = 162,
-                        Details = { },
+                    new SystemUnlock
+                        {
+                            Unlocks = { },
                     }
                 },
             },
@@ -427,7 +413,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                     36u,
                     new IndexInfo
                     {
-                        Details =
+                        Version =
                         {
                             { 22001u, 1703592104 },
                             { 22002u, 1728668611 },
@@ -442,7 +428,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                     37u,
                     new IndexInfo
                     {
-                        Details =
+                        Version =
                         {
                             { 23001u, 1703592104 },
                             { 23012u, 1703900704 },
@@ -456,16 +442,16 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         };
 
         foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(accountUid))
-            response.Indices[13].Details[costume.CostumeId] = true;
+            response.Indices[13].Unlocks[costume.CostumeId] = true;
 
         foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
-            response.Indices[21].Details[weaponMod.WeaponModId] = true;
+            response.Indices[21].Unlocks[weaponMod.WeaponModId] = true;
 
         foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
-            response.Indices[60].Details[weaponSkin.WeaponSkinId] = true;
+            response.Indices[60].Unlocks[weaponSkin.WeaponSkinId] = true;
 
         foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(accountUid))
-            response.Indices[61].Details[weaponModSkin.WeaponModSkinId] = true;
+            response.Indices[61].Unlocks[weaponModSkin.WeaponModSkinId] = true;
 
         foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(accountUid))
         {
@@ -474,7 +460,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 continue;
             }
 
-            response.Indices[162u].Details[item.ItemId] = true;
+            response.Indices[162u].Unlocks[item.ItemId] = true;
         }
 
         return response;

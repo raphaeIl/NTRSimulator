@@ -19,12 +19,11 @@ namespace NTRSimulator.GameServer.Handlers
                             GunPrivilege = { },
                             WeeklyQuest = { },
                             StepStatus = 0,
-                            StepB = new SimCombatWeekStepB
+                            StepB = new IAHOOMEFPND
                             {
-                                FinishBid = 0,
+                                IBJCLMJJFKO = 0,
                                 MaxScore = 0,
                                 Score = 0,
-                                Lineups = { },
                                 Finished = false,
                             },
                             StepBtimes = 0,
@@ -46,7 +45,6 @@ namespace NTRSimulator.GameServer.Handlers
                             OIFIKKAAKJB = 0,
                             Score = 0,
                             MaxScore = 0,
-                            Lineups = { },
                             InheritBuff = { },
                             KNPHEBDLFFP = weekId,
                             CEAKINDONJD = 0,

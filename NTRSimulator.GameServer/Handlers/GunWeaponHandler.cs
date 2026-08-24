@@ -54,23 +54,23 @@ namespace NTRSimulator.GameServer.Handlers
                 };
                 SC_GetGunWeaponModLockPlan response = new SC_GetGunWeaponModLockPlan
                 {
-                    DEOAAPJBIGP = new FJKJEJJPNLI
+                    DEOAAPJBIGP = new AOEAJGGGBBM
                     {
                         KJDFHNBFOMB = false,
                     },
                 };
                 foreach ((uint Index, uint[] Slots, uint PlanField2) plan in plans)
                 {
-                    SimCombatMythicInfo entry = new SimCombatMythicInfo
+                    CDANONKGCHB entry = new CDANONKGCHB
                     {
                         BEFHELAINLN = plan.Index,
                     };
-                    SimCombatMythicInfo.Types.DCDLLEBGAHH planValue = new SimCombatMythicInfo.Types.DCDLLEBGAHH
+                    CDANONKGCHB.Types.BHHOCNGPPJN planValue = new CDANONKGCHB.Types.BHHOCNGPPJN
                     {
                         IFKCJEAGCFH = plan.PlanField2,
                     };
                     planValue.CEAEBKMHDCJ.AddRange(plan.Slots);
-                    entry.LCPMEOFCFPB[1] = planValue;
+                    entry.KKLPCCBIFOM[1] = planValue;
                     response.DEOAAPJBIGP.PMDFJCLFFPB.Add(entry);
                 }
                 connection.Send(1, response);

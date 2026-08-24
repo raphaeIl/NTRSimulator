@@ -550,60 +550,9 @@ namespace NTRSimulator.GameServer.Handlers
         {
                 connection.Send(new SC_GetGunRemouldingPluginLockPlan
                 {
-                    DJNPEOFHKHD = new AOEAJGGGBBM
+                    DJNPEOFHKHD = new FJKJEJJPNLI
                     {
                         COFDFFJMNMA = false,
-                        PMDFJCLFFPB =
-                        {
-                            new PBPDJINOMHG
-                            {
-                                CLMMDIGBOJC =
-                                {
-                                    new HGHONBPDMNG
-                                    {
-                                        JMCMFMNNENL = { 11001, 11002 },
-                                        AEBNOHIKJOI = { 21007, 21008 },
-                                        IJMINJLDENL = 1,
-                                    },
-                                },
-                            },
-                            new PBPDJINOMHG
-                            {
-                                CLMMDIGBOJC =
-                                {
-                                    new HGHONBPDMNG
-                                    {
-                                        JMCMFMNNENL = { 12001, 12002 },
-                                        AEBNOHIKJOI = { 22007, 22008 },
-                                        IJMINJLDENL = 1,
-                                    },
-                                },
-                            },
-                            new PBPDJINOMHG
-                            {
-                                CLMMDIGBOJC =
-                                {
-                                    new HGHONBPDMNG
-                                    {
-                                        JMCMFMNNENL = { 13001, 13002 },
-                                        AEBNOHIKJOI = { 23007, 23008 },
-                                        IJMINJLDENL = 1,
-                                    },
-                                },
-                            },
-                            new PBPDJINOMHG
-                            {
-                                CLMMDIGBOJC =
-                                {
-                                    new HGHONBPDMNG
-                                    {
-                                        JMCMFMNNENL = { 14001, 14002 },
-                                        AEBNOHIKJOI = { 24007, 24008 },
-                                        IJMINJLDENL = 1,
-                                    },
-                                },
-                            },
-                        },
                     },
                 });
         }

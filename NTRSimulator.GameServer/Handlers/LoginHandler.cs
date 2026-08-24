@@ -95,8 +95,8 @@ namespace NTRSimulator.GameServer.Handlers
                     Status = new User.Types.LoginStatus
                     {
                         Online = false,
-                        LoginTime = 1780801750,
-                        LogoutTime = 1780801908,
+                        ECFLDOJNKDB = 1780801750,
+                        LBNHBMFFFJI = 1780801908,
                         SyncTime = 1780802125,
                         Client = 0
                     },
@@ -115,104 +115,104 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     AGMEOHPHANG =
                     {
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 11044,
                            GunId = 4134104,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 20116453, GunId = 7332824 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 10112353, GunId = 7331055 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 120115353, GunId = 7335814 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 30111353, GunId = 0 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 20116453, GunId = 7332824 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 10112353, GunId = 7331055 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 120115353, GunId = 7335814 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 30111353, GunId = 0 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 10523,
                            GunId = 4134085,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 20113453, GunId = 7332345 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 10112353, GunId = 7231355 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 120116353, GunId = 6315664 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 30116353, GunId = 6313484 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 20113453, GunId = 7332345 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 10112353, GunId = 7231355 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 120116353, GunId = 6315664 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 30116353, GunId = 6313484 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 10002,
                            GunId = 4132084,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 20127453, GunId = 6312264 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 10126353, GunId = 7331055 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 120127353, GunId = 7335814 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 30125353, GunId = 6313514 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 20127453, GunId = 6312264 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 10126353, GunId = 7331055 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 120127353, GunId = 7335814 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 30125353, GunId = 6313514 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 11038,
                            GunId = 4134104,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 20117453, GunId = 7332824 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 10115353, GunId = 7331055 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 120117353, GunId = 7335814 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 30115353, GunId = 0 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 20117453, GunId = 7332824 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 10115353, GunId = 7331055 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 120117353, GunId = 7335814 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 30115353, GunId = 0 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 11044,
                            GunId = 0,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 10333,
                            GunId = 0,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 10333,
                            GunId = 0,
                            Mods =
                            {
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 },
-                               new User.Types.BJDIMMICNPG { FNKBBPNGFBC = 0, GunId = 0 }
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 },
+                               new User.Types.DMPJMAKAIIE { FNKBBPNGFBC = 0, GunId = 0 }
                            },
                            BreakTimes = 1
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 0,
                            GunId = 0,
                            Mods = {}
                        },
-                       new User.Types.DBECHFOOJOO
+                       new User.Types.ActivityGacha
                        {
                            WeaponId = 0,
                            GunId = 0,
@@ -241,7 +241,7 @@ namespace NTRSimulator.GameServer.Handlers
                           true
                     },
                     OAIMENKAOEO = 25001,
-                    OBMLMKKHBIA = new LAHOFDCJGEM()
+                    KMPIHKFBAEP = new LAHOFDCJGEM()
                     {
                         NBONFIHFCBE =
                         {
@@ -294,7 +294,7 @@ namespace NTRSimulator.GameServer.Handlers
                 PrivateSign = "0",
                 CliResCropty = "abcdefghabcdefgh",
                 Status = UserStatus.StatusNormal,
-                DzStatus = AGFLPCMOGGI.Types.Status.Normal,
+                DzStatus = EALIADCLLKD.Types.Status.Normal,
                 OFLLLHEJEDO = 8,
                 JNJEOPFIHJP = true,
                 DHMOAKCALLG = ""
@@ -312,7 +312,7 @@ namespace NTRSimulator.GameServer.Handlers
                     CJOINHJCPII = 0,
                     CheckinDone = false,
                     Version = 2,
-                    ANGHCINLCJO = new OCLANMMGEGA()
+                    ANGHCINLCJO = new KPELIKEMNIH()
                     {
                         Type = IFIMADGKJOO.Normal,
                         Level = 0,
@@ -344,8 +344,8 @@ namespace NTRSimulator.GameServer.Handlers
                     Status = new User.Types.LoginStatus()
                     {
                         Online = false,
-                        LoginTime = 1779501594,
-                        LogoutTime = 1779501613,
+                        ECFLDOJNKDB = 1779501594,
+                        LBNHBMFFFJI = 1779501613,
                         SyncTime = 1779501613,
                         Client = 0,
                     },
@@ -369,15 +369,15 @@ namespace NTRSimulator.GameServer.Handlers
                     Assistants = { },
                     AGMEOHPHANG =
                     {
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
-                        new User.Types.DBECHFOOJOO(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
+                        new User.Types.ActivityGacha(),
                     },
                     MPDCKNHELFH = (POAMOPPDEJC)16,
                     KPGENCJDIFM =
@@ -401,7 +401,7 @@ namespace NTRSimulator.GameServer.Handlers
                         true,
                     },
                     OAIMENKAOEO = 0,
-                    OBMLMKKHBIA = new LAHOFDCJGEM()
+                    KMPIHKFBAEP = new LAHOFDCJGEM()
                     {
                         NBONFIHFCBE = { },
                         FJFCNNNPACN = 1335001,
@@ -424,7 +424,7 @@ namespace NTRSimulator.GameServer.Handlers
                 PrivateSign = "0",
                 CliResCropty = "abcdefghabcdefgh",
                 Status = UserStatus.StatusNormal,
-                DzStatus = AGFLPCMOGGI.Types.Status.Normal,
+                DzStatus = EALIADCLLKD.Types.Status.Normal,
                 OFLLLHEJEDO = 8,
                 JNJEOPFIHJP = true,
                 DHMOAKCALLG = "",
@@ -544,17 +544,17 @@ namespace NTRSimulator.GameServer.Handlers
                         [101] = new()
                         {
                             RefreshTime = 1779163704,
-                            Value = 183
+                            MDBHNCGNGHH = 183
                         },
                         [102] = new()
                         {
                             RefreshTime = 1779163939,
-                            Value = 0
+                            MDBHNCGNGHH = 3
                         },
                         [106] = new()
                         {
                             RefreshTime = 1779163939,
-                            Value = 0
+                            MDBHNCGNGHH = 5
                         }
                     },
 
@@ -604,7 +604,6 @@ namespace NTRSimulator.GameServer.Handlers
             SC_Record scRecord = new SC_Record()
             {
                 Gacha = { },
-                GachaDetails = null,
                 Exp = { true, true, true, true, true },
                 Limit = { },
                 Guarantee =
@@ -857,18 +856,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_DarkZoneStep1RoomBasicInfo scDarkZoneStep1RoomBasicInfo = new SC_DarkZoneStep1RoomBasicInfo()
             {
-                Room = new RoomBriefInfo()
+                Room = new ChatMessage()
                 {
-                    RoomStcId = 0,
+                    Id = 0,
                     RoomId = 0,
                     MapId = 0,
                     QuestId = 0,
                     DzType = 0,
                     GroupId = 0,
-                    ELBNMDGMJEF = 0,
-                    PKHIIDMOAAJ = null,
-                    GJJLHKODHIO = null,
-                    BCKGIFENEAL = 0,
                 },
                 RecnnFuncType = SC_DarkZoneStep1RoomBasicInfo.Types.RecnnFuncType.Enable,
                 OEPFKCENLIK = null,

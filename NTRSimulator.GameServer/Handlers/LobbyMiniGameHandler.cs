@@ -17,7 +17,8 @@ namespace NTRSimulator.GameServer.Handlers
                                 {
                                     MPNGHAKGLDM = false,
                                     KOPDKBOLABF = { },
-                                    
+                                    ShootspaceData = null,
+                                    DoodleJumpData = null,
                                 }
                             },
                             {
@@ -26,7 +27,8 @@ namespace NTRSimulator.GameServer.Handlers
                                 {
                                     MPNGHAKGLDM = false,
                                     KOPDKBOLABF = { },
-                                    
+                                    ShootspaceData = null,
+                                    DoodleJumpData = null,
                                 }
                             },
                         },

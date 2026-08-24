@@ -7,33 +7,19 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleTreasureData(CS_TreasureData request, Connection connection)
         {
-                    connection.Send(new SC_TreasureData
+            connection.Send(new SC_TreasureData
+            {
+                LLLDFCFANII =
+                {
+                    [60015] = new IAHOOMEFPND
                     {
-                        LLLDFCFANII =
-                        {
-                            [60015] = new IAHOOMEFPND
-                            {
-                                Level = 1,
-                                IOINKEDEKND = false,
-                                Rewards =
-                                {
-                                    [1001] = new ECDNJHCNDJB
-                                    {
-                                        EDCJPOMIGHG = (ECDNJHCNDJB.Types.BBCLAKIOMLF)1,
-                                        IFGAOKKPHAF = 0,
-                                    },
-                                },
-                                DPOCKPGIDJN = new CJPDLINBJCO
-                                {
-                                    EENJDLHFCPI = { },
-                                    FLEJPMNDEMN = { },
-                                    PPACOCKHNPE = { },
-                                    EBJGBABBELD = false,
-                                },
-                            },
-                        },
-                    });
+                        IBJCLMJJFKO = 1,
+                        Score = 0,
+                        MaxScore = 0,
+                        Finished = false,
+                    },
+                },
+            });
         }
-
     }
 }

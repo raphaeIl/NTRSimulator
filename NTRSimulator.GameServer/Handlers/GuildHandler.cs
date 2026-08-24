@@ -16,7 +16,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Name = "NTRSimulator",
                     Level = 23,
                     NLDDNFLPMNI = "ntrsimulator",
-                    ENPCEGHDOGP = 32,
+                    Exp = 32,
                     NEDCICLLAGJ = 0,
                     CPAHOGDFLFH = 3,
                     NDIFIFKGALK = 4,
@@ -60,8 +60,8 @@ namespace NTRSimulator.GameServer.Handlers
                                 Portrait = 21208,
                                 Status = new User.Types.LoginStatus
                                 {
-                                    LoginTime = 123123,
-                                    LogoutTime = 123123,
+                                    ECFLDOJNKDB = 123123,
+                                    LBNHBMFFFJI = 123123,
                                     SyncTime = 12313,
                                 },
                                 GuildId = 12312313,

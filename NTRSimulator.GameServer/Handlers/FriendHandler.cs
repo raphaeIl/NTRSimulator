@@ -58,8 +58,8 @@ namespace NTRSimulator.GameServer.Handlers
                         Status = new User.Types.LoginStatus
                         {
                             Online = true,
-                            LoginTime = 12312312,
-                            LogoutTime = 123123123,
+                            ECFLDOJNKDB = 12312312,
+                            LBNHBMFFFJI = 123123123,
                             SyncTime = 123123,
                             Client = 1231232323,
                         },

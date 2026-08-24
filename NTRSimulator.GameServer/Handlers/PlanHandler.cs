@@ -22,12 +22,12 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 10004,
                         Plans =
                         {
-                            new Plan
+                            new LGOAKPMJIDE
                             {
                                 Id = 10004,
                                 Type = 1,
                                 OpenTime = 1727038800,
-                                CloseTime = 4070897999,
+                                EndTime = 4070897999,
                                 Args = { 4 },
                             },
                         },
@@ -40,12 +40,12 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 20138,
                         Plans =
                         {
-                            new Plan
+                            new LGOAKPMJIDE
                             {
                                 Id = 20138,
                                 Type = 2,
                                 OpenTime = 1779051600,
-                                CloseTime = 1779652800,
+                                EndTime = 1779652800,
                                 Args = { 30034 },
                             },
                         },
@@ -58,12 +58,12 @@ namespace NTRSimulator.GameServer.Handlers
                         Id = 30034,
                         Plans =
                         {
-                            new Plan
+                            new LGOAKPMJIDE
                             {
                                 Id = 30034,
                                 Type = 3,
                                 OpenTime = 1779148800,
-                                CloseTime = 1780865999,
+                                EndTime = 1780865999,
                                 Args = { 30034 },
                             },
                         },

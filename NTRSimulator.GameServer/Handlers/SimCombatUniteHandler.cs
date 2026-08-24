@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_SimCombatUniteInfo
             {
-                Info = new CLEKMDAGJGD
+                Info = new DarkZoneQuestGroups
                 {
                     GOFCFHDHIIO =
                     {
@@ -18,15 +18,7 @@ namespace NTRSimulator.GameServer.Handlers
                             new FILNFOFMAJN
                             {
                                 OHPHNKCEGCM = 1162,
-                                MAFBBBKKJMB = 0,
-                                BHIAGOGIIGG = 0,
-                                IDMDHJOAAMP = false,
-                                LDOMDNMPOKP = { },
-                                IODHOGMMKKN = 0,
-                                HKNKLFBMPND = { },
-                                KJDMLPEHBKO = 0,
                                 PlanId = 90066,
-                                PNGEMPCLCNB = 0,
                             }
                         },
                     },

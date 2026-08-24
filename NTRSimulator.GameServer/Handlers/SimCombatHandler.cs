@@ -40,10 +40,10 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 Current =
                 {
-                    new MNINCNOAIAH.Types.HDBBHGABLCP
+                    new HNCAADDKDKC.Types.AJAGJKHMHHC
                     {
                         EPCCANNLACO = 26,
-                        JOCEPCJGCDA = { },
+                        FABAMONJFHE = { },
                         PlanId = 180026,
                     },
                 },

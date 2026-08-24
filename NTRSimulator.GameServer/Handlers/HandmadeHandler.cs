@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_HandmadeData
                     {
-                        HGMDLHCFPDE = new BJINECMIFNJ
+                        HGMDLHCFPDE = new OCLANMMGEGA
                         {
                             NBONFIHFCBE = { },
                             FJFCNNNPACN = 1335001,

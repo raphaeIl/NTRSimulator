@@ -56,7 +56,7 @@ namespace NTRSimulator.GameServer.Handlers
                         ExtItems = { },
                         TranItems = { },
                         DropUp = false,
-                        CIPFHAHNMBM = (FMMNODBGEJC)62,
+                        CIPFHAHNMBM = ECOKEFFBFHP.Gacha,
                         WeaponModDisplay = null,
                         
                     },
@@ -165,7 +165,6 @@ namespace NTRSimulator.GameServer.Handlers
                         
                     },
                 },
-                GachaDetails = null,
                 GachaTimes = 10,
                 Guarantee =
                 {
@@ -422,7 +421,6 @@ namespace NTRSimulator.GameServer.Handlers
                 {
 
                 },
-                GachaDetails = null,
                 GachaTimes = 10,
                 Guarantee =
                 {
@@ -733,13 +731,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newWeapon = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 6,
                     StcId = 11036,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -783,13 +782,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon2 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 7,
                     StcId = 11048,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -807,15 +807,16 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGun newGun = new SC_NewGun()
             {
-                Gun = new Gun()
+                Gun = new Gun_3()
                 {
                     Id = 1026,
                     Timestamp = nowUnix,
                     Level = 1,
-                    AuthLevel = 1,
+                    Exp = 120,
+                    AuthLevel = 0,
                     Costume = 1102600,
                     DPKJMEMMEGH = 0,
-                    GunClass = 0,
+                    GunClass = 1,
                     
                     PrivateTalentSkillItems = { 0, 0, 0 },
                     PublicTalentSkillItems = { 0, 0, 0 },
@@ -825,7 +826,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Preset = 0,
                     GunTalentConsume = { },
                     TalentResetNum = 0,
-                    Details = null,
+                    Version = null,
                     GNDEJNMOPAF = false,
                     JJKGLEOOAPH = new LoungeChatMessage()
                     {
@@ -942,13 +943,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon3 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 8,
                     StcId = 11045,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -983,13 +985,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon4 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 9,
                     StcId = 11017,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -1002,13 +1005,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon5 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 10,
                     StcId = 11039,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -1037,13 +1041,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon6 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 11,
                     StcId = 10631,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -1078,13 +1083,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon7 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 12,
                     StcId = 10361,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -1097,13 +1103,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon8 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 13,
                     StcId = 11009,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -1118,26 +1125,28 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon9 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 14,
                     StcId = 10361,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
             };
             SC_NewGunWeapon newGunWeapon10 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon()
+                Weapon = new GunWeapon_2()
                 {
                     Id = 15,
                     StcId = 11010,
                     Level = 1,
                     GunId = 0,
                     BreakTimes = 1,
+                    Exp = 0,
 
                     WeaponMods = { },
                 },
@@ -1218,7 +1227,7 @@ namespace NTRSimulator.GameServer.Handlers
                     ExtItems = { },
                     TranItems = { },
                     DropUp = false,
-                    CIPFHAHNMBM = (FMMNODBGEJC)62,
+                    CIPFHAHNMBM = ECOKEFFBFHP.Gacha,
                     WeaponModDisplay = null,
                     
                 };
