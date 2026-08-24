@@ -54,7 +54,7 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         GunId = defaultGun.Id,
                         Level = 1,
-                        CostumeId = defaultGun.Avatar,
+                        CostumeId = defaultGun.JLEMCACDDBN,
                         TimeCreated = DateTime.UtcNow
                     });
                 }

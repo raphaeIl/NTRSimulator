@@ -15,19 +15,31 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleGunWeapons(CS_GunWeapons request, Connection connection)
         {
-            if (connection.Account == null) return;
-
-            SC_GunWeapons scGunWeapons = new SC_GunWeapons();
-
-            foreach (WeaponEntity weapon in inventoryService.GetPlayerInventory<WeaponEntity>(connection.Account.Uid))
+            connection.SendAutoEncrypted(new SC_GunWeapons
             {
-                scGunWeapons.Weapons.Add(weapon.ToProtoWeapon());
-
-                if (weapon.GunId != 0)
-                    scGunWeapons.FEDCFGGDNBN[weapon.Id] = weapon.GunId;
-            }
-
-            connection.SendAutoEncrypted(scGunWeapons);
+                Weapons =
+                {
+                    new GunWeaponLite
+                    {
+                        Id = 739,
+                        StcId = 11056,
+                        Level = 60,
+                        GunId = 0,
+                    },
+                    new GunWeaponLite
+                    {
+                        Id = 455,
+                        StcId = 11073,
+                        Level = 20,
+                        GunId = 0,
+                    },
+                },
+                FEDCFGGDNBN =
+                {
+                    [739] = 1056,
+                    [455] = 1073,
+                },
+            });
         }
 
         public override void HandleGetGunWeaponModLockPlan(CS_GetGunWeaponModLockPlan request, Connection connection)

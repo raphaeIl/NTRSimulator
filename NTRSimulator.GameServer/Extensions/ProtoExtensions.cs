@@ -12,25 +12,19 @@ public static class ProtoExtensions
         return new Gun
         {
             Id = gun.GunId,
-            Exp = 120,
             Timestamp = new DateTimeOffset(gun.TimeCreated).ToUnixTimeSeconds(),
             Level = (uint)gun.Level,
             GunClass = 5,
             Costume = gun.CostumeId,
-            Grade = 9,
-            Energy = 4,
+            Exp = 120,
+            Energy = 120,
+            //Grade = 9,
             PrivateTalentSkillItems = { 0, 0, 0 },
             PublicTalentSkillItems = { 0, 0, 0 },
             PublicTalentSkillItemsUid = { 0, 0, 0 },
-            JJKGLEOOAPH = new LoungeChatMessage
-            {
-                KFIAKLNJHMB = 1,
-                ABOJJOJODME = 0,
-                FDKIHAPHHPD = 0,
-                APPPIAJDHLD = false,
-                PCPEAMOJPCF = 0
-            },
-            WeaponId = gun.Id
+            IsGetPublicTalentSkillItem = true,
+            //GNDEJNMOPAF = true,
+            //WeaponId = 739
         };
     }
 

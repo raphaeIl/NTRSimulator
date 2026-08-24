@@ -23,7 +23,7 @@ namespace NTRSimulator.GameServer.Services
                 {
                     GunId = d.Id,
                     Level = 60,
-                    CostumeId = d.Avatar,
+                    CostumeId = d.JLEMCACDDBN,
                     TimeCreated = DateTime.UtcNow,
                 })
                 .ToList();
