@@ -5,11 +5,11 @@ namespace NTRSimulator.GameServer.Extensions;
 
 public static class ProtoExtensions
 {
-    public static Gun_3 ToProtoGunCharacter(this GunEntity gun)
+    public static Gun ToProtoGunCharacter(this GunEntity gun)
     {
         ArgumentNullException.ThrowIfNull(gun);
 
-        return new Gun_3
+        return new Gun
         {
             Id = gun.GunId,
             Exp = 120,
@@ -34,27 +34,26 @@ public static class ProtoExtensions
         };
     }
 
-    public static GunWeapon_2 ToProtoWeapon(this WeaponEntity weapon)
+    public static GunWeaponLite ToProtoWeapon(this WeaponEntity weapon)
     {
         ArgumentNullException.ThrowIfNull(weapon);
 
-        return new GunWeapon_2
+        return new GunWeaponLite
         {
             Id = weapon.Id,
             StcId = weapon.WeaponId,
             Level = (uint)weapon.Level,
             Exp = weapon.CurExp,
             GunId = weapon.GunId,
-            BreakTimes = (uint)weapon.BreakTimes,
-            WeaponMods = { 0, 0, 0, 0 }
+            BreakTimes = (uint)weapon.BreakTimes
         };
     }
 
-    public static GunWeaponMod_2 ToProtoWeaponMod(this WeaponModEntity weaponMod)
+    public static GunWeaponMod ToProtoWeaponMod(this WeaponModEntity weaponMod)
     {
         ArgumentNullException.ThrowIfNull(weaponMod);
 
-        return new GunWeaponMod_2
+        return new GunWeaponMod
         {
             Id = weaponMod.Id,
             StcId = weaponMod.WeaponModId,

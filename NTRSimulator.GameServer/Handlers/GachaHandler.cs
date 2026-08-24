@@ -731,7 +731,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newWeapon = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 6,
                     StcId = 11036,
@@ -782,7 +782,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon2 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 7,
                     StcId = 11048,
@@ -807,7 +807,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGun newGun = new SC_NewGun()
             {
-                Gun = new Gun_3()
+                Gun = new Gun()
                 {
                     Id = 1026,
                     Timestamp = nowUnix,
@@ -943,7 +943,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon3 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 8,
                     StcId = 11045,
@@ -985,7 +985,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon4 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 9,
                     StcId = 11017,
@@ -1005,7 +1005,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon5 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 10,
                     StcId = 11039,
@@ -1041,7 +1041,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon6 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 11,
                     StcId = 10631,
@@ -1083,7 +1083,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon7 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 12,
                     StcId = 10361,
@@ -1103,7 +1103,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon8 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 13,
                     StcId = 11009,
@@ -1125,7 +1125,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon9 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 14,
                     StcId = 10361,
@@ -1139,7 +1139,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon10 = new SC_NewGunWeapon()
             {
-                Weapon = new GunWeapon_2()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 15,
                     StcId = 11010,
@@ -1273,8 +1273,8 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         //ch.ItemId = (uint)Random.Shared.Next(1020, 1063);
 
-                        //ch.ItemId = 1078; // fox
-                        ch.ItemId = 1079;
+                        ch.ItemId = 1081; // new char
+                        // ch.ItemId = 1079;
                         // 1032 daiyan
                     } while (ch.ItemId == 1038 || ch.ItemId == 1060 || ch.ItemId == 1041 || ch.ItemId == 1026 || ch.ItemId == 1036 || ch.ItemId == 1022 || ch.ItemId == 1024);
 

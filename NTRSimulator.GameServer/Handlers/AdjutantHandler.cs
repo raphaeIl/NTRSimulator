@@ -14,7 +14,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Current = 0,
                     Costume = 0,
                     Assistants = { 10202, 0, 0, 0 },
-                    Background = new BattleResult_2
+                    Background = new AdjutantBackground
                     {
                         PFFOLMNDAGL = 1001,
                         PANKKABLKMH = 2001

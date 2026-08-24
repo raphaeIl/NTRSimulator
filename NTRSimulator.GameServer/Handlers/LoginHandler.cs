@@ -856,7 +856,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_DarkZoneStep1RoomBasicInfo scDarkZoneStep1RoomBasicInfo = new SC_DarkZoneStep1RoomBasicInfo()
             {
-                Room = new ChatMessage()
+                Room = new DarkZoneRoom()
                 {
                     Id = 0,
                     RoomId = 0,

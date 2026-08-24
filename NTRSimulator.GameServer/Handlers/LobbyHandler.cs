@@ -1104,6 +1104,27 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
+        public override void HandleLobbyShareCodeV2TransformV3(CS_LobbyShareCodeV2TransformV3 request, Connection connection)
+        {
+            connection.Send(new SC_LobbyShareCodeV2TransformV3
+            {
+                HAOEIOLJDNP = 0,
+            });
+        }
+
+        public override void HandleLobbyCustomizeRoomInfo(CS_LobbyCustomizeRoomInfo request, Connection connection)
+        {
+            connection.Send(new SC_LobbyCustomizeRoomInfo
+            {
+                RoomId = request.RoomId,
+                EGOMNOLAAID = new NOMHELOJFLJ
+                {
+                    PIOFFPPPEPK = { },
+                    KBCJNGDOGKJ = 0,
+                },
+            });
+        }
+
         public override void HandleLobbyGetGunSetting(CS_LobbyGetGunSetting request, Connection connection)
         {
             uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();

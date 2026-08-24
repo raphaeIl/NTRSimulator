@@ -17,7 +17,7 @@ namespace NTRSimulator.GameServer.Handlers
                 connection.Send(new SC_Chat
                 {
                     Uid = request.Uid,
-                    Message = new ChatMessage_2
+                    Message = new ChatMessage
                     {
                         Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
                         Active = true,
@@ -34,7 +34,7 @@ namespace NTRSimulator.GameServer.Handlers
                     clientReplyCallback: reply => connection.Send(new SC_Chat
                     {
                         Uid = request.Uid,
-                        Message = new ChatMessage_2
+                        Message = new ChatMessage
                         {
                             Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
                             Active = false,
@@ -49,7 +49,7 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(new SC_Chat
             {
                 Uid = request.Uid,
-                Message = new ChatMessage_2
+                Message = new ChatMessage
                 {
                     Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
                     Active = true,
@@ -90,7 +90,7 @@ namespace NTRSimulator.GameServer.Handlers
                         {
                             Read =
                             {
-                                // new ChatMessage_2
+                                // new ChatMessage
                                 // {
                                 //     Read = 1865715237374722048,
                                 //     KCBKEINNPGK = true, // is self
@@ -101,7 +101,7 @@ namespace NTRSimulator.GameServer.Handlers
                             },
                             KCBKEINNPGK =
                             {
-                                new ChatMessage_2
+                                new ChatMessage
                                 {
                                     Id = 1865715258121785344,
                                     Active = false,
@@ -109,7 +109,7 @@ namespace NTRSimulator.GameServer.Handlers
                                     Emoji = 0,
                                     Ts = 1780894153,
                                 },
-                                new ChatMessage_2
+                                new ChatMessage
                                 {
                                     Id = 1865715294762176512,
                                     Active = false,
