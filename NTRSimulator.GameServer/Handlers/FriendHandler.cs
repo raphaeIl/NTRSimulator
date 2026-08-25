@@ -59,8 +59,8 @@ namespace NTRSimulator.GameServer.Handlers
                 Status = new User.Types.LoginStatus
                 {
                     Online = true,
-                    ECFLDOJNKDB = 1,
-                    LBNHBMFFFJI = 2,
+                    LoginTime = 1,
+                    LogoutTime = 2,
                     SyncTime = 3,
                 },
                 Title = 23087,
@@ -99,7 +99,7 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         IKDMNOBMIFE = 1,
                     },
-                    KAEDHCMMJKP = new POEGGEKHMCO(),
+                    KAEDHCMMJKP = new MPHCOCKNKGA(),
                 },
             };
         }
@@ -109,13 +109,13 @@ namespace NTRSimulator.GameServer.Handlers
             return new BJMBKFICIAC
             {
                 Idx = idx,
-                BKGHHPKAKBL = new KJNEMIMEEIA
+                BKGHHPKAKBL = new GunAvatar
                 {
                     Id = gunId,
                     Level = level,
                     Grade = grade,
                     CostumeId = costumeId,
-                    GPJLLBGIALN = gpjl,
+                    EFKCPDGOHPA = gpjl,
                 },
             };
         }

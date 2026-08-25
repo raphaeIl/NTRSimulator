@@ -11,25 +11,25 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 ActivityCheckin =
                 {
-                    [60813] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 1 },
-                    [60901] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 7 },
-                    [60607] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 3 },
-                    [60704] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 7 },
-                    [61507] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 2 },
-                    [61002] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 3 },
-                    [63003] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 3 },
-                    [69996] = new AIJGCACNFHL
+                    [60813] = new ActivityCheckin { CheckinDone = false, CheckinDay = 1 },
+                    [60901] = new ActivityCheckin { CheckinDone = false, CheckinDay = 7 },
+                    [60607] = new ActivityCheckin { CheckinDone = false, CheckinDay = 3 },
+                    [60704] = new ActivityCheckin { CheckinDone = false, CheckinDay = 7 },
+                    [61507] = new ActivityCheckin { CheckinDone = false, CheckinDay = 2 },
+                    [61002] = new ActivityCheckin { CheckinDone = false, CheckinDay = 3 },
+                    [63003] = new ActivityCheckin { CheckinDone = false, CheckinDay = 3 },
+                    [69996] = new ActivityCheckin
                     {
                         CheckinDone = false,
                         CheckinDay = 6,
                         BPMBLLOMLNB = new MLODPBBCLEB { CBPFCFLIMKJ = 1729890000 },
                     },
-                    [60504] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 6 },
-                    [62103] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 1 },
-                    [61604] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 2 },
-                    [61910] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 2 },
-                    [61705] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 3 },
-                    [61108] = new AIJGCACNFHL { CheckinDone = false, CheckinDay = 7 },
+                    [60504] = new ActivityCheckin { CheckinDone = false, CheckinDay = 6 },
+                    [62103] = new ActivityCheckin { CheckinDone = false, CheckinDay = 1 },
+                    [61604] = new ActivityCheckin { CheckinDone = false, CheckinDay = 2 },
+                    [61910] = new ActivityCheckin { CheckinDone = false, CheckinDay = 2 },
+                    [61705] = new ActivityCheckin { CheckinDone = false, CheckinDay = 3 },
+                    [61108] = new ActivityCheckin { CheckinDone = false, CheckinDay = 7 },
                 },
             });
         }

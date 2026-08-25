@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetCustomFormation
             {
-                OGNHICHKFAD = new ILLNLCMNCOB(),
+                OGNHICHKFAD = new PBEBLABCGEP(),
             });
         }
     }

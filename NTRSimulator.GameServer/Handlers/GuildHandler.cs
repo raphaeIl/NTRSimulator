@@ -60,8 +60,8 @@ namespace NTRSimulator.GameServer.Handlers
                                 Portrait = 21208,
                                 Status = new User.Types.LoginStatus
                                 {
-                                    ECFLDOJNKDB = 123123,
-                                    LBNHBMFFFJI = 123123,
+                                    LoginTime = 123123,
+                                    LogoutTime = 123123,
                                     SyncTime = 12313,
                                 },
                                 GuildId = 12312313,

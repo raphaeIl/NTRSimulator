@@ -2,6 +2,7 @@ using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Services;
+using ProtoIndex = NTRSimulator.Common.Proto.Index;
 
 namespace NTRSimulator.GameServer.Handlers
 {
@@ -18,9 +19,10 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     {
                         10u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 10,
+                            Details =
                             {
                                 { 1001u, false },
                                 { 1008u, false },
@@ -82,9 +84,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         12u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 12,
+                            Details =
                             {
                                 { 21000u, true },
                                 { 21001u, true },
@@ -228,9 +231,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         13u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 13,
+                            Details =
                             {
  
                             },
@@ -238,16 +242,18 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         14u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 14,
+                            Details = { },
                         }
                     },
                     {
                         20u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 20,
+                            Details =
                             {
                                 { 11009u, false },
                                 { 11010u, false },
@@ -282,9 +288,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         21u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 21,
+                            Details =
                             {
  
                             },
@@ -292,18 +299,20 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         30u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 30,
+                            Details =
                             {
                             },
                         }
                     },
                     {
                         36u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 36,
+                            Details =
                             {
                                 { 22001u, true },
                                 { 22002u, false },
@@ -316,9 +325,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         37u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 37,
+                            Details =
                             {
                                 { 23001u, true },
                                 { 23012u, true },
@@ -411,9 +421,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         39u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 39,
+                            Details =
                             {
                                 { 24001u, true },
                                 { 24032u, true },
@@ -477,9 +488,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         40u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 40,
+                            Details =
                             {
                                 { 25001u, true },
                                 // { 25009u, true },
@@ -490,9 +502,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         60u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 60,
+                            Details =
                             {
  
                             },
@@ -500,9 +513,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         61u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 61,
+                            Details =
                             {
  
                             },
@@ -510,9 +524,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         133u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 133,
+                            Details =
                             {
                                 { 1335001u, false },
                                 //{ 1335002u, false },
@@ -522,16 +537,18 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         162u, // special char cgs
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 162,
+                            Details = { },
                         }
                     },
                     {
                         171u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 171,
+                            Details =
                             {
                                 { 1600001u, false },
                                 { 1600002u, false },
@@ -540,9 +557,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         181u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 181,
+                            Details =
                             {
                                 { 1581008u, false },
                             },
@@ -550,9 +568,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         201u,
-                        new SystemUnlock
+                        new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 201,
+                            Details =
                             {
                                 { 1002u, false },
                                 { 2001u, false },
@@ -567,7 +586,7 @@ namespace NTRSimulator.GameServer.Handlers
                         36u,
                         new IndexInfo
                         {
-                            Version =
+                            Details =
                             {
                                 { 22001u, 1703592104 },
                                 { 22002u, 1728668611 },
@@ -582,7 +601,7 @@ namespace NTRSimulator.GameServer.Handlers
                         37u,
                         new IndexInfo
                         {
-                            Version =
+                            Details =
                             {
                                 { 23001u, 1703592104 },
                                 { 23012u, 1703900704 },
@@ -597,22 +616,22 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[13].Unlocks.Add(costume.CostumeId, true);
+                scIndex.Indices[13].Details.Add(costume.CostumeId, true);
             }
 
             foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[21].Unlocks.Add(weaponMod.WeaponModId, true);
+                scIndex.Indices[21].Details.Add(weaponMod.WeaponModId, true);
             }
 
             foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[60].Unlocks.Add(weaponSkin.WeaponSkinId, true);
+                scIndex.Indices[60].Details.Add(weaponSkin.WeaponSkinId, true);
             }
 
             foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[61].Unlocks.Add(weaponModSkin.WeaponModSkinId, true);
+                scIndex.Indices[61].Details.Add(weaponModSkin.WeaponModSkinId, true);
             }
 
             foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid))
@@ -622,7 +641,7 @@ namespace NTRSimulator.GameServer.Handlers
                     continue;
                 }
 
-                scIndex.Indices[162u].Unlocks[item.ItemId] = true;
+                scIndex.Indices[162u].Details[item.ItemId] = true;
             }
 
             //connection.Send(2, scIndex);

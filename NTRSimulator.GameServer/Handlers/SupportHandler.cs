@@ -11,7 +11,7 @@ namespace NTRSimulator.GameServer.Handlers
                     {
                         ABOENIKPJLH = new MIFHFBCEDCD
                         {
-                            AGDENEKDAHH =
+                            KMPIHKFBAEP =
                     {
                         new OMBHFHECHOO
                         {
@@ -343,7 +343,7 @@ namespace NTRSimulator.GameServer.Handlers
                             },
                         },
                     },
-                            JJGNOPPPPIB = 1,
+                            HLCFEAGODDH = 1,
                             JJGNHDJNMJM =
                     {
                     },

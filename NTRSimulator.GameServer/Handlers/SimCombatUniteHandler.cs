@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_SimCombatUniteInfo
             {
-                Info = new DarkZoneQuestGroups
+                Info = new CLEKMDAGJGD
                 {
                     GOFCFHDHIIO =
                     {

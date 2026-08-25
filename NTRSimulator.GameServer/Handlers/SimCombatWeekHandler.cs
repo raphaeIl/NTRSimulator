@@ -19,9 +19,9 @@ namespace NTRSimulator.GameServer.Handlers
                             GunPrivilege = { },
                             WeeklyQuest = { },
                             StepStatus = 0,
-                            StepB = new IAHOOMEFPND
+                            StepB = new SimCombatWeekStepB
                             {
-                                IBJCLMJJFKO = 0,
+                                FinishBid = 0,
                                 MaxScore = 0,
                                 Score = 0,
                                 Finished = false,

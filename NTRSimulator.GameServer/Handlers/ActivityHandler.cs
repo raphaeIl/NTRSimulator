@@ -59,7 +59,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 63409,
                                             OpenTime = 1779148800L,
-                                            EndTime = 1780963199L,
+                                            CloseTime = 1780963199L,
                                             Args =
                                             {
                                             },
@@ -71,7 +71,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 69992,
                                             OpenTime = 1697162400L,
-                                            EndTime = 2553800399L,
+                                            CloseTime = 2553800399L,
                                             Args =
                                             {
                                             },
@@ -83,7 +83,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 60015,
                                             OpenTime = 1702630800L,
-                                            EndTime = 2553800399L,
+                                            CloseTime = 2553800399L,
                                             Args =
                                             {
                                             },
@@ -95,7 +95,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 63301,
                                             OpenTime = 1777334400L,
-                                            EndTime = 1779656399L,
+                                            CloseTime = 1779656399L,
                                             Args =
                                             {
                                             },
@@ -107,7 +107,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 63410,
                                             OpenTime = 1779148800L,
-                                            EndTime = 1780963199L,
+                                            CloseTime = 1780963199L,
                                             Args =
                                             {
                                             },
@@ -119,7 +119,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 63402,
                                             OpenTime = 1779148800L,
-                                            EndTime = 1780963199L,
+                                            CloseTime = 1780963199L,
                                             Args =
                                             {
                                             },
@@ -131,7 +131,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 60003,
                                             OpenTime = 1697162400L,
-                                            EndTime = 2553800399L,
+                                            CloseTime = 2553800399L,
                                             Args =
                                             {
                                             },
@@ -143,7 +143,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 63401,
                                             OpenTime = 1779148800L,
-                                            EndTime = 1781470799L,
+                                            CloseTime = 1781470799L,
                                             Args =
                                             {
                                             },
@@ -155,7 +155,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 69999,
                                             OpenTime = 1779500060L,
-                                            EndTime = 1780709660L,
+                                            CloseTime = 1780709660L,
                                             Args =
                                             {
                                             },
@@ -167,7 +167,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 69997,
                                             OpenTime = 1702621200L,
-                                            EndTime = 2553800399L,
+                                            CloseTime = 2553800399L,
                                             Args =
                                             {
                                             },
@@ -179,7 +179,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 63408,
                                             OpenTime = 1779148800L,
-                                            EndTime = 1780963199L,
+                                            CloseTime = 1780963199L,
                                             Args =
                                             {
                                             },
@@ -191,7 +191,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 69993,
                                             OpenTime = 1779500060L,
-                                            EndTime = 0L,
+                                            CloseTime = 0L,
                                             Args =
                                             {
                                                 0,
@@ -204,7 +204,7 @@ namespace NTRSimulator.GameServer.Handlers
                                         {
                                             Id = 69995,
                                             OpenTime = 1743213915L,
-                                            EndTime = 0L,
+                                            CloseTime = 0L,
                                             Args =
                                             {
                                                 0,
@@ -269,7 +269,7 @@ namespace NTRSimulator.GameServer.Handlers
                             CJOINHJCPII = 0,
                             CheckinDone = false,
                             Version = 2,
-                            ANGHCINLCJO = new KPELIKEMNIH
+                            ANGHCINLCJO = new OCLANMMGEGA
                             {
                                 Type = 0,
                                 Level = 0,

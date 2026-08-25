@@ -550,7 +550,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                 connection.Send(new SC_GetGunRemouldingPluginLockPlan
                 {
-                    DJNPEOFHKHD = new FJKJEJJPNLI
+                    DJNPEOFHKHD = new AOEAJGGGBBM
                     {
                         COFDFFJMNMA = false,
                     },

@@ -15,18 +15,18 @@ namespace NTRSimulator.GameServer.Handlers
                     new FFHEDKJNNCE
                     {
                         GBBABCAJHBL = FPCALFLJIHM.GmConfigIdCustomText,
-                        CustomText = new JEIMMINDANP
+                        CustomText = new NBNHIJCGJDF
                         {
-                            LLGFHEAIHIE =
+                            PAIACGBBODH =
                             { },
                         },
                     },
                     new FFHEDKJNNCE
                     {
                         GBBABCAJHBL = FPCALFLJIHM.GmConfigIdCloseFunctions,
-                        CloseFunctions = new ELPIAJGOLCP
+                        CloseFunctions = new OHBPICADMHD
                         {
-                            PHDEOHJGHHO = { },
+                            PIGJLNIEJAP = { },
                         },
                     },
                 },

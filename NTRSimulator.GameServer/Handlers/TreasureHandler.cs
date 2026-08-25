@@ -13,10 +13,9 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     [60015] = new IAHOOMEFPND
                     {
-                        IBJCLMJJFKO = 1,
-                        Score = 0,
-                        MaxScore = 0,
-                        Finished = false,
+                        Level = 1,
+                        Exp = 0,
+                        IOINKEDEKND = false,
                     },
                 },
             });

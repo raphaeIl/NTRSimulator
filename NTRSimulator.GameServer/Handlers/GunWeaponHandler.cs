@@ -4,6 +4,7 @@ using NTRSimulator.Common.Protocol;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Extensions;
 using NTRSimulator.GameServer.Services;
+using static NTRSimulator.Common.Proto.DarkZoneBuff.Types;
 
 namespace NTRSimulator.GameServer.Handlers
 {
@@ -15,31 +16,19 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleGunWeapons(CS_GunWeapons request, Connection connection)
         {
-            connection.SendAutoEncrypted(new SC_GunWeapons
+            if (connection.Account == null) return;
+
+            SC_GunWeapons scGunWeapons = new SC_GunWeapons();
+
+            foreach (WeaponEntity weapon in inventoryService.GetPlayerInventory<WeaponEntity>(connection.Account.Uid))
             {
-                Weapons =
-                {
-                    new GunWeaponLite
-                    {
-                        Id = 739,
-                        StcId = 11056,
-                        Level = 60,
-                        GunId = 0,
-                    },
-                    new GunWeaponLite
-                    {
-                        Id = 455,
-                        StcId = 11073,
-                        Level = 20,
-                        GunId = 0,
-                    },
-                },
-                FEDCFGGDNBN =
-                {
-                    [739] = 1056,
-                    [455] = 1073,
-                },
-            });
+                scGunWeapons.Weapons.Add(weapon.ToProtoWeapon());
+
+                if (weapon.GunId != 0)
+                    scGunWeapons.FEDCFGGDNBN[weapon.Id] = weapon.GunId;
+            }
+
+            connection.SendAutoEncrypted(scGunWeapons);
         }
 
         public override void HandleGetGunWeaponModLockPlan(CS_GetGunWeaponModLockPlan request, Connection connection)
@@ -66,23 +55,23 @@ namespace NTRSimulator.GameServer.Handlers
                 };
                 SC_GetGunWeaponModLockPlan response = new SC_GetGunWeaponModLockPlan
                 {
-                    DEOAAPJBIGP = new AOEAJGGGBBM
+                    DEOAAPJBIGP = new FJKJEJJPNLI
                     {
                         KJDFHNBFOMB = false,
                     },
                 };
                 foreach ((uint Index, uint[] Slots, uint PlanField2) plan in plans)
                 {
-                    CDANONKGCHB entry = new CDANONKGCHB
+                    SimCombatMythicInfo entry = new SimCombatMythicInfo
                     {
                         BEFHELAINLN = plan.Index,
                     };
-                    CDANONKGCHB.Types.BHHOCNGPPJN planValue = new CDANONKGCHB.Types.BHHOCNGPPJN
+                    SimCombatMythicInfo.Types.DCDLLEBGAHH planValue = new SimCombatMythicInfo.Types.DCDLLEBGAHH
                     {
                         IFKCJEAGCFH = plan.PlanField2,
                     };
                     planValue.CEAEBKMHDCJ.AddRange(plan.Slots);
-                    entry.KKLPCCBIFOM[1] = planValue;
+                    entry.LCPMEOFCFPB[1] = planValue;
                     response.DEOAAPJBIGP.PMDFJCLFFPB.Add(entry);
                 }
                 connection.Send(1, response);

@@ -103,7 +103,7 @@ namespace NTRSimulator.GameServer.Handlers
                         { 212u, 1779570000L },
                         { 801u, 1779656400L },
                         },
-                        KDOHJCDHBLF =
+                        Goods =
                         {
                         { 1104u, 1780261200L },
                         { 1105u, 1780261200L },

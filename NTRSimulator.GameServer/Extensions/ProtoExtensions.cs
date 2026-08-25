@@ -28,11 +28,11 @@ public static class ProtoExtensions
         };
     }
 
-    public static GunWeaponLite ToProtoWeapon(this WeaponEntity weapon)
+    public static DAOEIFPHMFL ToProtoWeapon(this WeaponEntity weapon)
     {
         ArgumentNullException.ThrowIfNull(weapon);
 
-        return new GunWeaponLite
+        return new DAOEIFPHMFL
         {
             Id = weapon.Id,
             StcId = weapon.WeaponId,

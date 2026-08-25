@@ -3,14 +3,15 @@ using NTRSimulator.Common.Proto;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Extensions;
 using NTRSimulator.GameServer.Services;
+using ProtoIndex = NTRSimulator.Common.Proto.Index;
 
 namespace NTRSimulator.GameServer.Commands;
 
 [Command("inventory", "Manage player inventory", "inventory addall [type]", CommandSource.Client)]
 public sealed class InventoryCommand(IInventoryService inventoryService) : ICommand
 {
-    private const int ItemsPerResponse = 200;
-    private const int ResponseSendDelayMs = 50;
+    private const int ItemsPerResponse = 100;
+    private const int ResponseSendDelayMs = 100;
 
     private enum InventoryType
     {
@@ -264,9 +265,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             {
                 {
                     10u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 10,
+                            Details =
                         {
                             { 1001u, false },
                             { 1008u, false },
@@ -277,9 +279,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     12u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 12,
+                            Details =
                         {
                             { 21000u, true },
                             { 21001u, true },
@@ -292,23 +295,26 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     13u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 13,
+                            Details = { },
                     }
                 },
                 {
                     14u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 14,
+                            Details = { },
                     }
                 },
                 {
                     20u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 20,
+                            Details =
                         {
                             { 11009u, false },
                             { 11010u, false },
@@ -320,16 +326,18 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     21u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 21,
+                            Details = { },
                     }
                 },
                 {
                     36u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 36,
+                            Details =
                         {
                             { 22001u, true },
                             { 22002u, false },
@@ -342,9 +350,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     37u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 37,
+                            Details =
                         {
                             { 23001u, true },
                             { 23012u, true },
@@ -356,9 +365,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     39u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 39,
+                            Details =
                         {
                             { 24001u, true },
                         },
@@ -366,9 +376,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     40u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 40,
+                            Details =
                         {
                             { 25001u, true },
                         },
@@ -376,23 +387,26 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     60u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 60,
+                            Details = { },
                     }
                 },
                 {
                     61u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 61,
+                            Details = { },
                     }
                 },
                 {
                     133u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks =
+                            Type = 133,
+                            Details =
                         {
                             { 1335001u, false },
                             { 1335101u, false },
@@ -401,9 +415,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 },
                 {
                     162u,
-                    new SystemUnlock
+                    new ProtoIndex
                         {
-                            Unlocks = { },
+                            Type = 162,
+                            Details = { },
                     }
                 },
             },
@@ -413,7 +428,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                     36u,
                     new IndexInfo
                     {
-                        Version =
+                        Details =
                         {
                             { 22001u, 1703592104 },
                             { 22002u, 1728668611 },
@@ -428,7 +443,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                     37u,
                     new IndexInfo
                     {
-                        Version =
+                        Details =
                         {
                             { 23001u, 1703592104 },
                             { 23012u, 1703900704 },
@@ -442,16 +457,16 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         };
 
         foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(accountUid))
-            response.Indices[13].Unlocks[costume.CostumeId] = true;
+            response.Indices[13].Details[costume.CostumeId] = true;
 
         foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
-            response.Indices[21].Unlocks[weaponMod.WeaponModId] = true;
+            response.Indices[21].Details[weaponMod.WeaponModId] = true;
 
         foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
-            response.Indices[60].Unlocks[weaponSkin.WeaponSkinId] = true;
+            response.Indices[60].Details[weaponSkin.WeaponSkinId] = true;
 
         foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(accountUid))
-            response.Indices[61].Unlocks[weaponModSkin.WeaponModSkinId] = true;
+            response.Indices[61].Details[weaponModSkin.WeaponModSkinId] = true;
 
         foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(accountUid))
         {
@@ -460,7 +475,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 continue;
             }
 
-            response.Indices[162u].Unlocks[item.ItemId] = true;
+            response.Indices[162u].Details[item.ItemId] = true;
         }
 
         return response;
