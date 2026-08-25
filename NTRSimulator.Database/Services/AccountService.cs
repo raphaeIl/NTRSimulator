@@ -5,27 +5,27 @@ namespace NTRSimulator.Database.Services
 {
     public interface IAccountService
     {
-        Account? GetByUid(uint accountUid);
-        Account? GetByEmail(string email);
-        Account CreateAccount(string email, string passwordHash, bool isGuest, DateTime nowUtc);
-        void UpdateLastLogin(Account account, DateTime nowUtc);
+        AccountEntity? GetByUid(uint accountUid);
+        AccountEntity? GetByEmail(string email);
+        AccountEntity CreateAccount(string email, string passwordHash, bool isGuest, DateTime nowUtc);
+        void UpdateLastLogin(AccountEntity account, DateTime nowUtc);
     }
 
     public sealed class AccountService(IAccountRepository accountRepository) : IAccountService
     {
-        public Account? GetByUid(uint accountUid)
+        public AccountEntity? GetByUid(uint accountUid)
         {
             return accountRepository.GetByUid(accountUid);
         }
 
-        public Account? GetByEmail(string email)
+        public AccountEntity? GetByEmail(string email)
         {
             return accountRepository.GetByEmail(email);
         }
 
-        public Account CreateAccount(string email, string passwordHash, bool isGuest, DateTime nowUtc)
+        public AccountEntity CreateAccount(string email, string passwordHash, bool isGuest, DateTime nowUtc)
         {
-            var account = new Account
+            var account = new AccountEntity
             {
                 Email = email,
                 PasswordHash = passwordHash,
@@ -39,7 +39,7 @@ namespace NTRSimulator.Database.Services
             return account;
         }
 
-        public void UpdateLastLogin(Account account, DateTime nowUtc)
+        public void UpdateLastLogin(AccountEntity account, DateTime nowUtc)
         {
             account.TimeLastLogin = nowUtc;
             accountRepository.SaveChanges();

@@ -9,11 +9,11 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetControlFightInfo
                     {
-                        Field3 = new SC_ControlFightSettle_F3Type
+                        AGOKHELMAPP = new GBELKJBMGBP
                         {
-                            Field2 = 0,
-                            Field1 = { },
-                            Field3 = 0,
+                            CurrId = 0,
+                            CGALBDIKHKH = { },
+                            IONMLJBJODF = 0,
                         },
                     });
         }

@@ -9,41 +9,41 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(1, new SC_SupportRoomInfo
                     {
-                        Field1 = new SC_SupportRoomInfo_F1Type
+                        ABOENIKPJLH = new MIFHFBCEDCD
                         {
-                            Field1 =
+                            KMPIHKFBAEP =
                     {
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [3] = 20,
                                 [4] = 20,
@@ -52,45 +52,45 @@ namespace NTRSimulator.GameServer.Handlers
                                 [1] = 20,
                                 [2] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [6] = 20,
                                 [1] = 20,
@@ -99,45 +99,45 @@ namespace NTRSimulator.GameServer.Handlers
                                 [4] = 20,
                                 [5] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [1] = 20,
                                 [2] = 20,
@@ -146,45 +146,45 @@ namespace NTRSimulator.GameServer.Handlers
                                 [5] = 20,
                                 [6] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [2] = 20,
                                 [3] = 20,
@@ -193,45 +193,45 @@ namespace NTRSimulator.GameServer.Handlers
                                 [6] = 20,
                                 [1] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [4] = 20,
                                 [5] = 20,
@@ -240,45 +240,45 @@ namespace NTRSimulator.GameServer.Handlers
                                 [2] = 20,
                                 [3] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [4] = 20,
                                 [5] = 20,
@@ -287,45 +287,45 @@ namespace NTRSimulator.GameServer.Handlers
                                 [2] = 20,
                                 [3] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
-                        new CS_StageInto_F11Type
+                        new OMBHFHECHOO
                         {
-                            Field1 = "",
-                            Field2 =
+                            Name = "",
+                            CDLNJHGCDMK =
                             {
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
-                                new CS_StageInto_F11Type_F2Type
+                                new EFLMEODNBLD
                                 {
-                                    Field1 = 0,
-                                    Field2 = 0,
-                                    Field3 =
+                                    COCHLPMJPOJ = 0,
+                                    LOOPDHFNOIH = 0,
+                                    JIHKJNEPGBB =
                                     {
                                     },
                                 },
                             },
-                            Field3 =
+                            GDLFJIJOMAL =
                             {
                                 [2] = 20,
                                 [3] = 20,
@@ -334,20 +334,20 @@ namespace NTRSimulator.GameServer.Handlers
                                 [6] = 20,
                                 [1] = 20,
                             },
-                            Field4 = 0,
-                            Field5 =
+                            AHICNPGNNOC = 0,
+                            JELCIHPBECA =
                             {
                             },
-                            Field6 =
+                            ENFCKIOLJNM =
                             {
                             },
                         },
                     },
-                            Field2 = 1,
-                            Field8 =
+                            HLCFEAGODDH = 1,
+                            JJGNHDJNMJM =
                     {
                     },
-                            Field9 = 1,
+                            IFMGFOIGHNM = 1,
                         },
                     });
         }
@@ -356,7 +356,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_SupportTeams
                     {
-                        Field1 = { },
+                        NJMEBOGONKG = { },
                     });
         }
     }

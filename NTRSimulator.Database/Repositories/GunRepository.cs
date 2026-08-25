@@ -3,9 +3,9 @@ using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Repositories
 {
-    public sealed class GunRepository(NTRSimulatorDbContext db) : Repository<Gun>(db), IGunRepository
+    public sealed class GunRepository(NTRSimulatorDbContext db) : Repository<GunEntity>(db), IGunRepository
     {
-        public List<Gun> GetGunsByUid(uint uid)
+        public List<GunEntity> GetGunsByUid(uint uid)
         {
             return Db.Guns.Where(g => g.Account.Uid == uid).ToList();
         }
@@ -17,14 +17,14 @@ namespace NTRSimulator.Database.Repositories
 
         public int Count() => Db.Guns.Count();
 
-        public Gun? GetById(uint id) => Db.Guns.SingleOrDefault(g => g.Id == id);
+        public GunEntity? GetById(uint id) => Db.Guns.SingleOrDefault(g => g.Id == id);
     }
 
-    public interface IGunRepository : IRepository<Gun>
+    public interface IGunRepository : IRepository<GunEntity>
     {
-        Gun? GetById(uint id);
+        GunEntity? GetById(uint id);
         int Count();
-        List<Gun> GetGunsByUid(uint uid);
+        List<GunEntity> GetGunsByUid(uint uid);
         void DeleteAll();
     }
 }

@@ -16,7 +16,7 @@ namespace NTRSimulator.Common.Networking
         ILogger logger)
     {
         public PlayerSession? Session { get; set; }
-        public Account? Account { get; set; }
+        public AccountEntity? Account { get; set; }
         public long? ServerTimeOverride { get; set; }
 
         private readonly NetworkStream _stream = client.GetStream();

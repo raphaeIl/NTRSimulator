@@ -14,19 +14,19 @@ namespace NTRSimulator.Common.Utils
 
         public const string ClientVersion = "3.0.3531.0.0";
 
-        public const string AbResourceVersion = "3.0.3531.12401.24054";
+        public const string AbResourceVersion = "3.0.3531.13790.26703";
 
         public const string GameClientVersion = "3.0.3531";
 
-        public const string StcVersion = "1093303";
+        public const string StcVersion = "1145428";
 
-        public const string BinaryVersion = "3.0.3531.2689";
+        public const string BinaryVersion = "3.0.3531.2901";
 
-        public const string MustUpdateVersionClient = "11192.21670";
+        public const string MustUpdateVersionClient = "13407.25794";
 
-        public const string MustUpdateVersionBin = "2343";
+        public const string MustUpdateVersionBin = "2825";
 
-        public const string MustUpdateVersionStc = "1048877";
+        public const string MustUpdateVersionStc = "1128281";
 
         public const int GameNoticeListVersion = 1001;
     }

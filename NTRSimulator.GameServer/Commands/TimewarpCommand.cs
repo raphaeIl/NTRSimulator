@@ -64,8 +64,8 @@ public sealed class TimewarpCommand(ConnectionManager connectionManager) : IComm
         targetConnection.ServerTimeOverride = requestedServerTime;
         targetConnection.Send(new SC_Sync
         {
-            Field1 = requestedServerTime,
-            Field2 = 0
+            Timestamp = requestedServerTime,
+            ActiveTime = 0
         });
 
         ctx.Reply($"Set in-game server time to {requestedServerTime} for uid {targetUid}.");

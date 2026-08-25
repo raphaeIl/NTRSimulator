@@ -9,13 +9,13 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_DifficultInfo
             {
-                Field1 = new SC_DifficultInfo_F1Type
+                Difficult = new SimCombatDifficult
                 {
-                    Field1 = { },
-                    Field2 = { },
-                    Field3 = 0,
-                    Field4 = { },
-                    Field5 = 0,
+                    RaidTime = { },
+                    Info = { },
+                    TotalRaid = 0,
+                    HCHEDDOPGLL = { },
+                    IIJGACGAEAO = 0,
                 },
             });
         }

@@ -9,8 +9,8 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_Sync
             {
-                Field1 = connection.ServerTimeOverride ?? DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
-                Field2 = 0
+                Timestamp = connection.ServerTimeOverride ?? DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+                ActiveTime = 0
 
             });
         }

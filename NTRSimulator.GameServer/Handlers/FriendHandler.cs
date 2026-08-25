@@ -1,4 +1,5 @@
 using Google.Protobuf;
+using Google.Protobuf.Collections;
 using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 
@@ -8,94 +9,113 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleFriends(CS_Friends request, Connection connection)
         {
-            connection.Send(new SC_Friends
+            SC_Friends response = new SC_Friends
             {
-                Field2 = { },
-                Field3 = { },
-                Field4 = { },
-                Field5 = { },
-            });
+                Marks = { },
+                MIBABEHJCIK = { },
+                BHJLKLNBAFO = { },
+            };
+            FillFriends(response.Friends);
+            connection.SendAutoEncrypted(response);
         }
 
         public override void HandleFriendApplyList(CS_FriendApplyList request, Connection connection)
         {
             connection.Send(new SC_FriendApplyList
             {
-                Field1 = { },
+                Apps = { },
             });
         }
 
         public override void HandleRefreshFriends(CS_RefreshFriends request, Connection connection)
         {
-            var response = new SC_RefreshFriends
+            SC_RefreshFriends response = new SC_RefreshFriends
             {
-                Field2 = { },
-                Field3 = { },
+                Marks = { },
+                MIBABEHJCIK = { },
             };
-            // response.Field4[11651UL] = CreateFriendBrief(11651, "雷蒙先生", 21247, 24057);
-            response.Field4[1UL] = CreateFriendBrief(1, "Raymond (雷蒙先生)", 21257, 24023);
-            response.Field4[2] = CreateFriendBrief(2, "95（好女孩）", 21050, 24060);
-            response.Field4[3] = CreateFriendBrief(3, "雨中每亩", 1021035, 24160);
-
+            FillFriends(response.Friends);
             connection.SendAutoEncrypted(response);
         }
 
-        private static SC_FriendAdd_F2Type CreateFriendBrief(ulong id, string name, uint avatarId, uint avatarFrameId)
+        private static void FillFriends(MapField<ulong, Friend> friends)
         {
-            return new SC_FriendAdd_F2Type
+            friends[1UL] = CreateFriendBrief(1, "Raymond (雷蒙先生)", 21257, 24023);
+            friends[2UL] = CreateFriendBrief(2, "95（好女孩）", 21050, 24060);
+            friends[3UL] = CreateFriendBrief(3, "雨中每亩", 21015, 24160);
+        }
+
+        private static Friend CreateFriendBrief(ulong id, string name, uint avatarId, uint avatarFrameId)
+        {
+            User user = new User
             {
-                Field1 = id,
-                Field2 = new SC_AsyncPvpHistory_F1Type_F1Type
+                Uid = id,
+                Name = name,
+                Level = 60,
+                Sex = Sex.Female,
+                Birthday = 709,
+                Portrait = avatarId,
+                PortraitFrame = avatarFrameId,
+                Status = new User.Types.LoginStatus
                 {
-                    Field1 = new SC_Login_F1Type
+                    Online = true,
+                    LoginTime = 1,
+                    LogoutTime = 2,
+                    SyncTime = 3,
+                },
+                Title = 23087,
+                Medal = 22004,
+                MaxStage = 30465,
+                AchievementLevel = 1,
+                CreatTime = 1,
+                GunNum = 56,
+                Assistants =
+                {
+                    CreateAssistant(0, 1047, 60, 1104700, 1),
+                    CreateAssistant(1, 1032, 60, 1103200, 2),
+                    CreateAssistant(2, 1025, 60, 1102500, 3, grade: 2),
+                },
+                IDMOCOHNLDO = new User.Types.JMMLGEDCIGB
+                {
+                    JBMNHBBGAHP = false,
+                    OHPHNKCEGCM = 1,
+                    GPJEDMDBIIJ = 1,
+                },
+                MPDCKNHELFH = (POAMOPPDEJC)19,
+                HEEDJKIDCLI = new User.Types.KEKFMLHLAMN(),
+                PMJNEPPFAKF = new User.Types.IBGENNDHELL
+                {
+                    IKDMNOBMIFE = 1,
+                },
+            };
+
+            return new Friend
+            {
+                Id = id,
+                User = new BinaryUser
+                {
+                    Data = user.ToByteString(),
+                    IHNCKKDOJLL = new MNCIHOEMEMP
                     {
-                        Field1 = id,
-                        Field2 = name,
-                        Field3 = 60,
-                        Field5 = Enum_Male_Female.Female,
-                        Field6 = 709,
-                        Field7 = avatarId,
-                        Field10 = new SC_Login_F1Type_F10Type
-                        {
-                            Field1 = true,
-                            Field2 = 12312312,
-                            Field3 = 123123123,
-                            Field4 = 123123,
-                            Field5 = 1231232323,
-                        },
-                        Field12 = 123123,
-                        Field13 = "ntrsimulator",
-                        Field15 = 23087,
-                        Field16 = 22004,
-                        Field17 = 30465,
-                        Field18 = 123123123,
-                        Field19 = 12321313,
-                        Field20 = 56,
-                        Field21 = avatarFrameId,
-                        Field29 =
-                        {
-                 
-                        },
-                        Field31 = 3,
-                        Field32 = 4,
-                        Field34 = new SC_Login_F1Type_F34Type
-                        {
-                            Field2 = 1163,
-                            Field3 = 40,
-                        },
-                        Field35 = Enum_None_CashTicket_MonthCardReward_StoreDailyRefresh_JiangyuLoad.WeaponMigrate,
-                        Field39 = new SC_HeroModeMark_F1Type
-                        {
-                            Field1 = 1780963200UL,
-                            Field2 = 1f,
-                        },
-                        Field40 = new SC_Login_F1Type_F40Type
-                        {
-                            Field1 = 27,
-                            Field2 = 120,
-                        },
-                        Field42 = 1863,
-                    }.ToByteString(),
+                        IKDMNOBMIFE = 1,
+                    },
+                    KAEDHCMMJKP = new MPHCOCKNKGA(),
+                },
+            };
+        }
+
+        private static BJMBKFICIAC CreateAssistant(int idx, uint gunId, uint level, uint costumeId, uint gpjl, uint grade = 0)
+        {
+            return new BJMBKFICIAC
+            {
+                Idx = idx,
+                BKGHHPKAKBL = new GunAvatar
+                {
+                    Id = gunId,
+                    Level = level,
+                    Grade = grade,
+                    CostumeId = costumeId,
+                    EFKCPDGOHPA = gpjl,
                 },
             };
         }

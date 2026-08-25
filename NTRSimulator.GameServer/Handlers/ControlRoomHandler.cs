@@ -9,23 +9,23 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ControlRoomInfo
                     {
-                        Field1 = new SC_ControlRoomInfo_F1Type
+                        LIGIJKFNABP = new FOFHJPHAJBB
                         {
-                            Field1 = 1,
-                            Field2 = new SC_ControlRoomInfo_F1Type_F2Type
+                            Level = 1,
+                            DFABABLCGHH = new KOEDCHCBJNJ
                             {
-                                Field1 = 0,
-                                Field2 = 1762675047,
+                                JEELHBDIIHI = 0,
+                                RefreshTime = 1762675047,
                             },
-                            Field3 = { },
-                            Field4 = { },
-                            Field5 = { },
-                            Field6 = 0,
-                            Field7 = { },
-                            Field8 = 0,
-                            Field9 = 0,
+                            OIMEBMHAFPE = { },
+                            BCFPLLOKLOJ = { },
+                            OCKDMJGKKAP = { },
+                            GANJJEKKNMJ = 0,
+                            MFNMINHPEJF = { },
+                            NOMKAFOLOIO = 0,
+                            BBBLPEMJMJN = 0,
                         },
-                        Field2 = { },
+                        AHGJPJEKGJH = { },
                     });
         }
 
@@ -33,24 +33,24 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ControlRoomScheme
             {
-                Field1 = new SC_ControlRoomScheme_F1Type
+                FIBHCMPGDIK = new OneUnit
                 {
-                    Field1 =
+                    OBMLMKKHBIA =
                     {
                         1647247360, 1645478144, 1638859520, 1640563712, 1645678848, 1645744386, 1649742336, 1646723584, 1646724352, 1645413888, 1645545216, 1645611008, 1645807872, 1645873664, 1646136064, 1646201856, 1647447296, 1647513088, 1647578880, 1647710208, 1647841282, 1647907330, 1648300800, 1648366592
                     },
-                    Field2 = { 1704003614 },
-                    Field3 = 1335002,
-                    Field4 = 1335101,
-                    Field5 =
+                    OAADPGBJAFC = { 1704003614 },
+                    FJFCNNNPACN = 1335002,
+                    ELANFNLJCFM = 1335101,
+                    GMHAPPNLCPG =
                     {
                         61, 501, 980, 594, 699, 1210, 152, 0, 0
                     },
-                    Field6 = { },
-                    Field7 = { },
+                    AHGJPJEKGJH = { },
+                    CDJLGOLKEBG = { },
                 },
-                Field2 = 0,
-                Field3 = { },
+                HAOEIOLJDNP = 0,
+                KKABLJJJBHM = { },
             });
         }
 

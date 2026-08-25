@@ -43,6 +43,8 @@ namespace NTRSimulator.SDKServer.Controllers
                         H5LevasitupApiUrl = "https://gf2-h5levasitup-api.sunborngame.com/client/remain_cnt",
                         H5LevasitupWebUrl = "https://gf2.sunborngame.com/lydrlyd/",
                         LotteryH5WebUrl = "https://gf2.sunborngame.com/HHZZRaffle/",
+                        MicaH5ElmoRebuildApiUrl = "https://gf2-h5elmorebuild-api.sunborngame.com/client/lottery/remain_cnt",
+                        MicaH5ElmoRebuildWebUrl = "https://gf2.sunborngame.com/amhfbdzz/cn/",
                         NoticeAddr = "https://gf2-zoneinfo.sunborngame.com/gf2/game_notice_list",
                         NoticeHtmlAddr = string.Empty,
                         NoticeWebUrl = "https://gf2-gamenotice.sunborngame.com",

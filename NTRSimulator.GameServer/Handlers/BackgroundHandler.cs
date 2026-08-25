@@ -7,7 +7,7 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandleBackgroundInfo(CS_BackgroundInfo request, Connection connection)
         {
-            connection.Send(new SC_BackgroundInfo { Field1 = 1001 });
+            connection.Send(new SC_BackgroundInfo { Background = 1001 });
         }
     }
 }

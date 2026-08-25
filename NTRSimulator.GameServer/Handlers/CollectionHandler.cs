@@ -9,10 +9,10 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_GetCollectionInfo
                     {
-                        Field1 = new SC_GetCollectionInfo_F1Type
+                        MPBPMJOCFFM = new LFIIJJHKECB
                         {
-                            Field1 = 0,
-                            Field2 = { },
+                            CurrId = 0,
+                            History = { },
                         },
                     });
         }

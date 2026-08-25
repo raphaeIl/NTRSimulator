@@ -385,4 +385,6 @@ NTRSimulator.Common.Proto/**/*.proto
 
 temp/
 
+tools/
+
 .vscode/

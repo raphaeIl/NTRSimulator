@@ -7,13 +7,13 @@ namespace NTRSimulator.GameServer.Handlers
 {
     public sealed class ItemHandler(IInventoryService inventoryService) : ItemHandlerBase
     {
-        private const int ItemsPerResponse = 200;
+        private const int ItemsPerResponse = 100;
 
         public override void HandleItems(CS_Items request, Connection connection)
         {
             if (connection.Account == null) return;
 
-            Item[] items = inventoryService.GetPlayerInventory<Item>(connection.Account.Uid);
+            ItemEntity[] items = inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid);
 
             if (items.Length == 0)
             {

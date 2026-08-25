@@ -9,21 +9,20 @@ namespace NTRSimulator.GameServer.Handlers
         {
                     connection.Send(new SC_ThemeMiniGameInfo
                     {
-                        Field1 = 3601,
-                        Field2 = 21005,
-                        Field3 = null,
-                        Field4 = null,
-                        Field5 = null,
-                        Field6 = new SC_LobbyMiniGameInfo_F1ValueType_F4Type
+                        ThemeId = 3601,
+                        FNEFKKLJMDN = 21005,
+                        CandyCatchData = null,
+                        CardFlipData = null,
+                        AuditionData = null,
+                        DoodleJumpData = new FOMAJCHMPFL
                         {
-                            Field1 = false,
-                            Field2 = 0,
-                            Field3 = 0,
-                            Field4 = 0,
+                            KNFOFFBOCML = false,
+                            CGFMBCCDFPG = 0,
+                            Duration = 0,
+                            Times = 0,
                         },
-                        Field7 = null,
-                        Field8 = null,
-                        Field9 = 0,
+                        MotorcycleData = null,
+                        ButtGameData = null,
                     });
         }
 

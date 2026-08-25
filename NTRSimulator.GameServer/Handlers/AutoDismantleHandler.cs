@@ -10,10 +10,10 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(
             new SC_GetAutoDismantleRulesInfo
             {
-                Field1 = new SC_GetAutoDismantleRulesInfo_F1Type
+                CEOJCLOOAOA = new NGOKNFICEOD
                 {
-                    Field1 = null,
-                    Field2 = null,
+                    HOECFIANEAB = null,
+                    JGPEJLJCGMB = null,
                 },
             }
             );

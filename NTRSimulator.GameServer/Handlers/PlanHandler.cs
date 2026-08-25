@@ -13,22 +13,22 @@ namespace NTRSimulator.GameServer.Handlers
     {
         public override void HandlePlan(CS_Plan req, Connection connection)
         {
-            switch (req.Field1)
+            switch (req.Type)
             {
                 case 1:
                     connection.Send(new SC_Plan
                     {
-                        Field1 = 1,
-                        Field2 = 10004,
-                        Field3 =
+                        Type = 1,
+                        Id = 10004,
+                        Plans =
                         {
-                            new SC_Plan_F3Type
+                            new Plan
                             {
-                                Field1 = 10004,
-                                Field2 = 1,
-                                Field3 = 1727038800,
-                                Field4 = 4070897999,
-                                Field5 = { 4 },
+                                Id = 10004,
+                                Type = 1,
+                                OpenTime = 1727038800,
+                                CloseTime = 4070897999,
+                                Args = { 4 },
                             },
                         },
                     });
@@ -36,17 +36,17 @@ namespace NTRSimulator.GameServer.Handlers
                 case 2:
                     connection.Send(new SC_Plan
                     {
-                        Field1 = 2,
-                        Field2 = 20138,
-                        Field3 =
+                        Type = 2,
+                        Id = 20138,
+                        Plans =
                         {
-                            new SC_Plan_F3Type
+                            new Plan
                             {
-                                Field1 = 20138,
-                                Field2 = 2,
-                                Field3 = 1779051600,
-                                Field4 = 1779652800,
-                                Field5 = { 30034 },
+                                Id = 20138,
+                                Type = 2,
+                                OpenTime = 1779051600,
+                                CloseTime = 1779652800,
+                                Args = { 30034 },
                             },
                         },
                     });
@@ -54,17 +54,17 @@ namespace NTRSimulator.GameServer.Handlers
                 case 3:
                     connection.Send(new SC_Plan
                     {
-                        Field1 = 3,
-                        Field2 = 30034,
-                        Field3 =
+                        Type = 3,
+                        Id = 30034,
+                        Plans =
                         {
-                            new SC_Plan_F3Type
+                            new Plan
                             {
-                                Field1 = 30034,
-                                Field2 = 3,
-                                Field3 = 1779148800,
-                                Field4 = 1780865999,
-                                Field5 = { 30034 },
+                                Id = 30034,
+                                Type = 3,
+                                OpenTime = 1779148800,
+                                CloseTime = 1780865999,
+                                Args = { 30034 },
                             },
                         },
                     });
@@ -72,21 +72,21 @@ namespace NTRSimulator.GameServer.Handlers
                 case 12:
                     connection.Send(new SC_Plan
                     {
-                        Field1 = 12,
-                        Field2 = 0,
-                        Field3 = { },
+                        Type = 12,
+                        Id = 0,
+                        Plans = { },
                     });
                     break;
                 case 93:
                     connection.Send(new SC_Plan
                     {
-                        Field1 = 93,
-                        Field2 = 0,
-                        Field3 = { },
+                        Type = 93,
+                        Id = 0,
+                        Plans = { },
                     });
                     break;
                 default:
-                    Log.Warning("Unhandled MsgCsPlan Field1={Field1}", req.Field1);
+                    Log.Warning("Unhandled MsgCsPlan Field1={Field1}", req.Type);
                     break;
             }
         }

@@ -3,19 +3,19 @@ using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Repositories
 {
-    public sealed class WeaponModSkinRepository(NTRSimulatorDbContext db) : Repository<WeaponModSkin>(db), IWeaponModSkinRepository
+    public sealed class WeaponModSkinRepository(NTRSimulatorDbContext db) : Repository<WeaponModSkinEntity>(db), IWeaponModSkinRepository
     {
-        public WeaponModSkin[] GetWeaponModSkinsByUid(uint uid)
+        public WeaponModSkinEntity[] GetWeaponModSkinsByUid(uint uid)
         {
             return Db.WeaponModSkins.Where(s => s.Account.Uid == uid).ToArray();
         }
 
-        public WeaponModSkin? GetById(uint id) => Db.WeaponModSkins.SingleOrDefault(s => s.Id == id);
+        public WeaponModSkinEntity? GetById(uint id) => Db.WeaponModSkins.SingleOrDefault(s => s.Id == id);
     }
 
-    public interface IWeaponModSkinRepository : IRepository<WeaponModSkin>
+    public interface IWeaponModSkinRepository : IRepository<WeaponModSkinEntity>
     {
-        WeaponModSkin? GetById(uint id);
-        WeaponModSkin[] GetWeaponModSkinsByUid(uint uid);
+        WeaponModSkinEntity? GetById(uint id);
+        WeaponModSkinEntity[] GetWeaponModSkinsByUid(uint uid);
     }
 }

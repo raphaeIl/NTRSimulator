@@ -1,9 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace NTRSimulator.Database.Entities
 {
-    public class Item
+    [Table("Items")]
+    public class ItemEntity
     {
         [Key]
         public uint Id { get; set; }
@@ -15,6 +17,6 @@ namespace NTRSimulator.Database.Entities
         public int Count { get; set; } = 1;
 
         [JsonIgnore]
-        public virtual Account Account { get; set; } = null!;
+        public virtual AccountEntity Account { get; set; } = null!;
     }
 }

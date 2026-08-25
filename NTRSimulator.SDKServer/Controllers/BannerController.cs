@@ -7,10 +7,10 @@ namespace NTRSimulator.SDKServer.Controllers
     [Route("/banner")]
     public class BannerController : ControllerBase
     {
-        private const string DefaultStartTime = "2026-06-09 08:00:00";
-        private const string DefaultEndTime = "2026-06-30 05:59:59";
-        private const long DefaultStartTimeTs = 1780963200;
-        private const long DefaultEndTimeTs = 1782770399;
+        private const string DefaultStartTime = "2026-08-11 08:30:00";
+        private const string DefaultEndTime = "2026-09-01 07:59:59";
+        private const long DefaultStartTimeTs = 1786408200;
+        private const long DefaultEndTimeTs = 1788220799;
 
         [HttpGet]
         public IResult GetBanner(
@@ -32,34 +32,32 @@ namespace NTRSimulator.SDKServer.Controllers
                 Data =
                 [
                     Banner(
-                        id: 521,
-                        picName: "1780558704139.png",
-                        sort: 521,
-                        jumpId: 6348),
+                        id: 543,
+                        picName: "1786011907866.png",
+                        sort: 544,
+                        jumpId: 6372),
                     Banner(
-                        id: 519,
-                        picName: "1780558494111.png",
-                        sort: 519,
+                        id: 542,
+                        picName: "1786011802695.png",
+                        sort: 543,
                         jumpId: 5105),
                     Banner(
-                        id: 518,
-                        picName: "1780558269360.png",
-                        sort: 518,
-                        jumpId: 5105),
+                        id: 541,
+                        picName: "1786011736541.png",
+                        sort: 542,
+                        jumpId: 5116,
+                        startTime: "2026-08-19 05:00:00",
+                        startTimeTs: 1787086800),
                     Banner(
-                        id: 517,
-                        picName: "1780558188669.png",
-                        sort: 517,
-                        jumpId: 51006),
+                        id: 540,
+                        picName: "1786011644363.png",
+                        sort: 541,
+                        jumpId: 5117),
                     Banner(
-                        id: 514,
-                        picName: "1780022833928.png",
-                        sort: 516,
-                        jumpId: 5105,
-                        startTime: "2026-06-01 05:00:00",
-                        endTime: "2026-06-30 23:59:59",
-                        startTimeTs: 1780261200,
-                        endTimeTs: 1782835199),
+                        id: 539,
+                        picName: "1786011539480.png",
+                        sort: 540,
+                        jumpId: 30000),
                 ],
             };
         }

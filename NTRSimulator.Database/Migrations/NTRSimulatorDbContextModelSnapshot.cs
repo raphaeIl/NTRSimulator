@@ -22,7 +22,7 @@ namespace NTRSimulator.Database.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Account", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.AccountEntity", b =>
                 {
                     b.Property<long>("Uid")
                         .ValueGeneratedOnAdd()
@@ -55,7 +55,7 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("Accounts");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.AvgDuo", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.AvgDuoEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -67,10 +67,14 @@ namespace NTRSimulator.Database.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<long[]>("AvgDuoMainStageIds")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("bigint[]")
                         .HasDefaultValue(new long[0]);
 
                     b.Property<long[]>("AvgDuoSubStageIds")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("bigint[]")
                         .HasDefaultValue(new long[0]);
 
@@ -82,7 +86,7 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("AvgDuos");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Costume", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.CostumeEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -105,7 +109,7 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("Costumes");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Gun", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.GunEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -139,7 +143,41 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("Guns");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Weapon", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.ItemEntity", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("AccountUid")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Count")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(1);
+
+                    b.Property<long>("ItemId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Type")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(0);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("AccountUid", "ItemId")
+                        .IsUnique();
+
+                    b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -166,11 +204,11 @@ namespace NTRSimulator.Database.Migrations
                         .HasColumnType("integer")
                         .HasDefaultValue(1);
 
-                    b.Property<long>("WeaponId")
-                        .HasColumnType("bigint");
-
                     b.Property<DateTime>("TimeCreated")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<long>("WeaponId")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
@@ -183,43 +221,7 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("Weapons");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Item", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("AccountUid")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("Count")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(1);
-
-                    b.Property<long>("ItemId")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("Type")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(0);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AccountUid");
-
-                    b.HasIndex("ItemId");
-
-                    b.HasIndex("AccountUid", "ItemId")
-                        .IsUnique();
-
-                    b.ToTable("Items");
-                });
-
-            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponMod", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponModEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -240,25 +242,23 @@ namespace NTRSimulator.Database.Migrations
                         .HasColumnType("bigint")
                         .HasDefaultValue(0L);
 
-                    b.Property<long>("Field7")
+                    b.Property<decimal>("Field7")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasDefaultValue(0L);
+                        .HasColumnType("numeric(20,0)")
+                        .HasDefaultValue(0m);
 
                     b.Property<long>("Level")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
                         .HasDefaultValue(0L);
 
-                    b.Property<long>("Uid")
-                        .HasColumnType("bigint");
+                    b.Property<decimal>("Uid")
+                        .HasColumnType("numeric(20,0)");
 
                     b.Property<long>("WeaponModId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AccountUid");
 
                     b.HasIndex("Uid")
                         .IsUnique();
@@ -271,7 +271,7 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("WeaponMods");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponModSkin", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponModSkinEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -287,8 +287,6 @@ namespace NTRSimulator.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AccountUid");
-
                     b.HasIndex("WeaponModSkinId");
 
                     b.HasIndex("AccountUid", "WeaponModSkinId")
@@ -297,7 +295,7 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("WeaponModSkins");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponSkin", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponSkinEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -313,8 +311,6 @@ namespace NTRSimulator.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AccountUid");
-
                     b.HasIndex("WeaponSkinId");
 
                     b.HasIndex("AccountUid", "WeaponSkinId")
@@ -323,9 +319,20 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("WeaponSkins");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Costume", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.AvgDuoEntity", b =>
                 {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
+                        .WithOne("AvgDuo")
+                        .HasForeignKey("NTRSimulator.Database.Entities.AvgDuoEntity", "AccountUid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("NTRSimulator.Database.Entities.CostumeEntity", b =>
+                {
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
                         .WithMany("Costumes")
                         .HasForeignKey("AccountUid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -334,20 +341,9 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.AvgDuo", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.GunEntity", b =>
                 {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
-                        .WithOne("AvgDuo")
-                        .HasForeignKey("NTRSimulator.Database.Entities.AvgDuo", "AccountUid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Account");
-                });
-
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Gun", b =>
-                {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
                         .WithMany("Guns")
                         .HasForeignKey("AccountUid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -356,20 +352,9 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Weapon", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.ItemEntity", b =>
                 {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
-                        .WithMany("Weapons")
-                        .HasForeignKey("AccountUid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Account");
-                });
-
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Item", b =>
-                {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
                         .WithMany("Items")
                         .HasForeignKey("AccountUid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -378,9 +363,20 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponMod", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponEntity", b =>
                 {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
+                        .WithMany("Weapons")
+                        .HasForeignKey("AccountUid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponModEntity", b =>
+                {
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
                         .WithMany("WeaponMods")
                         .HasForeignKey("AccountUid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -389,9 +385,9 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponModSkin", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponModSkinEntity", b =>
                 {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
                         .WithMany("WeaponModSkins")
                         .HasForeignKey("AccountUid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -400,9 +396,9 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponSkin", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.WeaponSkinEntity", b =>
                 {
-                    b.HasOne("NTRSimulator.Database.Entities.Account", "Account")
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
                         .WithMany("WeaponSkins")
                         .HasForeignKey("AccountUid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -411,23 +407,23 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("NTRSimulator.Database.Entities.Account", b =>
+            modelBuilder.Entity("NTRSimulator.Database.Entities.AccountEntity", b =>
                 {
+                    b.Navigation("AvgDuo");
+
                     b.Navigation("Costumes");
 
                     b.Navigation("Guns");
 
                     b.Navigation("Items");
 
-                    b.Navigation("AvgDuo");
-
-                    b.Navigation("Weapons");
+                    b.Navigation("WeaponModSkins");
 
                     b.Navigation("WeaponMods");
 
-                    b.Navigation("WeaponModSkins");
-
                     b.Navigation("WeaponSkins");
+
+                    b.Navigation("Weapons");
                 });
 #pragma warning restore 612, 618
         }

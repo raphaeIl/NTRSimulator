@@ -9,20 +9,20 @@ namespace NTRSimulator.GameServer.Handlers
         {
             
 
-                    switch (request.Field1)
+                    switch (request.ThemeId)
                     {
                         case 3601:
                             connection.Send(new SC_GetSimCafeWarmUpInfo
                             {
-                                Field1 = new SC_GetSimCafeWarmUpInfo_F1Type
+                                ECOOFMAFCBG = new PIBACHAPBJH
                                 {
-                                    Field1 = 1,
-                                    Field2 = { },
-                                    Field3 = { },
-                                    Field4 = 0,
-                                    Field5 = 1779500060L,
+                                    NCINIEDEDFG = 1,
+                                    OKGBJPCOMPA = { },
+                                    FNOAGJBJGGG = { },
+                                    Score = 0,
+                                    BPJMFIBFGKC = 1779500060L,
                                 },
-                                Field2 = 3601,
+                                ThemeId = 3601,
                             });
                             break;
                     }

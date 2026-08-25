@@ -12,18 +12,18 @@ namespace NTRSimulator.GameServer.Handlers
             logger.LogInformation("Chat: {Request}", request);
 
             // Intercept commands prefixed with '/'
-            if (request.Field3 is { Length: > 1 } text && text.StartsWith('/'))
+            if (request.Message is { Length: > 1 } text && text.StartsWith('/'))
             {
                 connection.Send(new SC_Chat
                 {
-                    Field1 = request.Field1,
-                    Field2 = new SC_Chat_F2Type
+                    Uid = request.Uid,
+                    Message = new ChatMessage
                     {
-                        Field1 = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
-                        Field2 = true,
-                        Field5 = request.Field3 ?? "",
-                        Field6 = request.Field2,
-                        Field8 = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
+                        Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
+                        Active = true,
+                        Message = request.Message ?? "",
+                        Emoji = request.Emoji,
+                        Ts = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
                     },
                 });
 
@@ -33,14 +33,14 @@ namespace NTRSimulator.GameServer.Handlers
                     connection,
                     clientReplyCallback: reply => connection.Send(new SC_Chat
                     {
-                        Field1 = request.Field1,
-                        Field2 = new SC_Chat_F2Type
+                        Uid = request.Uid,
+                        Message = new ChatMessage
                         {
-                            Field1 = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
-                            Field2 = false,
-                            Field5 = reply,
-                            Field6 = 0,
-                            Field8 = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
+                            Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
+                            Active = false,
+                            Message = reply,
+                            Emoji = 0,
+                            Ts = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
                         },
                     }));
                 return;
@@ -48,14 +48,14 @@ namespace NTRSimulator.GameServer.Handlers
 
             connection.Send(new SC_Chat
             {
-                Field1 = request.Field1,
-                Field2 = new SC_Chat_F2Type
+                Uid = request.Uid,
+                Message = new ChatMessage
                 {
-                    Field1 = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
-                    Field2 = true,
-                    Field5 = request.Field3 ?? "",
-                    Field6 = request.Field2,
-                    Field8 = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
+                    Id = (long)(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() << 22),
+                    Active = true,
+                    Message = request.Message ?? "",
+                    Emoji = request.Emoji,
+                    Ts = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
                 },
             });
         }
@@ -65,64 +65,39 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_ChatRead
             {
-                Field1 = request.Field1,
+                Uid = request.Uid,
             });
         }
 
         public override void HandleChatDetail(CS_ChatDetail request, Connection connection)
         {
-            switch (request.Field1)
+            const long lastId = 1;
+            connection.Send(new SC_ChatDetail
             {
-                case 1:
-                    connection.Send(new SC_ChatDetail
+                Uid = request.Uid,
+                Chat = new Chat
+                {
+                    Uid = request.Uid,
+                    LastId = lastId,
+                    UnreadNum = 0,
+                    Show = false,
+                    AEEDCNBBHGK = lastId,
+                },
+                History = new FNMCGHAOALB
+                {
+                    KCBKEINNPGK =
                     {
-                        Field1 = 1,
-                        Field2 = new SC_ChatDetail_F2Type
+                        new ChatMessage
                         {
-                            Field1 = 1,
-                            Field2 = 1865715258121785344,
-                            Field5 = 0,
-                            Field6 = false,
-                            Field7 = 0,
-                            Field8 = 1865715258121785344,
+                            Id = lastId,
+                            Active = false,
+                            Message = "Welcome to NTRSimulator!",
+                            Emoji = 0,
+                            Ts = 1,
                         },
-                        Field3 = new SC_ChatDetail_F3Type
-                        {
-                            Field1 =
-                            {
-                                // new SC_Chat_F2Type
-                                // {
-                                //     Field1 = 1865715237374722048,
-                                //     Field2 = true, // is self
-                                //     Field5 = "我喜欢你",
-                                //     Field6 = 0,
-                                //     Field8 = 1780894134,
-                                // },
-                            },
-                            Field2 =
-                            {
-                                new SC_Chat_F2Type
-                                {
-                                    Field1 = 1865715258121785344,
-                                    Field2 = false,
-                                    Field5 = "Welcome to NTRSimulator!",
-                                    Field6 = 0,
-                                    Field8 = 1780894153,
-                                },
-                                new SC_Chat_F2Type
-                                {
-                                    Field1 = 1865715294762176512,
-                                    Field2 = false,
-                                    Field5 = "",
-                                    Field6 = 100901,
-                                    Field8 = 1780932799,
-                                },
-                            },
-
-                        },
-                    });
-                    break;
-            }
+                    },
+                },
+            });
         }
     }
 }

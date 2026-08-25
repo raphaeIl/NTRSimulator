@@ -3,22 +3,22 @@ using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Repositories
 {
-    public sealed class AccountRepository(NTRSimulatorDbContext db) : Repository<Account>(db), IAccountRepository
+    public sealed class AccountRepository(NTRSimulatorDbContext db) : Repository<AccountEntity>(db), IAccountRepository
     {
-        public Account? GetByEmail(string email)
+        public AccountEntity? GetByEmail(string email)
         {
             return Db.Accounts.SingleOrDefault(a => a.Email == email);
         }
 
-        public Account? GetByUid(uint uid)
+        public AccountEntity? GetByUid(uint uid)
         {
             return Db.Accounts.SingleOrDefault(a => a.Uid == uid);
         }
     }
 
-    public interface IAccountRepository : IRepository<Account>
+    public interface IAccountRepository : IRepository<AccountEntity>
     {
-        Account? GetByEmail(string email);
-        Account? GetByUid(uint uid);
+        AccountEntity? GetByEmail(string email);
+        AccountEntity? GetByUid(uint uid);
     }
 }

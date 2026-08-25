@@ -14,7 +14,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_GetPrefaceRecord
             {
-                Field1 = true
+                Preface = true
             });
         }
     }

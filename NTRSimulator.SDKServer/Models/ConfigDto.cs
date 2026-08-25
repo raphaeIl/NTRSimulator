@@ -69,6 +69,12 @@ namespace NTRSimulator.SDKServer.Models
             [JsonPropertyName("lottery_h5_web_url")]
             public string LotteryH5WebUrl { get; set; } = string.Empty;
 
+            [JsonPropertyName("mica_h5_elmo_rebuild_api_url")]
+            public string MicaH5ElmoRebuildApiUrl { get; set; } = string.Empty;
+
+            [JsonPropertyName("mica_h5_elmo_rebuild_web_url")]
+            public string MicaH5ElmoRebuildWebUrl { get; set; } = string.Empty;
+
             [JsonPropertyName("notice_addr")]
             public string NoticeAddr { get; set; } = string.Empty;
 

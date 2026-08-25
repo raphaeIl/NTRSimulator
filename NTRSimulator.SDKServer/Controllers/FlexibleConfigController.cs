@@ -28,7 +28,7 @@ namespace NTRSimulator.SDKServer.Controllers
                 GameDownloadAddr = "https://gf2-cn.cdn.sunborngame.com/game_resources/package/PCClient/",
                 HeadPic = new NexonPlugDto.HeadPicDto
                 {
-                    PicUrl = "https://gf2-cn.cdn.sunborngame.com/website/platform/798D0169C70480879D03B8F0EF39055C.png",
+                    PicUrl = "https://gf2-cn.cdn.sunborngame.com/website/platform/8A8BD8299A06E750FF7F4C5D675BCE1E.png",
                     JumpUrl = string.Empty,
                 },
                 NexonPlugAddr = "https://gf2-cn.cdn.sunborngame.com/game_resources/package/PCLauncher/",

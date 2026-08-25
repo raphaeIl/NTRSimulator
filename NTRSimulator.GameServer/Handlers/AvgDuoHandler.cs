@@ -13,10 +13,10 @@ namespace NTRSimulator.GameServer.Handlers
             SC_GetLobbbyAvgDuoInfo lobbyAvgDuoInfo = new SC_GetLobbbyAvgDuoInfo
             {
                 // main plot
-                Field1 = { },
+                JBLLPJFAIEJ = { },
 
                 // sub plot
-                Field2 = { }
+                KMJPFNBGAIM = { }
             };
 
             var avgDuo = avgDuoRepository.GetByUid(connection.Account.Uid);
@@ -25,12 +25,12 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 foreach (uint avgDuoMainStageId in avgDuo.AvgDuoMainStageIds)
                 {
-                    lobbyAvgDuoInfo.Field1[avgDuoMainStageId] = true;
+                    lobbyAvgDuoInfo.JBLLPJFAIEJ[avgDuoMainStageId] = true;
                 }
 
                 foreach (uint avgDuoSubStageId in avgDuo.AvgDuoSubStageIds)
                 {
-                    lobbyAvgDuoInfo.Field2[avgDuoSubStageId] = true;
+                    lobbyAvgDuoInfo.KMJPFNBGAIM[avgDuoSubStageId] = true;
                 }
             }
 
