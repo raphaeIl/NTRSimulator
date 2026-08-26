@@ -16,6 +16,12 @@ namespace NTRSimulator.Database.Entities
                 account.CostumeParts.Add(costumePart);
         }
 
+        public static void AddBackgrounds(this AccountEntity account, IReadOnlyList<BackgroundEntity> backgrounds)
+        {
+            foreach (var background in backgrounds)
+                account.Backgrounds.Add(background);
+        }
+
         public static void AddGuns(this AccountEntity account, IReadOnlyList<GunEntity> guns)
         {
             foreach (var gun in guns)

@@ -15,6 +15,8 @@ namespace NTRSimulator.Database.Core
 
         public DbSet<CostumePartEntity> CostumeParts => Set<CostumePartEntity>();
 
+        public DbSet<BackgroundEntity> Backgrounds => Set<BackgroundEntity>();
+
         public DbSet<AccountEntity> Accounts => Set<AccountEntity>();
 
         public DbSet<WeaponEntity> Weapons => Set<WeaponEntity>();
@@ -49,6 +51,13 @@ namespace NTRSimulator.Database.Core
                 e.HasIndex(p => p.CostumePartId);
                 e.HasIndex("AccountUid", "CostumePartId").IsUnique();
                 e.Property(p => p.Id).ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<BackgroundEntity>(e =>
+            {
+                e.HasIndex(b => b.BackgroundId);
+                e.HasIndex("AccountUid", "BackgroundId").IsUnique();
+                e.Property(b => b.Id).ValueGeneratedOnAdd();
             });
 
             modelBuilder.Entity<WeaponEntity>(e =>
@@ -117,6 +126,7 @@ namespace NTRSimulator.Database.Core
                 e.Property(a => a.Uid).ValueGeneratedOnAdd();
                 e.Property(a => a.Email).IsRequired();
                 e.Property(a => a.PasswordHash).IsRequired();
+                e.Property(a => a.BackgroundId).HasDefaultValue(1001u);
 
                 e.HasMany(a => a.Guns)
                  .WithOne(g => g.Account)
@@ -128,6 +138,10 @@ namespace NTRSimulator.Database.Core
 
                 e.HasMany(a => a.CostumeParts)
                  .WithOne(p => p.Account)
+                 .IsRequired();
+
+                e.HasMany(a => a.Backgrounds)
+                 .WithOne(b => b.Account)
                  .IsRequired();
 
                 e.HasMany(a => a.Weapons)

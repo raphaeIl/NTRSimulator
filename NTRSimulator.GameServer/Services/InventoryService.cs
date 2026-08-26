@@ -21,6 +21,7 @@ namespace NTRSimulator.GameServer.Services
         IWeaponModSkinService weaponModSkinService,
         ICostumeService costumeService,
         ICostumePartService costumePartService,
+        IBackgroundService backgroundService,
         IAvgDuoService avgDuoService) : IInventoryService
     {
         public void Add<T>(uint accountUid, T item) where T : class
@@ -75,6 +76,12 @@ namespace NTRSimulator.GameServer.Services
                 return;
             }
 
+            if (item is BackgroundEntity background)
+            {
+                backgroundService.AddBackground(accountUid, background);
+                return;
+            }
+
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
         }
 
@@ -120,6 +127,11 @@ namespace NTRSimulator.GameServer.Services
             if (item is CostumePartEntity costumePart)
             {
                 return costumePartService.RemoveCostumePart(accountUid, costumePart);
+            }
+
+            if (item is BackgroundEntity background)
+            {
+                return backgroundService.RemoveBackground(accountUid, background);
             }
 
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
@@ -182,6 +194,12 @@ namespace NTRSimulator.GameServer.Services
                 return;
             }
 
+            if (typeof(T) == typeof(BackgroundEntity))
+            {
+                backgroundService.AddAllBackgrounds(accountUid);
+                return;
+            }
+
             if (typeof(T) == typeof(AvgDuoEntity))
             {
                 avgDuoService.AddAllAvgDuo(accountUid);
@@ -216,6 +234,9 @@ namespace NTRSimulator.GameServer.Services
 
             if (typeof(T) == typeof(CostumePartEntity))
                 return (ICollection<T>)(object)account.CostumeParts;
+
+            if (typeof(T) == typeof(BackgroundEntity))
+                return (ICollection<T>)(object)account.Backgrounds;
 
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
         }

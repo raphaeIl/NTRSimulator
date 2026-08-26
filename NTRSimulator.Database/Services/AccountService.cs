@@ -32,6 +32,7 @@ namespace NTRSimulator.Database.Services
                 IsGuest = isGuest,
                 TimeCreated = nowUtc,
                 TimeLastLogin = nowUtc,
+                BackgroundId = 1001,
             };
 
             accountRepository.Add(account);

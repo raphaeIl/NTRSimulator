@@ -22,8 +22,13 @@ namespace NTRSimulator.Database.Entities
 
         public DateTime TimeLastLogin { get; set; }
 
+        public uint BackgroundId { get; set; } = 1001;
+
         [JsonIgnore]
         public virtual ICollection<GunEntity> Guns { get; set; } = new List<GunEntity>();
+
+        [JsonIgnore]
+        public virtual ICollection<BackgroundEntity> Backgrounds { get; set; } = new List<BackgroundEntity>();
 
         [JsonIgnore]
         public virtual ICollection<CostumeEntity> Costumes { get; set; } = new List<CostumeEntity>();

@@ -23,6 +23,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         Item,
         Costume,
         CostumePart,
+        Background,
         AvgDuo,
     }
 
@@ -39,13 +40,14 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         ["characterskin"] = InventoryType.Costume,
         ["costume"] = InventoryType.Costume,
         ["costumepart"] = InventoryType.CostumePart,
+        ["background"] = InventoryType.Background,
         ["avgduo"] = InventoryType.AvgDuo,
     };
 
     [Argument("addall", "Add all entries for one or all inventory types", pattern: "true", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
     public bool AddAll { get; set; }
 
-    [Argument("type", "Optional inventory type", pattern: "gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|costumepart|avgduo", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
+    [Argument("type", "Optional inventory type", pattern: "gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|costumepart|background|avgduo", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
     public string? Type { get; set; }
 
     public void Execute(CommandContext ctx)
@@ -70,7 +72,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             if (!TypeAliases.TryGetValue(requestedType, out var resolvedType))
             {
-                ctx.Reply($"Unknown type '{requestedType}'. Valid types: gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|costumepart|avgduo");
+                ctx.Reply($"Unknown type '{requestedType}'. Valid types: gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|costumepart|background|avgduo");
                 return;
             }
 
@@ -163,6 +165,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             case InventoryType.CostumePart:
                 inventoryService.AddAll<CostumePartEntity>(accountUid);
                 break;
+            case InventoryType.Background:
+                inventoryService.AddAll<BackgroundEntity>(accountUid);
+                break;
             case InventoryType.AvgDuo:
                 inventoryService.AddAll<AvgDuoEntity>(accountUid);
                 break;
@@ -199,6 +204,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 case InventoryType.WeaponModSkin:
                 case InventoryType.Costume:
                 case InventoryType.CostumePart:
+                case InventoryType.Background:
                     ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid, type));
                     Thread.Sleep(ResponseSendDelayMs);
                     ctx.Reply($"{type} index successfully updated!");
@@ -273,6 +279,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             InventoryType.Costume => 13,
             InventoryType.CostumePart => 14,
+            InventoryType.Background => 30,
             InventoryType.WeaponMod => 21,
             InventoryType.WeaponSkin => 60,
             InventoryType.WeaponModSkin => 61,
@@ -291,6 +298,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             case InventoryType.CostumePart:
                 foreach (CostumePartEntity costumePart in inventoryService.GetPlayerInventory<CostumePartEntity>(accountUid))
                     index.Details[costumePart.CostumePartId] = false;
+                break;
+            case InventoryType.Background:
+                foreach (BackgroundEntity background in inventoryService.GetPlayerInventory<BackgroundEntity>(accountUid))
+                    index.Details[background.BackgroundId] = true;
                 break;
             case InventoryType.WeaponMod:
                 foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))

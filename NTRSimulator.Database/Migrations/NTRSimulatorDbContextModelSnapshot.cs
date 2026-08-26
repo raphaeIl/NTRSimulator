@@ -47,6 +47,11 @@ namespace NTRSimulator.Database.Migrations
                     b.Property<DateTime>("TimeLastLogin")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<long>("BackgroundId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasDefaultValue(1001L);
+
                     b.HasKey("Uid");
 
                     b.HasIndex("Email")
@@ -84,6 +89,30 @@ namespace NTRSimulator.Database.Migrations
                         .IsUnique();
 
                     b.ToTable("AvgDuos");
+                });
+
+            modelBuilder.Entity("NTRSimulator.Database.Entities.BackgroundEntity", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("AccountUid")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BackgroundId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BackgroundId");
+
+                    b.HasIndex("AccountUid", "BackgroundId")
+                        .IsUnique();
+
+                    b.ToTable("Backgrounds");
                 });
 
             modelBuilder.Entity("NTRSimulator.Database.Entities.CostumeEntity", b =>
@@ -354,6 +383,17 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
+            modelBuilder.Entity("NTRSimulator.Database.Entities.BackgroundEntity", b =>
+                {
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
+                        .WithMany("Backgrounds")
+                        .HasForeignKey("AccountUid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
             modelBuilder.Entity("NTRSimulator.Database.Entities.CostumeEntity", b =>
                 {
                     b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
@@ -445,6 +485,8 @@ namespace NTRSimulator.Database.Migrations
             modelBuilder.Entity("NTRSimulator.Database.Entities.AccountEntity", b =>
                 {
                     b.Navigation("AvgDuo");
+
+                    b.Navigation("Backgrounds");
 
                     b.Navigation("CostumeParts");
 

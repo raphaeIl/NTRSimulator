@@ -3014,6 +3014,8 @@ namespace NTRSimulator.GameServer.Handlers
 
             List<GunData> gunData = tableService.GetTable<GunData>();
 
+            countSection6.Counters[0].Type = CommonQuestCounters.Types.Type.Achievement;
+
             foreach (GunEntity gun in gunService.GetPlayerGuns(connection.Account.Uid))
             {
                 uint dormId = gunData.Where(g => g.Id == gun.GunId).FirstOrDefault().POBHEFFJGOP[0];
