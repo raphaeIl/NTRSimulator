@@ -20,6 +20,7 @@ namespace NTRSimulator.GameServer.Services
         IWeaponSkinService weaponSkinService,
         IWeaponModSkinService weaponModSkinService,
         ICostumeService costumeService,
+        ICostumePartService costumePartService,
         IAvgDuoService avgDuoService) : IInventoryService
     {
         public void Add<T>(uint accountUid, T item) where T : class
@@ -68,6 +69,12 @@ namespace NTRSimulator.GameServer.Services
                 return;
             }
 
+            if (item is CostumePartEntity costumePart)
+            {
+                costumePartService.AddCostumePart(accountUid, costumePart);
+                return;
+            }
+
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
         }
 
@@ -108,6 +115,11 @@ namespace NTRSimulator.GameServer.Services
             if (item is CostumeEntity costume)
             {
                 return costumeService.RemoveCostume(accountUid, costume);
+            }
+
+            if (item is CostumePartEntity costumePart)
+            {
+                return costumePartService.RemoveCostumePart(accountUid, costumePart);
             }
 
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
@@ -164,6 +176,12 @@ namespace NTRSimulator.GameServer.Services
                 return;
             }
 
+            if (typeof(T) == typeof(CostumePartEntity))
+            {
+                costumePartService.AddAllCostumeParts(accountUid);
+                return;
+            }
+
             if (typeof(T) == typeof(AvgDuoEntity))
             {
                 avgDuoService.AddAllAvgDuo(accountUid);
@@ -195,6 +213,9 @@ namespace NTRSimulator.GameServer.Services
 
             if (typeof(T) == typeof(CostumeEntity))
                 return (ICollection<T>)(object)account.Costumes;
+
+            if (typeof(T) == typeof(CostumePartEntity))
+                return (ICollection<T>)(object)account.CostumeParts;
 
             throw new NotSupportedException($"Inventory type '{typeof(T).Name}' is not supported.");
         }

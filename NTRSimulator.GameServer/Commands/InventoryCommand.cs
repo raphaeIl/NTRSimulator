@@ -15,21 +15,22 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private enum InventoryType
     {
-        Gun_3,
+        Gun,
         Weapon,
         WeaponMod,
         WeaponSkin,
         WeaponModSkin,
         Item,
         Costume,
+        CostumePart,
         AvgDuo,
     }
 
     private static readonly Dictionary<string, InventoryType> TypeAliases = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["gun"] = InventoryType.Gun_3,
-        ["char"] = InventoryType.Gun_3,
-        ["character"] = InventoryType.Gun_3,
+        ["gun"] = InventoryType.Gun,
+        ["char"] = InventoryType.Gun,
+        ["character"] = InventoryType.Gun,
         ["weapon"] = InventoryType.Weapon,
         ["weaponmod"] = InventoryType.WeaponMod,
         ["weaponskin"] = InventoryType.WeaponSkin,
@@ -37,13 +38,14 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         ["item"] = InventoryType.Item,
         ["characterskin"] = InventoryType.Costume,
         ["costume"] = InventoryType.Costume,
+        ["costumepart"] = InventoryType.CostumePart,
         ["avgduo"] = InventoryType.AvgDuo,
     };
 
     [Argument("addall", "Add all entries for one or all inventory types", pattern: "true", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
     public bool AddAll { get; set; }
 
-    [Argument("type", "Optional inventory type", pattern: "gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|avgduo", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
+    [Argument("type", "Optional inventory type", pattern: "gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|costumepart|avgduo", flags: ArgumentFlags.Optional | ArgumentFlags.IgnoreCase)]
     public string? Type { get; set; }
 
     public void Execute(CommandContext ctx)
@@ -68,7 +70,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             if (!TypeAliases.TryGetValue(requestedType, out var resolvedType))
             {
-                ctx.Reply($"Unknown type '{requestedType}'. Valid types: gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|avgduo");
+                ctx.Reply($"Unknown type '{requestedType}'. Valid types: gun|char|character|weapon|weaponmod|weaponskin|weaponmodskin|item|characterskin|costume|costumepart|avgduo");
                 return;
             }
 
@@ -79,10 +81,13 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             AddAllTypes(accountUid, ctx);
             ctx.Reply("Added all inventory types.");
-            return;
+        }
+        else
+        {
+            AddSingleType(accountUid, inventoryType!.Value, ctx);
         }
 
-        AddSingleType(accountUid, inventoryType!.Value, ctx);
+        ctx.Reply("[IMPORTANT] Please restart the client for the changes to take effect.");
     }
 
     private static string? ResolveRequestedType(IReadOnlyDictionary<string, string> rawArgs, string? typedTypeArg)
@@ -108,7 +113,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private void AddAllTypes(uint accountUid, CommandContext ctx)
     {
-        InventoryType[] types = Enum.GetValues<InventoryType>();
+        InventoryType[] types = Enum.GetValues<InventoryType>().Where(t => t != InventoryType.Item).ToArray();
+
+        // TODO: if all items are included when adding all inventory types, it can cause the whole game to freeze, probably because too much data are being send, spliting/delaying them seems to cause problem as well
+        ctx.Reply($"Due to the shear size of the All Items Packet, please run \"/inventory addall item\" seperately if you need");
 
         foreach (InventoryType type in types)
         {
@@ -131,7 +139,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
     {
         switch (type)
         {
-            case InventoryType.Gun_3:
+            case InventoryType.Gun:
                 inventoryService.AddAll<GunEntity>(accountUid);
                 break;
             case InventoryType.Weapon:
@@ -152,6 +160,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             case InventoryType.Costume:
                 inventoryService.AddAll<CostumeEntity>(accountUid);
                 break;
+            case InventoryType.CostumePart:
+                inventoryService.AddAll<CostumePartEntity>(accountUid);
+                break;
             case InventoryType.AvgDuo:
                 inventoryService.AddAll<AvgDuoEntity>(accountUid);
                 break;
@@ -168,13 +179,12 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
             return;
 
         uint accountUid = ctx.Connection.Account.Uid;
-        bool needsIndexResponse = false;
 
         foreach (InventoryType type in types.Distinct())
         {
             switch (type)
             {
-                case InventoryType.Gun_3:
+                case InventoryType.Gun:
                     ctx.Connection.SendAutoEncrypted(CreateGunResponse(accountUid));
                     Thread.Sleep(ResponseSendDelayMs);
                     ctx.Reply("Guns successfully updated!");
@@ -188,8 +198,10 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                 case InventoryType.WeaponSkin:
                 case InventoryType.WeaponModSkin:
                 case InventoryType.Costume:
-                case InventoryType.AvgDuo:
-                    needsIndexResponse = true;
+                case InventoryType.CostumePart:
+                    ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid, type));
+                    Thread.Sleep(ResponseSendDelayMs);
+                    ctx.Reply($"{type} index successfully updated!");
                     break;
                 case InventoryType.Item:
                     foreach (SC_Items response in CreateItemResponses(accountUid))
@@ -198,18 +210,16 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                         Thread.Sleep(ResponseSendDelayMs);
                     }
                     ctx.Reply("Items successfully updated!");
-                    needsIndexResponse = true;
+                    ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid, type));
+                    Thread.Sleep(ResponseSendDelayMs);
+                    ctx.Reply("Item index successfully updated!");
+                    break;
+                case InventoryType.AvgDuo:
+                    ctx.Reply("AvgDuo successfully updated!");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, "Unsupported inventory type.");
             }
-        }
-
-        if (needsIndexResponse)
-        {
-            ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid));
-            Thread.Sleep(ResponseSendDelayMs);
-            ctx.Reply("Index successfully updated!");
         }
     }
 
@@ -257,227 +267,60 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         }
     }
 
-    private SC_Index CreateIndexResponse(uint accountUid)
+    private SC_Index CreateIndexResponse(uint accountUid, InventoryType type)
     {
-        SC_Index response = new SC_Index
+        uint indexType = type switch
+        {
+            InventoryType.Costume => 13,
+            InventoryType.CostumePart => 14,
+            InventoryType.WeaponMod => 21,
+            InventoryType.WeaponSkin => 60,
+            InventoryType.WeaponModSkin => 61,
+            InventoryType.Item => 162,
+            _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Inventory type has no index slot."),
+        };
+
+        ProtoIndex index = new ProtoIndex { Type = indexType };
+
+        switch (type)
+        {
+            case InventoryType.Costume:
+                foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(accountUid))
+                    index.Details[costume.CostumeId] = true;
+                break;
+            case InventoryType.CostumePart:
+                foreach (CostumePartEntity costumePart in inventoryService.GetPlayerInventory<CostumePartEntity>(accountUid))
+                    index.Details[costumePart.CostumePartId] = false;
+                break;
+            case InventoryType.WeaponMod:
+                foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
+                    index.Details[weaponMod.WeaponModId] = true;
+                break;
+            case InventoryType.WeaponSkin:
+                foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
+                    index.Details[weaponSkin.WeaponSkinId] = true;
+                break;
+            case InventoryType.WeaponModSkin:
+                foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(accountUid))
+                    index.Details[weaponModSkin.WeaponModSkinId] = true;
+                break;
+            case InventoryType.Item:
+                foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(accountUid))
+                {
+                    if (item.Type != 162)
+                        continue;
+
+                    index.Details[item.ItemId] = true;
+                }
+                break;
+        }
+
+        return new SC_Index
         {
             Indices =
             {
-                {
-                    10u,
-                    new ProtoIndex
-                        {
-                            Type = 10,
-                            Details =
-                        {
-                            { 1001u, false },
-                            { 1008u, false },
-                            { 1017u, false },
-                            { 1024u, false },
-                        },
-                    }
-                },
-                {
-                    12u,
-                    new ProtoIndex
-                        {
-                            Type = 12,
-                            Details =
-                        {
-                            { 21000u, true },
-                            { 21001u, true },
-                            { 21004u, true },
-                            { 21009u, true },
-                            { 21038u, false },
-                            { 21999u, true },
-                        },
-                    }
-                },
-                {
-                    13u,
-                    new ProtoIndex
-                        {
-                            Type = 13,
-                            Details = { },
-                    }
-                },
-                {
-                    14u,
-                    new ProtoIndex
-                        {
-                            Type = 14,
-                            Details = { },
-                    }
-                },
-                {
-                    20u,
-                    new ProtoIndex
-                        {
-                            Type = 20,
-                            Details =
-                        {
-                            { 11009u, false },
-                            { 11010u, false },
-                            { 11022u, false },
-                            { 11023u, false },
-                            { 11039u, false },
-                        },
-                    }
-                },
-                {
-                    21u,
-                    new ProtoIndex
-                        {
-                            Type = 21,
-                            Details = { },
-                    }
-                },
-                {
-                    36u,
-                    new ProtoIndex
-                        {
-                            Type = 36,
-                            Details =
-                        {
-                            { 22001u, true },
-                            { 22002u, false },
-                            { 22019u, false },
-                            { 22020u, false },
-                            { 22022u, false },
-                            { 22023u, false },
-                        },
-                    }
-                },
-                {
-                    37u,
-                    new ProtoIndex
-                        {
-                            Type = 37,
-                            Details =
-                        {
-                            { 23001u, true },
-                            { 23012u, true },
-                            { 23014u, true },
-                            { 23015u, true },
-                            { 23019u, true },
-                        },
-                    }
-                },
-                {
-                    39u,
-                    new ProtoIndex
-                        {
-                            Type = 39,
-                            Details =
-                        {
-                            { 24001u, true },
-                        },
-                    }
-                },
-                {
-                    40u,
-                    new ProtoIndex
-                        {
-                            Type = 40,
-                            Details =
-                        {
-                            { 25001u, true },
-                        },
-                    }
-                },
-                {
-                    60u,
-                    new ProtoIndex
-                        {
-                            Type = 60,
-                            Details = { },
-                    }
-                },
-                {
-                    61u,
-                    new ProtoIndex
-                        {
-                            Type = 61,
-                            Details = { },
-                    }
-                },
-                {
-                    133u,
-                    new ProtoIndex
-                        {
-                            Type = 133,
-                            Details =
-                        {
-                            { 1335001u, false },
-                            { 1335101u, false },
-                        },
-                    }
-                },
-                {
-                    162u,
-                    new ProtoIndex
-                        {
-                            Type = 162,
-                            Details = { },
-                    }
-                },
-            },
-            IndicesInfo =
-            {
-                {
-                    36u,
-                    new IndexInfo
-                    {
-                        Details =
-                        {
-                            { 22001u, 1703592104 },
-                            { 22002u, 1728668611 },
-                            { 22019u, 1737270231 },
-                            { 22020u, 1736063989 },
-                            { 22022u, 1737956678 },
-                            { 22023u, 1731480838 },
-                        },
-                    }
-                },
-                {
-                    37u,
-                    new IndexInfo
-                    {
-                        Details =
-                        {
-                            { 23001u, 1703592104 },
-                            { 23012u, 1703900704 },
-                            { 23014u, 1703900704 },
-                            { 23015u, 1704824955 },
-                            { 23019u, 1703901382 },
-                        },
-                    }
-                },
+                { indexType, index },
             },
         };
-
-        foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(accountUid))
-            response.Indices[13].Details[costume.CostumeId] = true;
-
-        foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
-            response.Indices[21].Details[weaponMod.WeaponModId] = true;
-
-        foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
-            response.Indices[60].Details[weaponSkin.WeaponSkinId] = true;
-
-        foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(accountUid))
-            response.Indices[61].Details[weaponModSkin.WeaponModSkinId] = true;
-
-        foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(accountUid))
-        {
-            if (item.Type != 162)
-            {
-                continue;
-            }
-
-            response.Indices[162u].Details[item.ItemId] = true;
-        }
-
-        return response;
     }
 }

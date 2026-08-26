@@ -109,6 +109,30 @@ namespace NTRSimulator.Database.Migrations
                     b.ToTable("Costumes");
                 });
 
+            modelBuilder.Entity("NTRSimulator.Database.Entities.CostumePartEntity", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("AccountUid")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("CostumePartId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CostumePartId");
+
+                    b.HasIndex("AccountUid", "CostumePartId")
+                        .IsUnique();
+
+                    b.ToTable("CostumeParts");
+                });
+
             modelBuilder.Entity("NTRSimulator.Database.Entities.GunEntity", b =>
                 {
                     b.Property<long>("Id")
@@ -341,6 +365,17 @@ namespace NTRSimulator.Database.Migrations
                     b.Navigation("Account");
                 });
 
+            modelBuilder.Entity("NTRSimulator.Database.Entities.CostumePartEntity", b =>
+                {
+                    b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
+                        .WithMany("CostumeParts")
+                        .HasForeignKey("AccountUid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
             modelBuilder.Entity("NTRSimulator.Database.Entities.GunEntity", b =>
                 {
                     b.HasOne("NTRSimulator.Database.Entities.AccountEntity", "Account")
@@ -410,6 +445,8 @@ namespace NTRSimulator.Database.Migrations
             modelBuilder.Entity("NTRSimulator.Database.Entities.AccountEntity", b =>
                 {
                     b.Navigation("AvgDuo");
+
+                    b.Navigation("CostumeParts");
 
                     b.Navigation("Costumes");
 

@@ -260,11 +260,17 @@ namespace NTRSimulator.GameServer.Handlers
                                 [104] = new OICGGHHHFBI { KICFGBGNDGF = { 10401, 10402 } },
                                 [106] = new OICGGHHHFBI { KICFGBGNDGF = { 10601, 10602, 10603, 10607 } },
                                 [107] = new OICGGHHHFBI { KICFGBGNDGF = { 10716, 10701, 10702, 10704, 10703 } },
+                                [109] = new OICGGHHHFBI { KICFGBGNDGF = { } },
                                 [201] = new OICGGHHHFBI { KICFGBGNDGF = { } },
                                 [202] = new OICGGHHHFBI { KICFGBGNDGF = { 20202, 20203 } },
                             },
                             Level = 49,
                             CFOCLIHKKJL = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 },
+                            Exp = 40360,
+                            KAFLIJKLBKO = new ABOOLELFBEE
+                            {
+                                DAAAANLMKAA = 35,
+                            },
                         });
 
                     if (lobbyGetBuildInfoCount != 2)
@@ -1044,13 +1050,19 @@ namespace NTRSimulator.GameServer.Handlers
 
         public override void HandleGetLobbyPhotoCut(CS_GetLobbyPhotoCut request, Connection connection)
         {
-            connection.Send(new SC_GetLobbyPhotoCut
+            SC_GetLobbyPhotoCut response = new SC_GetLobbyPhotoCut
             {
                 OAGEAGJKLHB = { },
-                CCNDHNDHKBO = { 1, 2, 3, 4, 5, 6, 7, 53, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 49, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 },
-                BOKKHALJCMA = 1,
+                BOKKHALJCMA = request.BOKKHALJCMA,
                 INNLIAFIMIM = { },
-            });
+            };
+
+            if (request.BOKKHALJCMA == 1)
+            {
+                response.CCNDHNDHKBO.AddRange(new uint[] { 1, 2, 3, 4, 5, 6, 7, 53, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 49, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 });
+            }
+
+            connection.Send(response);
         }
 
                 public override void HandleLobbyWelcomeSettingInfo(CS_LobbyWelcomeSettingInfo request, Connection connection)
@@ -1108,7 +1120,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_LobbyShareCodeV2TransformV3
             {
-                HAOEIOLJDNP = 0,
+                HAOEIOLJDNP = request.HAOEIOLJDNP,
             });
         }
 
@@ -1573,6 +1585,64 @@ namespace NTRSimulator.GameServer.Handlers
                     [235] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 235 },
                     [236] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 236 },
                     [248] = new OGKLGOMMLIM { Timestamp = nowUnix, BNAJBJBNIAK = 248 },
+                },
+            });
+        }
+
+        public override void HandleLobbyMessageBoardCreate(CS_LobbyMessageBoardCreate request, Connection connection)
+        {
+            uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            BNCNOLPBNBN board = new BNCNOLPBNBN
+            {
+                Message = new OGKLGOMMLIM
+                {
+                    Timestamp = nowUnix,
+                    BNAJBJBNIAK = 248,
+                },
+            };
+            if (request.LMFLEGLPBPG.Count > 0)
+            {
+                foreach (var entry in request.LMFLEGLPBPG)
+                    board.LMFLEGLPBPG[entry.Key] = entry.Value;
+            }
+            else
+            {
+                board.LMFLEGLPBPG[1] = 3;
+            }
+
+            connection.Send(new SC_LobbyMessageBoardCreate
+            {
+                CECNOCLMAOG = board,
+                AMADPLLHFDD = true,
+            });
+        }
+
+        public override void HandleLobbyDurabilityInfo(CS_LobbyDurabilityInfo request, Connection connection)
+        {
+            connection.Send(new SC_LobbyDurabilityInfo
+            {
+                Info = new IHADGDPBCLM
+                {
+                    MCKEKMMKFFA = 2,
+                    LIMKACAINNP =
+                    {
+                        [4000001] = new IHADGDPBCLM.Types.GPIHNEINDJJ
+                        {
+                            Status = IHADGDPBCLM.Types.KJBJEIPOBFN.EventStatusRefresh,
+                            MHCGGLDOKKL = 0,
+                        },
+                        [4000005] = new IHADGDPBCLM.Types.GPIHNEINDJJ
+                        {
+                            Status = IHADGDPBCLM.Types.KJBJEIPOBFN.EventStatusRefresh,
+                            MHCGGLDOKKL = 0,
+                        },
+                        [4000007] = new IHADGDPBCLM.Types.GPIHNEINDJJ
+                        {
+                            Status = IHADGDPBCLM.Types.KJBJEIPOBFN.EventStatusRefresh,
+                            MHCGGLDOKKL = 0,
+                        },
+                    },
+                    MCJCANKLOAP = 1787185299,
                 },
             });
         }

@@ -29,6 +29,9 @@ namespace NTRSimulator.Database.Entities
         public virtual ICollection<CostumeEntity> Costumes { get; set; } = new List<CostumeEntity>();
 
         [JsonIgnore]
+        public virtual ICollection<CostumePartEntity> CostumeParts { get; set; } = new List<CostumePartEntity>();
+
+        [JsonIgnore]
         public virtual ICollection<WeaponEntity> Weapons { get; set; } = new List<WeaponEntity>();
 
         [JsonIgnore]

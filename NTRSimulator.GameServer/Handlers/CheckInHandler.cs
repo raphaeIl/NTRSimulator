@@ -56,5 +56,10 @@ namespace NTRSimulator.GameServer.Handlers
                         Passive = false,
                     });
         }
+
+        public override void HandleDailyCheckIn(CS_DailyCheckIn request, Connection connection)
+        {
+            connection.Send(new SC_DailyCheckIn());
+        }
     }
 }

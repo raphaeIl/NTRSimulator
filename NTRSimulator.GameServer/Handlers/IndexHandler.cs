@@ -619,6 +619,11 @@ namespace NTRSimulator.GameServer.Handlers
                 scIndex.Indices[13].Details.Add(costume.CostumeId, true);
             }
 
+            foreach (CostumePartEntity costumePart in inventoryService.GetPlayerInventory<CostumePartEntity>(connection.Account.Uid))
+            {
+                scIndex.Indices[14].Details.Add(costumePart.CostumePartId, false);
+            }
+
             foreach (WeaponModEntity weaponMod in inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid))
             {
                 scIndex.Indices[21].Details.Add(weaponMod.WeaponModId, true);

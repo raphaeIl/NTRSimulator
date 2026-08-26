@@ -13,6 +13,8 @@ namespace NTRSimulator.Database.Core
 
         public DbSet<CostumeEntity> Costumes => Set<CostumeEntity>();
 
+        public DbSet<CostumePartEntity> CostumeParts => Set<CostumePartEntity>();
+
         public DbSet<AccountEntity> Accounts => Set<AccountEntity>();
 
         public DbSet<WeaponEntity> Weapons => Set<WeaponEntity>();
@@ -40,6 +42,13 @@ namespace NTRSimulator.Database.Core
             {
                 e.HasIndex(c => c.CostumeId);
                 e.Property(c => c.Id).ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<CostumePartEntity>(e =>
+            {
+                e.HasIndex(p => p.CostumePartId);
+                e.HasIndex("AccountUid", "CostumePartId").IsUnique();
+                e.Property(p => p.Id).ValueGeneratedOnAdd();
             });
 
             modelBuilder.Entity<WeaponEntity>(e =>
@@ -115,6 +124,10 @@ namespace NTRSimulator.Database.Core
 
                 e.HasMany(a => a.Costumes)
                  .WithOne(c => c.Account)
+                 .IsRequired();
+
+                e.HasMany(a => a.CostumeParts)
+                 .WithOne(p => p.Account)
                  .IsRequired();
 
                 e.HasMany(a => a.Weapons)

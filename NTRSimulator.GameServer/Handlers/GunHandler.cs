@@ -546,6 +546,16 @@ namespace NTRSimulator.GameServer.Handlers
                 });
         }
 
+        public override void HandleGunCostumeParts(CS_GunCostumeParts request, Connection connection)
+        {
+            connection.Send(new SC_GunCostumeParts
+            {
+                CostumeId = request.CostumeId,
+                DPKJMEMMEGH = request.DPKJMEMMEGH,
+                LLLFHFLGNCH = request.LLLFHFLGNCH,
+            });
+        }
+
         public override void HandleGetGunRemouldingPluginLockPlan(CS_GetGunRemouldingPluginLockPlan request, Connection connection)
         {
                 connection.Send(new SC_GetGunRemouldingPluginLockPlan
