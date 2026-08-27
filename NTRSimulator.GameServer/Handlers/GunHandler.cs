@@ -37,9 +37,9 @@ namespace NTRSimulator.GameServer.Handlers
                 connection.Send(4,
                     new SC_GunRemouldingPlugins
                     {
-                        AIDIBGJDNLM =
+                        RemouldingPlugins =
                         {
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1835910277177040896UL,
                                 StcId = 983201,
@@ -51,7 +51,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1846099719155113984UL,
                                 StcId = 984102,
@@ -63,7 +63,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1843288636979699712UL,
                                 StcId = 983301,
@@ -75,7 +75,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1839071274439041024UL,
                                 StcId = 983101,
@@ -87,7 +87,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1829565371798020096UL,
                                 StcId = 984202,
@@ -99,7 +99,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1846544928750985216UL,
                                 StcId = 983101,
@@ -111,7 +111,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1845186142339620864UL,
                                 StcId = 984302,
@@ -123,7 +123,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1830929806184701952UL,
                                 StcId = 983101,
@@ -135,7 +135,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1832835441797128192UL,
                                 StcId = 983301,
@@ -147,7 +147,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1845005422894800896UL,
                                 StcId = 984302,
@@ -159,7 +159,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1858088292359102464UL,
                                 StcId = 983101,
@@ -171,7 +171,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1836550333413744640UL,
                                 StcId = 983401,
@@ -183,7 +183,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1841010189906501632UL,
                                 StcId = 984402,
@@ -195,7 +195,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1835280701670318080UL,
                                 StcId = 984202,
@@ -207,7 +207,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1838893343599255552UL,
                                 StcId = 984402,
@@ -219,7 +219,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1842370612705648640UL,
                                 StcId = 984402,
@@ -231,7 +231,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1857996740069711872UL,
                                 StcId = 983301,
@@ -243,7 +243,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1843288855838482432UL,
                                 StcId = 984402,
@@ -255,7 +255,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1834636826666622976UL,
                                 StcId = 983101,
@@ -267,7 +267,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1845459095485702144UL,
                                 StcId = 984202,
@@ -279,7 +279,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1840808736761864192UL,
                                 StcId = 983401,
@@ -291,7 +291,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1842370402064556032UL,
                                 StcId = 983101,
@@ -303,7 +303,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1830196550596321280UL,
                                 StcId = 983401,
@@ -315,7 +315,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1831464973352591360UL,
                                 StcId = 983401,
@@ -327,7 +327,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1842097119480012800UL,
                                 StcId = 985102,
@@ -340,7 +340,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1827044870051618816UL,
                                 StcId = 984302,
@@ -352,7 +352,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1834013572877803520UL,
                                 StcId = 983101,
@@ -364,7 +364,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1856336655181438976UL,
                                 StcId = 983201,
@@ -376,7 +376,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1845640086511706112UL,
                                 StcId = 984302,
@@ -388,7 +388,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1828925846182715392UL,
                                 StcId = 985102,
@@ -400,7 +400,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = true,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1826204793002024960UL,
                                 StcId = 983401,
@@ -412,7 +412,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1826383457987616768UL,
                                 StcId = 983401,
@@ -424,7 +424,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1833379456729767936UL,
                                 StcId = 983201,
@@ -436,7 +436,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1844548013226221568UL,
                                 StcId = 984102,
@@ -448,7 +448,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1845818391211827200UL,
                                 StcId = 984202,
@@ -460,7 +460,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1839905421879435264UL,
                                 StcId = 984402,
@@ -472,7 +472,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1846545133357522944UL,
                                 StcId = 984302,
@@ -484,7 +484,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1832285033641041920UL,
                                 StcId = 983201,
@@ -496,7 +496,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1837905451422867456UL,
                                 StcId = 984302,
@@ -508,7 +508,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1827847029261361152UL,
                                 StcId = 983401,
@@ -520,7 +520,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GunId = 0,
                                 MDFIDAFPBJN = false,
                             },
-                            new DBPDOCMENBN
+                            new GunRemouldingPlugin
                             {
                                 Id = 1828489963575992320UL,
                                 StcId = 983301,
@@ -551,7 +551,7 @@ namespace NTRSimulator.GameServer.Handlers
             connection.Send(new SC_GunCostumeParts
             {
                 CostumeId = request.CostumeId,
-                DPKJMEMMEGH = request.DPKJMEMMEGH,
+                CostumeParts = request.CostumeParts,
                 LLLFHFLGNCH = request.LLLFHFLGNCH,
             });
         }

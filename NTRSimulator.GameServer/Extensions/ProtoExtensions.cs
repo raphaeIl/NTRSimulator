@@ -23,16 +23,16 @@ public static class ProtoExtensions
             PublicTalentSkillItems = { 0, 0, 0 },
             PublicTalentSkillItemsUid = { 0, 0, 0 },
             IsGetPublicTalentSkillItem = true,
-            //GNDEJNMOPAF = true,
+            //IsAllTalnetUnlock = true,
             //WeaponId = 739
         };
     }
 
-    public static DAOEIFPHMFL ToProtoWeapon(this WeaponEntity weapon)
+    public static GunWeaponLite ToProtoWeapon(this WeaponEntity weapon)
     {
         ArgumentNullException.ThrowIfNull(weapon);
 
-        return new DAOEIFPHMFL
+        return new GunWeaponLite
         {
             Id = weapon.Id,
             StcId = weapon.WeaponId,

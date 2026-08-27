@@ -731,7 +731,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newWeapon = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 6,
                     StcId = 11036,
@@ -782,7 +782,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon2 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 7,
                     StcId = 11048,
@@ -815,7 +815,7 @@ namespace NTRSimulator.GameServer.Handlers
                     Exp = 120,
                     AuthLevel = 0,
                     Costume = 1102600,
-                    DPKJMEMMEGH = 0,
+                    CostumeParts = 0,
                     GunClass = 1,
                     
                     PrivateTalentSkillItems = { 0, 0, 0 },
@@ -827,8 +827,8 @@ namespace NTRSimulator.GameServer.Handlers
                     GunTalentConsume = { },
                     TalentResetNum = 0,
                     Details = null,
-                    GNDEJNMOPAF = false,
-                    JJKGLEOOAPH = new LoungeChatMessage()
+                    IsAllTalnetUnlock = false,
+                    Love = new LoungeChatMessage()
                     {
                         KFIAKLNJHMB = 1,
                         ABOJJOJODME = 0,
@@ -838,10 +838,10 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     DKKBDFJPOOA = { },
                     NJKHKDCNJPK = { 0 },
-                    NEBMMBJDNPF = 0,
-                    HALPACHDCFI = { },
+                    PresetId = 0,
+                    GrassGroup = { },
                     MHBBHAHAIGD = 0,
-                    IDCHKHCLGLB = null,
+                    BattleAiPreset = null,
                     NGJCBNLMPHP = 0,
                     INKGHGACOKA = { 0 },
                     HMKBFECHGJD = { 0 },
@@ -943,7 +943,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon3 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 8,
                     StcId = 11045,
@@ -985,7 +985,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon4 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 9,
                     StcId = 11017,
@@ -1005,7 +1005,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon5 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 10,
                     StcId = 11039,
@@ -1041,7 +1041,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon6 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 11,
                     StcId = 10631,
@@ -1083,7 +1083,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon7 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 12,
                     StcId = 10361,
@@ -1103,7 +1103,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon8 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 13,
                     StcId = 11009,
@@ -1125,7 +1125,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon9 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 14,
                     StcId = 10361,
@@ -1139,7 +1139,7 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGunWeapon newGunWeapon10 = new SC_NewGunWeapon()
             {
-                Weapon = new DAOEIFPHMFL()
+                Weapon = new GunWeaponLite()
                 {
                     Id = 15,
                     StcId = 11010,
