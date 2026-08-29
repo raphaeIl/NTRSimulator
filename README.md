@@ -7,7 +7,7 @@
 ## Requirements
 - .NET 8 SDK
 - PostgreSQL
-- mitmproxy
+- [daiyan-patcher](https://github.com/raphaeIl/daiyan-patcher/releases)
 - CN Game Client is REQUIRED
 
 ## Installation Tutorial
@@ -19,12 +19,11 @@
 ## Running
 
 1. Start the Server
-2. run `proxy.bat`
-3. Start the Client
+2. Download the latest [daiyan-patcher](https://github.com/raphaeIl/daiyan-patcher/releases) (`daiyan.dll` + `launcher.exe`) and place them in the game folder (`GF2Exilium\GF2 Game\`)
+3. Run `launcher.exe` as administrator
 
 ## Common Issues
 
-- If you see nothing in the mitm console, this is a cert issue, please follow official mitm instructions for installing them.
 - If you are unable to compile and getting a lot errors, this is most likely an outdated/broken proto version - right click on solution in vs -> clean solution -> build again
 - **中国用户看这里**: 如果无法编译，并且报错提示 NuGet 包不存在，请使用梯子/VPN。本项目使用了自定义 NuGet 包源。
 
