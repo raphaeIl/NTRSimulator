@@ -5,12 +5,11 @@ using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Extensions;
 using NTRSimulator.GameServer.Services;
 using NTRSimulator.PcapParser;
-using NTRSimulator.Common.Table;
 using System;
 
 namespace NTRSimulator.GameServer.Handlers
 {
-    public sealed class GunHandler(IInventoryService inventoryService, ITableService tableService) : GunHandlerBase
+    public sealed class GunHandler(IInventoryService inventoryService) : GunHandlerBase
     {
         public override void HandleGuns(CS_Guns request, Connection connection)
         {

@@ -21,6 +21,12 @@ namespace NTRSimulator.Database.Entities
 
         public uint GunId { get; set; }
 
+        public uint Flags { get; set; }
+
+        public uint EquippedSkinId { get; set; }
+
+        public uint[] EquippedModIds { get; set; } = [];
+
         public DateTime TimeCreated { get; set; }
 
         [JsonIgnore]

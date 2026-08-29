@@ -48,15 +48,9 @@ namespace NTRSimulator.GameServer.Handlers
 
                 GunData[] defaultGuns = gunData.Where(gun => initItemData.Select(item => item.Id).Contains(gun.Id)).ToArray();
 
-                foreach (var defaultGun in defaultGuns)
+                foreach (var defaultGunData in defaultGuns)
                 {
-                    inventoryService.Add<GunEntity>(account.Uid, new GunEntity()
-                    {
-                        GunId = defaultGun.Id,
-                        Level = 1,
-                        CostumeId = defaultGun.JLEMCACDDBN,
-                        TimeCreated = DateTime.UtcNow
-                    });
+                    inventoryService.Add<GunEntity>(account.Uid, GunService.CreateDefault(defaultGunData, level: 1));
                 }
             }
 

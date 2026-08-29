@@ -2,6 +2,7 @@ using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 using NTRSimulator.Common.Protocol;
 using NTRSimulator.Database.Entities;
+using NTRSimulator.Database.Repositories;
 using NTRSimulator.GameServer.Extensions;
 using NTRSimulator.GameServer.Services;
 using static NTRSimulator.Common.Proto.DarkZoneBuff.Types;
@@ -9,7 +10,8 @@ using static NTRSimulator.Common.Proto.DarkZoneBuff.Types;
 namespace NTRSimulator.GameServer.Handlers
 {
     public sealed class GunWeaponHandler(
-        IInventoryService inventoryService) : GunWeaponHandlerBase
+        IInventoryService inventoryService,
+        IWeaponRepository weaponRepository) : GunWeaponHandlerBase
     {
         // Official captures send 50 mods per SC_GunWeaponMods (see all_skins.json).
         private const int ModsPerResponse = 50;
@@ -155,6 +157,55 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 GunId = request.GunId,
             });
+        }
+
+        public override void HandleGunWeaponRedDotClear(CS_GunWeaponRedDotClear request, Connection connection)
+        {
+            connection.Send(new SC_GunWeaponRedDotClear
+            {
+                KNGOGHKBHBE = { request.KNGOGHKBHBE },
+            });
+        }
+
+        public override void HandleGunWeaponBelong(CS_GunWeaponBelong request, Connection connection)
+        {
+            if (connection.Account == null) return;
+
+            WeaponEntity[] weapons = inventoryService.GetPlayerInventory<WeaponEntity>(connection.Account.Uid);
+            GunEntity[] guns = inventoryService.GetPlayerInventory<GunEntity>(connection.Account.Uid);
+
+            GunEntity gun = guns.First(g => g.GunId == request.GunId);
+            WeaponEntity previous = weapons.First(w => w.Id == gun.WeaponId);
+            WeaponEntity weapon = weapons.First(w => w.Id == request.Id);
+
+            if (previous.Id == weapon.Id)
+            {
+                connection.Send(new SC_GunWeaponBelong
+                {
+                    Id = request.Id,
+                    GunId = request.GunId,
+                });
+                return;
+            }
+
+            if (weapon.GunId != 0 && weapon.GunId != request.GunId)
+            {
+                GunEntity otherGun = guns.First(g => g.GunId == weapon.GunId);
+                otherGun.WeaponId = previous.Id;
+                previous.GunId = otherGun.GunId;
+            }
+            else
+            {
+                previous.GunId = 0;
+            }
+
+            weapon.GunId = request.GunId;
+            gun.WeaponId = request.Id;
+            weaponRepository.SaveChanges();
+
+            connection.Send(
+                new SC_GunWeaponBelong { Id = previous.Id, GunId = previous.GunId },
+                new SC_GunWeaponBelong { Id = weapon.Id, GunId = weapon.GunId });
         }
 
     }

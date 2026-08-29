@@ -26,6 +26,9 @@ namespace NTRSimulator.GameServer.Services
                     CurExp = 0,
                     BreakTimes = 1,
                     GunId = 0,
+                    Flags = 0,
+                    EquippedSkinId = 0,
+                    EquippedModIds = [],
                     TimeCreated = DateTime.UtcNow,
                 })
                 .ToList();

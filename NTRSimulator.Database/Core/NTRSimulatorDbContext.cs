@@ -1,4 +1,7 @@
+using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NTRSimulator.Database.Entities;
 
 namespace NTRSimulator.Database.Core
@@ -36,8 +39,18 @@ namespace NTRSimulator.Database.Core
             modelBuilder.Entity<GunEntity>(e =>
             {
                 e.HasIndex(g => g.GunId);
+                e.HasIndex(g => g.WeaponId);
                 e.Property(g => g.Id).ValueGeneratedOnAdd();
                 e.Property(g => g.Level).HasDefaultValue(1);
+                e.Property(g => g.Exp).HasDefaultValue(120u);
+                e.Property(g => g.Energy).HasDefaultValue(120u);
+                e.Property(g => g.GunClass).HasDefaultValue(1u);
+                e.Property(g => g.LoveLevel).HasDefaultValue(1u);
+                e.Property(g => g.PrivateTalentSkillItems).HasDefaultValue(new uint[] { 0, 0, 0 });
+                e.Property(g => g.PublicTalentSkillItems).HasDefaultValue(new uint[] { 0, 0, 0 });
+                e.Property(g => g.PublicTalentSkillItemsUid).HasColumnType("numeric(20,0)[]").HasDefaultValue(new ulong[] { 0, 0, 0 });
+                ConfigureJsonDictionary(e.Property(g => g.TalentTree));
+                ConfigureJsonDictionary(e.Property(g => g.GunTalentConsume));
             });
 
             modelBuilder.Entity<CostumeEntity>(e =>
@@ -67,6 +80,7 @@ namespace NTRSimulator.Database.Core
                 e.Property(w => w.Id).ValueGeneratedOnAdd();
                 e.Property(w => w.Level).HasDefaultValue(1);
                 e.Property(w => w.BreakTimes).HasDefaultValue(1);
+                e.Property(w => w.EquippedModIds).HasDefaultValue(Array.Empty<uint>());
             });
 
             modelBuilder.Entity<ItemEntity>(e =>
@@ -164,6 +178,25 @@ namespace NTRSimulator.Database.Core
                  .WithOne(s => s.Account)
                  .IsRequired();
             });
+        }
+
+        private static readonly JsonSerializerOptions JsonOptions = new();
+
+        private static void ConfigureJsonDictionary<TKey, TValue>(PropertyBuilder<Dictionary<TKey, TValue>> property)
+            where TKey : notnull
+        {
+            property
+                .HasColumnType("jsonb")
+                .HasDefaultValueSql("'{}'::jsonb")
+                .HasConversion(
+                    v => JsonSerializer.Serialize(v ?? new Dictionary<TKey, TValue>(), JsonOptions),
+                    v => JsonSerializer.Deserialize<Dictionary<TKey, TValue>>(v, JsonOptions) ?? new())
+                .Metadata.SetValueComparer(new ValueComparer<Dictionary<TKey, TValue>>(
+                    (left, right) => JsonSerializer.Serialize(left ?? new Dictionary<TKey, TValue>(), JsonOptions)
+                        == JsonSerializer.Serialize(right ?? new Dictionary<TKey, TValue>(), JsonOptions),
+                    v => JsonSerializer.Serialize(v ?? new Dictionary<TKey, TValue>(), JsonOptions).GetHashCode(),
+                    v => JsonSerializer.Deserialize<Dictionary<TKey, TValue>>(
+                        JsonSerializer.Serialize(v ?? new Dictionary<TKey, TValue>(), JsonOptions), JsonOptions) ?? new()));
         }
     }
 }
