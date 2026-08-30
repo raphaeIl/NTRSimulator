@@ -19,7 +19,7 @@
 ## Running
 
 1. Start the Server
-2. Download the latest [daiyan-patcher](https://github.com/raphaeIl/daiyan-patcher/releases) (`daiyan.dll` + `launcher.exe`) and place them in the game folder (`GF2Exilium\GF2 Game\`)
+2. Download the latest [daiyan-patcher](https://github.com/raphaeIl/daiyan-patcher) (`daiyan.dll` + `launcher.exe`) and place them in the game folder (`GF2Exilium\GF2 Game\`)
 3. Run `launcher.exe` as administrator
 
 ## Common Issues

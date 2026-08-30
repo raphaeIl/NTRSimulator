@@ -2,7 +2,6 @@ using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Services;
-using ProtoIndex = NTRSimulator.Common.Proto.Index;
 
 namespace NTRSimulator.GameServer.Handlers
 {
@@ -19,7 +18,7 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     {
                         10u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 10,
                             Details =
@@ -84,7 +83,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         12u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 12,
                             Details =
@@ -231,7 +230,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         13u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 13,
                             Details =
@@ -242,7 +241,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         14u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 14,
                             Details = { },
@@ -250,7 +249,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         20u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 20,
                             Details =
@@ -288,7 +287,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         21u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 21,
                             Details =
@@ -299,7 +298,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         30u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 30,
                             Details =
@@ -309,7 +308,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         36u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 36,
                             Details =
@@ -325,7 +324,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         37u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 37,
                             Details =
@@ -421,7 +420,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         39u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 39,
                             Details =
@@ -488,7 +487,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         40u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 40,
                             Details =
@@ -502,7 +501,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         60u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 60,
                             Details =
@@ -513,7 +512,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         61u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 61,
                             Details =
@@ -524,7 +523,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         133u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 133,
                             Details =
@@ -537,7 +536,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         162u, // special char cgs
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 162,
                             Details = { },
@@ -545,7 +544,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         171u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 171,
                             Details =
@@ -557,7 +556,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         181u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 181,
                             Details =
@@ -568,7 +567,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     {
                         201u,
-                        new ProtoIndex
+                        new NTRSimulator.Common.Proto.Index
                         {
                             Type = 201,
                             Details =
@@ -641,7 +640,7 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (WeaponModSkinEntity weaponModSkin in inventoryService.GetPlayerInventory<WeaponModSkinEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[61].Details.Add(weaponModSkin.WeaponModSkinId, true);
+               scIndex.Indices[61].Details.Add(weaponModSkin.WeaponModSkinId, true);
             }
 
             foreach (ItemEntity item in inventoryService.GetPlayerInventory<ItemEntity>(connection.Account.Uid))
@@ -651,7 +650,7 @@ namespace NTRSimulator.GameServer.Handlers
                     continue;
                 }
 
-                scIndex.Indices[162u].Details[item.ItemId] = true;
+                scIndex.Indices[162u].Details[item.ItemId] = false;
             }
 
             //connection.Send(2, scIndex);

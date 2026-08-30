@@ -1,17 +1,16 @@
 using NTRSimulator.Command;
 using NTRSimulator.Common.Proto;
+using NTRSimulator.Common.Table;
 using NTRSimulator.Database.Entities;
 using NTRSimulator.GameServer.Extensions;
 using NTRSimulator.GameServer.Services;
-using ProtoIndex = NTRSimulator.Common.Proto.Index;
 
 namespace NTRSimulator.GameServer.Commands;
 
 [Command("inventory", "Manage player inventory", "inventory addall [type]", CommandSource.Client)]
-public sealed class InventoryCommand(IInventoryService inventoryService) : ICommand
+public sealed class InventoryCommand(IInventoryService inventoryService, ITableService tableService) : ICommand
 {
-    private const int ItemsPerResponse = 100;
-    private const int ResponseSendDelayMs = 100;
+    private const int ItemsPerResponse = 7000;
 
     private enum InventoryType
     {
@@ -88,8 +87,6 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         {
             AddSingleType(accountUid, inventoryType!.Value, ctx);
         }
-
-        ctx.Reply("[IMPORTANT] Please restart the client for the changes to take effect.");
     }
 
     private static string? ResolveRequestedType(IReadOnlyDictionary<string, string> rawArgs, string? typedTypeArg)
@@ -115,10 +112,7 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
     private void AddAllTypes(uint accountUid, CommandContext ctx)
     {
-        InventoryType[] types = Enum.GetValues<InventoryType>().Where(t => t != InventoryType.Item).ToArray();
-
-        // TODO: if all items are included when adding all inventory types, it can cause the whole game to freeze, probably because too much data are being send, spliting/delaying them seems to cause problem as well
-        ctx.Reply($"Due to the shear size of the All Items Packet, please run \"/inventory addall item\" seperately if you need");
+        InventoryType[] types = Enum.GetValues<InventoryType>();
 
         foreach (InventoryType type in types)
         {
@@ -185,48 +179,93 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
 
         uint accountUid = ctx.Connection.Account.Uid;
 
+        bool sendIndex = false;
+
         foreach (InventoryType type in types.Distinct())
         {
             switch (type)
             {
                 case InventoryType.Gun:
                     ctx.Connection.SendAutoEncrypted(CreateGunResponse(accountUid));
-                    Thread.Sleep(ResponseSendDelayMs);
+                    ctx.Connection.SendAutoEncrypted(CreateGunAchievementCountSection(accountUid));
                     ctx.Reply("Guns successfully updated!");
                     break;
                 case InventoryType.Weapon:
                     ctx.Connection.SendAutoEncrypted(CreateWeaponResponse(accountUid));
-                    Thread.Sleep(ResponseSendDelayMs);
                     ctx.Reply("Weapons successfully updated!");
                     break;
                 case InventoryType.WeaponMod:
+                    ctx.Connection.SendAutoEncrypted(CreateWeaponModResponse(accountUid));
+                    ctx.Reply("Weapon mods successfully updated!");
+                    sendIndex = true;
+                    break;
                 case InventoryType.WeaponSkin:
+                    ctx.Connection.SendAutoEncrypted(CreateWeaponSkinResponse(accountUid));
+                    ctx.Reply("Weapon skins successfully updated!");
+                    sendIndex = true;
+                    break;
                 case InventoryType.WeaponModSkin:
                 case InventoryType.Costume:
                 case InventoryType.CostumePart:
                 case InventoryType.Background:
-                    ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid, type));
-                    Thread.Sleep(ResponseSendDelayMs);
-                    ctx.Reply($"{type} index successfully updated!");
+                    sendIndex = true;
                     break;
                 case InventoryType.Item:
                     foreach (SC_Items response in CreateItemResponses(accountUid))
-                    {
                         ctx.Connection.SendAutoEncrypted(response);
-                        Thread.Sleep(ResponseSendDelayMs);
-                    }
                     ctx.Reply("Items successfully updated!");
-                    ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid, type));
-                    Thread.Sleep(ResponseSendDelayMs);
-                    ctx.Reply("Item index successfully updated!");
+                    sendIndex = true;
                     break;
                 case InventoryType.AvgDuo:
                     ctx.Reply("AvgDuo successfully updated!");
+                    sendIndex = true;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, "Unsupported inventory type.");
             }
         }
+
+        if (!sendIndex)
+            return;
+
+        InventoryType[] indexTypes =
+        [
+            InventoryType.Costume,
+            InventoryType.CostumePart,
+            InventoryType.Background,
+            InventoryType.WeaponMod,
+            InventoryType.WeaponSkin,
+            InventoryType.WeaponModSkin,
+            InventoryType.Item,
+        ];
+        ctx.Connection.SendAutoEncrypted(CreateIndexResponse(accountUid, indexTypes));
+        ctx.Reply("Index successfully updated!");
+    }
+
+    private SC_CountSection CreateGunAchievementCountSection(uint accountUid)
+    {
+        SC_CountSection countSection = new SC_CountSection
+        {
+            Counters =
+            {
+                new CommonQuestCounters
+                {
+                    Type = CommonQuestCounters.Types.Type.Achievement,
+                    Rewards = { },
+                    PhaseRewards = { },
+                    JGOJBNHMJJH = { },
+                },
+            },
+        };
+
+        List<GunData> gunData = tableService.GetTable<GunData>();
+        foreach (GunEntity gun in inventoryService.GetPlayerInventory<GunEntity>(accountUid))
+        {
+            uint dormId = gunData.Where(g => g.Id == gun.GunId).FirstOrDefault().POBHEFFJGOP[0];
+            countSection.Counters[0].Rewards.Add(dormId, false);
+        }
+
+        return countSection;
     }
 
     private SC_Guns CreateGunResponse(uint accountUid)
@@ -252,6 +291,24 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         return response;
     }
 
+    private SC_GunWeaponMods CreateWeaponModResponse(uint accountUid)
+    {
+        SC_GunWeaponMods response = new();
+        foreach (WeaponModEntity mod in inventoryService.GetPlayerInventory<WeaponModEntity>(accountUid))
+            response.Mods.Add(mod.ToProtoWeaponMod());
+
+        return response;
+    }
+
+    private SC_GunWeaponSkinItems CreateWeaponSkinResponse(uint accountUid)
+    {
+        SC_GunWeaponSkinItems response = new();
+        foreach (WeaponSkinEntity weaponSkin in inventoryService.GetPlayerInventory<WeaponSkinEntity>(accountUid))
+            response.PGMKLGCFAOF[weaponSkin.WeaponSkinId] = 1;
+
+        return response;
+    }
+
     private IEnumerable<SC_Items> CreateItemResponses(uint accountUid)
     {
         ItemEntity[] items = inventoryService.GetPlayerInventory<ItemEntity>(accountUid);
@@ -273,22 +330,36 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
         }
     }
 
-    private SC_Index CreateIndexResponse(uint accountUid, InventoryType type)
+    private SC_Index CreateIndexResponse(uint accountUid, IEnumerable<InventoryType> types)
     {
-        uint indexType = type switch
+        SC_Index response = new();
+
+        foreach (InventoryType type in types.Distinct())
         {
-            InventoryType.Costume => 13,
-            InventoryType.CostumePart => 14,
-            InventoryType.Background => 30,
-            InventoryType.WeaponMod => 21,
-            InventoryType.WeaponSkin => 60,
-            InventoryType.WeaponModSkin => 61,
-            InventoryType.Item => 162,
-            _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Inventory type has no index slot."),
-        };
+            uint indexType = type switch
+            {
+                InventoryType.Costume => 13,
+                InventoryType.CostumePart => 14,
+                InventoryType.Background => 30,
+                InventoryType.WeaponMod => 21,
+                InventoryType.WeaponSkin => 60,
+                InventoryType.WeaponModSkin => 61,
+                InventoryType.Item => 162,
+                _ => 0,
+            };
+            if (indexType == 0)
+                continue;
 
-        ProtoIndex index = new ProtoIndex { Type = indexType };
+            NTRSimulator.Common.Proto.Index index = new NTRSimulator.Common.Proto.Index { Type = indexType };
+            FillIndexDetails(accountUid, type, index);
+            response.Indices[indexType] = index;
+        }
 
+        return response;
+    }
+
+    private void FillIndexDetails(uint accountUid, InventoryType type, NTRSimulator.Common.Proto.Index index)
+    {
         switch (type)
         {
             case InventoryType.Costume:
@@ -321,17 +392,9 @@ public sealed class InventoryCommand(IInventoryService inventoryService) : IComm
                     if (item.Type != 162)
                         continue;
 
-                    index.Details[item.ItemId] = true;
+                    index.Details[item.ItemId] = false;
                 }
                 break;
         }
-
-        return new SC_Index
-        {
-            Indices =
-            {
-                { indexType, index },
-            },
-        };
     }
 }

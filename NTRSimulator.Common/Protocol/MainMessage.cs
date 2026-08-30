@@ -102,10 +102,12 @@ namespace NTRSimulator.Common.Protocol
         public bool IsEncrypted => EncryptionByte > 0;
 
         /// <summary>
-        /// Client XOR-masks the 2-byte body length when this is non-zero.
-        /// Observed rule: encryptionByte = floor(bodyLength / 255).
+        /// High byte of the 16-bit body length. XOR with [enc, 0] zeros that byte
+        /// on the wire so the client can rebuild length as (enc &lt;&lt; 8) | low.
+        /// Official packets use bodyLength &gt;&gt; 8, not bodyLength / 255.
+        /// Those match except in bands like 1020–1023, 2555–2559, 21420–21503.
         /// </summary>
-        public static byte ComputeEncryptionByte(ushort bodyLength) => (byte)(bodyLength / 255);
+        public static byte ComputeEncryptionByte(ushort bodyLength) => (byte)(bodyLength >> 8);
 
         public static MainMessageHeader DecodeFromBytes(ReadOnlySpan<byte> headerBytes)
         {

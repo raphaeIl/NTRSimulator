@@ -1725,5 +1725,13 @@ namespace NTRSimulator.GameServer.Handlers
                 GunId = request.GunId,
             });
         }
+
+        public override void HandleLobbyWeddingAsmrWatched(CS_LobbyWeddingAsmrWatched request, Connection connection)
+        {
+            connection.Send(new SC_LobbyWeddingAsmrWatched
+            {
+                CIJJNNGKHLB = request.CIJJNNGKHLB,
+            });
+        }
     }
 }

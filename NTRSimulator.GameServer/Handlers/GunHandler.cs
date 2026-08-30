@@ -565,5 +565,14 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                 });
         }
+
+        public override void HandleGunSelected(CS_GunSelected request, Connection connection)
+        {
+            connection.Send(new SC_GunSelected
+            {
+                GunId = request.GunId,
+                KOPLHBNFPIN = request.KOPLHBNFPIN,
+            });
+        }
     }
 }

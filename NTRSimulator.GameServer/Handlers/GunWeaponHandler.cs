@@ -13,9 +13,6 @@ namespace NTRSimulator.GameServer.Handlers
         IInventoryService inventoryService,
         IWeaponRepository weaponRepository) : GunWeaponHandlerBase
     {
-        // Official captures send 50 mods per SC_GunWeaponMods (see all_skins.json).
-        private const int ModsPerResponse = 50;
-
         public override void HandleGunWeapons(CS_GunWeapons request, Connection connection)
         {
             if (connection.Account == null) return;
@@ -84,25 +81,11 @@ namespace NTRSimulator.GameServer.Handlers
             if (connection.Account == null) return;
 
             WeaponModEntity[] mods = inventoryService.GetPlayerInventory<WeaponModEntity>(connection.Account.Uid);
+            SC_GunWeaponMods response = new SC_GunWeaponMods();
+            foreach (WeaponModEntity mod in mods)
+                response.Mods.Add(mod.ToProtoWeaponMod());
 
-            if (mods.Length == 0)
-            {
-                connection.SendAutoEncrypted(new SC_GunWeaponMods());
-                return;
-            }
-
-            int offset = 0;
-            while (offset < mods.Length)
-            {
-                SC_GunWeaponMods response = new SC_GunWeaponMods();
-                int end = Math.Min(offset + ModsPerResponse, mods.Length);
-
-                for (int i = offset; i < end; i++)
-                    response.Mods.Add(mods[i].ToProtoWeaponMod());
-
-                connection.SendAutoEncrypted(response);
-                offset += ModsPerResponse;
-            }
+            connection.SendAutoEncrypted(response);
         }
 
         public override void HandleGunWeaponSkinItems(CS_GunWeaponSkinItems request, Connection connection)
