@@ -20,6 +20,12 @@ namespace NTRSimulator.Common.Utils
 
         public const string StcVersion = "1145428";
 
+        public const string ResUrlCdn = "https://gf2-cn.cdn.sunborngame.com/game_resources";
+
+        public const string ResUrlOss = "https://gf2.oss-cn-beijing.aliyuncs.com/game_resources";
+
+        public static string StcTableZipUrl => $"{ResUrlCdn}/data/{StcVersion}/bk_stc_pb.zip";
+
         public const string BinaryVersion = "3.0.3531.2901";
 
         public const string MustUpdateVersionClient = "13407.25794";

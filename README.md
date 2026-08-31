@@ -13,8 +13,7 @@
 ## Installation Tutorial
 1. Clone the repo.
 2. Set `ConnectionStrings:Postgres` in `NTRSimulator/appsettings.json` (skip this step if your postgres password is "password")
-3. Copy client table `*.bytes` files `C:\GF2Exilium\GF2 Game\GF2_Exilium_Data\LocalCache\Data\Table` into `NTRSimulator/bin/Debug/net8.0/Resources/Tables/`.
-4. `build`
+3. `build`
 
 ## Running
 

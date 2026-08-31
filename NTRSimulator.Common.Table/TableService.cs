@@ -1,8 +1,10 @@
 using System.Collections.Concurrent;
+using System.IO.Compression;
 using System.Reflection;
 using Google.Protobuf;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using NTRSimulator.Common.Utils;
 
 namespace NTRSimulator.Common.Table
 {
@@ -15,6 +17,54 @@ namespace NTRSimulator.Common.Table
         private readonly ConcurrentDictionary<Type, MessageParser> parserCache = new();
 
         public static string ResourceDir = Path.Join(Path.GetDirectoryName(AppContext.BaseDirectory), "Resources");
+
+        public void EnsureTables()
+        {
+            var tablesDir = Path.Combine(ResourceDir, "Tables");
+            var versionPath = Path.Combine(tablesDir, "version.txt");
+            var expectedVersion = StaticConfig.StcVersion;
+
+            if (File.Exists(versionPath)
+                && string.Equals(File.ReadAllText(versionPath).Trim(), expectedVersion, StringComparison.Ordinal))
+            {
+                logger.LogInformation("Tables already at version {Version}, skipping download", expectedVersion);
+                return;
+            }
+
+            logger.LogInformation("Tables missing or stale, downloading version {Version}", expectedVersion);
+            DownloadTables();
+        }
+
+        public void DownloadTables()
+        {
+            var tablesDir = Path.Combine(ResourceDir, "Tables");
+            var versionPath = Path.Combine(tablesDir, "version.txt");
+            var expectedVersion = StaticConfig.StcVersion;
+            var zipPath = Path.Combine(Path.GetTempPath(), $"bk_stc_pb_{expectedVersion}.zip");
+
+            if (Directory.Exists(tablesDir))
+                Directory.Delete(tablesDir, recursive: true);
+            Directory.CreateDirectory(tablesDir);
+
+            try
+            {
+                var url = StaticConfig.StcTableZipUrl;
+                logger.LogInformation("Downloading and Extracting Tables, this may take a while...");
+                var zipBytes = FetchTables(url);
+                File.WriteAllBytes(zipPath, zipBytes);
+
+                ZipFile.ExtractToDirectory(zipPath, tablesDir);
+                File.WriteAllText(versionPath, expectedVersion);
+
+                var tableCount = Directory.EnumerateFiles(tablesDir, "*.bytes").Count();
+                logger.LogInformation("Downloaded Tables version: {Version} to {Dir}", expectedVersion, tablesDir);
+            }
+            finally
+            {
+                if (File.Exists(zipPath))
+                    File.Delete(zipPath);
+            }
+        }
 
         public void DumpAllJsonToFile(string? outputDir = null)
         {
@@ -74,23 +124,6 @@ namespace NTRSimulator.Common.Table
             return rows;
         }
 
-        // TODO: idk whats the url to download these
-        //public void DownloadTable<T>(string url, bool autoLoad = true) where T : IMessage<T>, new()
-        //{
-        //    var outputPath = GetBytesFilePath(typeof(T).Name);
-        //    Directory.CreateDirectory(Path.GetDirectoryName(outputPath)!);
-
-        //    using var client = new HttpClient();
-        //    var bytes = client.GetByteArrayAsync(url).GetAwaiter().GetResult();
-
-        //    File.WriteAllBytes(outputPath, bytes);
-        //    logger.LogInformation("Downloaded {Table} ({Bytes} bytes) from {Url}",
-        //        typeof(T).Name, bytes.Length, url);
-
-        //    if (autoLoad)
-        //        GetTable<T>(bypassCache: true);
-        //}
-
         public void ClearCache()
         {
             var count = caches.Count;
@@ -101,6 +134,20 @@ namespace NTRSimulator.Common.Table
         private static string GetBytesFilePath(string tableName)
         {
             return Path.Combine(ResourceDir, "Tables", $"{tableName}.bytes");
+        }
+
+        private static byte[] FetchTables(string url)
+        {
+            using var client = new HttpClient { Timeout = TimeSpan.FromMinutes(10) };
+            client.DefaultRequestHeaders.TryAddWithoutValidation(
+                "User-Agent",
+                "UnityPlayer/2019.4.40f1 (UnityWebRequest/1.0, libcurl/7.80.0-DEV)");
+            client.DefaultRequestHeaders.TryAddWithoutValidation("X-Unity-Version", "2019.4.40f1");
+            client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "*/*");
+
+            using var response = client.GetAsync(url).GetAwaiter().GetResult();
+            response.EnsureSuccessStatusCode();
+            return response.Content.ReadAsByteArrayAsync().GetAwaiter().GetResult();
         }
 
         private static Assembly GetTableAssembly()
@@ -196,8 +243,10 @@ namespace NTRSimulator.Common.Table
 
         void DumpAllJsonToFile(string? outputDir = null);
 
-        //void DownloadTable<T>(string url, bool autoLoad = true) where T : IMessage<T>, new();
-        
+        void EnsureTables();
+
+        void DownloadTables();
+
         void ClearCache();
     }
 }

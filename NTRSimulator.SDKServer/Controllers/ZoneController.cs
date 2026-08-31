@@ -44,8 +44,8 @@ namespace NTRSimulator.SDKServer.Controllers
                 {
                     AuditResVersion = StaticConfig.AbResourceVersion,
                     ResVersion = StaticConfig.AbResourceVersion,
-                    ResUrlCdn = "https://gf2-cn.cdn.sunborngame.com/game_resources",
-                    ResUrlOss = "https://gf2.oss-cn-beijing.aliyuncs.com/game_resources",
+                    ResUrlCdn = StaticConfig.ResUrlCdn,
+                    ResUrlOss = StaticConfig.ResUrlOss,
                     AppUpdateUrl = "https://gf2.sunborngame.com/",
                     StcVersion = StaticConfig.StcVersion,
                     ModifyHotfix = false,
