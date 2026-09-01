@@ -56,6 +56,7 @@ namespace NTRSimulator.SDKServer.Controllers
                     MustUpdateVersionBin = StaticConfig.MustUpdateVersionBin,
                     MustUpdateVersionStc = StaticConfig.MustUpdateVersionStc,
                     IsCloseBattle = 1,
+                    PreDownloadResVersion = 0,
                 },
             };
         }

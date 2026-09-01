@@ -21,6 +21,7 @@ namespace NTRSimulator.SDKServer.Controllers
                         Log("1.0.4", 1703001600),
                         Log("1.0.5", 1703779200),
                         Log("1.0.6", 1721836800),
+                        Log("1.0.7", 1788192000),
                     ],
                 },
             };

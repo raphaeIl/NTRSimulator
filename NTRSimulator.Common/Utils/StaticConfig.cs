@@ -12,13 +12,13 @@ namespace NTRSimulator.Common.Utils
 
         public static string PcapDir = Path.Join(ResourceDir, "Packets");
 
-        public const string ClientVersion = "3.0.3531.0.0";
+        public const string ClientVersion = "4.0.5136.0.0";
 
-        public const string AbResourceVersion = "3.0.3531.13790.26703";
+        public const string AbResourceVersion = "4.0.5136.13967.27078";
 
-        public const string GameClientVersion = "3.0.3531";
+        public const string GameClientVersion = "4.0.5136";
 
-        public const string StcVersion = "1145428";
+        public const string StcVersion = "1152911";
 
         public const string ResUrlCdn = "https://gf2-cn.cdn.sunborngame.com/game_resources";
 
@@ -26,7 +26,7 @@ namespace NTRSimulator.Common.Utils
 
         public static string StcTableZipUrl => $"{ResUrlCdn}/data/{StcVersion}/bk_stc_pb.zip";
 
-        public const string BinaryVersion = "3.0.3531.2901";
+        public const string BinaryVersion = "4.0.5136.2988";
 
         public const string MustUpdateVersionClient = "13407.25794";
 

@@ -56,6 +56,9 @@ namespace NTRSimulator.SDKServer.Models
 
             [JsonPropertyName("IsCloseBattle")]
             public int IsCloseBattle { get; set; }
+
+            [JsonPropertyName("PreDownloadResVersion")]
+            public int PreDownloadResVersion { get; set; }
         }
     }
 }

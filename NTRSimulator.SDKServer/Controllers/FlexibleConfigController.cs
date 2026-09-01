@@ -28,15 +28,15 @@ namespace NTRSimulator.SDKServer.Controllers
                 GameDownloadAddr = "https://gf2-cn.cdn.sunborngame.com/game_resources/package/PCClient/",
                 HeadPic = new NexonPlugDto.HeadPicDto
                 {
-                    PicUrl = "https://gf2-cn.cdn.sunborngame.com/website/platform/8A8BD8299A06E750FF7F4C5D675BCE1E.png",
+                    PicUrl = "https://gf2-cn.cdn.sunborngame.com/website/platform/F38D5B7EEC37F071D6FE42A2FF8D35F3.png",
                     JumpUrl = string.Empty,
                 },
                 NexonPlugAddr = "https://gf2-cn.cdn.sunborngame.com/game_resources/package/PCLauncher/",
-                NexonPlugVersion = "1.0.6",
-                PicName = "platform",
+                NexonPlugVersion = "1.0.7",
+                PicName = "F38D5B7EEC37F071D6FE42A2FF8D35F3.png",
                 UpdateLog = "<p>修复了一些已知问题。</p>",
                 ResourceUpdateSwitch = true,
-                CompatibleVersion = "1.0.4",
+                CompatibleVersion = string.Empty,
             };
 
             return new FlexibleConfigDto
@@ -49,7 +49,7 @@ namespace NTRSimulator.SDKServer.Controllers
                     {
                         NexonPlug = JsonSerializer.Serialize(nexonPlug),
                     },
-                    IsNeedUpdate = true,
+                    IsNeedUpdate = false,
                 },
             };
         }
