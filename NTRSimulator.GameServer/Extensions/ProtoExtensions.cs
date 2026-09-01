@@ -63,7 +63,7 @@ public static class ProtoExtensions
             Exp = weapon.CurExp,
             GunId = weapon.GunId,
             BreakTimes = (uint)weapon.BreakTimes,
-            DOOGGPFMOFL = weapon.Flags,
+            LPEEABKNKKE = weapon.Flags,
         };
 
         if (weapon.EquippedModIds is { Length: > 0 })

@@ -91,7 +91,7 @@ namespace NTRSimulator.GameServer.Services
                 Exp = 120,
                 Energy = 120,
                 GunClass = level >= 60 ? 5u : 1u,
-                CostumeId = data.JLEMCACDDBN,
+                CostumeId = data.GLMMIEHDLEG,
                 CostumeParts = 0,
                 Grade = 6,
                 AuthLevel = 0,

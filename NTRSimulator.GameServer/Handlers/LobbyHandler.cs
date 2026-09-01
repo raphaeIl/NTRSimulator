@@ -1131,9 +1131,7 @@ namespace NTRSimulator.GameServer.Handlers
                 RoomId = request.RoomId,
                 EGOMNOLAAID = new AFICNAJOLBB
                 {
-                    DIPHLGDEIED = { },
-                    BNKCFOEPAPH = false,
-                    LJCECOPFCEM = { },
+                    KFJDLALJNDI = NDHFANCENHD.Types.GLGHIGHBFOC.PhaseNone,
                 },
             });
         }

@@ -77,11 +77,10 @@ namespace NTRSimulator.GameServer.Handlers
                 Uid = request.Uid,
                 Chat = new Chat
                 {
-                    Uid = request.Uid,
-                    LastId = lastId,
-                    UnreadNum = 0,
-                    Show = false,
-                    AEEDCNBBHGK = lastId,
+                    CounterType = JCODPDKNMBI.CounterDefault,
+                    LastId = DPKCGBBDMAM.ResetNone,
+                    PJBOAGJCMKK = KCCBHFPHCPD.Default,
+                    AJNAPNNKIFC = false,
                 },
                 History = new FNMCGHAOALB
                 {

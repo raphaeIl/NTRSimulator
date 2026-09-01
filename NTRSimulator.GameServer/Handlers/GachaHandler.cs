@@ -49,7 +49,7 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     new UserDropCache()
                     {
-                        ItemId = 1022,
+                        ItemId = 1082,
                         ItemNum = 1,
                         Relate = 0,
                         OverflowNum = 0,
@@ -797,7 +797,7 @@ namespace NTRSimulator.GameServer.Handlers
             SC_GunWeaponBelong gunWeaponBelong = new SC_GunWeaponBelong()
             {
                 Id = 7,
-                GunId = 1026,
+                GunId = 1082,
             };
             SC_AddIndex addIndex4 = new SC_AddIndex()
             {
@@ -807,14 +807,14 @@ namespace NTRSimulator.GameServer.Handlers
             };
             SC_NewGun newGun = new SC_NewGun()
             {
-                NNKDNBHDDGA = new Gun()
+                Gun = new Gun()
                 {
-                    Id = 1026,
+                    Id = 1082,
                     Timestamp = nowUnix,
                     Level = 1,
                     Exp = 120,
                     AuthLevel = 0,
-                    Costume = 1102600,
+                    Costume = 1108200,
                     CostumeParts = 0,
                     GunClass = 1,
                     
@@ -852,7 +852,7 @@ namespace NTRSimulator.GameServer.Handlers
             SC_AddIndex addIndex5 = new SC_AddIndex()
             {
                 Type = 10,
-                Id = 1026,
+                Id = 1082,
                 Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync15 = new SC_PlayerStatusCounterSync()
@@ -866,7 +866,7 @@ namespace NTRSimulator.GameServer.Handlers
             SC_AddIndex addIndex6 = new SC_AddIndex()
             {
                 Type = 13,
-                Id = 1102600,
+                Id = 1108200,
                 Ts = 0,
             };
             SC_PlayerStatusCounterSync playerStatusCounterSync17 = new SC_PlayerStatusCounterSync()
@@ -916,7 +916,7 @@ namespace NTRSimulator.GameServer.Handlers
                 {
                     new PELLFAAPKOL() { SystemId = 1, UniqueId = 402609 },
                     new PELLFAAPKOL() { SystemId = 1, UniqueId = 402610 },
-                    new PELLFAAPKOL() { SystemId = 49, UniqueId = 102611 },
+                    new PELLFAAPKOL() { SystemId = 49, UniqueId = 108211 },
                 },
             };
             SC_AddIndex addIndex7 = new SC_AddIndex()
@@ -1265,22 +1265,25 @@ namespace NTRSimulator.GameServer.Handlers
 
             else
             {
+                const uint newCharId = 1082;
+                const uint newCostumeId = 1108200;
+
                 List<uint> history = new List<uint>();
 
                 foreach (var ch in gachaAqu.Drops)
                 {
-                    do
-                    {
-                        //ch.ItemId = (uint)Random.Shared.Next(1020, 1063);
-
-                        ch.ItemId = 1081; // new char
-                        // ch.ItemId = 1079;
-                        // 1032 daiyan
-                    } while (ch.ItemId == 1038 || ch.ItemId == 1060 || ch.ItemId == 1041 || ch.ItemId == 1026 || ch.ItemId == 1036 || ch.ItemId == 1022 || ch.ItemId == 1024);
-
+                    ch.ItemId = newCharId;
+                    ch.CIPFHAHNMBM = FMMNODBGEJC.Gacha;
                     history.Add(ch.ItemId);
                     Log.Information("Got character {char}", ch.ItemId);
                 }
+
+                newGun.Gun.Id = newCharId;
+                newGun.Gun.Costume = newCostumeId;
+                addIndex5.Id = newCharId;
+                addIndex6.Id = newCostumeId;
+                gunWeaponBelong.GunId = newCharId;
+                gachaAqu.PMJGFLLPIHO.Add(newCharId);
 
                 gachaAquirementResp = gachaAqu;
             }

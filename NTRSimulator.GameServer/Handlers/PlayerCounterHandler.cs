@@ -1182,7 +1182,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GBBABCAJHBL = 34013
                             },
                         },
-                        Counter = new PlayerCounter.Types.Counter { Id = 1435, SummaryCounter = (JHMDEAANPCC)2,
+                        Counter = new PlayerCounter.Types.Counter { Id = 1435, SummaryCounter = (ELLMHKFIHFO)2,
                             DNGBLDDNGIN = 400,
                             IMMIPLFMKIF = true,
                             BBFIKDDGMFN = { 400 }
@@ -1260,7 +1260,7 @@ namespace NTRSimulator.GameServer.Handlers
                                 GBBABCAJHBL = 1
                             },
                         },
-                        Counter = new PlayerCounter.Types.Counter { Id = 1434, SummaryCounter = (JHMDEAANPCC)1,
+                        Counter = new PlayerCounter.Types.Counter { Id = 1434, SummaryCounter = (ELLMHKFIHFO)1,
                             DNGBLDDNGIN = 400,
                             IMMIPLFMKIF = false,
                             BBFIKDDGMFN = { 400 }

@@ -288,7 +288,7 @@ namespace NTRSimulator.GameServer.Handlers
                 PrivateSign = "0",
                 CliResCropty = "abcdefghabcdefgh",
                 Status = UserStatus.StatusNormal,
-                DzStatus = EALIADCLLKD.Types.Status.Normal,
+                DzStatus = LIJEDJGNKBD.Types.Status.Normal,
                 OFLLLHEJEDO = 8,
                 JNJEOPFIHJP = true,
                 DHMOAKCALLG = ""
@@ -418,7 +418,7 @@ namespace NTRSimulator.GameServer.Handlers
                 PrivateSign = "0",
                 CliResCropty = "abcdefghabcdefgh",
                 Status = UserStatus.StatusNormal,
-                DzStatus = EALIADCLLKD.Types.Status.Normal,
+                DzStatus = LIJEDJGNKBD.Types.Status.Normal,
                 OFLLLHEJEDO = 8,
                 JNJEOPFIHJP = true,
                 DHMOAKCALLG = "",
@@ -845,7 +845,7 @@ namespace NTRSimulator.GameServer.Handlers
                 OBJIBOMKEKD = 1,
                 NJHKLBALAJA =
                 {
-                    { 4101, new RecordRoomDetail() { MMHMOJABOPP = 1027, LNMCMKNNILF = false } },
+                    { 4101, new RecordRoomDetail() { DetailIdx = 1027, State = false } },
                 },
             };
             SC_DarkZoneStep1RoomBasicInfo scDarkZoneStep1RoomBasicInfo = new SC_DarkZoneStep1RoomBasicInfo()

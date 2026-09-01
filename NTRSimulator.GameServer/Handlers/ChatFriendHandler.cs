@@ -20,14 +20,12 @@ namespace NTRSimulator.GameServer.Handlers
 
         private static Chat CreateChat(ulong uid)
         {
-            const long lastId = 1;
             return new Chat
             {
-                Uid = uid,
-                LastId = lastId,
-                UnreadNum = 0,
-                Show = false,
-                AEEDCNBBHGK = lastId,
+                CounterType = JCODPDKNMBI.CounterDefault,
+                LastId = DPKCGBBDMAM.ResetNone,
+                PJBOAGJCMKK = KCCBHFPHCPD.Default,
+                AJNAPNNKIFC = false,
             };
         }
     }

@@ -40,7 +40,7 @@ namespace NTRSimulator.GameServer.Handlers
             {
                 Current =
                 {
-                    new HNCAADDKDKC.Types.HDBBHGABLCP
+                    new CBMLKOLAIJA.Types.HDBBHGABLCP
                     {
                         EPCCANNLACO = 26,
                         JOCEPCJGCDA = { },
