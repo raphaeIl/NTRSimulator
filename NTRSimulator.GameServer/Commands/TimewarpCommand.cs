@@ -8,7 +8,7 @@ namespace NTRSimulator.GameServer.Commands;
 [Command("timewarp", "Set the in-game clock to a custom server time", "timewarp <serverTime> [uid] (or timewarp serverTime=<value> [uid=<value>])", CommandSource.All)]
 public sealed class TimewarpCommand(ConnectionManager connectionManager) : ICommand
 {
-    [Argument("serverTime", "Unix timestamp (milliseconds) to use as in-game time", flags: ArgumentFlags.Optional)]
+    [Argument("serverTime", "Unix timestamp (seconds) to use as in-game time", flags: ArgumentFlags.Optional)]
     public long ServerTime { get; set; }
 
     [Argument("uid", "Target player UID (required from console)", flags: ArgumentFlags.Optional)]
@@ -59,6 +59,13 @@ public sealed class TimewarpCommand(ConnectionManager connectionManager) : IComm
                 ctx.Reply($"No online connection found for uid {targetUid}.");
                 return;
             }
+        }
+
+        // Reject millisecond values instead of silently moving the client far past every banner.
+        if (requestedServerTime < 0 || requestedServerTime > uint.MaxValue)
+        {
+            ctx.Reply("Use Unix seconds (for example 1789286400), not milliseconds.");
+            return;
         }
 
         targetConnection.ServerTimeOverride = requestedServerTime;

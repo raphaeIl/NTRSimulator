@@ -1,4 +1,4 @@
-﻿using NTRSimulator.Common.Networking;
+using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 
 namespace NTRSimulator.GameServer.Handlers
@@ -9,7 +9,7 @@ namespace NTRSimulator.GameServer.Handlers
         {
             connection.Send(new SC_Sync
             {
-                Timestamp = connection.ServerTimeOverride ?? DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+                Timestamp = connection.ServerTimeSeconds,
                 ActiveTime = 0
 
             });

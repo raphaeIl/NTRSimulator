@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+cache/
+work/
+build/
+*.bytes
+*.zip

@@ -17,7 +17,10 @@ namespace NTRSimulator.Common.Networking
     {
         public PlayerSession? Session { get; set; }
         public AccountEntity? Account { get; set; }
+        /// <summary>SC_Sync and table schedules both use Unix seconds.</summary>
         public long? ServerTimeOverride { get; set; }
+        public long ServerTimeSeconds => ServerTimeOverride ?? DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        public Dictionary<uint, uint> RecruitmentSelections { get; } = [];
 
         private readonly NetworkStream _stream = client.GetStream();
 

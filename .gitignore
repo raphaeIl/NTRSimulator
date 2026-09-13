@@ -388,3 +388,6 @@ temp/
 tools/
 
 .vscode/
+
+# Local client patch backups and publisher reference cache
+.ntr-client-patches/
