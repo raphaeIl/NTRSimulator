@@ -26,6 +26,15 @@
 - If you are unable to compile and getting a lot errors, this is most likely an outdated/broken proto version - right click on solution in vs -> clean solution -> build again
 - **中国用户看这里**: 如果无法编译，并且报错提示 NuGet 包不存在，请使用梯子/VPN。本项目使用了自定义 NuGet 包源。
 
+## Optional client patches
+
+Run `Client Patcher.cmd` for an optional English UI or a recruitment archive.
+Chinese remains the default, story dialogue stays Chinese, and both patches can
+restore the original files. See [setup, coverage, and limitations](client-patcher/README.md).
+
+可选英文界面和历史招募补丁：运行 `Client Patcher.cmd`。默认保留中文，支持恢复原文件，
+不翻译剧情对话。详情见 [使用说明](client-patcher/README.md)。
+
 
 ## Features
 - [X] Gacha

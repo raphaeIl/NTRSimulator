@@ -2,11 +2,12 @@
 using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 using Serilog;
+using NTRSimulator.GameServer.Services;
 using System;
 
 namespace NTRSimulator.GameServer.Handlers
 {
-    public sealed class GachaHandler : GachaHandlerBase
+    public sealed partial class GachaHandler(IRecruitmentService recruitment) : GachaHandlerBase
     {
         public override void HandleGetGachaCumulativeInfo(CS_GetGachaCumulativeInfo request, Connection connection)
         {
@@ -16,7 +17,7 @@ namespace NTRSimulator.GameServer.Handlers
             });
         }
 
-        public override void HandleGachaTentimes(CS_GachaTentimes request, Connection connection)
+        private void HandleLegacyOutfitTentimes(CS_GachaTentimes request, Connection connection)
         {
             uint nowUnix = (uint)DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 

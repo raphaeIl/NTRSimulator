@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "client_version": "4.0.5136",
+  "table_version": "1152911",
+  "originals": {
+    "LangPackageTableCnData.bytes": "96bc2a7a4641b25bc90c04835d80ccbf61f255f63ea6c8fc7a4b7787ab876a10",
+    "LangPackageTableCnBuiltinData.bytes": "8623d07ae1f628cbc193dd5b00fd6c9529d9a78b9365ef69c22a2c41385043f5",
+    "GachaData.bytes": "2d89725d3f10d6c865668d73da9572a1e18255e90c53ef13d23fb756c9ca5696"
+  },
+  "translated_ui_entries": 61150,
+  "protected_story_entries": 381078,
+  "official_reference_entries": 57717,
+  "custom_entries": 3433,
+  "reference_url": "https://gf2-us-cdn.sunborngame.com/prod/data/1151583/bk_stc_pb.zip",
+  "reference_sha256": "62f327e14caef69358836f15f823a71fb41abcf4c571dd80142c2e0352f97815"
+}
