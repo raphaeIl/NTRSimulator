@@ -1,4 +1,7 @@
-﻿using NTRSimulator.Common.Networking;
+﻿using NTRSimulator.GameServer.Services;
+using NTRSimulator.Database.Entities;
+using NTRSimulator.GameServer.Extensions;
+using NTRSimulator.Common.Networking;
 using NTRSimulator.Common.Proto;
 using System;
 using System.Collections.Generic;
@@ -8,10 +11,192 @@ using System.Threading.Tasks;
 
 namespace NTRSimulator.GameServer.Handlers
 {
-    public sealed class StageHandler : StageHandlerBase
+    public sealed class StageHandler(IInventoryService inventoryService, NTRSimulator.Common.Table.ITableService tableService) : StageHandlerBase
     {
+        // uid → 最近一次 StageStart 的关卡 id（StageInto 里要回填 StageBattle.StcStageId）
+        private static readonly System.Collections.Concurrent.ConcurrentDictionary<uint, uint> LastStageId = new();
+        // ── 进副本第一步 ─────────────────────────────────────────────
+        // 实测客户端发的就是 CS_StageStart(10304) { stcStageId = 10144 }
+        // 服务端原来直接抛 NotImplementedException，客户端等不到回包就卡死。
+        // SC_StageReady 只有一个字段 Timestamp(long)，先回当前时间试。
+        public override void HandleStageStart(CS_StageStart request, Connection connection)
+        {
+            // ★ 进副本的关键回包：SC_StageStart(10305)，带 StageBattle(field2) + StageOther(field3)
+            //   （之前错回 SC_StageReady(10316)，客户端拿不到战斗数据 → 本地初始化失败 → 黑屏 -1000001）
+            // 现在把 StageBattle 的关键字段填上，让客户端据此生成己方单位：
+            //   formation_id → 取玩家编队（编队里有 gunId），客户端用它在场上摆己方角色
+            //   leader_id    → 队长角色 id
+            uint uid = connection.Account?.Uid ?? 0;
+            const uint formationId = 1;
+            uint leaderGunId = CustomFormationHandler.GetLeaderGunId(formationId);
+            // 会在下面被部署列表的第一个覆盖（队长必须在 camps 里）
+
+            SC_StageStart sc = new()
+            {
+                Stage = new StageBattle
+                {
+                    Id = 1,
+                    StcStageId = request.StcStageId,
+                    RandomSeed = 12345,
+                    BattleLevel = 1,
+                    FormationId = formationId,
+                    LeaderId = leaderGunId,
+                    Side = FMMHAOHCKFN.Player0,
+                    Auto = false,  // 试验：强制手动，避免自动战斗时单位无 AI 导致空转回合
+                },
+                Other = new StageOther(),
+            };
+            if (uid != 0)
+            {
+                sc.Stage.UserSides[uid] = FMMHAOHCKFN.Player0;
+            }
+
+            if (uid != 0) LastStageId[uid] = request.StcStageId;
+            Console.WriteLine($"[STAGE] SC_StageStart: stcStageId={request.StcStageId} formationId={formationId} leader={leaderGunId} uid={uid}");
+            connection.Send(sc);
+        }
+
+        // ★ 客户端进副本后/部署前会问"本关可用人形"：
+        //   CS_StageUsableGuns(10300) → SC_StageUsableGuns(10301)
+        //   lineup = 角色 id 列表，lineup_guns = 完整角色数据（客户端据此显示部署面板）
+        //   原来没实现 → 客户端收不到 → 部署面板显示 0/0「暂无可选择人形」。
+        public override void HandleStageUsableGuns(CS_StageUsableGuns request, Connection connection)
+        {
+            if (connection.Account == null) return;
+
+            SC_StageUsableGuns response = new()
+            {
+                StageId = request.StageId,
+            };
+
+            // ★ 只给"编队 1 里的人形"（正常流程就是编队出战，而不是把全库都丢出来）
+            var byId = new Dictionary<uint, GunEntity>();
+            foreach (GunEntity g in inventoryService.GetPlayerInventory<GunEntity>(connection.Account.Uid))
+            {
+                byId[g.GunId] = g;   // ★ 客户端给的是配置角色 id(GunId)，不是数据库行号
+            }
+
+            uint formationId = 1;
+            foreach (uint gid in CustomFormationHandler.GetFormationGunIds(formationId))
+            {
+                if (!byId.TryGetValue(gid, out GunEntity? gunEntity)) continue;
+                response.Lineup.Add(gunEntity.GunId);
+                response.LineupGuns[gunEntity.GunId] = gunEntity.ToProtoGunCharacter();
+            }
+            Console.WriteLine($"[USABLE] 编队{formationId} 人形 = {response.Lineup.Count}");
+
+            Console.WriteLine($"[USABLE] stage={request.StageId} 可用人形={response.Lineup.Count}");
+            connection.Send(response);
+        }
+
+        // ★ 部署完成后客户端发 CS_StageInto(10306)，要回 SC_StageInto(10307)：
+        //   stage(field2, StageBattle) + other(field3, StageOther)
+        //   原来没实现 → NotImplementedException → 客户端一直转圈。
+        public override void HandleStageInto(CS_StageInto request, Connection connection)
+        {
+            uint uid = connection.Account?.Uid ?? 0;
+            uint stcStageId = LastStageId.TryGetValue(uid, out uint sid) ? sid : 0;
+            const uint formationId = 1;
+            uint leaderGunId = 0;   // 队长 = 部署列表第一个（下面填）
+
+            SC_StageInto response = new()
+            {
+                Stage = new StageBattle
+                {
+                    Id = 1,
+                    StcStageId = stcStageId,
+                    RandomSeed = 12345,
+                    BattleLevel = 1,
+                    FormationId = 0,   // 基线：不指向编队（此状态敌人会动）
+                    LeaderId = leaderGunId,
+                    Side = FMMHAOHCKFN.Player0,
+                },
+                Other = new StageOther(),
+            };
+            if (uid != 0)
+            {
+                response.Stage.UserSides[uid] = FMMHAOHCKFN.Player0;
+            }
+
+            // ★ 关键：把客户端部署的人形放进 StageBattle.camps（每 camp = 一队）
+            //   camps 元素 OPADLDPIIKL：field1 = 阵营，field7 (NFGCFGBGMCA) = 上场单位列表
+            //   单位 JPPLEFEAECH：field1 (JEKFJDDLGOO) = Gun 数据，field24 = sequence，field25 = uid
+            //   没有这段，客户端场上就只有敌人、己方空转回合。
+            bool sendCamps = false;   // camps 交给客户端按关卡表生成；服务端只给 StageBattle 基本字段
+            if (uid != 0 && sendCamps)
+            {
+                OPADLDPIIKL camp = new() { KGMEBGGOOAM = FMMHAOHCKFN.Player0 };
+                var byId = new Dictionary<uint, GunEntity>();
+                foreach (GunEntity g in inventoryService.GetPlayerInventory<GunEntity>(uid))
+                {
+                    byId[g.GunId] = g;   // ★ 同上：配置角色 id
+                }
+
+                // 从关卡表取出生点坐标：gun_birth_points = 'id:(x, y, z)::false|...'
+                var birthPos = new Dictionary<uint, string>();
+                try
+                {
+                    foreach (var cfg in tableService.GetTable<NTRSimulator.Common.Table.StageConfigData>())
+                    {
+                        if (cfg.StageId != stcStageId) continue;
+                        foreach (string part in cfg.GunBirthPoints.Split('|', StringSplitOptions.RemoveEmptyEntries))
+                        {
+                            string[] seg2 = part.Split(':');
+                            if (seg2.Length < 2) continue;
+                            if (uint.TryParse(seg2[0], out uint bp)) birthPos[bp] = seg2[1].Trim();
+                        }
+                        break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[INTO] 读出生点失败: {ex.Message}");
+                }
+
+                uint seq = 0;
+                int added = 0;
+                foreach (var kv in request.Guns)
+                {
+                    if (!byId.TryGetValue(kv.Value, out GunEntity? gunEntity)) continue;
+                    string birthPointPos = birthPos.TryGetValue(kv.Key, out string? pos) ? pos : string.Empty;
+                    camp.NFGCFGBGMCA.Add(new JPPLEFEAECH
+                    {
+                        JEKFJDDLGOO = gunEntity.ToProtoGunCharacter(),
+                        Sequence = seq++,
+                        Uid = kv.Key,                       // 出生点 id
+                        GCAABEBJHFL = birthPointPos,        // 出生点坐标字符串
+                        OGEOEEBNDEP = seq,                  // 槽位序号
+                    });
+                    if (added == 0)
+                    {
+                        // 队长必须是队伍里的人，否则客户端可能整队不生成
+                        leaderGunId = kv.Value;
+                    }
+                    added++;
+                }
+                if (added > 0)
+                {
+                    response.Stage.Camps.Add(camp);
+                }
+                Console.WriteLine($"[INTO] 部署请求 {request.Guns.Count} 条，成功放入 camps {added} 个");
+            }
+
+            Console.WriteLine($"[INTO] SC_StageInto: stcStageId={stcStageId} formation={formationId} leader={leaderGunId} 部署角色数={request.Guns.Count}");
+            connection.Send(response);
+        }
+
         public override void HandleStageRecord(CS_StageRecord request, Connection connection)
         {
+            // 客户端会按 type 询问十几种关卡记录（实测 11/12/13/14/20/21/22/26/31/32/33/
+            // 36/41/50/54/59/61/63/64…）。原来 switch 只有 11~14，**没有 default**，
+            // 其余 type 一律不回包 —— 客户端会一直等。
+            // 现在：未实现的 type 一律回一个空 SC_StageRecord，保证有应答。
+            if (request.Type is not (11 or 12 or 13 or 14))
+            {
+                connection.Send(new SC_StageRecord { Record = null });
+                return;
+            }
+
             switch (request.Type)
             {
                 case 11:
@@ -153,6 +338,104 @@ namespace NTRSimulator.GameServer.Handlers
                             {
                                 StageId = 10143,
                                 FirstPassTime = 1728668327,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10144,
+                            new StageRecord()
+                            {
+                                StageId = 10144,
+                                FirstPassTime = 1730100000,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10145,
+                            new StageRecord()
+                            {
+                                StageId = 10145,
+                                FirstPassTime = 1730100000,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10146,
+                            new StageRecord()
+                            {
+                                StageId = 10146,
+                                FirstPassTime = 1730100000,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10147,
+                            new StageRecord()
+                            {
+                                StageId = 10147,
+                                FirstPassTime = 1730100000,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10148,
+                            new StageRecord()
+                            {
+                                StageId = 10148,
+                                FirstPassTime = 1730100000,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10149,
+                            new StageRecord()
+                            {
+                                StageId = 10149,
+                                FirstPassTime = 1730100000,
+                                CompleteChallenges = 7,
+                                NOAHEPNBHPG = false,
+                                HKEGGELDDEP = 1,
+                                MCDNPPCAFOK = true,
+                                BEGDAIAHIBG = 0,
+                                CKEMELBKBNE = false,
+                            }
+                        },
+                        {
+                            10150,
+                            new StageRecord()
+                            {
+                                StageId = 10150,
+                                FirstPassTime = 1730100000,
                                 CompleteChallenges = 7,
                                 NOAHEPNBHPG = false,
                                 HKEGGELDDEP = 1,

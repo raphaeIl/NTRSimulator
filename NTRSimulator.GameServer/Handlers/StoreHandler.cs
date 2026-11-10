@@ -1,14 +1,16 @@
 using NTRSimulator.Common.Networking;
+using NTRSimulator.GameServer.Services;
+using System.IO;
 using NTRSimulator.Common.Proto;
 
 namespace NTRSimulator.GameServer.Handlers
 {
-    public sealed class StoreHandler : StoreHandlerBase
+    public sealed class StoreHandler(IInventoryService inventoryService, NTRSimulator.Common.Table.ITableService tableService) : StoreHandlerBase
     {
         public override void HandleStore(CS_Store request, Connection connection)
         {
-            connection.Send(8,
-                new SC_Store
+
+            SC_Store response = new SC_Store
                 {
                     Histories =
                     {
@@ -316,7 +318,114 @@ namespace NTRSimulator.GameServer.Handlers
                     },
                     GMCGHLPFHND = 0u,
                     JGKJGOBNBGD = { },
-                });
+            };
+
+            connection.Send(8, response);
         }
-    }
+    
+        // ─────────────────────────────────────────────────────────────
+        // 商城购买：客户端点购买时发 CS_StoreBuy(10502)。
+        // 原来这里没实现（抛 NotImplementedException）→ 客户端收不到回包 →
+        // 表现为"点了没东西、也没变已购买"。
+        // 现在按 StoreGoodData.reward 直接发奖（reward 形如 "10:60;11:1;"）。
+        // ─────────────────────────────────────────────────────────────
+        public override void HandleStoreBuy(CS_StoreBuy request, Connection connection)
+        {
+            if (connection.Account == null) return;
+            uint uid = connection.Account.Uid;
+            uint goodsId = request.GoodsId;
+
+            string reward = string.Empty;
+            uint priceType = request.PriceType;
+            try
+            {
+                foreach (var good in tableService.GetTable<NTRSimulator.Common.Table.StoreGoodData>())
+                {
+                    if (good.Id != goodsId) continue;
+                    reward = good.Reward ?? string.Empty;
+                    priceType = good.PriceType;
+                    break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[BUY] 读 StoreGoodData 失败: {ex.Message}");
+            }
+
+            int granted = 0;
+            foreach ((uint itemId, uint count) in ParseReward(reward))
+            {
+                GrantItem(uid, itemId, count);
+                granted++;
+            }
+
+            connection.Send(new SC_StoreBuy
+            {
+                Code = MANKAOBLPBJ.Types.Code.Normal,
+                GoodsId = goodsId,
+                PriceType = priceType,
+            });
+
+            Console.WriteLine($"[BUY] goods={goodsId} price_type={priceType} reward={reward} → 发货 {granted} 项");
+        }
+
+        /// <summary>解析 "10:60;11:1;" 这种奖励串</summary>
+        private static List<(uint itemId, uint count)> ParseReward(string reward)
+        {
+            var result = new List<(uint, uint)>();
+            if (string.IsNullOrWhiteSpace(reward)) return result;
+
+            foreach (string part in reward.Split(';', StringSplitOptions.RemoveEmptyEntries))
+            {
+                string[] kv = part.Split(':');
+                if (kv.Length < 2) continue;
+                if (!uint.TryParse(kv[0].Trim(), out uint itemId)) continue;
+                if (!uint.TryParse(kv[1].Trim(), out uint count)) continue;
+                if (itemId == 0 || count == 0) continue;
+                result.Add((itemId, count));
+            }
+            return result;
+        }
+
+        /// <summary>发一件东西：先看是不是时装 id，否则按道具叠加</summary>
+        private void GrantItem(uint uid, uint itemId, uint count)
+        {
+            // 时装？
+            bool isCostume = false;
+            try
+            {
+                foreach (var costume in tableService.GetTable<NTRSimulator.Common.Table.CostumeData>())
+                {
+                    if (costume.Id == itemId) { isCostume = true; break; }
+                }
+            }
+            catch { }
+
+            if (isCostume)
+            {
+                inventoryService.Add<NTRSimulator.Database.Entities.CostumeEntity>(
+                    uid, new NTRSimulator.Database.Entities.CostumeEntity { CostumeId = itemId });
+                Console.WriteLine($"[BUY]   + 时装 {itemId} x{count}");
+                return;
+            }
+
+            // 道具：已有则叠加
+            var items = inventoryService.GetPlayerInventory<NTRSimulator.Database.Entities.ItemEntity>(uid);
+            var exist = items.FirstOrDefault(i => i.ItemId == itemId);
+            if (exist != null)
+            {
+                int newCount = exist.Count + (int)count;
+                inventoryService.Remove<NTRSimulator.Database.Entities.ItemEntity>(uid, exist);
+                inventoryService.Add<NTRSimulator.Database.Entities.ItemEntity>(uid,
+                    new NTRSimulator.Database.Entities.ItemEntity { ItemId = itemId, Count = newCount });
+            }
+            else
+            {
+                inventoryService.Add<NTRSimulator.Database.Entities.ItemEntity>(uid,
+                    new NTRSimulator.Database.Entities.ItemEntity { ItemId = itemId, Count = (int)count });
+            }
+            Console.WriteLine($"[BUY]   + 道具 {itemId} x{count}");
+        }
+
+}
 }
