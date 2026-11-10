@@ -998,6 +998,8 @@ namespace NTRSimulator.GameServer.Handlers
                             [10091] = true,
                             [10101] = true,
                             [10102] = true,
+                            [10144] = true,
+                            [1014411] = true,
                             [30100] = true,
                             [30200] = true,
                             [30300] = true,

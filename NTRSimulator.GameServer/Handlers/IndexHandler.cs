@@ -615,12 +615,12 @@ namespace NTRSimulator.GameServer.Handlers
 
             foreach (CostumeEntity costume in inventoryService.GetPlayerInventory<CostumeEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[13].Details.Add(costume.CostumeId, true);
+                scIndex.Indices[13].Details[costume.CostumeId] = true;   // 索引器写法，重复不会抛异常
             }
 
             foreach (CostumePartEntity costumePart in inventoryService.GetPlayerInventory<CostumePartEntity>(connection.Account.Uid))
             {
-                scIndex.Indices[14].Details.Add(costumePart.CostumePartId, false);
+                scIndex.Indices[14].Details[costumePart.CostumePartId] = false;
             }
 
             foreach (BackgroundEntity background in inventoryService.GetPlayerInventory<BackgroundEntity>(connection.Account.Uid))
