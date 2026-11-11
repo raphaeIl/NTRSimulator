@@ -36,6 +36,8 @@ namespace NTRSimulator.GameServer
             services.AddSingleton<ConnectionManager>();
 
             services.AddHostedService<GameServerHostedService>();
+            services.AddHostedService<NTRSimulator.GameServer.Services.PurchaseGrantWorker>();   // 购买发货（后台，每秒）
+            // (PurchaseGrantWorker 已停用：发货改回 SyncHandler 心跳触发，这是实测能显示已拥有的路径)
 
              //var _ = PcapUtils.GetPacketFromPcap<SC_Guns>(MsgId.MsgScGuns, PacketType.RESPONSE);
 
